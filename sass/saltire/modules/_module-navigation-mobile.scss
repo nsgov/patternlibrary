@@ -1,0 +1,492 @@
+// Author: Able Sense Media
+
+.mobile {
+	@include clearfix();
+	position: absolute;
+	float: left;
+	z-index: 10000;
+	top: 0;
+	right: 200%;
+	width: 85%;
+	margin: 0;
+	background: $blue;
+	@include rotateY_translate3d(0, 100%, 0, 0);
+	@include transition(right 0s .1s, transform .1s);
+	@include backface-visibility(hidden);
+
+	&.is-open {
+		right: 0;
+		@include rotateY_translate3d(0, 0, 0, 0);
+		@include transition(transform .15s);
+		display: block !important;
+	}
+
+	&.navigation {
+		.menu {
+			li {
+				&.active-trail.first {
+					.active-trail {
+						span {
+							color: $yellow;
+						}
+
+						&:after {
+							height: 4px;
+						}
+					}
+				}
+
+				a {
+					&:hover,
+					&:focus,
+					&.active-trail.first:hover {
+						&:after {
+							height: 0;
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.menu {
+		&:before,
+		&:after {
+			display: none;
+		}
+
+		&, li {
+			position: static;
+		}
+
+		li {
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	li, a {
+		width: 100%;
+	}
+
+	form {
+		background: $navbar-default-bg;
+	}
+
+	.mobile-navigation {
+		&-summary,
+		&-details li a, {
+			color: $yellow;
+			background: $blue;
+			border: solid 1px darken($blue, 5%);
+			border-left-width: 0;
+			border-right-width: 0;
+		}
+
+		&-details {
+			li {
+				a {
+					background: $darkestblue;
+					border-color: lighten($darkestblue, 5%);
+
+					&, &:visited {
+						color: lighten($darkestblue, 70%);
+					}
+				}
+			}
+		}
+
+		&-summary {
+			margin: 0;
+			padding: 1em 1.5em;
+			position: relative;
+			color: $yellow;
+
+			&:focus {
+				color: $blue;
+				background: #fff;
+			}
+
+			&:before {
+				content: '';
+				font-size: .889em;
+				position: absolute;
+				top: 1em;
+				right: .611em;
+				width: 2em;
+				height: 2em;
+				@include sprite($icon__arrow-right--yellow);
+			}
+		}
+	}
+
+	.row,
+	.menu__sidebar {
+		&, ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			float: left;
+			width: 100%;
+		}
+
+		> li {
+			&.expanded.expanded.expanded {
+				> a {
+					&:before {
+						content: '';
+						display: block;
+						position: absolute;
+						z-index: 2;
+						margin-top: 0;
+						right: .611em;
+						width: 2em;
+						height: 2em;
+						font-size: .889em;
+						@include sprite($icon__arrow-right--yellow);
+					}
+				}
+			}
+		}
+
+		h2 {
+			font-size: 1em;
+			float: left;
+			width: 100%;
+		}
+
+		li {
+			&[class*=col] { // Removes bootstrap styles
+				position: static;
+				padding: 0;
+			}
+
+			a.active-trail {
+				position: relative;
+			}
+
+			ul {
+				position: absolute;
+				z-index: 1000000;
+				top: 5.75em;
+				right: 1000%;
+				height: 100%;
+				width: 100%;
+				background: $blue;
+
+				&.is-open__submenu {
+					right: 0;
+					@include transform-origin(right);
+					@include animation(from_right_fake .2s);
+				}
+
+				li {
+					float: left;
+					width: 100%;
+
+					a {
+						float: left;
+						width: 100%;
+						padding: .75em 1.5em;
+						color: $yellow;
+						background: $darkestblue;
+						border-top: solid 1px lighten($darkestblue, 2.5%);
+						border-bottom: solid 1px darken($darkestblue, 5%);
+						border-left-width: 0;
+						border-right-width: 0;
+
+						&:active, &:focus {
+							position: relative;
+							z-index: 1000;
+							outline-offset: -4px;
+						}
+					}
+
+					.btn-back {
+						position: relative;
+						background: $blue;
+
+						&:before {
+							content: '';
+							float: left;
+							position: relative;
+							top: 0;
+							right: .5em;
+							width: 1.5em;
+							height: 1.5em;
+							font-size: 1em;
+							@include sprite($icon__arrow-left--yellow);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.menu__first-of-type {
+		> li {
+			@include box-shadow(none);
+
+			> ul.menu__sidebar {
+				li {
+					a {
+						padding-left: 2.5em;
+						color: $yellow;
+						border-top: solid 1px lighten($darkestblue, 2.5%);
+						border-bottom: solid 1px darken($darkestblue, 5%);
+						border-left-width: 0;
+						border-right-width: 0;
+						background: $darkestblue;
+					}
+				}
+			}
+
+			.submenu {
+				.active-trail {
+					.active-trail {
+						background: $blue;
+					}
+				}
+			}
+
+			&.active-trail {
+				> a, &.first > a, a.active-trail {
+					border-bottom: none;
+					position: relative;
+					color: $yellow;
+
+					&:after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						height: 4px;
+						width: 100%;
+						background: $yellow;
+					}
+				}
+
+				a.active-trail {
+					&:before {
+						display: none;
+					}
+				}
+
+				.collapsed a.active-trail {
+					&:before {
+						display: inline-block;
+					}
+				}
+
+				.btn-back {
+					background: $blue;
+				}
+
+				a.active-trail {
+					&:before {
+						top: .85em;
+					}
+				}
+
+				&.active-trail__has-child-active-trail {
+					span {
+						color: #fff;
+					}
+
+					> a {
+						color: #fff;
+
+						&:after {
+							height: 3px;
+							background: lighten($darkestblue, 5%);
+						}
+					}
+				}
+			}
+
+			a {
+				color: $blue;
+				background: $navbar-default-bg;
+				border: solid 1px $navbar-default-border;
+				border-left-width: 0;
+				border-right-width: 0;
+				text-decoration: none;
+				transition: background .2s, color .1s;
+
+				&:active {
+					box-shadow: none;
+				}
+
+				&.active {
+					background: $blue;
+					color: $yellow;
+					position: relative;
+				}
+			}
+
+			ul {
+				li {
+					a {
+						padding-left: 2.25em;
+					}
+				}
+			}
+
+			&.active-trail {
+				a {
+					color: $yellow;
+					background: $blue;
+				}
+			}
+		}
+	}
+
+	.menu__sidebar {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		> li {
+			 &, &:first-of-type {
+				a {
+					color: $blue;
+					background: $navbar-default-bg;
+					border: solid 1px $navbar-default-border;
+					border-left-width: 0;
+					border-right-width: 0;
+				}
+
+				> .active-trail {
+					color: $yellow;
+					background: $blue;
+					border-color: darken($blue, 5%);
+
+					&:before {
+						content: '';
+						font-size: .889em;
+						position: absolute;
+						top: 1em;
+						right: .611em;
+						width: 2em;
+						height: 2em;
+						@include sprite($icon__arrow-right--yellow);
+					}
+				}
+			}
+		}
+	}
+}
+
+.nav--is-open__submenu {
+	div > ul > li {
+		&:after { // Used to cover the menu items below the open submenu
+			content: '';
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: $blue;
+		}
+	}
+}
+
+
+// JS Generated Elements
+
+// Mobile Navigation Styles
+.pseudo__body { // Used to animate the body when the menu is opened
+	@include translateX(0);
+	@include transition(transform .1s);
+	@include backface-visibility(hidden);
+
+	.nav-is-open & {
+		overflow: hidden;
+		position: absolute;
+		height: 100%;
+		@include transition(transform .15s);
+		@include translateX(-5%);
+	}
+}
+
+#mobile-trigger,
+#mobile-close {
+	position: relative;
+	float: right;
+	text-indent: -9999em;
+	border: none;
+
+	&:active {
+		@include box-shadow(none);
+	}
+
+	.navigation-mobile-left & {
+		float: left;
+	}
+}
+
+#mobile-trigger {
+	min-width: 2.75em;
+	height: 2.75em;
+	background-color: $blue;
+	border-radius: 2px;
+	box-shadow: 0 0 0 1px #fff;
+	margin: 1.3em 1.3em 1.3em 0;
+
+	&:after {
+		content: '';
+		position: relative;
+		right: .25em;
+		float: right;
+		width: 50%;
+		height: 100%;
+		@include sprite($icon__menu--white);
+	}
+
+	&.add-search-icon {
+		width: 5.5em;
+
+		&:before {
+			content: '';
+			position: relative;
+			left: .25em;
+			float: left;
+			top: 0;
+			width: 50%;
+			height: 100%;
+			@include sprite($icon__search--white);
+		}
+	}
+}
+
+#mobile-close {
+	position: absolute;
+	top: 1.375em;
+	right: .375em;
+	width: 2.75em;
+	height: 2.75em;
+	@include sprite($icon__close--black);
+	background-color: transparent;
+	opacity: .8;
+}
+
+#mobile-close-body-area {
+	position: fixed;
+	z-index: -1000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: #000;
+	@include transition(opacity .2s);
+
+	&.is-visible {
+		opacity: .5;
+		@include transition(opacity .2s);
+	}
+}

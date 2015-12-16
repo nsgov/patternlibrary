@@ -1,0 +1,78 @@
+// Author: Able Sense Media
+
+.footer {
+	overflow: hidden;
+	position: relative;
+	margin-top: 2em;
+	padding: 4em 0 1.5em;
+	background: $blue url(../img/bg-footer.svg) bottom/100% fixed no-repeat;
+
+	.copyright {
+		padding: 4em 0;
+
+		li {
+			display: inline;
+			margin-right: 1em;
+		}
+	}
+
+	.mobile-navigation-summary {
+		color: $yellow;
+	}
+
+	&, a {
+		color: #fff;
+	}
+
+	a {
+		opacity: .9;
+
+		&:hover, &:focus {
+			opacity: 1;
+			text-decoration: none;
+		}
+
+		&:focus, &:active {
+			color: $blue;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.footer-secondary-nav-section {
+		.mobile-navigation-link {
+			padding: 3em 0;
+
+			&:first-child {
+				padding-top: 0;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	.navigation-footer {
+		display: none;
+		padding: 0;
+	}
+
+	.footer {
+		padding: 1em 0;
+		background: $blue;
+		text-align: center;
+
+		.copyright {
+			li {
+				margin: 0 .25em;
+			}
+		}
+	}
+}

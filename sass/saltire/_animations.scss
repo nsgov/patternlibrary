@@ -1,0 +1,223 @@
+@-webkit-keyframes from_left {
+  from {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+}
+@keyframes from_left {
+  from {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+}
+@keyframes from_left-opacity {
+  from {
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
+            opacity: 0;
+  }
+}
+@-webkit-keyframes from_right {
+  from {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+}
+@keyframes from_right {
+  from {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+}
+@-webkit-keyframes from_right_fake {
+  from {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+}
+@keyframes from_right_fake {
+  from {
+    -webkit-transform: rotateY(-90deg);
+            transform: rotateY(-90deg);
+  }
+}
+@-webkit-keyframes from_top {
+  from {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+}
+@keyframes from_top {
+  from {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+}
+@-webkit-keyframes from_bottom {
+  from {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+}
+@keyframes from_bottom {
+  from {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+}
+@-webkit-keyframes from_left_25-delay {
+  0%, 25% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+}
+@keyframes from_left_25-delay {
+  0%, 25% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+}
+@-webkit-keyframes from_right_25-delay {
+  0%, 25% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+}
+@keyframes from_right_25-delay {
+  0%, 25% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+}
+@-webkit-keyframes from_top_25-delay {
+  0%, 25% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+}
+@keyframes from_top_25-delay {
+  0%, 25% {
+    -webkit-transform: translateY(-200%);
+            transform: translateY(-200%);
+  }
+}
+@-webkit-keyframes from_bottom_25-delay {
+  0%, 25% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+}
+@keyframes from_bottom_25-delay {
+  0%, 25% {
+    -webkit-transform: translateY(200%);
+            transform: translateY(200%);
+  }
+}
+@-webkit-keyframes opacity_25-delay {
+  0%, 25% {
+    opacity: 0;
+  }
+}
+@keyframes opacity_25-delay {
+  0%, 25% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes from_left-Y_50 {
+  0%, 25% {
+    -webkit-transform: translate(-150%, 50%);
+            transform: translate(-150%, 50%);
+  }
+}
+@keyframes from_left-Y_50 {
+  0%, 25% {
+    -webkit-transform: translate(-150%, 50%);
+            transform: translate(-150%, 50%);
+  }
+}
+@-webkit-keyframes from_right-Y_50 {
+  from {
+    -webkit-transform: translate(150%, 50%);
+            transform: translate(150%, 50%);
+  }
+}
+@keyframes from_right-Y_50 {
+  from {
+    -webkit-transform: translate(150%, 50%);
+            transform: translate(150%, 50%);
+  }
+}
+@-webkit-keyframes from_top-Y_50 {
+  from {
+    -webkit-transform: translate(-200%, 50%);
+            transform: translate(-200%, 50%);
+  }
+}
+@keyframes from_top-Y_50 {
+  from {
+    -webkit-transform: translate(-200%, 50%);
+            transform: translate(-200%, 50%);
+  }
+}
+@-webkit-keyframes from_bottom-Y_50 {
+  from {
+    -webkit-transform: translate(200%, 50%);
+            transform: translate(200%, 50%);
+  }
+}
+@keyframes from_bottom-Y_50 {
+  from {
+    -webkit-transform: translate(200%, 50%);
+            transform: translate(200%, 50%);
+  }
+}
+@-webkit-keyframes exit_aniation {
+  0%, 100% {
+    left: 0;
+  }
+}
+@keyframes exit_aniation {
+  0%, 100% {
+    left: 0;
+  }
+}
+@-webkit-keyframes wait_text_indent {
+  from {
+    text-indent: -9999px;
+  }
+  to {
+    text-indent: 0;
+  }
+}
+@keyframes wait_text_indent {
+  from {
+    text-indent: -9999px;
+  }
+  to {
+    text-indent: 0;
+  }
+}
+
+  @-webkit-keyframes skew-wait-for-js_-30deg {
+    0%, 100% {
+      @include skewX_translateZ(-30deg, 0);
+    }
+  }
+
+  @keyframes skew-wait-for-js_30deg {
+    0%, 100% {
+      @include skewX_translateZ(30deg, 0);
+    }
+  }
+
+  @-webkit-keyframes skew-wait-for-js_-30deg {
+    0%, 100% {
+      @include skewX_translateZ(-30deg, 0);
+    }
+  }
+
+  @keyframes skew-wait-for-js_30deg {
+    0%, 100% {
+      @include skewX_translateZ(30deg, 0);
+    }
+  }

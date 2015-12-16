@@ -1,0 +1,67 @@
+
+
+.language-switcher-locale-session {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	.session-active {
+		display: none;
+		visibility: hidden;
+	}
+
+	li {
+		a {
+			background: $navbar-default-bg;
+			padding: .625em 1.5em;
+			margin-top: -.625em;
+			float: left;
+			text-align: right;
+			width: 100%;
+			outline-offset: -4px;
+
+			&, &:visited {
+				color: $blue;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $screen-sm) {
+	.language-switcher-locale-session {
+		li {
+			position: absolute;
+			right: 0;
+			z-index: 9999;
+			padding: 0 1.5em .188em;
+
+			a {
+				padding: 0;
+				padding-top: .063em;
+				margin-top: 0;
+				background: none;
+				outline-offset: 0;
+
+				&:before {
+					content: '';
+					position: absolute;
+					z-index: -1;
+					right: 0;
+					background: white;
+					width: 100%;
+					height: 100%;
+					@include skewX(-30deg);
+				}
+
+				&:active, &:focus {
+					outline: none;
+
+					&:before {
+						outline: solid 4px $yellow;
+						outline-offset: -3px;
+					}
+				}
+			}
+		}
+	}
+}

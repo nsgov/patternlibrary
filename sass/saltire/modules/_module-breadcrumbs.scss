@@ -1,0 +1,90 @@
+// Author: Able Sense Media
+
+// Styles to fix issues with breadcrumbs
+main,
+.main,
+#main {
+	position: relative;
+}
+
+main,
+.main,
+#main,
+footer,
+.footer,
+#footer {
+	float: left;
+	width: 100%;
+}
+
+.breadcrumbs {
+	list-style: none;
+	float: left;
+	margin: 0;
+	padding: .33em 0;
+	color: $blue;
+	list-style: none;
+
+	li {
+		float: left;
+	}
+
+	a {
+		position: relative;
+		text-decoration: none;
+		background: none;
+		@include box-shadow(none);
+		float: left;
+
+		&:after {
+			content: '';
+			float: right;
+			margin: .5em .125em 0 .25em;
+			width: 1em;
+			height: 1em;
+			@include sprite($icon__breadcrumb--darkblue);
+		}
+	}
+
+	&.has-hero-headline {
+		position: absolute;
+		z-index: 2;
+		padding: .33em 1.66em;
+		padding-left: 0;
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			height: 100%;
+			@include skewX(-30deg);
+		}
+
+		&:before {
+			left: -9100%;
+			height: 200%;
+			width: 9100%;
+			background: rgba(0, 88, 164, .25);
+			@include animation(from_left .9s);
+		}
+
+		&:after {
+			left: -9000%;
+			width: 9100%;
+			background: #fff;
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	.breadcrumbs {
+		display: none;
+
+		&.has-hero-headline {
+			overflow: hidden;
+			left: 0;
+		}
+	}
+}

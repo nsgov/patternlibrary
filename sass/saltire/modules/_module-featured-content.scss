@@ -1,0 +1,164 @@
+// Author: Able Sense Media
+.featured {
+	ul {
+		margin-top: 0;
+		margin-bottom: 1.75em;
+		padding-left: 0;
+		list-style: none;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	h1 {
+		margin-top: .5em;
+	}
+}
+
+@media only screen and (min-width: $screen-lg) {
+	.featured {
+		transform: translateZ(0); // Fixes text rendering
+		padding-bottom: 3em;
+
+		&-text {
+			position: relative;
+			z-index: 2;
+			max-width: 85%;
+			padding: 1em 2em 1.25em 1em;
+			padding-right: 2em;
+
+			&-bottom {
+				margin-top: -225px;
+			}
+
+			&-top { // Flag the angles look bad
+				position: absolute;
+				top: 10%;
+			}
+
+			&-animation {
+				@include animation(from_left .6s cubic-bezier( 1, .5, .3, 1.1 ));
+
+				h1, p, ul {
+					@include animation(from_left .7s cubic-bezier( 1, .5, .3, 1.1 ));
+				}
+			}
+
+			h1 {
+				margin-top: 0;
+				margin-bottom: .25em;
+
+				a {
+					text-decoration: none;
+				}
+			}
+
+			ul {
+				margin: 0;
+
+				li {
+					display: inline-block;
+
+					a {
+						margin-right: .5em;
+					}
+				}
+			}
+
+			p {
+				&:first-of-type {
+					margin-bottom: .35em;
+				}
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				right: 0;
+				width: 200%;
+				height: 100%;
+				@include skewX(-30deg);
+			}
+
+			&:before {
+				z-index: -1;
+				background: white;
+			}
+		}
+
+		&-img-container {
+			position: relative;
+			display: inline-block;
+			width: 100%;
+		}
+
+		&-angles-container-js {
+			overflow: hidden;
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,.5);
+		}
+
+		&-angles-js {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			@include skewX(-30deg);
+
+			&:before,
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				height: 100%;
+			}
+
+			&:first-of-type {
+				&:before {
+					width: 8%;
+					right: 5.3%;
+					height: 30%;
+					top: auto;
+					bottom: 0;
+					background: linear-gradient(to bottom,
+								rgba(0, 50, 98, 1) 33%,
+								rgba(0, 174, 239, 1) 100%);
+					opacity: .5;
+					@include animation(from_bottom_25-delay 1.4s);
+				}
+
+				&:after {
+					width: 16%;
+					right: 13.3%;
+					background: linear-gradient(to bottom,
+								rgba(0, 50, 98, 0) 0%,
+								rgba(0, 50, 98, .5) 80%,
+								rgba(0, 174, 239, 1) 100%);
+					opacity: .25;
+					@include animation(from_bottom_25-delay .8s);
+				}
+			}
+
+			&:nth-of-type(2) {
+				&:before,
+				&:after {
+					right: auto;
+					left: 0;
+					width: 35%;
+					background: linear-gradient(to bottom,
+								rgba(0, 50, 98, 0) 0%,
+								rgba(0, 50, 98, 1) 100%);
+					opacity: .125;
+					@include animation(from_bottom_25-delay 1.2s);
+				}
+			}
+		}
+	}
+}

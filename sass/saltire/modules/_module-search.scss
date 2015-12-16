@@ -1,0 +1,100 @@
+// Author: Able Sense Media
+
+.search-box {
+	margin-top: .34em;
+
+	&-container, div {
+		display: inline;
+	}
+
+	&-label {
+		position: absolute;
+		left: -9999em;
+	}
+
+	&-button {
+		color: #fff;
+		text-indent: -9999em;
+		background-color: $blue;
+		@include sprite($icon__search--white);
+		@include transition(background-color .2s);
+
+		&:hover, &:active, &:focus {
+			background-color: darken($blue, 5%);
+		}
+	}
+
+	&-input {
+		padding: .063em .5em 0 .625em;
+		border: solid 1px;
+		border-color: $navbar-default-border;
+	}
+
+	&-input,
+	&-button {
+		float: left;
+		min-width: 2.25em;
+		height: 2.25em;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		@include appearance(none);
+
+		&:active, &:focus {
+			position: relative;
+			z-index: 100;
+			outline-width: 4px;
+		}
+	}
+}
+
+.mobile {
+	.search-box {
+		float: left;
+		width: 100%;
+		overflow: hidden;
+		margin: 0;
+		padding: 0;
+
+		&-button {
+			min-width: 2.75em;
+		}
+
+		&-input,
+		&-button {
+			margin: 1.5em 0 1.5em;
+			height: 2.75em;
+		}
+
+		&-input {
+			margin-left: 1em;
+			max-width: 9.5em;
+			min-width: 55%;
+		}
+	}
+}
+
+@media only screen and (min-width: $screen-sm) {
+	.search-box {
+		float: right;
+		margin: 3.25em 0 0 .75em;
+
+		&-input {
+			width: 15em;
+		}
+
+		&-label {
+			display: block; // Fixes layout bug in ie9
+			height: 0; // Fixes layout bug in ie9
+			@include animation(wait_text_indent 1s steps(1));
+		}
+
+		&-button {
+			font-size: .875em;
+			min-width: 2.571em;
+			height: 2.571em;
+			background-position: center -3.125em;
+			border-left: solid .143em $blue;
+		}
+	}
+}

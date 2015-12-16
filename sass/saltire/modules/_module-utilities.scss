@@ -1,0 +1,244 @@
+// Author: Able Sense Media
+//
+// Utility classes
+// --------------------------------------------------
+
+.clearfix {
+	@include clearfix;
+}
+
+.center-block {
+	@include center-block;
+}
+
+.pull {
+	&-right {
+		float: right;
+
+		img & {
+			padding-left: 1em;
+		}
+	}
+
+	&-left {
+		float: left;
+
+		img & {
+			padding-right: 1em;
+		}
+	}
+}
+
+// Hide from screenreaders and browsers
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+// Remove Underline
+//
+.remove-underline {
+	&, a {
+		text-decoration: none;
+	}
+}
+
+// Column Underline
+//
+.col-underline {
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: -.5em;
+		margin-left: -1%;
+		width: 94%;
+		height: 1px;
+		border-bottom: solid 1px $lightestgray;
+	}
+}
+
+@media only screen and (min-width: $screen-sm) {
+	.col-underline {
+		&:before {
+			bottom: 0;
+		}
+	}
+
+	.col-underline-container {
+		position: relative;
+		overflow: hidden;
+
+		.col-underline {
+			position: static;
+
+			&:before {
+				margin-left: -.5%;
+				width: 47%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	.col-underline {
+		position: relative;
+	}
+}
+
+
+// PDF - Graphic
+//
+.pdf {
+	position: relative;
+	padding-left: 1.25em;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		width: 1em;
+		height: 2em;
+		font-size: 1em;
+		@include sprite($icon__pdf-link--darkblue);
+	}
+}
+
+// Hide Bullets from lists
+//
+.hide-bullets {
+	&, ul {
+		list-style: none;
+	}
+}
+
+// Remove default padding from lists
+//
+.remove-list-padding {
+	&, ul, ol {
+		padding-left: 0;
+	}
+}
+
+// Margin Top
+//
+.margin-top {
+	margin-top: .75em;
+}
+
+// Pseudo Space
+//
+// Used to keep pairs of words from collapsing separately on line wraps,
+// for example it keeps Nova Scotia from being seperated in the footer.
+.word-break-together {
+	display: inline-block;
+}
+
+
+// Used to align the sidebar with the extra spacing due the the lineheight and margin of a heading being
+// the first element on a page (i.e. when a heading is the first thing after the breadcrumbs)
+.nav-top-margin {
+	margin-top: 2em;
+}
+
+@media only screen and (min-width: $screen-sm) {
+	.margin-top {
+		margin-top: 1em;
+	}
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	.on-sm-increase {
+		li {
+			a {
+				font-size: 1.125em;
+				line-height: 2;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	.remove-row-sm {
+		margin: 0;
+
+		& > div {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.col-remove-gutter {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+@media only screen and (min-width: $screen-xs) {
+	.remove-gutter-xs-right {
+		margin-right: -.5em;
+	}
+
+	.remove-gutter-xs-left {
+		margin-left: -.5em;
+	}
+}
+
+@media only screen and (min-width: $screen-sm) {
+	.remove-gutter-sm-right {
+		margin-right: -.5em;
+	}
+
+	.remove-gutter-sm-left {
+		margin-left: -.5em;
+	}
+}
+
+@media only screen and (min-width: $screen-md) {
+	.remove-gutter-md-right {
+		margin-right: -.5em;
+	}
+
+	.remove-gutter-md-left {
+		margin-left: -.5em;
+	}
+}
+
+@media only screen and (min-width: $screen-lg) {
+	.remove-gutter-lg-right {
+		margin-right: -.5em;
+	}
+
+	.remove-gutter-lg-left {
+		margin-left: -.5em;
+	}
+}
+
+// Colors & Backgrounds
+.color-headline-cyan {
+	color: $cyan-headline-lightest;
+}
+
+.color-font-cyan {
+	color: $cyan-bodytext-lightest;
+}
+
+.color-font-blue {
+	color: $blue;
+}
+
+.color-font-darkestblue {
+	color: $darkestblue;
+}
+
+.color-bg-blue {
+	background-color: $blue;
+}
+
+.color-bg-cyan {
+	background-color: $cyan;
+}
+
+.color-bg-darkestblue {
+	background-color: $darkestblue;
+}

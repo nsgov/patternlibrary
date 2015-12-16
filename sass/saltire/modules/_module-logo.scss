@@ -1,0 +1,24 @@
+.logo {
+	display: inline-block;
+	margin-top: .75em;
+	font-size: 1em; // For when it is an h1 on the homepage.
+
+	> a { // For when it is an h1 on the homepage.
+		display: block;
+		background: transparent;
+	}
+
+	&:active, &:focus {
+		background: none;
+	}
+
+	&-img {
+		width: 13em;
+	}
+}
+
+@media only screen and (min-width: $screen-lg) {
+	.logo {
+		margin-left: -.6em;
+	}
+}

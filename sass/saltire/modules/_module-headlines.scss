@@ -1,0 +1,11 @@
+// Author: Able Sense Media
+
+.headline-underline {
+	margin-left: -.125em;
+	text-indent: .125em;
+	border-bottom: solid .0625em;
+
+	+ p {
+		padding-top: .5em;
+	}
+}

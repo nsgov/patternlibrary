@@ -1,0 +1,32 @@
+// Author: Able Sense Media
+
+.search-form {
+	margin: 0 auto;
+	margin-top: 2em;
+	width: 100%;
+	max-width: 30em;
+
+	legend {
+		padding-top: 1.5em;
+	}
+
+	label {
+		font-weight: 300;
+	}
+
+	label + input {
+		margin-bottom: 1.5em;
+	}
+
+	input {
+		padding: .25em 1em;
+		width: 100%;
+		border: solid 1px $lightgray;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		width: auto;
+		margin: 0 .25em;
+	}
+}

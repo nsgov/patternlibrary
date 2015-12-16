@@ -1,0 +1,153 @@
+// Author: Able Sense Media
+
+// Fallbacks
+.no-js,
+.no-placeholder {
+	label {
+		position: relative;
+		text-indent: 0 !important;
+	}
+}
+
+// ie 8
+.ie {
+	.header {
+		.navigation {
+			.menu {
+				li.first {
+					background: $blue;
+				}
+			}
+		}
+	}
+
+	.search-box {
+		&-input {
+			border: solid 1px $blue;
+		}
+
+		&-button {
+			background-position: center -3.75em;
+		}
+	}
+
+	.logo {
+		float: left;
+		width: 13em;
+	}
+
+	.header {
+		background-image: url(../img/bg-header.png);
+		background-position: -200% 55%;
+		background-repeat: no-repeat;
+
+		&:after {
+			display: none;
+		}
+	}
+
+	.footer {
+		background: $blue;
+	}
+
+	.from-footer-li,
+	.from-sidebar-li {
+		display: none;
+		visibility: hidden;
+	}
+
+	.container {
+		form:before,
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+
+	.headline-saltire-container {
+		img {
+			width: auto;
+		}
+
+		.container-link {
+			&:before,
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	.hero-headline-container {
+		background-color: #fff;
+	}
+
+	.hero-angles {
+		&, &:before, &:after {
+			display: none;
+		}
+	}
+
+	.hero-graphics {
+		background: #fff;
+
+		.hero-background,
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+
+	.copyright {
+		position: relative;
+		z-index: 2;
+		float: left;
+		width: 100%;
+	}
+
+	.col-underline-container {
+		position: static;
+	}
+
+	.featured {
+		&-text {
+			position: static;
+			margin-top: 0;
+
+			h1, h2, h3, h4, h5, h6 {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.headline-saltire-caption {
+		float: left;
+		width: 100%;
+		position: static;
+	}
+
+	.popup-overlay {
+		position: absolute;
+		left: 0;
+		top: -100%;
+
+		&.is-open {
+			top: 0;
+		}
+	}
+}
+
+@media only screen and (min-width: $screen-sm) {
+	.no-js .skew {
+		.menu {
+			@include skewX_translateZ(0, 0);
+
+			li {
+				a {
+					span {
+						@include skewX_translateZ(0, 0);
+					}
+				}
+			}
+		}
+	}
+}

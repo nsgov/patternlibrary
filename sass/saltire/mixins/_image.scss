@@ -1,0 +1,57 @@
+// Image Mixins
+// - Sprites Mixin ( Added by Ablesense )
+// - Responsive image
+// - Retina image
+
+// Sprites Mixin
+$icon__menu--white: 0;
+$icon__search--white: 1em;
+$icon__close--black: 2em;
+$icon__pdf-link--darkblue: 3em;
+$icon__breadcrumb--darkblue: 4em;
+$icon__arrow-up--white: 5em;
+$icon__arrow-right--white: 6em;
+$icon__arrow-down--white: 7em;
+$icon__arrow-left--white: 8em;
+$icon__arrow-up--yellow: 9em;
+$icon__arrow-right--yellow: 10em;
+$icon__arrow-down--yellow: 11em;
+$icon__arrow-left--yellow: 12em;
+$icon__arrow-up--blue: 13em;
+$icon__arrow-right--blue: 14em;
+$icon__arrow-down--blue: 15em;
+$icon__arrow-left--blue: 16em;
+
+@mixin sprite($icon: $icon__menu--white) {
+  $icon-calc: -3 * $icon;
+  background-position: center $icon-calc;
+  background-size: auto 148.5em;
+  background-repeat: no-repeat;
+  background-image: url(../img/sprite-icons.svg);
+
+  .no-svg & {
+    background-position: center $icon-calc;
+    background-image: url(../img/sprite-icons.png);
+  }
+}
+
+@mixin svg-bg($img-name, $pos: center, $size: cover) {
+  background-image: url(../img/#{$img-name}.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-size: $size;
+
+  .no-svg & {
+    background-image: url(../img/#{$img-name}.png);
+  }
+}
+
+// Responsive image
+//
+// Keep images from scaling beyond the width of their parents.
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
+}

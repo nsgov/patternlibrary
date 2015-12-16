@@ -1,0 +1,70 @@
+.alert {
+	position: relative;
+	margin-top: $line-height-em;
+	padding: 1em $line-height-em;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: .375em;
+		background-color: $darkestblue;
+		@include box-shadow(0 0 0 1px $darkestblue);
+	}
+
+	p {
+		margin-bottom: 0;
+		line-height: 1.5;
+		font-size: $font-size-large;
+		font-weight: $font-weight-bold;
+	}
+
+	&-low {
+		background-color: lighten($yellowgreen, 49.5%);
+		@include box-shadow(0 0 0 1px lighten($yellowgreen, 35%));
+
+		&:before {
+			background-color: $yellowgreen;
+			@include box-shadow(0 0 0 1px $yellowgreen);
+		}
+
+		p {
+			color: darken($yellowgreen, 25%);
+		}
+	}
+
+	&-medium {
+		background-color: lighten($blue, 62.5%);
+		@include box-shadow(0 0 0 1px lighten($blue, 52.5%));
+
+		&:before {
+			background-color: $blue;
+			@include box-shadow(0 0 0 1px $blue);
+		}
+
+		p {
+			color: darken($blue, 15%);
+		}
+	}
+
+	&-high {
+		background-color: lighten($red, 48%);
+		@include box-shadow(0 0 0 1px lighten($red, 40%));
+
+		&:before {
+			background-color: $red;
+			@include box-shadow(0 0 0 1px $red);
+		}
+
+		p {
+			color: darken($red, 15%);
+		}
+	}
+
+	&-in-view {
+		@include animation(from_left-opacity .45s);
+		@include animation-timing-function(cubic-bezier(1, .3, .5, 1.5));
+	}
+}

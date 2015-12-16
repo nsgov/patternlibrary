@@ -1,0 +1,164 @@
+// Author: Able Sense Media
+.sidebar_first,
+.sidebar {
+	overflow: hidden;
+	margin-bottom: 2em;
+
+	li {
+		&:first-child {
+			a {
+				border-top-width: 1px;
+			}
+		}
+
+		&.collapsed {
+			a {
+				&:after {
+					content: '';
+					position: absolute;
+					right: 1.5em;
+					width: 1.5em;
+					height: 1.5em;
+					@include sprite($icon__arrow-right--blue);
+				}
+
+				&:focus, &:active, &:hover {
+					&:after {
+						@include sprite($icon__arrow-right--white);
+					}
+				}
+			}
+		}
+
+		&.expanded {
+			> a {
+				&:before {
+					content: '';
+					position: absolute;
+					right: 0;
+					margin-left: -.4em;
+					margin-right: 1em;
+					width: 1.5em;
+					height: 1.5em;
+					@include sprite($icon__arrow-down--yellow);
+				}
+			}
+		}
+	}
+
+	a {
+		float: left;
+		width: 100%;
+		border: solid 1px $lightestgray;
+		border-top-width: 0;
+		padding: 1em 1.5em;
+		text-decoration: none;
+		@include transition(border .1s, background .1s, color .1s);
+
+		&:focus, &:active {
+			color: #fff;
+			background: $blue;
+			@include box-shadow(none);
+		}
+
+		&:focus, &:hover {
+			outline-offset: -4px;
+		}
+
+		&.active-trail {
+			color: $yellow;
+			background: $blue;
+			position: relative;
+			border-color: darken($blue, 5%);
+
+			+ ul .active-trail {
+				color: $blue;
+
+				&:before {
+					display: none;
+				}
+			}
+
+			&:hover {
+				color: $yellow;
+				background: $blue;
+			}
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		ul a {
+			padding-left: 3em;
+		}
+
+		ul ul a {
+			padding-left: 6em;
+		}
+
+		a.active-trail + ul {
+			float: left;
+			width: 100%;
+
+			a {
+				background: lighten($lightestgray, 5%);
+
+				&:hover, &:focus {
+					color: #fff;
+					background: $darkestblue;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	.sidebar a {
+		padding-left: .5em;
+	}
+
+	.is-copied {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: $screen-sm) {
+	.from-sidebar-li {
+		display: none;
+	}
+
+	.sidebar_first, .sidebar {
+		.expanded.active-trail {
+			li a.active-trail {
+				position: relative;
+				color: $yellow;
+				background: $darkestblue;
+
+				&:after {
+					content: 'test';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					height: 4px;
+					width: 100%;
+					background: $yellow;
+				}
+			}
+		}
+		a {
+			&:hover {
+				color: #fff;
+				background: $blue;
+			}
+
+			&:active {
+				background: lighten($blue, 5%);
+				@include transition(background .075s);
+				@include box-shadow(none);
+			}
+		}
+	}
+}
