@@ -15,7 +15,8 @@
   touch-action: manipulation;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
-  border: 1px solid transparent;
+  border: 0px solid transparent;
+  border-radius: $btn-border-radius-base;
   white-space: nowrap;
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-em, $line-height-base, $btn-border-radius-base);
   @include user-select(none);
@@ -40,7 +41,7 @@
   &.active {
     outline: 0;
     background-image: none;
-    @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    @include box-shadow(none);
   }
 
   &.disabled,
@@ -73,8 +74,8 @@ a.btn {
 
   @include transition(background .2s, color .2s);
    &:hover, &:focus {
-     color: $darkestblue;
-     background-color: $yellow;
+     color: #fff;
+     background-color: darken($darkestblue, 5%);
    }
 
    &:active {

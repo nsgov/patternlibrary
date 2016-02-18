@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Pattern Primer</title>
+<title>NSGov Pattern Library</title>
 <link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="saltire.css">
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
 <style>
 .pattern {
     clear: both;
-    overflow: hidden;
+    overflow: visible;
+    display: block;
+    padding-top: 1em;
+ 
 }
 .pattern .display {
     width: 65%;
@@ -22,6 +28,7 @@
 .pattern .source textarea {
     width: 90%;
 }
+
 </style>
 </head>
 <body>
@@ -76,13 +83,13 @@ sort($molecules);
 foreach ($molecules as $molecule):
     echo '<div class="pattern">';
     echo '<div class="display">';
-    include('patterns/'.$molecule);
+    include('molecules/'.$molecule);
     echo '</div>';
     echo '<div class="source">';
     echo '<textarea rows="6" cols="30">';
     echo htmlspecialchars(file_get_contents('molecules/'.$molecule));
     echo '</textarea>';
-    echo '<p><a href="atoms/'.$molecule.'">'.$molecule.'</a></p>';
+    echo '<p><a href="molecules/'.$molecule.'">'.$molecule.'</a></p>';
     echo '</div>';
     echo '</div>';
 endforeach;
@@ -118,5 +125,8 @@ foreach ($organisms as $organism):
 endforeach;
 ?>
 </div>
+
+
+	<script src="js/script.min.js"></script>
 </body>
 </html>

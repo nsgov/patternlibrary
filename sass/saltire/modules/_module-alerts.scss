@@ -1,8 +1,7 @@
 .alert {
 	position: relative;
 	margin-top: $line-height-em;
-	padding: 1em $line-height-em;
-
+		
 	&:before {
 		content: '';
 		position: absolute;
@@ -21,9 +20,26 @@
 		font-weight: $font-weight-bold;
 	}
 
+
+	&-success {
+		background-color: lighten($green, 20%);
+		@include box-shadow(0 0 0 1px lighten($green, 15%));
+
+		&:before {
+			background-color: $green;
+			@include box-shadow(0 0 0 1px $green);
+		}
+
+		p {
+			color: darken($yellowgreen, 25%);
+			padding: 2%;
+		}
+	}
+
+
 	&-low {
-		background-color: lighten($yellowgreen, 49.5%);
-		@include box-shadow(0 0 0 1px lighten($yellowgreen, 35%));
+		background-color: lighten($yellowgreen, 20%);
+		@include box-shadow(0 0 0 1px lighten($yellowgreen, 15%));
 
 		&:before {
 			background-color: $yellowgreen;
@@ -32,12 +48,13 @@
 
 		p {
 			color: darken($yellowgreen, 25%);
+			padding: 2%;
 		}
 	}
 
 	&-medium {
-		background-color: lighten($blue, 62.5%);
-		@include box-shadow(0 0 0 1px lighten($blue, 52.5%));
+		background-color: lighten($blue, 50%);
+		@include box-shadow(0 0 0 1px lighten($blue, 45%));
 
 		&:before {
 			background-color: $blue;
@@ -46,12 +63,13 @@
 
 		p {
 			color: darken($blue, 15%);
+			padding: 2%;
 		}
 	}
 
 	&-high {
-		background-color: lighten($red, 48%);
-		@include box-shadow(0 0 0 1px lighten($red, 40%));
+		background-color: lighten($red, 25%);
+		@include box-shadow(0 0 0 1px lighten($red, 35%));
 
 		&:before {
 			background-color: $red;
@@ -60,6 +78,7 @@
 
 		p {
 			color: darken($red, 15%);
+			padding: 2%;
 		}
 	}
 
