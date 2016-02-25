@@ -10,7 +10,6 @@
 		height: 100%;
 		width: .375em;
 		background-color: $darkestblue;
-		@include box-shadow(0 0 0 1px $darkestblue);
 	}
 
 	p {
@@ -23,7 +22,6 @@
 
 	&-success {
 		background-color: lighten($green, 20%);
-		@include box-shadow(0 0 0 1px lighten($green, 15%));
 
 		&:before {
 			background-color: $green;
@@ -31,30 +29,14 @@
 		}
 
 		p {
-			color: darken($yellowgreen, 25%);
+			color: darken($green, 50%);
 			padding: 2%;
 		}
 	}
 
 
 	&-low {
-		background-color: lighten($yellowgreen, 20%);
-		@include box-shadow(0 0 0 1px lighten($yellowgreen, 15%));
-
-		&:before {
-			background-color: $yellowgreen;
-			@include box-shadow(0 0 0 1px $yellowgreen);
-		}
-
-		p {
-			color: darken($yellowgreen, 25%);
-			padding: 2%;
-		}
-	}
-
-	&-medium {
 		background-color: lighten($blue, 50%);
-		@include box-shadow(0 0 0 1px lighten($blue, 45%));
 
 		&:before {
 			background-color: $blue;
@@ -62,14 +44,27 @@
 		}
 
 		p {
-			color: darken($blue, 15%);
+			color: darken($blue, 50%);
+			padding: 2%;
+		}
+	}
+
+	&-medium {
+		background-color: lighten($yellowgreen, 20%);
+
+		&:before {
+			background-color: $yellowgreen;
+			@include box-shadow(0 0 0 1px $yellowgreen);
+		}
+
+		p {
+			color: darken($yellowgreen, 50%);
 			padding: 2%;
 		}
 	}
 
 	&-high {
 		background-color: lighten($red, 25%);
-		@include box-shadow(0 0 0 1px lighten($red, 35%));
 
 		&:before {
 			background-color: $red;
@@ -77,7 +72,17 @@
 		}
 
 		p {
-			color: darken($red, 15%);
+			color: darken($red, 50%);
+			padding: 2%;
+		}
+	}
+
+	&-clear {
+		background-color: lighten($lightgray, 100%);
+		@include box-shadow(0 0 0 1px $lightgray);
+
+		p {
+			color: #000;
 			padding: 2%;
 		}
 	}
