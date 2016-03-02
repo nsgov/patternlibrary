@@ -98,6 +98,10 @@
 		height: 1.6em;
 		background: $blue;
 	}
+	
+	&.nonav {
+	border-bottom: 10px solid $blue;
+	}
 }
 
 .navigation {
