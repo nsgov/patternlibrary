@@ -7,13 +7,17 @@
 	padding: 4em 0 1.5em;
 	background: $blue url(../img/bg-footer.svg) bottom/100% fixed no-repeat;
 
-	.copyright {
+	.container {
 		padding: 4em 0;
 
 		li {
 			display: inline;
 			margin-right: 1em;
 		}
+	}
+
+	.footer-social-links a, .footer-statement-links a {
+		text-decoration: none;
 	}
 
 	.mobile-navigation-summary {
@@ -69,7 +73,7 @@
 		background: $blue;
 		text-align: center;
 
-		.copyright {
+		.container {
 			li {
 				margin: 0 .25em;
 			}
