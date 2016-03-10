@@ -107,6 +107,10 @@
 .navigation {
 	background: $blue;
 
+	& > .menu > .first {
+		white-space: nowrap;
+	}
+
 	.menu {
 		margin: 0;
 		padding: 0;
