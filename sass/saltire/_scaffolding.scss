@@ -17,6 +17,18 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main,
+.main,
+#main {
+  flex: 1;
+}
+
 // Reset fonts for relevant elements
 input,
 button,
