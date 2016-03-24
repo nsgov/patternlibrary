@@ -1005,6 +1005,7 @@ h6, .h6 {
     font-size: 1.125em; } }
 p {
   word-spacing: 0;
+  line-height: 1.6875;
   margin: 0 0 13.5px; }
   p + p {
     text-indent: 0; }

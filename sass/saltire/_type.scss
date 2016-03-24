@@ -74,6 +74,7 @@ h6, .h6 { font-size: $font-size-h6; }
 
 p {
   word-spacing: 0;
+  line-height: $line-height-base;
   margin: 0 0 ($line-height-computed / 2);
   + p {
     text-indent: 0;
