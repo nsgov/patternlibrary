@@ -12,6 +12,7 @@ $angles-time: $headline-time + .5;
 	height: 400px;
 	background: $darkestblue no-repeat top/100%; // 100% is a fallback for cover
 	background-size: cover;
+	background-position: 0% 70%;
 	transform: translateZ(0); // Fixes text rendering
 
 	img { // fallback for no javascript

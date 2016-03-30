@@ -219,8 +219,21 @@ address {
   line-height: $line-height-base;
 }
 
+// Time
+
+time {
+  &#issue-date {
+    font-size: $font-size-small;
+  }
+}
+
 em, i {
   font-family: $font-family-italic;
+}
+
+a i.fa {
+  text-decoration: none;
+  margin: auto 5px;
 }
 
 th, b, strong {

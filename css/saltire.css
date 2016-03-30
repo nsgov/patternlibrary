@@ -1108,8 +1108,15 @@ address {
   font-style: normal;
   line-height: 1.6875; }
 
+time#issue-date {
+  font-size: 11.9px; }
+
 em, i {
   font-family: "robotoitalic", Helvetica, Arial, Tahoma, sans-serif; }
+
+a i.fa {
+  text-decoration: none;
+  margin: auto 5px; }
 
 th, b, strong {
   font-family: "robotobold", Helvetica, Arial, Tahoma, sans-serif;
@@ -1453,8 +1460,10 @@ input[type="checkbox"] {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
-a.btn.disabled, fieldset[disabled] a.btn {
-  pointer-events: none; }
+a.btn {
+  text-decoration: none; }
+  a.btn.disabled, fieldset[disabled] a.btn {
+    pointer-events: none; }
 
 .btn-default {
   color: white;
@@ -1665,19 +1674,31 @@ a.btn.disabled, fieldset[disabled] a.btn {
   padding: 10px 16px;
   font-size: 17.5px;
   line-height: 1.33333;
-  border-radius: 6px; }
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 27px auto; }
+  .btn-lg:hover, .btn-lg:focus, .btn-lg:active {
+    text-decoration: none; }
 
 .btn-sm {
   padding: 5px 10px;
   font-size: 11.9px;
   line-height: 1.5;
-  border-radius: 3px; }
+  border-radius: 3px;
+  text-decoration: none;
+  margin: 27px auto; }
+  .btn-sm:hover, .btn-sm:focus, .btn-sm:active {
+    text-decoration: none; }
 
 .btn-xs {
   padding: 1px 5px;
   font-size: 11.9px;
   line-height: 1.5;
-  border-radius: 3px; }
+  border-radius: 3px;
+  text-decoration: none;
+  margin: 27px auto; }
+  .btn-xs:hover, .btn-xs:focus, .btn-xs:active {
+    text-decoration: none; }
 
 .btn-block {
   display: block;
@@ -1690,6 +1711,29 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
+
+/* Note to Editors Block at the top of News Releases */
+#nte {
+  border: 1px solid #ccc;
+  border-width: 1px 0;
+  padding: 1em 0;
+  margin: 1.5em 0; }
+
+.location {
+  float: left; }
+
+/* Homepage Topic Blocks */
+#home-topics div {
+  float: left;
+  height: 8em;
+  line-height: 1.2em; }
+
+.pub-details {
+  min-height: 5em !important; }
+
+#call-to-action {
+  display: block;
+  margin: 27px auto; }
 
 .clearfix:before, .clearfix:after {
   content: " ";
@@ -3123,6 +3167,9 @@ footer,
   width: 100%;
   height: auto; }
 
+#photo figcaption {
+  font-size: 11.9px; }
+
 .list-group {
   margin-bottom: 20px;
   padding-left: 0; }
@@ -3221,6 +3268,7 @@ button.list-group-item {
   height: 400px;
   background: #003262 no-repeat top/100%;
   background-size: cover;
+  background-position: 0% 70%;
   transform: translateZ(0); }
   .hero-headline-container img {
     float: left;

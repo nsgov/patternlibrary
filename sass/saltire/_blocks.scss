@@ -13,5 +13,37 @@
 }
 
 .related-content {
-	
+
+}
+
+/* Note to Editors Block at the top of News Releases */
+#nte {
+	border: 1px solid #ccc;
+	border-width: 1px 0;
+	padding: 1em 0;
+	margin: 1.5em 0;
+}
+
+.location {
+	float: left;
+}
+
+/* Homepage Topic Blocks */
+
+#home-topics div {
+	float: left;
+	height: 8em;
+	line-height: 1.2em;
+}
+
+
+.pub-details {
+	min-height: 5em !important;
+}
+
+// Call to Action
+
+#call-to-action {
+	display: block;
+  margin: $line-height-computed auto;
 }
