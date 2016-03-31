@@ -18,7 +18,7 @@
 
 /* Note to Editors Block at the top of News Releases */
 #nte {
-	border: 1px solid #ccc;
+	border: 1px solid $gray-light;
 	border-width: 1px 0;
 	padding: 1em 0;
 	margin: 1.5em 0;
@@ -45,5 +45,9 @@
 
 #call-to-action {
 	display: block;
-  margin: $line-height-computed auto;
+  margin: 2.5em auto;
+}
+
+#broadcast-copy p {
+	line-height: $line-height-large * 2em;
 }

@@ -1714,7 +1714,7 @@ input[type="button"].btn-block {
 
 /* Note to Editors Block at the top of News Releases */
 #nte {
-  border: 1px solid #ccc;
+  border: 1px solid #777777;
   border-width: 1px 0;
   padding: 1em 0;
   margin: 1.5em 0; }
@@ -1733,7 +1733,10 @@ input[type="button"].btn-block {
 
 #call-to-action {
   display: block;
-  margin: 27px auto; }
+  margin: 2.5em auto; }
+
+#broadcast-copy p {
+  line-height: 2.66667em; }
 
 .clearfix:before, .clearfix:after {
   content: " ";
