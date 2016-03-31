@@ -51,3 +51,8 @@
 #broadcast-copy p {
 	line-height: $line-height-large * 2em;
 }
+
+#summary, #collection-teaser, #introduction {
+	font-size: $font-size-large;
+	color: $gray-darker;
+}

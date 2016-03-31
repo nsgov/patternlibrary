@@ -1738,6 +1738,10 @@ input[type="button"].btn-block {
 #broadcast-copy p {
   line-height: 2.66667em; }
 
+#summary, #collection-teaser, #introduction {
+  font-size: 17.5px;
+  color: #222222; }
+
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table; }
