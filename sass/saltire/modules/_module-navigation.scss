@@ -24,20 +24,20 @@
 		text-align:center;
 		top:-9em;
 		width:12em;
-		
+
 		&:focus{
 		position:static;
 		text-decoration:underline
 		}
-		
+
 		&:visited{
 		color:#fff
 		}
-	
-	}	
-	
+
+	}
+
 }
-	
+
 
 .header,
 .navigation {
@@ -98,7 +98,7 @@
 		height: 1.6em;
 		background: $blue;
 	}
-	
+
 	&.nonav {
 	border-bottom: 10px solid $blue;
 	}
@@ -268,13 +268,13 @@
 			li {
 				text-align: center;
 
-				&:first-of-type,
-				&.active-trail.first {
-					a {
-						margin-left: -1.35em;
-						background: $blue;
-					}
-				}
+				//&:first-of-type,
+				//&.active-trail.first {
+				//	a {
+				//		margin-left: -1.35em;
+				//		background: $blue;
+				//	}
+				//}
 			}
 		}
 

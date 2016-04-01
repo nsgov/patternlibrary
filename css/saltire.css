@@ -2057,9 +2057,6 @@ input[type="button"].btn-block {
     background: #0058a4; }
     .navigation .menu li {
       text-align: center; }
-      .navigation .menu li:first-of-type a, .navigation .menu li.active-trail.first a {
-        margin-left: -1.35em;
-        background: #0058a4; }
     .navigation:before, .navigation:after {
       content: '';
       position: absolute;
