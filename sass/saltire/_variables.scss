@@ -98,10 +98,10 @@ $line-height-em:          $line-height-base * 1em;
 $line-height-computed:    floor((16px * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    $font-family-sans-serif-light !default;
+$headings-font-family:    $font-family-sans-serif !default;
 $headings-font-weight:    300 !default;
 $headings-line-height:    1.25 !default;
-$headings-color:          $blue !default;
+$headings-color:          $darkestblue !default;
 
 
 //== Components

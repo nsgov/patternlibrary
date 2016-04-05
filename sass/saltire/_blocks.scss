@@ -18,10 +18,10 @@
 
 /* Note to Editors Block at the top of News Releases */
 #nte {
-	border: 1px solid $gray-light;
-	border-width: 1px 0;
-	padding: 1em 0;
+	background-color: $gray-lighter;
+	padding: 1em;
 	margin: 1.5em 0;
+	color: $gray-darker;
 }
 
 .location {
@@ -48,11 +48,121 @@
   margin: 2.5em auto;
 }
 
-#broadcast-copy p {
+#pull-quote {
+	padding: 13.5px 27px;
+	margin: 0 0 27px;
+	border-left: 5px solid $darkblue;
+	font-size: $font-size-h2;
+}
+
+#broadcast-copy {
 	line-height: $line-height-large * 2em;
 }
 
 #summary, #collection-teaser, #introduction {
-	font-size: $font-size-large;
-	color: $gray-darker;
+	font-size: $font-size-h3;
+	margin: $line-height-computed auto;
 }
+
+.pub-introduction {
+	display: block;
+	padding-top: $line-height-computed;
+	margin-bottom: $line-height-computed;
+}
+.pub-details {
+	margin-bottom: $line-height-computed;
+	vertical-align: top;
+}
+.pub-label {
+	margin-bottom: $line-height-computed;
+	h2 {margin-top: 0; padding-top: 0;}
+}
+
+#accessibility-email {
+	font-size: $font-size-small;
+}
+
+#social-media-account, #department, #media-contact {
+	ul, li {list-style: none; margin-left: 0; padding-left: 0;}
+}
+
+#department {color: $blue; text-decoration: underline;}
+
+.profile-details {
+	#job-title, #department {font-size: $font-size-h3; display: inline;}
+}
+
+#services-list ol {
+	list-style: none; margin-left: 0; padding-left: 0;
+	li {list-style: none; margin-left: 0; padding-left: 0;}
+}
+
+// Homepage Blocks //
+
+#home-topics li {
+	min-height: 8em;
+	list-style-type: none;
+}
+
+@media (max-width: 767px) {
+	#home-top-tasks {
+		display: block;
+		position: relative;
+		background-color: lighten($cyan, 47.6%);
+		z-index: -1;
+		font-size: $font-size-em;
+		padding: 2em;
+	}
+
+	#home-top-tasks li {
+		list-style-type: none;
+		width: 45%;
+		float: left;
+	}
+}
+
+@media (min-width: 768px) {
+
+		#home-top-tasks {
+			position: absolute;
+			top: 20px;
+			left: 62.5%;
+			background: white;
+			color: $gray;
+			text-align: left;
+			font-size: $font-size-small;
+			list-style-type: none;
+			padding: 0.25em 1em;
+			z-index: 2;
+		}
+
+		#home-top-tasks li {
+			list-style-type: none;
+		}
+}
+#home-features {
+	background-color: lighten($cyan, 47.6%); display: block; clear: both; margin-top: $line-height-computed; padding: $line-height-computed auto;}
+
+#features, #about-government {display: block; clear: both; margin: $line-height-computed auto;}
+
+#home-about-government {
+	display: block;
+	h2 {font-size: $font-size-h1; color: $darkestblue;}
+	h3 {font-size: $font-size-h2; color: $darkestblue; clear: both; display: block; margin-top: $line-height-computed;}
+	.directory {padding-bottom: $line-height-computed; display: block;}
+}
+
+#about-government {
+	padding: $line-height-computed auto; display: block;
+	li {
+		list-style-type: none;
+		display: block;
+	}
+}
+
+
+// Universal Survey Block //
+
+#feedback {clear: both; display: block; background: $darkestblue; padding: $line-height-computed; margin-top: $line-height-computed auto; color: #fff; font-size: $font-size-large;}
+#feedback a {color: $yellow;}
+#feedback a:hover, #feedback a:focus {color: #fff;}
