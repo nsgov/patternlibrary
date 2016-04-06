@@ -27,23 +27,23 @@ $icon__arrow-left--blue: 16em;
   background-position: center $icon-calc;
   background-size: auto 148.5em;
   background-repeat: no-repeat;
-  background-image: url(http://novascotia.ca/clf/ignition/img/sprite-icons.svg);
+  background-image: url(/clf/saltire/fonts/img/sprite-icons.svg);
 
   .no-svg & {
     background-position: center $icon-calc;
-    background-image: url(http://novascotia.ca/clf/ignition/img/sprite-icons.png);
+    background-image: url(/clf/saltire/img/sprite-icons.png);
   }
 }
 
 @mixin svg-bg($img-name, $pos: center, $size: cover) {
-  background-image: url(http://novascotia.ca/clf/ignition/img/#{$img-name}.svg);
+  background-image: url(/clf/saltire/img/#{$img-name}.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   background-size: $size;
 
   .no-svg & {
-    background-image: url(http://novascotia.ca/clf/ignition/img/#{$img-name}.png);
+    background-image: url(/clf/saltire/img/#{$img-name}.png);
   }
 }
 
