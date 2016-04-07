@@ -1006,7 +1006,7 @@ h6, .h6 {
 p {
   word-spacing: 0;
   line-height: 1.6875;
-  margin: 0 0 13.5px; }
+  margin: 0 0 31.05px; }
   p + p {
     text-indent: 0; }
 
@@ -1024,7 +1024,7 @@ ul,
 ol {
   margin: 1em 0;
   padding-left: 2em;
-  margin-bottom: 13.5px; }
+  margin-bottom: 31.05px; }
   ul ul,
   ul ol,
   ol ul,
@@ -1034,6 +1034,9 @@ ol {
 li ul, li ol {
   margin: 0;
   padding-left: 1em; }
+
+#body ul li {
+  margin-bottom: 13.5px; }
 
 .list-unstyled {
   padding-left: 0;
@@ -3820,7 +3823,7 @@ button.list-group-item {
   float: left;
   width: 13em; }
 .ie .header {
-  background-image: url(http://novascotia.ca/clf/ignition/img/bg-header.png);
+  background-image: url(/clf/saltire/img/bg-header.png);
   background-position: -200% 55%;
   background-repeat: no-repeat; }
   .ie .header:after {
