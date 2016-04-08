@@ -31,7 +31,7 @@
 /* Homepage Topic Blocks */
 
 #home-topics ul {
-	margin-left: 0; padding-left: 0;
+	margin-left: 0;
 }
 
 #home-topics li {
@@ -91,9 +91,11 @@
 	font-size: $font-size-small;
 }
 
-#social-media-account, #department, #media-contact {
+#social-media-account, #department, #media-contact, #corp-info, {
 	ul, li {list-style: none; margin-left: 0; padding-left: 0;}
 }
+
+.corp-info, .corp-info li {list-style: none; margin-left: 0; padding-left: 0;}
 
 #department {color: $blue; text-decoration: underline;}
 

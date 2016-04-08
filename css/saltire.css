@@ -1727,8 +1727,7 @@ input[type="button"].btn-block {
 
 /* Homepage Topic Blocks */
 #home-topics ul {
-  margin-left: 0;
-  padding-left: 0; }
+  margin-left: 0; }
 
 #home-topics li {
   min-height: 189px;
@@ -1777,7 +1776,12 @@ input[type="button"].btn-block {
 #accessibility-email {
   font-size: 11.9px; }
 
-#social-media-account ul, #social-media-account li, #department ul, #department li, #media-contact ul, #media-contact li {
+#social-media-account ul, #social-media-account li, #department ul, #department li, #media-contact ul, #media-contact li, #corp-info ul, #corp-info li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
+
+.corp-info, .corp-info li {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
@@ -1850,9 +1854,6 @@ input[type="button"].btn-block {
     clear: both;
     display: block;
     margin-top: 27px; }
-  #home-about-government .directory {
-    padding-bottom: 27px;
-    display: block; }
 
 #about-government {
   padding: 27px auto;
