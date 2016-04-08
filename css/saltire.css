@@ -1726,11 +1726,19 @@ input[type="button"].btn-block {
   float: left; }
 
 /* Homepage Topic Blocks */
-#home-topics div {
-  float: left;
-  height: 8em;
-  line-height: 1.2em; }
+#home-topics ul {
+  margin-left: 0;
+  padding-left: 0; }
 
+#home-topics li {
+  min-height: 189px;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0; }
+
+@media only screen and (max-width: 767px) {
+  #home-topics li {
+    min-height: 1em; } }
 .pub-details {
   min-height: 5em !important; }
 
@@ -1790,10 +1798,6 @@ input[type="button"].btn-block {
     list-style: none;
     margin-left: 0;
     padding-left: 0; }
-
-#home-topics li {
-  min-height: 8em;
-  list-style-type: none; }
 
 @media (max-width: 767px) {
   #home-top-tasks {
@@ -1937,7 +1941,7 @@ input[type="button"].btn-block {
     background-position: center -9em;
     background-size: auto 148.5em;
     background-repeat: no-repeat;
-    background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+    background-image: url(/clf/saltire/img/sprite-icons.svg); }
     .no-svg .pdf:before {
       background-position: center -9em;
       background-image: url(/clf/saltire/img/sprite-icons.png); }
@@ -2294,7 +2298,7 @@ input[type="button"].btn-block {
       background-position: center -30em;
       background-size: auto 148.5em;
       background-repeat: no-repeat;
-      background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+      background-image: url(/clf/saltire/img/sprite-icons.svg); }
       .no-svg .mobile .mobile-navigation-summary:before {
         background-position: center -30em;
         background-image: url(/clf/saltire/img/sprite-icons.png); }
@@ -2320,7 +2324,7 @@ input[type="button"].btn-block {
     background-position: center -30em;
     background-size: auto 148.5em;
     background-repeat: no-repeat;
-    background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+    background-image: url(/clf/saltire/img/sprite-icons.svg); }
     .no-svg .mobile .row > li.expanded.expanded.expanded > a:before, .no-svg
     .mobile .menu__sidebar > li.expanded.expanded.expanded > a:before {
       background-position: center -30em;
@@ -2394,7 +2398,7 @@ input[type="button"].btn-block {
           background-position: center -36em;
           background-size: auto 148.5em;
           background-repeat: no-repeat;
-          background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+          background-image: url(/clf/saltire/img/sprite-icons.svg); }
           .no-svg .mobile .row li ul li .btn-back:before, .no-svg
           .mobile .menu__sidebar li ul li .btn-back:before {
             background-position: center -36em;
@@ -2483,7 +2487,7 @@ input[type="button"].btn-block {
       background-position: center -30em;
       background-size: auto 148.5em;
       background-repeat: no-repeat;
-      background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+      background-image: url(/clf/saltire/img/sprite-icons.svg); }
       .no-svg .mobile .menu__sidebar > li > .active-trail:before, .no-svg .mobile .menu__sidebar > li:first-of-type > .active-trail:before {
         background-position: center -30em;
         background-image: url(/clf/saltire/img/sprite-icons.png); }
@@ -2550,7 +2554,7 @@ input[type="button"].btn-block {
     background-position: center 0;
     background-size: auto 148.5em;
     background-repeat: no-repeat;
-    background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+    background-image: url(/clf/saltire/img/sprite-icons.svg); }
     .no-svg #mobile-trigger:after {
       background-position: center 0;
       background-image: url(/clf/saltire/img/sprite-icons.png); }
@@ -2567,7 +2571,7 @@ input[type="button"].btn-block {
       background-position: center -3em;
       background-size: auto 148.5em;
       background-repeat: no-repeat;
-      background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+      background-image: url(/clf/saltire/img/sprite-icons.svg); }
       .no-svg #mobile-trigger.add-search-icon:before {
         background-position: center -3em;
         background-image: url(/clf/saltire/img/sprite-icons.png); }
@@ -2581,7 +2585,7 @@ input[type="button"].btn-block {
   background-position: center -6em;
   background-size: auto 148.5em;
   background-repeat: no-repeat;
-  background-image: url(/clf/saltire/fonts/img/sprite-icons.svg);
+  background-image: url(/clf/saltire/img/sprite-icons.svg);
   background-color: transparent;
   opacity: .8; }
   .no-svg #mobile-close {
@@ -2707,7 +2711,7 @@ footer,
       background-position: center -12em;
       background-size: auto 148.5em;
       background-repeat: no-repeat;
-      background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+      background-image: url(/clf/saltire/img/sprite-icons.svg); }
       .no-svg .breadcrumbs a:after {
         background-position: center -12em;
         background-image: url(/clf/saltire/img/sprite-icons.png); }
@@ -2805,7 +2809,7 @@ footer,
     background-position: center -3em;
     background-size: auto 148.5em;
     background-repeat: no-repeat;
-    background-image: url(/clf/saltire/fonts/img/sprite-icons.svg);
+    background-image: url(/clf/saltire/img/sprite-icons.svg);
     -webkit-transition: background-color 0.2s;
     -o-transition: background-color 0.2s;
     transition: background-color 0.2s; }
@@ -2884,7 +2888,7 @@ footer,
     background-position: center -42em;
     background-size: auto 148.5em;
     background-repeat: no-repeat;
-    background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+    background-image: url(/clf/saltire/img/sprite-icons.svg); }
     .no-svg .sidebar_first li.collapsed a:after, .no-svg
     .sidebar li.collapsed a:after {
       background-position: center -42em;
@@ -2896,7 +2900,7 @@ footer,
     background-position: center -18em;
     background-size: auto 148.5em;
     background-repeat: no-repeat;
-    background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+    background-image: url(/clf/saltire/img/sprite-icons.svg); }
     .no-svg .sidebar_first li.collapsed a:focus:after, .no-svg .sidebar_first li.collapsed a:active:after, .no-svg .sidebar_first li.collapsed a:hover:after, .no-svg
     .sidebar li.collapsed a:focus:after, .no-svg
     .sidebar li.collapsed a:active:after, .no-svg
@@ -2915,7 +2919,7 @@ footer,
     background-position: center -33em;
     background-size: auto 148.5em;
     background-repeat: no-repeat;
-    background-image: url(/clf/saltire/fonts/img/sprite-icons.svg); }
+    background-image: url(/clf/saltire/img/sprite-icons.svg); }
     .no-svg .sidebar_first li.expanded > a:before, .no-svg
     .sidebar li.expanded > a:before {
       background-position: center -33em;
@@ -3531,10 +3535,18 @@ button.list-group-item {
       -o-animation: from_left 0.9s cubic-bezier(1, 0.5, 0.3, 1.1);
       animation: from_left 0.9s cubic-bezier(1, 0.5, 0.3, 1.1); }
     .hero-headline h1 {
-      max-width: 85%; }
+      white-space: nowrap;
+      font-size: 1.5em;
+      font-size-adjust: auto; }
 
   .hero-graphics .hero-background {
     right: -1em; } }
+@media only screen and (min-width: 479px) and (max-width: 1200px) {
+  h1 {
+    max-width: 75%;
+    white-space: nowrap;
+    font-size: 1.5em;
+    font-size-adjust: auto; } }
 @media only screen and (min-width: 1200px) {
   .hero-headline-container {
     text-align: center; }

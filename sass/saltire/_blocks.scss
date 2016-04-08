@@ -30,12 +30,21 @@
 
 /* Homepage Topic Blocks */
 
-#home-topics div {
-	float: left;
-	height: 8em;
-	line-height: 1.2em;
+#home-topics ul {
+	margin-left: 0; padding-left: 0;
 }
 
+#home-topics li {
+	min-height: ($line-height-computed * 7);
+	list-style-type: none;
+	margin-left: 0; padding-left: 0;
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	#home-topics li {
+		min-height: 1em;
+	}
+}
 
 .pub-details {
 	min-height: 5em !important;
@@ -97,12 +106,6 @@
 	li {list-style: none; margin-left: 0; padding-left: 0;}
 }
 
-// Homepage Blocks //
-
-#home-topics li {
-	min-height: 8em;
-	list-style-type: none;
-}
 
 @media (max-width: 767px) {
 	#home-top-tasks {
@@ -149,7 +152,6 @@
 	display: block;
 	h2 {font-size: $font-size-h1; color: $darkestblue;}
 	h3 {font-size: $font-size-h2; color: $darkestblue; clear: both; display: block; margin-top: $line-height-computed;}
-	.directory {padding-bottom: $line-height-computed; display: block;}
 }
 
 #about-government {
