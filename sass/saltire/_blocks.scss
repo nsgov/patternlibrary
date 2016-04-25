@@ -29,9 +29,9 @@
 }
 
 /* Homepage Topic Blocks */
-
-#home-topics ul {
-	margin-left: 0;
+#home-topics {margin: 0; padding: 0;}
+#home-topics ol {
+	margin-left: 0; padding-left: 0;
 }
 
 #home-topics li {
