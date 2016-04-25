@@ -1754,7 +1754,7 @@ input[type="button"].btn-block {
 #broadcast-copy {
   line-height: 2.66667em; }
 
-#summary, #collection-teaser, #introduction, #dept-homepage-design #what-we-do {
+#summary, #collection-teaser, #introduction {
   font-size: 1.25em;
   margin: 27px auto; }
 
@@ -1766,18 +1766,8 @@ input[type="button"].btn-block {
 .pub-details {
   margin-bottom: 27px;
   vertical-align: top; }
-  .pub-details ul, .pub-details li {
-    list-style: none;
-    margin: 0;
-    padding: 0; }
   .pub-details article {
     margin-bottom: 27px; }
-  .pub-details .document-type,
-  .pub-details .first-published,
-  .pub-details .document-author {
-    font-size: 11.9px;
-    display: inline;
-    margin-right: 1.5em; }
 
 .pub-label {
   margin-bottom: 27px; }
@@ -1785,21 +1775,13 @@ input[type="button"].btn-block {
     margin-top: 0;
     padding-top: 0; }
 
-#meta-publication-type ul, #meta-publication-type li, #meta-department ul, #meta-department li, #news-release #department ul, #news-release #department li {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
 #accessibility-email {
   font-size: 11.9px; }
 
-#social-media-account ul, #social-media-account li, #department ul, #department li, #media-contact ul, #media-contact li, #corp-info ul, #corp-info li, #announcements ul, #announcements li {
+#social-media-account ul, #social-media-account li, #department ul, #department li, #media-contact ul, #media-contact li, #corp-info ul, #corp-info li {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
-
-#social-media-account .fa {
-  font-size: 1.5em; }
 
 .corp-info, .corp-info li {
   list-style: none;
@@ -1809,10 +1791,6 @@ input[type="button"].btn-block {
 #department {
   color: #0058a4;
   text-decoration: underline; }
-
-.feature-image img {
-  width: 100%;
-  height: auto; }
 
 .profile-details #job-title, .profile-details #department {
   font-size: 1.25em;
@@ -1891,7 +1869,7 @@ input[type="button"].btn-block {
   display: block;
   background: #003262;
   padding: 27px;
-  margin-top: 2em;
+  margin-top: 27px auto;
   color: #fff;
   font-size: 17.5px; }
 
