@@ -70,9 +70,29 @@
 
 // Document, Document Collection
 
+.document-thumbnail-container {
+	&:after {
+		width: 100px;
+		content:'';
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    display: block;
+    position: absolute;
+    background: black;
+    opacity: 0.05;
+	}
+}
+
+.document-layout {
+	label {font-weight: normal;}
+}
+
 #summary, #collection-teaser, #introduction, #dept-homepage-design #what-we-do {
 	font-size: $font-size-h3;
 	margin: $line-height-computed auto;
+	clear: both;
 }
 
 .pub-introduction {
@@ -99,14 +119,27 @@
 	h2 {margin-top: 0; padding-top: 0;}
 }
 
-#meta-publication-type, #meta-department, #news-release #department {
+#meta-publication-type, #meta-department, #news-release #department, #legislative-acts, #dept-services {
 		ul, li {list-style: none; margin: 0; padding: 0;}
+		ol, li {list-style: none; margin: 0; padding: 0;}
 }
 
 #accessibility-email {
 	font-size: $font-size-small;
 }
 
+#legislative-acts {
+	a {
+		&:after {
+			display: inline-block;
+		  font: normal normal normal 14px/1 FontAwesome;
+		  font-size: inherit;
+		  text-rendering: auto;
+		  -webkit-font-smoothing: antialiased;
+		  -moz-osx-font-smoothing: grayscale;
+			content: '  \f08e';}
+	}
+}
 
 
 // Department Profile
@@ -114,6 +147,8 @@
 #social-media-account, #department, #media-contact, #corp-info, #announcements {
 	ul, li {list-style: none; margin-left: 0; padding-left: 0;}
 }
+
+.about-link {font-size: $font-size-h3; margin-bottom: $line-height-computed; display: block;}
 
 #social-media-account .fa {font-size: 1.5em;}
 
@@ -124,7 +159,15 @@
 .feature-image img {width: 100%; height: auto;}
 
 .profile-details {
-	#job-title, #department {font-size: $font-size-h3; display: inline;}
+	width: 100%; display: block; margin: 0 0 $line-height-computed 0;
+	#job-title {
+		font-size: $font-size-h3;
+	}
+	#department {
+		font-size: $font-size-h3;
+		ul {margin: 0; padding: 0; list-style: none;}
+		li {margin: 0; padding: 0; list-style: none;}
+	}
 }
 
 #services-list ol {

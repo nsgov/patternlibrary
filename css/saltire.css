@@ -1759,9 +1759,25 @@ input[type="button"].btn-block {
 #broadcast-copy {
   line-height: 2.66667em; }
 
+.document-thumbnail-container:after {
+  width: 100px;
+  content: '';
+  top: 0;
+  left: 0;
+  z-index: 10;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: black;
+  opacity: 0.05; }
+
+.document-layout label {
+  font-weight: normal; }
+
 #summary, #collection-teaser, #introduction, #dept-homepage-design #what-we-do {
   font-size: 1.25em;
-  margin: 27px auto; }
+  margin: 27px auto;
+  clear: both; }
 
 .pub-introduction {
   display: block;
@@ -1790,7 +1806,11 @@ input[type="button"].btn-block {
     margin-top: 0;
     padding-top: 0; }
 
-#meta-publication-type ul, #meta-publication-type li, #meta-department ul, #meta-department li, #news-release #department ul, #news-release #department li {
+#meta-publication-type ul, #meta-publication-type li, #meta-department ul, #meta-department li, #news-release #department ul, #news-release #department li, #legislative-acts ul, #legislative-acts li, #dept-services ul, #dept-services li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+#meta-publication-type ol, #meta-publication-type li, #meta-department ol, #meta-department li, #news-release #department ol, #news-release #department li, #legislative-acts ol, #legislative-acts li, #dept-services ol, #dept-services li {
   list-style: none;
   margin: 0;
   padding: 0; }
@@ -1798,10 +1818,24 @@ input[type="button"].btn-block {
 #accessibility-email {
   font-size: 11.9px; }
 
+#legislative-acts a:after {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '  \f08e'; }
+
 #social-media-account ul, #social-media-account li, #department ul, #department li, #media-contact ul, #media-contact li, #corp-info ul, #corp-info li, #announcements ul, #announcements li {
   list-style: none;
   margin-left: 0;
   padding-left: 0; }
+
+.about-link {
+  font-size: 1.25em;
+  margin-bottom: 27px;
+  display: block; }
 
 #social-media-account .fa {
   font-size: 1.5em; }
@@ -1819,9 +1853,22 @@ input[type="button"].btn-block {
   width: 100%;
   height: auto; }
 
-.profile-details #job-title, .profile-details #department {
-  font-size: 1.25em;
-  display: inline; }
+.profile-details {
+  width: 100%;
+  display: block;
+  margin: 0 0 27px 0; }
+  .profile-details #job-title {
+    font-size: 1.25em; }
+  .profile-details #department {
+    font-size: 1.25em; }
+    .profile-details #department ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .profile-details #department li {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
 
 #services-list ol {
   list-style: none;
