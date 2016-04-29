@@ -1,0 +1,13 @@
+@mixin delimited-list($separator: ", ") {
+  @include inline-list;
+  li {
+    &:after {
+      content: $separator;
+    }
+    &:last-child {
+      &:after {
+        content: "";
+      }
+    }
+  }
+}

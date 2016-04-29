@@ -1759,6 +1759,17 @@ input[type="button"].btn-block {
 #broadcast-copy {
   line-height: 2.66667em; }
 
+#meta-publication-type {
+  list-style-type: none; }
+  #meta-publication-type, #meta-publication-type li {
+    margin: 0;
+    padding: 0;
+    display: inline; }
+  #meta-publication-type li:after {
+    content: ", "; }
+  #meta-publication-type li:last-child:after {
+    content: ""; }
+
 .document-thumbnail-container:after {
   width: 100px;
   content: '';
