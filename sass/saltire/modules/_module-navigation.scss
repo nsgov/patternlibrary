@@ -155,8 +155,7 @@
 				background: $darkestblue;
 				@include transition(background .35s);
 
-				&:hover {
-					color: $yellow;
+				&:focus, &:hover {
 					color: $lightestblue;
 					background: darken($darkestblue, 5%);
 				}
@@ -193,7 +192,7 @@
 					}
 				}
 
-				&:focus, &:active,
+				&:active,
 				&.active-trail,
 				&.active-trail.first:active {
 					outline: none;
