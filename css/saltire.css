@@ -1020,6 +1020,9 @@ mark {
   background-color: #fcf8e3;
   padding: .2em; }
 
+.big-number {
+  font-size: 10em; }
+
 ul,
 ol {
   margin: 1em 0;
@@ -1963,6 +1966,36 @@ input[type="button"].btn-block {
 
 #feedback a:hover, #feedback a:focus {
   color: #fff; }
+
+.project-introduction {
+  font-size: 1.25em;
+  clear: both; }
+
+.project-highlights {
+  font-size: 1.25em;
+  clear: both;
+  background-color: #0058a4;
+  color: #fff;
+  padding: 27px; }
+
+.project-highlights h2 {
+  color: #fff;
+  margin: 0 auto 1.5em auto; }
+
+.project-highlights .icon {
+  text-align: center; }
+
+.project-highlights .fa {
+  font-size: 3em;
+  min-height: 2em; }
+
+.project-centered-button {
+  clear: both;
+  margin: 27px auto;
+  text-align: center; }
+
+.project-details {
+  clear: both; }
 
 .clearfix:before, .clearfix:after {
   content: " ";

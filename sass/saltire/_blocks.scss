@@ -239,3 +239,14 @@
 #feedback {clear: both; display: block; background: $darkestblue; padding: $line-height-computed; margin-top: 2em; color: #fff; font-size: $font-size-large;}
 #feedback a {color: $yellow;}
 #feedback a:hover, #feedback a:focus {color: #fff;}
+
+// About the Project page //
+
+
+.project-introduction {font-size: 1.25em; clear: both;}
+.project-highlights {font-size: 1.25em; clear: both; background-color: $blue; color: #fff; padding: $line-height-computed;}
+.project-highlights h2 {color: #fff; margin: 0 auto 1.5em auto;}
+.project-highlights .icon {text-align: center;}
+.project-highlights .fa {font-size: 3em; min-height: 2em;}
+.project-centered-button {clear: both; margin: $line-height-computed auto; text-align: center;}
+.project-details {clear: both;}
