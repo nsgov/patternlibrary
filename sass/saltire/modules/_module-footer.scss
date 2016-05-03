@@ -36,7 +36,8 @@
 			text-decoration: none;
 		}
 
-		&:focus, &:active {
+		&:focus, &:hover, &:active {
+			background: $yellow;
 			color: $blue;
 		}
 	}
