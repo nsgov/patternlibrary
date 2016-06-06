@@ -1735,15 +1735,18 @@ input[type="button"].btn-block {
   margin: 0;
   padding: 0; }
 
+#home-topics div {
+  min-height: 189px; }
 #home-topics ol {
-  margin-left: 0;
-  padding-left: 0; }
-
+  margin: 0 auto 0 0;
+  padding-left: 0;
+  padding-bottom: 0; }
 #home-topics li {
   min-height: 189px;
   list-style-type: none;
-  margin-left: 0;
-  padding-left: 0; }
+  margin: auto 0 0 auto;
+  padding-left: 0;
+  padding-bottom: 0; }
 
 @media only screen and (max-width: 767px) {
   #home-topics li {
@@ -1764,15 +1767,15 @@ input[type="button"].btn-block {
 #broadcast-copy {
   line-height: 2.66667em; }
 
-#meta-publication-type {
+#meta-publication-type, .pub-details .item-list {
   list-style-type: none; }
-  #meta-publication-type, #meta-publication-type li {
+  #meta-publication-type, #meta-publication-type li, .pub-details .item-list, .pub-details .item-list li {
     margin: 0;
     padding: 0;
     display: inline; }
-  #meta-publication-type li:after {
+  #meta-publication-type li:after, .pub-details .item-list li:after {
     content: ", "; }
-  #meta-publication-type li:last-child:after {
+  #meta-publication-type li:last-child:after, .pub-details .item-list li:last-child:after {
     content: ""; }
 
 .document-thumbnail-container:after {
@@ -1786,6 +1789,29 @@ input[type="button"].btn-block {
   position: absolute;
   background: black;
   opacity: 0.05; }
+
+.document-link {
+  display: inline-block; }
+
+.document-link-container {
+  position: relative;
+  margin: 1em 0;
+  padding-left: 128px;
+  min-height: 130px; }
+
+.document-size {
+  margin-bottom: 0.5em; }
+
+.document-title {
+  font-size: 120%;
+  font-weight: normal; }
+
+.document-thumbnail-container {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100px; }
 
 .document-layout label {
   font-weight: normal; }
@@ -1811,7 +1837,8 @@ input[type="button"].btn-block {
     margin-bottom: 27px; }
   .pub-details .document-type,
   .pub-details .first-published,
-  .pub-details .document-author {
+  .pub-details .document-author,
+  .pub-details .item-list ul {
     font-size: 11.9px;
     display: inline;
     margin-right: 1.5em; }
@@ -1831,17 +1858,18 @@ input[type="button"].btn-block {
   margin: 0;
   padding: 0; }
 
-#accessibility-email {
+.accessibility-email {
   font-size: 11.9px; }
 
-#legislative-acts a:after {
+#legislative-acts a:after, #related-information a:after, #minister-link a:after {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: '  \f08e'; }
+  padding-left: 3px;
+  content: '\f08e'; }
 
 #social-media-account ul, #social-media-account li, #department ul, #department li, #media-contact ul, #media-contact li, #corp-info ul, #corp-info li, #announcements ul, #announcements li {
   list-style: none;
@@ -1895,7 +1923,7 @@ input[type="button"].btn-block {
     margin-left: 0;
     padding-left: 0; }
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
   #home-top-tasks {
     display: block;
     position: relative;
@@ -1903,11 +1931,34 @@ input[type="button"].btn-block {
     z-index: -1;
     font-size: 1em;
     padding: 2em; }
-
-  #home-top-tasks li {
-    list-style-type: none;
-    width: 45%;
-    float: left; } }
+    #home-top-tasks ul {
+      margin-left: 0;
+      padding-left: 0; }
+    #home-top-tasks li {
+      list-style-type: none;
+      position: relative;
+      width: 100%; } }
+@media (min-width: 501px) and (max-width: 767px) {
+  #home-top-tasks {
+    display: block;
+    position: relative;
+    background-color: #e3f7ff;
+    z-index: -1;
+    font-size: 1em;
+    padding: 2em; }
+    #home-top-tasks ul {
+      margin-left: 0;
+      padding-left: 0; }
+    #home-top-tasks li {
+      list-style-type: none;
+      position: relative;
+      margin: 0 1% 0 0;
+      padding-left: 0;
+      width: 47%;
+      float: left; } }
+@media (max-width: 767px) {
+  #home-topics div {
+    min-height: 27px; } }
 @media (min-width: 768px) {
   #home-top-tasks {
     position: absolute;
@@ -1920,9 +1971,13 @@ input[type="button"].btn-block {
     list-style-type: none;
     padding: 0.25em 1em;
     z-index: 2; }
-
-  #home-top-tasks li {
-    list-style-type: none; } }
+    #home-top-tasks ul {
+      margin-left: 0;
+      padding-left: 0; }
+    #home-top-tasks li {
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 0; } }
 #home-features {
   background-color: #e3f7ff;
   display: block;
@@ -2253,8 +2308,7 @@ input[type="button"].btn-block {
         -webkit-transition: background 0.35s;
         -o-transition: background 0.35s;
         transition: background 0.35s; }
-        .navigation .menu li a:hover {
-          color: #f8d44c;
+        .navigation .menu li a:focus, .navigation .menu li a:hover {
           color: #85bace;
           background: #002549; }
         .navigation .menu li a.active-trail.first:after {
@@ -2275,14 +2329,14 @@ input[type="button"].btn-block {
           height: .25em; }
         .navigation .menu li a.active-trail.first:after {
           height: 1em; }
-        .navigation .menu li a:focus, .navigation .menu li a:active, .navigation .menu li a.active-trail, .navigation .menu li a.active-trail.first:active {
+        .navigation .menu li a:active, .navigation .menu li a.active-trail, .navigation .menu li a.active-trail.first:active {
           outline: none;
           -webkit-transition: all 0.03s;
           -o-transition: all 0.03s;
           transition: all 0.03s; }
-          .navigation .menu li a:focus span, .navigation .menu li a:active span, .navigation .menu li a.active-trail span, .navigation .menu li a.active-trail.first:active span {
+          .navigation .menu li a:active span, .navigation .menu li a.active-trail span, .navigation .menu li a.active-trail.first:active span {
             color: #f8d44c; }
-          .navigation .menu li a:focus:after, .navigation .menu li a:active:after, .navigation .menu li a.active-trail:after, .navigation .menu li a.active-trail.first:active:after {
+          .navigation .menu li a:active:after, .navigation .menu li a.active-trail:after, .navigation .menu li a.active-trail.first:active:after {
             background: #f8d44c; }
         .navigation .menu li a.active-trail.first span {
           color: #fff; }
@@ -2894,7 +2948,8 @@ footer,
     .footer a:hover, .footer a:focus {
       opacity: 1;
       text-decoration: none; }
-    .footer a:focus, .footer a:active {
+    .footer a:focus, .footer a:hover, .footer a:active {
+      background: #f8d44c;
       color: #0058a4; }
   .footer ul {
     list-style: none;

@@ -30,20 +30,16 @@
 
 /* Homepage Topic Blocks */
 #home-topics {margin: 0; padding: 0;}
-#home-topics ol {
-	margin-left: 0; padding-left: 0;
+#home-topics {
+	div {min-height: ($line-height-computed * 7);}
+	ol {margin: 0 auto 0 0; padding-left: 0; padding-bottom: 0;}
+	li {min-height: ($line-height-computed * 7); list-style-type: none; margin: auto 0 0 auto; padding-left: 0; padding-bottom: 0;}
 }
 
-#home-topics li {
-	min-height: ($line-height-computed * 7);
-	list-style-type: none;
-	margin-left: 0; padding-left: 0;
-}
+
 
 @media only screen and (max-width: $screen-sm-max) {
-	#home-topics li {
-		min-height: 1em;
-	}
+	#home-topics li {min-height: 1em;}
 }
 
 .pub-details {
@@ -70,7 +66,7 @@
 
 // Document, Document Collection
 
-#meta-publication-type {@include delimited-list;}
+#meta-publication-type, .pub-details .item-list {@include delimited-list;}
 
 .document-thumbnail-container {
 	&:after {
@@ -85,6 +81,34 @@
     background: black;
     opacity: 0.05;
 	}
+}
+
+.document-link {
+	display: inline-block;
+}
+
+.document-link-container {
+	position:relative;
+	margin:1em 0;
+	padding-left:128px;
+	min-height:130px;
+}
+
+.document-size {
+	margin-bottom: 0.5em;
+}
+
+.document-title {
+	font-size:120%;
+	font-weight:normal;
+}
+
+.document-thumbnail-container {
+	width:100px;
+	position:absolute;
+	top:0;
+	left:0;
+	max-width:100px;
 }
 
 .document-layout {
@@ -113,7 +137,8 @@
 	.teaser {}
 	.document-type,
 	.first-published,
-	.document-author {font-size: $font-size-small; display: inline; margin-right: 1.5em;}
+	.document-author,
+	.item-list ul {font-size: $font-size-small; display: inline; margin-right: 1.5em;}
 
 }
 .pub-label {
@@ -126,11 +151,11 @@
 		ol, li {list-style: none; margin: 0; padding: 0;}
 }
 
-#accessibility-email {
+.accessibility-email {
 	font-size: $font-size-small;
 }
 
-#legislative-acts {
+#legislative-acts, #related-information, #minister-link {
 	a {
 		&:after {
 			display: inline-block;
@@ -139,7 +164,8 @@
 		  text-rendering: auto;
 		  -webkit-font-smoothing: antialiased;
 		  -moz-osx-font-smoothing: grayscale;
-			content: '  \f08e';}
+			padding-left: 3px;
+			content: '\f08e';}
 	}
 }
 
@@ -155,8 +181,6 @@
 #social-media-account .fa {font-size: 1.5em;}
 
 .corp-info, .corp-info li {list-style: none; margin-left: 0; padding-left: 0;}
-
-#department {color: $blue; text-decoration: underline;}
 
 .feature-image img {width: 100%; height: auto;}
 
@@ -178,7 +202,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 500px) {
 	#home-top-tasks {
 		display: block;
 		position: relative;
@@ -186,16 +210,59 @@
 		z-index: -1;
 		font-size: $font-size-em;
 		padding: 2em;
-	}
 
-	#home-top-tasks li {
-		list-style-type: none;
-		width: 45%;
-		float: left;
+		ul {
+			margin-left: 0;
+			padding-left: 0;
+		}
+		li {
+			list-style-type: none;
+			position: relative;
+			width: 100%;
+			}
+		}
+}
+
+
+@media (min-width: 501px) and (max-width: 767px) {
+
+	#home-top-tasks {
+		display: block;
+		position: relative;
+		background-color: lighten($cyan, 47.6%);
+		z-index: -1;
+		font-size: $font-size-em;
+		padding: 2em;
+
+		ul {
+			margin-left: 0;
+			padding-left: 0;
+		}
+		li {
+			list-style-type: none;
+			position: relative;
+			margin: 0 1% 0 0;
+			padding-left: 0;
+			width: 47%;
+			float: left;
+		}
 	}
 }
 
+
+
+@media (max-width: 767px) {
+
+
+	#home-topics {
+		div {min-height: ($line-height-computed * 1);}
+	}
+
+
+}
+
 @media (min-width: 768px) {
+
 
 		#home-top-tasks {
 			position: absolute;
@@ -208,11 +275,17 @@
 			list-style-type: none;
 			padding: 0.25em 1em;
 			z-index: 2;
+			ul {
+				margin-left: 0;
+				padding-left: 0;
+			}
+			li {
+				list-style-type: none;
+				margin-left: 0;
+				padding-left: 0;
+			}
 		}
 
-		#home-top-tasks li {
-			list-style-type: none;
-		}
 }
 #home-features {
 	background-color: lighten($cyan, 47.6%); display: block; clear: both; margin-top: $line-height-computed; padding: $line-height-computed auto;}
