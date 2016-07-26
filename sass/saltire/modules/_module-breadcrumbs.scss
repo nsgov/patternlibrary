@@ -37,12 +37,13 @@ footer,
 		float: left;
 
 		&:after {
-			content: '';
+			font-family: $font-family-icon;
+			content: '\f054';
 			float: right;
-			margin: .5em .125em 0 .25em;
+			margin: 0 .25em 0 .25em;
 			width: 1em;
 			height: 1em;
-			@include sprite($icon__breadcrumb--darkblue);
+			font-weight: 300;
 		}
 	}
 

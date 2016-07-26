@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NSGov Pattern Library</title>
+<title>NSGov UI Pattern Library</title>
 <link rel="stylesheet" href="global.css">
-<link rel="stylesheet" href="saltire.css">
+<link rel="stylesheet" href="css/saltire.css">
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -15,7 +15,7 @@
     overflow: visible;
     display: block;
     padding-top: 1em;
- 
+
 }
 .pattern .display {
     width: 65%;
@@ -34,31 +34,120 @@
 <body>
 
 <div class="container">
-<h1>Province of Nova Scotia Pattern Library</h1>
+<h1>Province of Nova Scotia UI Pattern Library</h1>
 
 <?php
-$atoms = array();
-$handle=opendir('atoms');
-while (false !== ($atom = readdir($handle))):
-    if(stristr($atom,'.html')):
-        $atoms[] = $atom;
+$buttons = array();
+$handle=opendir('buttons');
+while (false !== ($button = readdir($handle))):
+    if(stristr($button,'.html')):
+        $buttons[] = $button;
     endif;
 endwhile;
-sort($atoms);
+sort($buttons);
 
 ?>
-<h2 class="section">Atoms</h1>
+<h2 class="section">Buttons</h1>
 <?php
-foreach ($atoms as $atom):
+foreach ($buttons as $button):
     echo '<div class="pattern">';
     echo '<div class="display">';
-    include('atoms/'.$atom);
+    include('buttons/'.$button);
     echo '</div>';
     echo '<div class="source">';
     echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('atoms/'.$atom));
+    echo htmlspecialchars(file_get_contents('buttons/'.$button));
     echo '</textarea>';
-    echo '<p><a href="atoms/'.$atom.'">'.$atom.'</a></p>';
+    echo '<p><a href="buttons/'.$button.'">'.$button.'</a></p>';
+    echo '</div>';
+    echo '</div>';
+endforeach;
+?>
+
+
+
+<?php
+$forms = array();
+$handle=opendir('forms');
+while (false !== ($form = readdir($handle))):
+    if(stristr($form,'.html')):
+        $forms[] = $form;
+    endif;
+endwhile;
+sort($forms);
+
+?>
+<h2 class="section">Form Elements</h2>
+<?php
+foreach ($forms as $form):
+    echo '<div class="pattern">';
+    echo '<div class="display">';
+    include('forms/'.$form);
+    echo '</div>';
+    echo '<div class="source">';
+    echo '<textarea rows="6" cols="30">';
+    echo htmlspecialchars(file_get_contents('forms/'.$form));
+    echo '</textarea>';
+    echo '<p><a href="forms/'.$form.'">'.$form.'</a></p>';
+    echo '</div>';
+    echo '</div>';
+endforeach;
+?>
+
+
+<?php
+$typographys = array();
+$handle=opendir('typography');
+while (false !== ($typography = readdir($handle))):
+    if(stristr($typography,'.html')):
+        $typographys[] = $typography;
+    endif;
+endwhile;
+sort($typographys);
+
+?>
+<h2 class="section">Typography</h2>
+<?php
+foreach ($typographys as $typography):
+    echo '<div class="pattern">';
+    echo '<div class="display">';
+    include('typography/'.$typography);
+    echo '</div>';
+    echo '<div class="source">';
+    echo '<textarea rows="6" cols="30">';
+    echo htmlspecialchars(file_get_contents('typography/'.$typography));
+    echo '</textarea>';
+    echo '<p><a href="typographys/'.$typography.'">'.$typography.'</a></p>';
+    echo '</div>';
+    echo '</div>';
+endforeach;
+?>
+
+
+
+<?php
+$feedbacks = array();
+$handle=opendir('feedback');
+while (false !== ($feedback = readdir($handle))):
+    if(stristr($feedback,'.html')):
+        $feedbacks[] = $feedback;
+    endif;
+endwhile;
+sort($feedbacks);
+
+?>
+<h2 class="section">Messages and Feedback</h2>
+<?php
+foreach ($feedbacks as $feedback):
+    echo '<div class="pattern">';
+    echo '<div class="display">';
+    include('feedback/'.$feedback);
+    echo '</div>';
+    echo '<div class="source">';
+    echo '<textarea rows="6" cols="30">';
+    echo htmlspecialchars(file_get_contents('feedback/'.$feedback));
+    echo '</textarea>';
+    echo '<p><a href="feedbacks/'.$feedback.'">'.$feedback.'</a></p>';
     echo '</div>';
     echo '</div>';
 endforeach;
@@ -68,28 +157,28 @@ endforeach;
 
 
 <?php
-$molecules = array();
-$handle=opendir('molecules');
-while (false !== ($molecule = readdir($handle))):
-    if(stristr($molecule,'.html')):
-        $molecules[] = $molecule;
+$navigations = array();
+$handle=opendir('navigation');
+while (false !== ($navigation = readdir($handle))):
+    if(stristr($navigation,'.html')):
+        $navigations[] = $navigation;
     endif;
 endwhile;
-sort($molecules);
+sort($navigations);
 
 ?>
-<h2 class="section">Molecules</h2>
+<h2 class="section">Navigation Elements</h2>
 <?php
-foreach ($molecules as $molecule):
+foreach ($navigations as $navigation):
     echo '<div class="pattern">';
     echo '<div class="display">';
-    include('molecules/'.$molecule);
+    include('navigation/'.$navigation);
     echo '</div>';
     echo '<div class="source">';
     echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('molecules/'.$molecule));
+    echo htmlspecialchars(file_get_contents('navigation/'.$navigation));
     echo '</textarea>';
-    echo '<p><a href="molecules/'.$molecule.'">'.$molecule.'</a></p>';
+    echo '<p><a href="navigations/'.$navigation.'">'.$navigation.'</a></p>';
     echo '</div>';
     echo '</div>';
 endforeach;
@@ -97,33 +186,6 @@ endforeach;
 
 
 
-<?php
-$organisms = array();
-$handle=opendir('organisms');
-while (false !== ($organism = readdir($handle))):
-    if(stristr($organism,'.html')):
-        $organisms[] = $organism;
-    endif;
-endwhile;
-sort($organisms);
-
-?>
-<h2 class="section">Organisms</h2>
-<?php
-foreach ($organisms as $organism):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('organisms/'.$organism);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('organisms/'.$organism));
-    echo '</textarea>';
-    echo '<p><a href="organisms/'.$organism.'">'.$organism.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-endforeach;
-?>
 </div>
 
 

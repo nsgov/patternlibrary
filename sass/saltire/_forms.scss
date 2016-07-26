@@ -27,7 +27,7 @@ legend {
 }
 
 label {
-  display: inline-block;
+  display: block;
   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
   font-weight: bold;
@@ -109,4 +109,20 @@ input[type="checkbox"] {
   fieldset[disabled] & {
     cursor: $cursor-disabled;
   }
+}
+
+
+
+// Feedback states
+.has-success {
+  @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+  color: $state-success-text;
+}
+.has-warning {
+  @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+  color: $state-warning-text;
+}
+.has-error {
+  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+  color: $state-danger-text;
 }

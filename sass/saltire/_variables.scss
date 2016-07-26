@@ -67,11 +67,12 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "robotoregular", Helvetica, Arial, Tahoma, sans-serif !default;
-$font-family-italic:  "robotoitalic", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-sans-serif:        "robotoregular", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-italic:            "robotoitalic", Helvetica, Arial, Tahoma, sans-serif !default;
 $font-family-sans-serif-light:  "robotolight", Helvetica, Arial, Tahoma, sans-serif !default;
-$font-family-bold:  "robotobold", Helvetica, Arial, Tahoma, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-bold:              "robotobold", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-serif:             Georgia, "Times New Roman", Times, serif !default;
+$font-family-icon:              'FontAwesome';
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
@@ -99,7 +100,7 @@ $line-height-computed:    floor((16px * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    $font-family-sans-serif !default;
-$headings-font-weight:    300 !default;
+$headings-font-weight:    400 !default;
 $headings-line-height:    1.25 !default;
 $headings-color:          $gray-dark !default;
 
@@ -160,7 +161,7 @@ $table-border-color:            #ddd !default;
 
 
 //== Buttons
-$btn-font-weight:                300 !default;
+$btn-font-weight:                400 !default;
 
 $btn-default-color:              #fff !default;
 $btn-default-bg:                 $blue !default;

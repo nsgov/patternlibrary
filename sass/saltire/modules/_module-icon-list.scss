@@ -1,0 +1,31 @@
+ul.icon-list {
+  margin: 2em 0; padding: 0;
+
+  li {
+  	padding: 0;
+  	margin: 0;
+  	list-style: none;
+  	margin: 1em;
+  	margin-left: 1.5em;
+
+  }
+
+  li:before {
+  	font-family: 'FontAwesome';
+  	float: left;
+  	margin-left: -1.5em;
+    margin-top: -.05em;
+  	color: $blue;
+  }
+
+  li.pdf-file:before 		{content: '\f1c1';}
+  li.ppt-file:before 		{content: '\f1c4';}
+  li.doc-file:before 		{content: '\f0f6';}
+  li.twitter:before			{content: '\f081';}
+  li.facebook:before 		{content: '\f082';}
+  li.youtube:before 		{content: '\f166';}
+  li.flickr:before 			{content: '\f16e';}
+  li.tumblr:before 			{content: '\f174';}
+
+
+}
