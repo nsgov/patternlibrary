@@ -5,7 +5,7 @@ ul.icon-list {
   	padding: 0;
   	margin: 0;
   	list-style: none;
-  	margin: 1em;
+  	margin: .5em;
   	margin-left: 1.5em;
 
   }
@@ -13,19 +13,24 @@ ul.icon-list {
   li:before {
   	font-family: 'FontAwesome';
   	float: left;
-  	margin-left: -1.5em;
-    margin-top: -.05em;
+    font-size: 1.5em;
+  	margin-left: -1.15em;
+    margin-top: -.35em;
   	color: $blue;
   }
 
-  li.pdf-file:before 		{content: '\f1c1';}
-  li.ppt-file:before 		{content: '\f1c4';}
-  li.doc-file:before 		{content: '\f0f6';}
-  li.twitter:before			{content: '\f081';}
-  li.facebook:before 		{content: '\f082';}
-  li.youtube:before 		{content: '\f166';}
-  li.flickr:before 			{content: '\f16e';}
-  li.tumblr:before 			{content: '\f174';}
-
+  li.pdf-file:before 	        	{content: '\f1c1';}
+  li.ppt-file:before 	         	{content: '\f1c4';}
+  li.doc-file:before 	        	{content: '\f0f6';}
+  li.twitter:before		   	      {content: '\f081';}
+  li.facebook:before 		        {content: '\f082';}
+  li.youtube:before       		  {content: '\f166';}
+  li.flickr:before 		         	{content: '\f16e';}
+  li.tumblr:before 		         	{content: '\f174';}
+  li.external-link:before 			{content: '\f08e';}
+  li.file:before 			          {content: '\f0f6';}
+  li.office:before              {content: '\f0f7';}
+  li.map:before                 {content: '\f041';}
+  li.info:before                {content: '\f05a';}
 
 }

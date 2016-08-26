@@ -994,15 +994,6 @@ h5, .h5 {
 h6, .h6 {
   font-size: 1em; }
 
-@media only screen and (max-width: 479px) {
-  h1, .h1 {
-    font-size: 1.5em; }
-
-  h2, .h2 {
-    font-size: 1.25em; }
-
-  h3, .h3 {
-    font-size: 1.125em; } }
 p {
   word-spacing: 0;
   line-height: 1.6875;
@@ -3624,13 +3615,14 @@ ul.icon-list {
     padding: 0;
     margin: 0;
     list-style: none;
-    margin: 1em;
+    margin: .5em;
     margin-left: 1.5em; }
   ul.icon-list li:before {
     font-family: 'FontAwesome';
     float: left;
-    margin-left: -1.5em;
-    margin-top: -.05em;
+    font-size: 1.5em;
+    margin-left: -1.15em;
+    margin-top: -.35em;
     color: #0058a4; }
   ul.icon-list li.pdf-file:before {
     content: '\f1c1'; }
@@ -3648,6 +3640,16 @@ ul.icon-list {
     content: '\f16e'; }
   ul.icon-list li.tumblr:before {
     content: '\f174'; }
+  ul.icon-list li.external-link:before {
+    content: '\f08e'; }
+  ul.icon-list li.file:before {
+    content: '\f0f6'; }
+  ul.icon-list li.office:before {
+    content: '\f0f7'; }
+  ul.icon-list li.map:before {
+    content: '\f041'; }
+  ul.icon-list li.info:before {
+    content: '\f05a'; }
 
 .figure {
   display: inline-block; }
