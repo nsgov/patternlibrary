@@ -1,7 +1,7 @@
 .alert {
 	position: relative;
 	margin-top: $line-height-em;
-		
+
 	&:before {
 		content: '';
 		position: absolute;
@@ -50,15 +50,15 @@
 	}
 
 	&-medium {
-		background-color: lighten($yellowgreen, 20%);
+		background-color: lighten($yellow, 10%);
 
 		&:before {
-			background-color: $yellowgreen;
-			@include box-shadow(0 0 0 1px $yellowgreen);
+			background-color: $yellow;
+			@include box-shadow(0 0 0 1px $yellow);
 		}
 
 		p {
-			color: darken($yellowgreen, 50%);
+			color: darken($yellow, 50%);
 			padding: 2%;
 		}
 	}

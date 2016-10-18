@@ -3305,13 +3305,13 @@ footer,
       color: black;
       padding: 2%; }
   .alert-medium {
-    background-color: #d4dd80; }
+    background-color: #fae07d; }
     .alert-medium:before {
-      background-color: #b5c334;
-      -webkit-box-shadow: 0 0 0 1px #b5c334;
-      box-shadow: 0 0 0 1px #b5c334; }
+      background-color: #f8d44c;
+      -webkit-box-shadow: 0 0 0 1px #f8d44c;
+      box-shadow: 0 0 0 1px #f8d44c; }
     .alert-medium p {
-      color: black;
+      color: #423503;
       padding: 2%; }
   .alert-high {
     background-color: #f28f8a; }
