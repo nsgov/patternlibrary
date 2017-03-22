@@ -144,6 +144,7 @@ $angles-time: $headline-time + .5;
 
 	h1 {
 		max-width: 13.25em;
+		font-size: 2em;
 	}
 }
 
@@ -176,11 +177,13 @@ $angles-time: $headline-time + .5;
 }
 
 @media only screen and (min-width: $screen-xs-max) and (max-width: $screen-lg-min) {
-	h1 {
-		max-width: 75%;
-		white-space: nowrap;
-		font-size: 1.5em;
-		font-size-adjust: auto;
+	.hero-headline {
+			h1 {
+			max-width: 75%;
+			white-space: nowrap;
+			font-size: 1.5em;
+			font-size-adjust: auto;
+		}
 	}
 }
 

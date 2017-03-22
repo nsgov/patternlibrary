@@ -32,5 +32,10 @@ ul.icon-list {
   li.office:before              {content: '\f0f7';}
   li.map:before                 {content: '\f041';}
   li.info:before                {content: '\f05a';}
+  li.progress:before            {content: '\f110'; color: $text-color;} // spinner
+  li.complete:before            {content: '\f00c'; color: $green;} // check
+  li.scheduled:before           {content: '\f274';} // calendar-check-o
 
 }
+
+.big-icon {font-size: 3em; color: #2750a0;}

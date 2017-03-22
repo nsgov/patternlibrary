@@ -905,6 +905,7 @@ figure {
 
 img {
   max-width: 100%;
+  height: auto;
   vertical-align: middle; }
 
 [role="button"] {
@@ -978,22 +979,22 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 2em; }
+  font-size: 2.25em; }
 
 h2, .h2 {
-  font-size: 1.5em; }
+  font-size: 1.7em; }
 
 h3, .h3 {
-  font-size: 1.25em; }
+  font-size: 1.35em; }
 
 h4, .h4 {
-  font-size: 1em; }
+  font-size: 1.15em; }
 
 h5, .h5 {
   font-size: 1em; }
 
 h6, .h6 {
-  font-size: 1em; }
+  font-size: 0.875em; }
 
 p {
   word-spacing: 0;
@@ -1784,7 +1785,6 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-/* Note to Editors Block at the top of News Releases */
 #nte {
   background-color: #eeeeee;
   padding: 1em;
@@ -1794,7 +1794,6 @@ input[type="button"].btn-block {
 .location {
   float: left; }
 
-/* Homepage Topic Blocks */
 #home-topics {
   margin: 0;
   padding: 0; }
@@ -1826,7 +1825,7 @@ input[type="button"].btn-block {
   padding: 13.5px 27px;
   margin: 0 0 27px;
   border-left: 5px solid #008585;
-  font-size: 1.5em; }
+  font-size: 1.7em; }
 
 #broadcast-copy {
   line-height: 2.66667em; }
@@ -1863,12 +1862,27 @@ input[type="button"].btn-block {
   padding-left: 128px;
   min-height: 130px; }
 
-.document-size {
+.document-filesize {
   margin-bottom: 0.5em; }
+
+.document-pages div {
+  display: inline; }
 
 .document-title {
   font-size: 120%;
-  font-weight: normal; }
+  font-weight: normal;
+  display: inline-block; }
+  .document-title:before {
+    display: inline;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding-right: 3px;
+    content: '\f1c1'; }
+  .document-title div {
+    display: inline; }
 
 .document-thumbnail-container {
   width: 100px;
@@ -1881,7 +1895,7 @@ input[type="button"].btn-block {
   font-weight: normal; }
 
 #summary, #collection-teaser, #introduction, #dept-homepage-design #what-we-do {
-  font-size: 1.25em;
+  font-size: 1.35em;
   margin: 27px auto;
   clear: both; }
 
@@ -1941,7 +1955,7 @@ input[type="button"].btn-block {
   padding-left: 0; }
 
 .about-link {
-  font-size: 1.25em;
+  font-size: 1.35em;
   margin-bottom: 27px;
   display: block; }
 
@@ -1962,9 +1976,9 @@ input[type="button"].btn-block {
   display: block;
   margin: 0 0 27px 0; }
   .profile-details #job-title {
-    font-size: 1.25em; }
+    font-size: 1.35em; }
   .profile-details #department {
-    font-size: 1.25em; }
+    font-size: 1.35em; }
     .profile-details #department ul {
       margin: 0;
       padding: 0;
@@ -2053,10 +2067,10 @@ input[type="button"].btn-block {
 #home-about-government {
   display: block; }
   #home-about-government h2 {
-    font-size: 2em;
+    font-size: 2.25em;
     color: #003262; }
   #home-about-government h3 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: #003262;
     clear: both;
     display: block;
@@ -3650,6 +3664,18 @@ ul.icon-list {
     content: '\f041'; }
   ul.icon-list li.info:before {
     content: '\f05a'; }
+  ul.icon-list li.progress:before {
+    content: '\f110';
+    color: #555555; }
+  ul.icon-list li.complete:before {
+    content: '\f00c';
+    color: #5cb84c; }
+  ul.icon-list li.scheduled:before {
+    content: '\f274'; }
+
+.big-icon {
+  font-size: 3em;
+  color: #2750a0; }
 
 .figure {
   display: inline-block; }
@@ -3794,7 +3820,8 @@ ul.icon-list {
     -o-animation: from_left 0.9s cubic-bezier(1, 0.5, 0.3, 1.1);
     animation: from_left 0.9s cubic-bezier(1, 0.5, 0.3, 1.1); }
   .hero-headline h1 {
-    max-width: 13.25em; }
+    max-width: 13.25em;
+    font-size: 2em; }
 
 @media only screen and (max-width: 479px) {
   .hero-headline {
@@ -3817,7 +3844,7 @@ ul.icon-list {
   .hero-graphics .hero-background {
     right: -1em; } }
 @media only screen and (min-width: 479px) and (max-width: 1200px) {
-  h1 {
+  .hero-headline h1 {
     max-width: 75%;
     white-space: nowrap;
     font-size: 1.5em;
