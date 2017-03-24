@@ -80,8 +80,63 @@
 	}
 }
 
-.document-link {
+
+.document-title {
 	display: inline-block;
+	font-size:120%;
+	font-weight:normal;
+	display: inline-block;
+	div {display: inline;}
+
+	.file--mime-application-pdf {
+		a {
+			&:before {
+					display: inline;
+				  font: normal normal normal 14px/1 FontAwesome;
+				  font-size: inherit;
+				  text-rendering: auto;
+				  -webkit-font-smoothing: antialiased;
+				  -moz-osx-font-smoothing: grayscale;
+					padding-right: 3px;
+					content: '\f1c1';
+			}
+		}
+	}
+
+	.file--mime-application-vnd-openxmlformats-officedocument-spreadsheetml-sheet {
+		a {
+			&:before {
+					display: inline;
+					font: normal normal normal 14px/1 FontAwesome;
+					font-size: inherit;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					padding-right: 3px;
+					content: '\f1c3';
+			}
+		}
+	}
+
+	.file--mime-application-vnd-openxmlformats-officedocument-wordprocessingml-document {
+		a {
+			&:before {
+					display: inline;
+					font: normal normal normal 14px/1 FontAwesome;
+					font-size: inherit;
+					text-rendering: auto;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					padding-right: 3px;
+					content: '\f1c2';
+			}
+		}
+	}
+}
+
+.document-author,
+.document-updated {
+	div {display: inline;}
 }
 
 .document-link-container {
@@ -101,27 +156,7 @@
 	}
 }
 
-.document-title {
-	font-size:120%;
-	font-weight:normal;
-	display: inline-block;
 
-	&:before {
-			display: inline;
-		  font: normal normal normal 14px/1 FontAwesome;
-		  font-size: inherit;
-		  text-rendering: auto;
-		  -webkit-font-smoothing: antialiased;
-		  -moz-osx-font-smoothing: grayscale;
-			padding-right: 3px;
-			content: '\f1c1';
-	}
-
-	div {
-		display: inline;
-	}
-
-}
 
 .document-thumbnail-container {
 	width:100px;
@@ -157,9 +192,10 @@
 	.teaser {}
 	.document-type,
 	.first-published,
+	.last-published,
+	.document-updated,
 	.document-author,
 	.item-list ul {font-size: $font-size-small; display: inline; margin-right: 1.5em;}
-
 }
 .pub-label {
 	margin-bottom: $line-height-computed;
@@ -343,3 +379,33 @@
 .project-highlights .fa {font-size: 2.5em; min-height: 1.5em;}
 .project-centered-button {clear: both; margin: $line-height-computed auto; text-align: center;}
 .project-details {clear: both;}
+
+
+// STORY NOT STORY //
+
+.profile-stories {
+
+	section {min-height: 100px;}
+
+	h3 {color: $blue;
+		&:before {
+		display: block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 4em;
+		text-align: center;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		padding: 30px 10px;
+		margin-bottom: .25em;
+		background: $blue;
+		}
+	}
+
+	.build-workforce {&:before {content: '\f0c0'; color: #fff;}}
+	.do-business-with-government {&:before {content: '\f0f7'; color: #fff;}}
+	.innovate-grow {&:before {content: '\f201'; color: #fff;}}
+	.locate {&:before {content: '\f0ac'; color: #fff;}}
+	.sector-regional-development {&:before {content: '\f06c'; color: #fff;}}
+	.start-manage-business {&:before {content: '\f0b1'; color: #fff;}}
+}
