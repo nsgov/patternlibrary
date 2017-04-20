@@ -15,8 +15,12 @@
 		}
 	}
 
-	.footer-social-links a, .footer-statement-links a {
-		text-decoration: none;
+	.footer-social-links, .footer-statement-links, .footer-feedback, .copyright {
+		a {text-decoration: underline;}
+	}
+
+	.footer-feedback a {
+		font-size: 1.25em;
 	}
 
 	.mobile-navigation-summary {

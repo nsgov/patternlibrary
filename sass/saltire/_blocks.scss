@@ -27,11 +27,15 @@
 }
 
 // Homepage Topic Blocks
+#services-list {
+	ol, ul {list-style: none; margin-left: 0; padding-left: 0;}
+	li {list-style: none; margin-left: 0; padding-left: 0;}
+}
 
-#home-topics {margin: 0; padding: 0;}
 #home-topics {
+	margin: 0; padding: 0;
 	div {min-height: ($line-height-computed * 7);}
-	ol {margin: 0 auto 0 0; padding-left: 0; padding-bottom: 0;}
+	ol, ul {margin: 0 auto 0 0; padding-left: 0; padding-bottom: 0;}
 	li {min-height: ($line-height-computed * 7); list-style-type: none; margin: auto 0 0 auto; padding-left: 0; padding-bottom: 0;}
 	p {padding-right: 40px;}
 }
@@ -253,12 +257,6 @@
 	}
 }
 
-#services-list ol {
-	list-style: none; margin-left: 0; padding-left: 0;
-	li {list-style: none; margin-left: 0; padding-left: 0;}
-}
-
-
 @media (max-width: 500px) {
 	#home-top-tasks {
 		display: block;
@@ -367,12 +365,13 @@
 // Universal Survey Block //
 
 #feedback {clear: both; display: block; background: $darkestblue; padding: $line-height-computed; margin-top: 2em; color: #fff; font-size: $font-size-large;}
-#feedback a {color: $yellow;}
-#feedback a:hover, #feedback a:focus {color: #fff;}
+#feedback a {color: $yellow; background: transparent;}
+#feedback a:hover, #feedback a:focus {color: #fff; background: transparent;}
 
 // About the Project page //
 
-
+.project-site-links {padding: 1.25em; margin-bottom: 2em; background-color: lighten($green, 30%)}
+.project-progress-heading {text-align: center; text-align: center; margin-bottom: 2em;}
 .project-introduction {font-size: 1.25em; clear: both;}
 .project-highlights {font-size: 1.25em; clear: both; background-color: $blue; color: #fff; padding: $line-height-computed;}
 .project-highlights h2 {color: #fff; margin: 0 auto 1.5em auto;}
