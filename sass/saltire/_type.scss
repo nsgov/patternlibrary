@@ -251,3 +251,10 @@ th, b, strong {
   font-family: $font-family-bold;
   font-weight: $font-weight-bold;
 }
+
+// Read the release - force sentence case
+
+p.feature-link {
+  text-transform: lowercase;
+  .feature-link::first-letter {text-transform: uppercase;}
+}

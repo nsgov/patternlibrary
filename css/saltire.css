@@ -1134,6 +1134,11 @@ th, b, strong {
   font-family: "robotobold", Helvetica, Arial, Tahoma, sans-serif;
   font-weight: 600; }
 
+p.feature-link {
+  text-transform: lowercase; }
+  p.feature-link .feature-link::first-letter {
+    text-transform: uppercase; }
+
 table {
   background-color: transparent; }
 
