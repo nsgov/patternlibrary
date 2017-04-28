@@ -1136,7 +1136,7 @@ th, b, strong {
 
 p.feature-link {
   text-transform: lowercase; }
-  p.feature-link .feature-link::first-letter {
+  p.feature-link::first-letter {
     text-transform: uppercase; }
 
 table {

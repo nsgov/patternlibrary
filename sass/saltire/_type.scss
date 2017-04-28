@@ -256,5 +256,5 @@ th, b, strong {
 
 p.feature-link {
   text-transform: lowercase;
-  .feature-link::first-letter {text-transform: uppercase;}
+    &::first-letter {text-transform: uppercase;}
 }
