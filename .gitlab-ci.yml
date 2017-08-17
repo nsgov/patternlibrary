@@ -22,14 +22,15 @@ test:
   script:
   - vendor/bin/phpunit --configuration phpunit.xml --coverage-text --colors=never
 
+
 pages:
- stage: deploy
- script:
+  stage: deploy
+  script:
   - mkdir public
   - php index.php > public/index.html
- artifacts:
-   paths:
-   - public
+  artifacts:
+    paths:
+    - public
   only:
   - master
   tags:
