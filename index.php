@@ -201,7 +201,7 @@ endforeach;
 
 <?php
 $organisms = array();
-$handle=opendir('organism');
+$handle=opendir('organisms');
 while (false !== ($organism = readdir($handle))):
     if(stristr($organism,'.html')):
         $organisms[] = $organism;
