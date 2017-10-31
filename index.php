@@ -36,6 +36,7 @@
 <div class="container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
 
+<!-- BUTTONS -->
 <?php
 $buttons = array();
 $handle=opendir('buttons');
@@ -61,11 +62,14 @@ foreach ($buttons as $button):
     echo '<p><a href="buttons/'.$button.'">'.$button.'</a></p>';
     echo '</div>';
     echo '</div>';
+    echo '<hr />'
+
 endforeach;
 ?>
 
 
 
+<!-- FORMS -->
 <?php
 $forms = array();
 $handle=opendir('forms');
@@ -91,9 +95,13 @@ foreach ($forms as $form):
     echo '<p><a href="forms/'.$form.'">'.$form.'</a></p>';
     echo '</div>';
     echo '</div>';
+    echo '<hr />'
 endforeach;
 ?>
 
+
+
+<!-- TYPOGRAPHY -->
 
 <?php
 $typographys = array();
@@ -120,10 +128,12 @@ foreach ($typographys as $typography):
     echo '<p><a href="typographys/'.$typography.'">'.$typography.'</a></p>';
     echo '</div>';
     echo '</div>';
+    echo '<hr />'
 endforeach;
 ?>
 
 
+<!-- MESSAGES AND FEEDBACK -->
 
 <?php
 $feedbacks = array();
@@ -150,10 +160,12 @@ foreach ($feedbacks as $feedback):
     echo '<p><a href="feedback/'.$feedback.'">'.$feedback.'</a></p>';
     echo '</div>';
     echo '</div>';
+    echo '<hr />'
 endforeach;
 ?>
 
 
+<!-- CONTENT -->
 
 <?php
 $contents = array();
@@ -180,12 +192,14 @@ foreach ($contents as $content):
     echo '<p><a href="content/'.$content.'">'.$content.'</a></p>';
     echo '</div>';
     echo '</div>';
+    echo '<hr />'
 endforeach;
 ?>
 
 
 
 
+<!-- NAVIGATION -->
 
 <?php
 $navigations = array();
@@ -212,6 +226,7 @@ foreach ($navigations as $navigation):
     echo '<p><a href="navigations/'.$navigation.'">'.$navigation.'</a></p>';
     echo '</div>';
     echo '</div>';
+    echo '<hr />'
 endforeach;
 ?>
 
