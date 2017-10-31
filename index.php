@@ -212,7 +212,7 @@ sort($organisms);
 ?>
 <h2 class="section">Organisms</h2>
 <?php
-foreach ($organisms as organism):
+foreach ($organisms as $organism):
     echo '<div class="pattern">';
     echo '<div class="display">';
     include('organisms/'.$organism);
