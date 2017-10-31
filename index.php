@@ -197,6 +197,36 @@ endforeach;
 ?>
 
 
+<!-- Organisms -->
+
+<?php
+$organisms = array();
+$handle=opendir('organism');
+while (false !== ($organism = readdir($handle))):
+    if(stristr($organism,'.html')):
+        $organisms[] = $organism;
+    endif;
+endwhile;
+sort($organisms);
+
+?>
+<h2 class="section">Organisms</h2>
+<?php
+foreach ($organisms as organism):
+    echo '<div class="pattern">';
+    echo '<div class="display">';
+    include('organisms/'.$organism);
+    echo '</div>';
+    echo '<div class="source">';
+    echo '<textarea rows="6" cols="30">';
+    echo htmlspecialchars(file_get_contents('organisms/'.$organism));
+    echo '</textarea>';
+    echo '<p><a href="organism/'.$organism.'">'.$organism.'</a></p>';
+    echo '</div>';
+    echo '</div>';
+    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
+endforeach;
+?>
 
 
 <!-- NAVIGATION -->
