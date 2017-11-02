@@ -246,15 +246,13 @@ sort($navigations);
 <?php
 foreach ($navigations as $navigation):
     echo '<div class="pattern">';
-    echo '<div class="display">';
     include('navigation/'.$navigation);
     echo '</div>';
-    echo '<div class="source">';
+    echo '<div class="pattern">';
     echo '<textarea rows="6" cols="30">';
     echo htmlspecialchars(file_get_contents('navigation/'.$navigation));
     echo '</textarea>';
     echo '<p><a href="navigations/'.$navigation.'">'.$navigation.'</a></p>';
-    echo '</div>';
     echo '</div>';
     echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
 endforeach;
