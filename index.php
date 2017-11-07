@@ -33,7 +33,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="pattern-container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
 
 <!-- BUTTONS -->
