@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NSGov UI Pattern Library</title>
+<title>Saltire Pattern Library</title>
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="css/saltire.css">
 <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
