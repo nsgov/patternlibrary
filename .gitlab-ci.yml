@@ -7,6 +7,7 @@ pages:
   script:
   - mkdir .public
   - php index.php > .public/index.html
+  - php forms.php > .public/forms.html
   - cp -r * .public
   - mv .public public
   artifacts:
@@ -16,4 +17,3 @@ pages:
   - master
   tags:
   - docker
-
