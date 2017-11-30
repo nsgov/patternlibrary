@@ -40,6 +40,8 @@
 
 <p>We use the <a href="https://getbootstrap.com/docs/3.3/examples/grid/">Bootstrap grid system</a>.</p>
 
+<p>We design mobile first and work up from there.</p>
+
 <p>Bootstrap is based on a 12 column grid, and has four basic breakpoints:</p>
 
 <ul>
@@ -63,7 +65,6 @@
   <div class="col-xs-3">col-xs-3</div>
 </div>
 
-<p>We design mobile first and work up from there.</p>
 <!-- Organisms -->
 
 <?php

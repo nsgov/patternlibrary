@@ -29,10 +29,12 @@
 
 .ui-categories li {}
 
+#header {background: #244EA1 url(img/logo-banner-overlay.png) top left no-repeat; height: 60px; width: 100%;}
+
 </style>
 </head>
 <body>
-
+<div id="header"></div>
 <div class="pattern-container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
 
