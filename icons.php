@@ -38,7 +38,7 @@
 
 <h2>Icons</h2>
 
-<p>We currently use the <a href="http://fontawesome.io/icons/">Font Awesome</p>, a set of scalable vector icons implemented with CSS.</p>
+<p>We currently use the <a href="http://fontawesome.io/icons/">Font Awesome</a>, a set of scalable vector icons implemented with CSS.</p>
 
 <p>Typically, icons are only used for decorative purposes and are not used alone to communicate meaning. If you are using an icon in a way that should be accessible to screen readers, please refer to the <a href="http://fontawesome.io/accessibility/">accessibility documentation</a> for details on how to do this.</p>
 
