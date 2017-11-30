@@ -7,7 +7,15 @@ pages:
   script:
   - mkdir .public
   - php index.php > .public/index.html
+  - php buttons.php > .public/buttons.html
+  - php content.php > .public/content.html
   - php forms.php > .public/forms.html
+  - php grid-system.php > .public/grid-system.html
+  - php icons.php > .public/icons.html
+  - php messages.php > .public/messages.html
+  - php navigation.php > .public/navigation.html
+  - php tables.php > .public/tables.html
+  - php typography.php > .public/typography.html
   - cp -r * .public
   - mv .public public
   artifacts:
