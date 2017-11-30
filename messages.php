@@ -30,6 +30,7 @@
 </style>
 </head>
 <body>
+<div id="header"></div>
 
 <div class="pattern-container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
