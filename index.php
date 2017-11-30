@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 <style>
+
 .pattern {
     clear: both;
     overflow: visible;
@@ -29,7 +30,7 @@
 
 .ui-categories li {}
 
-#header {background: #244EA1 url(img/logo-banner-overlay.png) top left no-repeat; height: 60px; width: 100%;}
+#header {background: #244EA1 url(img/logo-banner-overlay.png) top left no-repeat; height: 60px; width: 100%; margin: 0; padding: 0;}
 
 </style>
 </head>
