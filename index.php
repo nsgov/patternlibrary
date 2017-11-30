@@ -9,28 +9,6 @@
 
 <style>
 
-.pattern {
-    clear: both;
-    overflow: visible;
-    display: block;
-    padding-top: 1em;
-
-}
-.pattern .display {
-    width: 65%;
-    float: left;
-}
-.pattern .source {
-    width: 30%;
-    float: right;
-}
-.pattern .source textarea {
-    width: 90%;
-}
-
-.ui-categories li {}
-
-#header {background: #244EA1 url(img/logo-banner-overlay.png) top left no-repeat; height: 60px; width: 100%; margin: 0; padding: 0;}
 
 </style>
 </head>
