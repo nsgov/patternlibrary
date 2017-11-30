@@ -34,44 +34,42 @@
 <div class="pattern-container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
 
-<h2>Typography</h2>
+<h2>Buttons</h2>
 
-<p>Our primary typeface online is Roboto Sans*.</p>
+<p>Buttons should only be used as a call to action, and the label should make it clear what the button will lead to.</p>
 
-<p>For information about writing online, please refer to the <a href="https://novascotia.sharepoint.com/sites/Projects/CNSGovWebStrategy/Tools%20and%20Guides/Forms/AllItems.aspx?id=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides%2FOnline%20Writing%20Guide%20v2%2Epdf&parent=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides">online writing guide (PDF)</a>.</p>
+<p>For starting a service, the button text should contain a clear call to action to "Start" the service.</p>
 
-<!-- TYPOGRAPHY -->
-
+<!-- BUTTONS -->
 <?php
-$typographys = array();
-$handle=opendir('typography');
-while (false !== ($typography = readdir($handle))):
-    if(stristr($typography,'.html')):
-        $typographys[] = $typography;
+$buttons = array();
+$handle=opendir('buttons');
+while (false !== ($button = readdir($handle))):
+    if(stristr($button,'.html')):
+        $buttons[] = $button;
     endif;
 endwhile;
-sort($typographys);
+sort($buttons);
 
 ?>
-<h2 class="section">Typographic patterns</h2>
+<h2 class="section">Button patterns</h1>
 <?php
-foreach ($typographys as $typography):
+foreach ($buttons as $button):
     echo '<div class="pattern">';
     echo '<div class="display">';
-    include('typography/'.$typography);
+    include('buttons/'.$button);
     echo '</div>';
     echo '<div class="source">';
     echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('typography/'.$typography));
+    echo htmlspecialchars(file_get_contents('buttons/'.$button));
     echo '</textarea>';
-    echo '<p><a href="typographys/'.$typography.'">'.$typography.'</a></p>';
+    echo '<p><a href="buttons/'.$button.'">'.$button.'</a></p>';
     echo '</div>';
     echo '</div>';
     echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
+
 endforeach;
 ?>
-
-
 
 </div>
 

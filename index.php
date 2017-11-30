@@ -5,8 +5,6 @@
 <title>Saltire Pattern Library</title>
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="css/saltire.css">
-<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
 <style>
@@ -29,6 +27,8 @@
     width: 90%;
 }
 
+.ui-categories li {}
+
 </style>
 </head>
 <body>
@@ -36,229 +36,28 @@
 <div class="pattern-container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
 
-<!-- BUTTONS -->
-<?php
-$buttons = array();
-$handle=opendir('buttons');
-while (false !== ($button = readdir($handle))):
-    if(stristr($button,'.html')):
-        $buttons[] = $button;
-    endif;
-endwhile;
-sort($buttons);
+<h2>How it works</h2>
 
-?>
-<h2 class="section">Buttons</h1>
-<?php
-foreach ($buttons as $button):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('buttons/'.$button);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('buttons/'.$button));
-    echo '</textarea>';
-    echo '<p><a href="buttons/'.$button.'">'.$button.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
+<p>This library is a reference for all the pieces in the user interface for the Nova Scotia brand online.</p>
 
-endforeach;
-?>
+<p>You can look up different elements and grab the HTML you need to use them.</p>
 
+<p>You can <a href="https://gitlab.novascotia.ca/cns/patternlab/blob/master/css/saltire.css">grab the latest version of the Saltire CSS file</a>.
 
+<p>This is a living collection that will continue to evolve and expand. If you can't find what you are looking for, email <a href="internet@novascotia.ca">internet@novascotia.ca</a> and we will work with you to help you find a solution.</p>
 
-<!-- FORMS -->
-<?php
-$forms = array();
-$handle=opendir('forms');
-while (false !== ($form = readdir($handle))):
-    if(stristr($form,'.html')):
-        $forms[] = $form;
-    endif;
-endwhile;
-sort($forms);
-
-?>
-<h2 class="section">Form Elements</h2>
-<?php
-foreach ($forms as $form):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('forms/'.$form);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('forms/'.$form));
-    echo '</textarea>';
-    echo '<p><a href="forms/'.$form.'">'.$form.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
-endforeach;
-?>
-
-
-
-<!-- TYPOGRAPHY -->
-
-<?php
-$typographys = array();
-$handle=opendir('typography');
-while (false !== ($typography = readdir($handle))):
-    if(stristr($typography,'.html')):
-        $typographys[] = $typography;
-    endif;
-endwhile;
-sort($typographys);
-
-?>
-<h2 class="section">Typography</h2>
-<?php
-foreach ($typographys as $typography):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('typography/'.$typography);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('typography/'.$typography));
-    echo '</textarea>';
-    echo '<p><a href="typographys/'.$typography.'">'.$typography.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
-endforeach;
-?>
-
-
-<!-- MESSAGES AND FEEDBACK -->
-
-<?php
-$feedbacks = array();
-$handle=opendir('feedback');
-while (false !== ($feedback = readdir($handle))):
-    if(stristr($feedback,'.html')):
-        $feedbacks[] = $feedback;
-    endif;
-endwhile;
-sort($feedbacks);
-
-?>
-<h2 class="section">Messages and Feedback</h2>
-<?php
-foreach ($feedbacks as $feedback):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('feedback/'.$feedback);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('feedback/'.$feedback));
-    echo '</textarea>';
-    echo '<p><a href="feedback/'.$feedback.'">'.$feedback.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
-endforeach;
-?>
-
-
-<!-- CONTENT -->
-
-<?php
-$contents = array();
-$handle=opendir('content');
-while (false !== ($content = readdir($handle))):
-    if(stristr($content,'.html')):
-        $contents[] = $content;
-    endif;
-endwhile;
-sort($contents);
-
-?>
-<h2 class="section">Content</h2>
-<?php
-foreach ($contents as $content):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('content/'.$content);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('content/'.$content));
-    echo '</textarea>';
-    echo '<p><a href="content/'.$content.'">'.$content.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
-endforeach;
-?>
-
-
-<!-- Organisms -->
-
-<?php
-$organisms = array();
-$handle=opendir('organisms');
-while (false !== ($organism = readdir($handle))):
-    if(stristr($organism,'.html')):
-        $organisms[] = $organism;
-    endif;
-endwhile;
-sort($organisms);
-
-?>
-<h2 class="section">Organisms</h2>
-<?php
-foreach ($organisms as $organism):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('organisms/'.$organism);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('organisms/'.$organism));
-    echo '</textarea>';
-    echo '<p><a href="organism/'.$organism.'">'.$organism.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
-endforeach;
-?>
-
-
-<!-- NAVIGATION -->
-
-<?php
-$navigations = array();
-$handle=opendir('navigation');
-while (false !== ($navigation = readdir($handle))):
-    if(stristr($navigation,'.html')):
-        $navigations[] = $navigation;
-    endif;
-endwhile;
-sort($navigations);
-
-?>
-<h2 class="section">Navigation Elements</h2>
-<?php
-foreach ($navigations as $navigation):
-    echo '<div class="pattern">';
-    include('navigation/'.$navigation);
-    echo '</div>';
-    echo '<div class="pattern">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('navigation/'.$navigation));
-    echo '</textarea>';
-    echo '<p><a href="navigations/'.$navigation.'">'.$navigation.'</a></p>';
-    echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
-endforeach;
-?>
-
-
+<h2>Categories</h2>
+  <ul class="ui-categories">
+    <li><a href="buttons.html">Buttons</a></li>
+    <li><a href="content.html">Content</a></li>
+    <li><a href="forms.html">Form elements</a></li>
+    <li><a href="icons.html">Icons</a></li>
+    <li><a href="messages.html">Messages/Feedback</a></li>
+    <li><a href="navigation.html">Navigation and structural elements</a></li>
+    <li><a href="grid-system.html">Responsive grid system</a></li>
+    <li><a href="tables.html">Tables</a></li>
+    <li><a href="typography.html">Typography</a></li>
+  </ul>
 
 </div>
 

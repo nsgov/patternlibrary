@@ -34,42 +34,42 @@
 <div class="pattern-container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
 
-<h2>Typography</h2>
+<h2>Content</h2>
 
-<p>Our primary typeface online is Roboto Sans*.</p>
+<p>The following examples are configurations made from groups of fields used in our content types.</p>
 
-<p>For information about writing online, please refer to the <a href="https://novascotia.sharepoint.com/sites/Projects/CNSGovWebStrategy/Tools%20and%20Guides/Forms/AllItems.aspx?id=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides%2FOnline%20Writing%20Guide%20v2%2Epdf&parent=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides">online writing guide (PDF)</a>.</p>
 
-<!-- TYPOGRAPHY -->
+<!-- CONTENT -->
 
 <?php
-$typographys = array();
-$handle=opendir('typography');
-while (false !== ($typography = readdir($handle))):
-    if(stristr($typography,'.html')):
-        $typographys[] = $typography;
+$contents = array();
+$handle=opendir('content');
+while (false !== ($content = readdir($handle))):
+    if(stristr($content,'.html')):
+        $contents[] = $content;
     endif;
 endwhile;
-sort($typographys);
+sort($contents);
 
 ?>
-<h2 class="section">Typographic patterns</h2>
+<h2 class="section">Content UI Patterns</h2>
 <?php
-foreach ($typographys as $typography):
+foreach ($contents as $content):
     echo '<div class="pattern">';
     echo '<div class="display">';
-    include('typography/'.$typography);
+    include('content/'.$content);
     echo '</div>';
     echo '<div class="source">';
     echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('typography/'.$typography));
+    echo htmlspecialchars(file_get_contents('content/'.$content));
     echo '</textarea>';
-    echo '<p><a href="typographys/'.$typography.'">'.$typography.'</a></p>';
+    echo '<p><a href="content/'.$content.'">'.$content.'</a></p>';
     echo '</div>';
     echo '</div>';
     echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
 endforeach;
 ?>
+
 
 
 
