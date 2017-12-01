@@ -30,12 +30,12 @@
 </style>
 </head>
 <body>
-<div id="header"></div>
+<div id="header">
+  <div class="site-title">Province of Nova Scotia UI Pattern Library</div>
+</div>
 
 <div class="pattern-container">
-<h1>Province of Nova Scotia UI Pattern Library</h1>
-
-<h2>Buttons</h2>
+<h1>Buttons</h1>
 
 <p>Buttons should only be used as a call to action, and the label should make it clear what the button will lead to.</p>
 

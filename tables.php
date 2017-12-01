@@ -30,12 +30,12 @@
 </style>
 </head>
 <body>
-<div id="header"></div>
+<div id="header">
+  <div class="site-title">Province of Nova Scotia UI Pattern Library</div>
+</div>
 
 <div class="pattern-container">
-<h1>Province of Nova Scotia UI Pattern Library</h1>
-
-<h2>Tables</h2>
+<h1>Tables</h1>
 
 <p>Consider the type of data you are working with when selecting which table to use. Complicated data tables should make use of the "scope" property as illustrated in Accessible Data Table. Using scope is very helpful for users trying to navigate a complicated table with a screen reader.</p>
 

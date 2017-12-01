@@ -32,11 +32,25 @@
 </style>
 </head>
 <body>
-<div id="header"></div>
+<div id="header">
+  <div class="site-title">Province of Nova Scotia UI Pattern Library</div>
+</div>
 
 <div class="pattern-container">
-<h1>Province of Nova Scotia Form UI Pattern Library</h1>
+<h1>Form elements</h1>
 
+<p>Online forms must be simple to use and accessible to all users no matter what device they are using.</p>
+
+<ul>
+  <li>Labels must be associated with controls.</li>
+  <li>Inline validation is preferred.</li>
+  <li>A reset button is rarely necessary and not recommended.</li>
+  <li>Users should be able to input their phone number or postal code however they like: a little javascript on the backend can strip out unwanted spaces or characters so it will conform to the format your system requires.</li>
+  <li>Always provide a legend when you use a fieldset. The legend will be read for each control in the fieldset, so keep it brief.</li>
+  <li>Never use javascript "jump menus", always provide a submit button.</li>
+</ul>
+
+<p>For detailed information about creating accessible forms, please refer to <a href="https://webaim.org/techniques/forms/">WebAIM's article: "Creating Accessible Forms"</a>.</p>
 <!-- FORMS -->
 <?php
 $forms = array();

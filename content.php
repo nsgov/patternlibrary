@@ -30,12 +30,12 @@
 </style>
 </head>
 <body>
-<div id="header"></div>
+<div id="header">
+  <div class="site-title">Province of Nova Scotia UI Pattern Library</div>
+</div>
 
 <div class="pattern-container">
-<h1>Province of Nova Scotia UI Pattern Library</h1>
-
-<h2>Content</h2>
+<h1>Content</h1>
 
 <p>The following examples are configurations made from groups of fields used in our content types.</p>
 

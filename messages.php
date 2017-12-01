@@ -30,12 +30,12 @@
 </style>
 </head>
 <body>
-<div id="header"></div>
+<div id="header">
+  <div class="site-title">Province of Nova Scotia UI Pattern Library</div>
+</div>
 
 <div class="pattern-container">
-<h1>Province of Nova Scotia UI Pattern Library</h1>
-
-<h2>Messages/Feedback</h2>
+<h1>Messages/Feedback</h1>
 
 <p>These blocks are used to provide action based feedback or communicate critical information.</p>
 
