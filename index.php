@@ -19,14 +19,12 @@
 <div class="pattern-container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
 
-<h2>How it works</h2>
-
+<p>This is a living collection that will continue to evolve and expand. If you can't find what you are looking for, email <a href="internet@novascotia.ca">internet@novascotia.ca</a> and we will work with you to help you find a solution.</p>
 
 <p>You can look up different elements and grab the HTML you need to use them.</p>
 
 <p>You can <a href="css/saltire.css">grab the latest version of the Saltire CSS file</a>.
 
-<p>This is a living collection that will continue to evolve and expand. If you can't find what you are looking for, email <a href="internet@novascotia.ca">internet@novascotia.ca</a> and we will work with you to help you find a solution.</p>
 
 <h2>Categories</h2>
   <ul class="ui-categories">
