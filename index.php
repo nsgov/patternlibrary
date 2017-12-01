@@ -13,11 +13,11 @@
 </style>
 </head>
 <body>
-<div id="header"></div>
+<div id="header">
+  <div class="site-title">Province of Nova Scotia UI Pattern Library</div>
+</div>
 <div class="pattern-container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
-
-<p>This library is a reference for all the pieces in the user interface for the Nova Scotia brand online.</p>
 
 <h2>How it works</h2>
 

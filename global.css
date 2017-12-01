@@ -1,8 +1,10 @@
-.pattern-container {margin: 30px; text-align: left;}
 
+
+.pattern-container {margin: 30px; text-align: left;}
+.pattern-container h1 {margin-bottom: 1.5em;}
 
 #header {background: #244EA1 url(img/logo-banner-overlay.png) top left no-repeat; height: 60px; width: 100%; margin: 0; padding: 0;}
-
+#header .site-title {float: left; color: #fff;}
 .pattern {
     clear: both;
     overflow: visible;
@@ -25,6 +27,7 @@
 .ui-categories li {}
 
 
+h1.pl-title {font-family: 'PT Serif', Georgia, serif; font-weight: normal; margin-bottom: 1.5em;}
 
 h2.section {background: #333; color: #fff; padding: 20px; clear: both; display: block; margin: 2em auto; text-transform: uppercase;}
 
