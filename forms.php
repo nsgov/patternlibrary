@@ -41,6 +41,8 @@
 
 <p>Online forms must be simple to use and accessible to all users no matter what device they are using.</p>
 
+<p>We recommend:</p>
+
 <ul>
   <li>Labels must be associated with controls.</li>
   <li>Inline validation is preferred.</li>
