@@ -14,7 +14,7 @@
 </head>
 <body>
 <div id="header">
-  <div class="site-title">Province of Nova Scotia UI Pattern Library</div>
+  <div class="site-title"><a href="https://cns.pages.novascotia.ca/patternlab/">Province of Nova Scotia UI Pattern Library</a></div>
 </div>
 <div class="pattern-container">
 <h1>Province of Nova Scotia UI Pattern Library</h1>
