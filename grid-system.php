@@ -70,18 +70,18 @@
   <div class="col-xs-2">col-xs-2</div>
   <div class="col-xs-2">col-xs-2</div>
   <div class="col-xs-2">col-xs-2</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
-  <div class="col-xs-2">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
+  <div class="col-xs-1">col-xs-1</div>
 </div>
 
 <!-- Organisms -->
