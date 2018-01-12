@@ -3780,12 +3780,12 @@ ul.icon-list {
     margin-bottom: 1em; }
   .step-list li::before {
     content: counter(step-counter);
-    margin: 0 0 30px -32px;
+    margin: 0 .5em 30px -32px;
     font-size: 1em;
     background-color: #333;
     color: white;
     font-weight: bold;
-    padding: 3px 10px;
+    padding: 4px 10px;
     border-radius: 100%; }
 
 .contact-block {
