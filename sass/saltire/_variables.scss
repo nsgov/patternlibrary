@@ -67,10 +67,16 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:        "robotoregular", Helvetica, Arial, Tahoma, sans-serif !default;
-$font-family-italic:            "robotoitalic", Helvetica, Arial, Tahoma, sans-serif !default;
-$font-family-sans-serif-light:  "robotolight", Helvetica, Arial, Tahoma, sans-serif !default;
-$font-family-bold:              "robotobold", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-sans-serif:        "open_sansregular", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-italic:            "open_sansitalic", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-sans-serif-light:  "open_sanslight", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-bold:              "open_sansbold", Helvetica, Arial, Tahoma, sans-serif !default;
+
+// $font-family-sans-serif:        "robotoregular", Helvetica, Arial, Tahoma, sans-serif !default;
+// $font-family-italic:            "robotoitalic", Helvetica, Arial, Tahoma, sans-serif !default;
+// $font-family-sans-serif-light:  "robotolight", Helvetica, Arial, Tahoma, sans-serif !default;
+// $font-family-bold:              "robotobold", Helvetica, Arial, Tahoma, sans-serif !default;
+
 $font-family-serif:             Georgia, "Times New Roman", Times, serif !default;
 $font-family-icon:              'FontAwesome';
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.

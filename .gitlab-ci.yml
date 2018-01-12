@@ -12,6 +12,7 @@ pages:
   - php forms.php > .public/forms.html
   - php grid-system.php > .public/grid-system.html
   - php icons.php > .public/icons.html
+  - php lists.php > .public/lists.html
   - php messages.php > .public/messages.html
   - php navigation.php > .public/navigation.html
   - php tables.php > .public/tables.html

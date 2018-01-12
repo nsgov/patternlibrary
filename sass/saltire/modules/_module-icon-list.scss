@@ -19,19 +19,28 @@ ul.icon-list {
   	color: $blue;
   }
 
-  li.pdf-file:before 	        	{content: '\f1c1';}
-  li.ppt-file:before 	         	{content: '\f1c4';}
-  li.doc-file:before 	        	{content: '\f0f6';}
+// File types
+  li.website:before 	        	{content: '\f0f6';} // file-text-o
+  li.pdf-file:before 	        	{content: '\f1c1';} // pdf-o
+  li.ppt-file:before 	         	{content: '\f1c4';} // powerpoint-o
+  li.doc-file:before 	        	{content: '\f0f6';} // word-o
+  li.excel-file:before 	       	{content: '\f1c3';} // file-excel-o
+  li.file:before 			          {content: '\f15b';} // file-o
+  li.zip:before 	            	{content: '\f1c6';} // file-archive-o
+
+// Social
   li.twitter:before		   	      {content: '\f081';}
   li.facebook:before 		        {content: '\f082';}
   li.youtube:before       		  {content: '\f166';}
   li.flickr:before 		         	{content: '\f16e';}
   li.tumblr:before 		         	{content: '\f174';}
+// Other
   li.external-link:before 			{content: '\f08e';}
-  li.file:before 			          {content: '\f0f6';}
   li.office:before              {content: '\f0f7';}
   li.map:before                 {content: '\f041';}
   li.info:before                {content: '\f05a';}
+
+// Status
   li.progress:before            {content: '\f110'; color: $text-color;} // spinner
   li.complete:before            {content: '\f00c'; color: $green;} // check
   li.scheduled:before           {content: '\f274';} // calendar-check-o
