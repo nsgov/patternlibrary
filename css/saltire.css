@@ -3778,15 +3778,15 @@ ul.icon-list {
   .step-list li {
     counter-increment: step-counter;
     margin-bottom: 1em; }
-    .step-list li ::before {
-      content: counter(step-counter);
-      margin: 0 0 30px -32px;
-      font-size: 1em;
-      background-color: #333;
-      color: white;
-      font-weight: bold;
-      padding: 3px 10px;
-      border-radius: 100%; }
+  .step-list li::before {
+    content: counter(step-counter);
+    margin: 0 0 30px -32px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 3px 10px;
+    border-radius: 100%; }
 
 .contact-block {
   margin-top: 13.5px; }
