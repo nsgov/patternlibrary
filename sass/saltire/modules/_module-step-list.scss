@@ -1,0 +1,17 @@
+.step-list {
+  list-style-type: none;
+  li {
+    counter-increment: step-counter;
+    margin-bottom: 1em;
+    ::before {
+      content: counter(step-counter);
+      margin: 0 0 30px -32px;
+      font-size: 1em;
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      padding: 3px 10px;
+      border-radius: 100%;
+    }
+  }
+}
