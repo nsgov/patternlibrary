@@ -68,6 +68,12 @@ input {
   }
 }
 
+// Horizontal rule
+//
+// Sets minimal gray horizontal rule
+
+hr {border: none; border-top: 1px solid $gray-light; box-shadow: none;}
+
 // Figures
 //
 // We reset this here because previously Normalize had no `figure` margins. This
