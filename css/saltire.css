@@ -1878,21 +1878,6 @@ input[type="button"].btn-block {
   .field--name-field-document-thumbnail img,
   .document-thumbnail-container img {
     border: 1px solid #eeeeee; }
-    .field--name-field-document-thumbnail img:after,
-    .document-thumbnail-container img:after {
-      width: 100%;
-      max-width: 200px;
-      content: '';
-      top: 0;
-      left: 0;
-      z-index: 10;
-      height: 100%;
-      display: block;
-      position: absolute;
-      background: black;
-      opacity: 0.05;
-      margin: 0;
-      padding: 0; }
 
 .document-title {
   display: inline-block;
@@ -2139,19 +2124,16 @@ input[type="button"].btn-block {
 #feedback {
   clear: both;
   display: block;
-  background: #003262;
+  background: #e6e7e6;
+  border: 2px solid #d2d3d1;
+  border-radius: 4px;
   padding: 27px;
   margin-top: 2em;
-  color: #fff;
   font-size: 17.5px; }
-
-#feedback a {
-  color: #f8d44c;
-  background: transparent; }
-
-#feedback a:hover, #feedback a:focus {
-  color: #fff;
-  background: transparent; }
+  #feedback a {
+    background: transparent; }
+  #feedback a:hover, #feedback a:focus {
+    background: transparent; }
 
 .project-site-links {
   padding: 1.25em;

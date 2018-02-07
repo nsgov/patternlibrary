@@ -91,7 +91,7 @@
 			//	padding: 0;
 		}
 	}
-}
+
 
 
 .document-title {
@@ -366,9 +366,19 @@
 
 // Universal Survey Block //
 
-#feedback {clear: both; display: block; background: $darkestblue; padding: $line-height-computed; margin-top: 2em; color: #fff; font-size: $font-size-large;}
-#feedback a {color: $yellow; background: transparent;}
-#feedback a:hover, #feedback a:focus {color: #fff; background: transparent;}
+#feedback {
+	clear: both;
+	display: block;
+	background: $lightestgray;
+	border: 2px solid $lightgray;
+	border-radius: $border-radius-base;
+	padding: $line-height-computed;
+	margin-top: 2em;
+	font-size: $font-size-large;
+
+	a {background: transparent;}
+	a:hover, a:focus {background: transparent;}
+}
 
 // About the Project page //
 
