@@ -70,18 +70,26 @@
 
 #meta-publication-type, .pub-details .item-list {@include delimited-list;}
 
+.field--name-field-document-thumbnail,
 .document-thumbnail-container {
-	&:after {
-		width: 100px;
-		content:'';
-    top: 0;
-    left: 0;
-    z-index: 10;
-    height: 100%;
-    display: block;
-    position: absolute;
-    background: black;
-    opacity: 0.05;
+	margin-bottom: 1.5em;
+	img	{
+		border: 1px solid $gray-lighter;
+			// &:after {
+			//width: 100%;
+			//max-width: 200px;
+			//content:'';
+			//  top: 0;
+			// left: 0;
+			// z-index: 10;
+			// height: 100%;
+			// display: block;
+			// position: absolute;
+			// background: black;
+			// opacity: 0.05;
+			//	margin: 0;
+			//	padding: 0;
+		}
 	}
 }
 
@@ -140,7 +148,9 @@
 }
 
 .document-author,
-.document-updated {
+.document-updated,
+.first-published,
+.document-pages {
 	div {display: inline;}
 }
 
@@ -154,14 +164,6 @@
 .document-filesize {
 	margin-bottom: 0.5em;
 }
-
-.document-pages {
-	div {
-		display: inline;
-	}
-}
-
-
 
 .document-thumbnail-container {
 	width:100px;
