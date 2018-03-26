@@ -30,7 +30,7 @@
 </style>
 </head>
 <body>
-<div id="header">
+<div id="patternlab-header">
   <div class="site-title"><a href="https://cns.pages.novascotia.ca/patternlab/">Province of Nova Scotia UI Pattern Library</a></div>
 </div>
 

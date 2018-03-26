@@ -13,7 +13,7 @@
 </style>
 </head>
 <body>
-<div id="header">
+<div id="patternlab-header">
   <div class="site-title"><a href="https://cns.pages.novascotia.ca/patternlab/">Province of Nova Scotia UI Pattern Library</a></div>
 </div>
 <div class="pattern-container">
@@ -32,6 +32,7 @@
     <li><a href="content.html">Content</a></li>
     <li><a href="forms.html">Form elements</a></li>
     <li><a href="icons.html">Icons</a></li>
+    <li><a href="lists.html">Lists</a></li>
     <li><a href="messages.html">Messages/Feedback</a></li>
     <li><a href="navigation.html">Navigation and structural elements</a></li>
     <li><a href="grid-system.html">Responsive grid system</a></li>

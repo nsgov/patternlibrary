@@ -1834,11 +1834,15 @@ input[type="button"].btn-block {
     padding-left: 0;
     padding-bottom: 0; }
   #home-topics li {
-    min-height: 189px;
+    min-height: 378px;
     list-style-type: none;
     margin: auto 0 0 auto;
     padding-left: 0;
     padding-bottom: 0; }
+    #home-topics li .icon {
+      width: 40%;
+      height: auto;
+      margin: 1.5em 27% 0 27%; }
   #home-topics p {
     padding-right: 40px; }
 
@@ -3767,6 +3771,21 @@ ul.icon-list {
     counter-increment: step-counter;
     margin-bottom: 1em; }
   .step-list li::before {
+    content: counter(step-counter);
+    margin: 0 .5em 30px -32px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 100%; }
+
+.steps ol {
+  list-style-type: none; }
+  .steps ol li {
+    counter-increment: step-counter;
+    margin-bottom: 1em; }
+  .steps ol li::before {
     content: counter(step-counter);
     margin: 0 .5em 30px -32px;
     font-size: 1em;
