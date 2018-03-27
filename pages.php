@@ -44,7 +44,7 @@
 
 <?php
 $pages = array();
-$handle=opendir('page');
+$handle=opendir('pages');
 while (false !== ($page = readdir($handle))):
     if(stristr($page,'.html')):
         $pages[] = $page;
