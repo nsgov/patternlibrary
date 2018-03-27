@@ -60,7 +60,7 @@ foreach ($pages as $page):
     include('pages/'.$page);
     echo '</div>';
     echo '<div class="pattern">';
-    echo '<textarea rows="6" cols="30">';
+    echo '<textarea rows="20" style="width: 100%">';
     echo htmlspecialchars(file_get_contents('pages/'.$page));
     echo '</textarea>';
     echo '<p><a href="pages/'.$page.'">'.$page.'</a></p>';
