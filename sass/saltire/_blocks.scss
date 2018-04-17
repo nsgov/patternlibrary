@@ -38,8 +38,8 @@
 	div {min-height: ($line-height-computed * 7);}
 	ol, ul {margin: 0 auto 0 0; padding-left: 0; padding-bottom: 0;}
 	li {
-		min-height: ($line-height-computed * 14); list-style-type: none; margin: auto 0 0 auto; padding-left: 0; padding-bottom: 0;
-		.icon {width: 40%; height: auto; margin: 1.5em 27% 0 27%;}
+		min-height: ($line-height-computed * 11); list-style-type: none; margin: auto 0 0 auto; padding-left: 0; padding-bottom: 0;
+		.icon {width: 25%; height: auto; margin: 1.5em 35% 0 35%;}
 		}
 	p {padding-right: 40px;}
 }

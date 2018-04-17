@@ -52,6 +52,8 @@
   <li>lg (large screen) 1200px</li>
 </ul>
 
+<p>For page content, we keep the width of the content area at a comfortable reading width that works out to be: col-xs-12 col-md-8. For examples, please refer to the <a href="pages.html">Page Patterns</a>.</p>
+
 
 <div class="row bootsample">
   <div class="col-xs-12">col-xs-12</div>

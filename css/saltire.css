@@ -1834,15 +1834,15 @@ input[type="button"].btn-block {
     padding-left: 0;
     padding-bottom: 0; }
   #home-topics li {
-    min-height: 378px;
+    min-height: 297px;
     list-style-type: none;
     margin: auto 0 0 auto;
     padding-left: 0;
     padding-bottom: 0; }
     #home-topics li .icon {
-      width: 40%;
+      width: 25%;
       height: auto;
-      margin: 1.5em 27% 0 27%; }
+      margin: 1.5em 35% 0 35%; }
   #home-topics p {
     padding-right: 40px; }
 
