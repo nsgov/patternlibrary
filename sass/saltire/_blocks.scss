@@ -74,6 +74,9 @@
 
 #meta-publication-type, .pub-details .item-list {@include delimited-list;}
 
+// Style for before & after HR containing document details
+hr.document-details {margin: 0 0 1.5em 0;}
+
 .field--name-field-document-thumbnail,
 .document-thumbnail-container {
 	margin-bottom: 1.5em;
@@ -95,6 +98,15 @@
 			//	padding: 0;
 		}
 	}
+
+
+.document-thumbnail-container {
+	width:80%;
+	position: relative;
+	top:0;
+	left:0;
+	max-width:160px;
+}
 
 
 
@@ -168,15 +180,6 @@
 .document-filesize {
 	margin-bottom: 0.5em;
 }
-
-.document-thumbnail-container {
-	width:100px;
-	position:absolute;
-	top:0;
-	left:0;
-	max-width:100px;
-}
-
 .document-layout {
 	label {font-weight: normal;}
 }
@@ -377,7 +380,8 @@
 	border: 2px solid $lightgray;
 	border-radius: $border-radius-base;
 	padding: $line-height-computed;
-	margin-top: 2em;
+	margin-top: 2.5em;
+	width: 100%;
 	font-size: $font-size-large;
 
 	a {background: transparent;}
