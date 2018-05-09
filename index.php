@@ -35,6 +35,7 @@
     <li><a href="lists.html">Lists</a></li>
     <li><a href="messages.html">Messages/Feedback</a></li>
     <li><a href="navigation.html">Navigation and structural elements</a></li>
+    <li><a href="pages.html">Pages</a></li>
     <li><a href="grid-system.html">Responsive grid system</a></li>
     <li><a href="tables.html">Tables</a></li>
     <li><a href="typography.html">Typography</a></li>

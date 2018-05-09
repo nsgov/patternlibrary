@@ -1621,11 +1621,11 @@ a.btn {
     background-color: #fff; }
   .btn-primary:hover, .btn-primary:focus {
     color: #fff;
-    background-color: #002549; }
+    background: #002549; }
   .btn-primary:active {
     outline: none;
     color: #fff;
-    background-color: #002549;
+    background: #002549;
     -webkit-transition: background 0.06s;
     -o-transition: background 0.06s;
     transition: background 0.06s; }
@@ -1751,7 +1751,7 @@ a.btn {
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
-    background-color: transparent;
+    background: transparent;
     -webkit-box-shadow: none;
     box-shadow: none; }
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
@@ -1759,7 +1759,7 @@ a.btn {
   .btn-link:hover, .btn-link:focus {
     color: #0081f1;
     text-decoration: underline;
-    background-color: transparent; }
+    background: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
     color: #777777;
     text-decoration: none; }

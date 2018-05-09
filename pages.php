@@ -39,6 +39,13 @@
 
 <p>The following page layouts are based on the content types identified in the Government Web Strategy.</p>
 
+<ul>
+  <li>Basic page</li>
+  <li>Campaign page</li>
+  <li>Document page</li>
+</ul>
+
+<p>More will be added over time.</p>
 
 <!-- page -->
 

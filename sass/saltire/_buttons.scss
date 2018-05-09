@@ -73,17 +73,16 @@ a.btn {
 }
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
-
   @include transition(background .2s, color .2s);
    &:hover, &:focus {
      color: #fff;
-     background-color: darken($darkestblue, 5%);
+     background: darken($darkestblue, 5%);
    }
 
    &:active {
      outline: none;
      color: #fff;
-     background-color: darken($darkestblue, 5%);
+     background: darken($darkestblue, 5%);
      @include transition(background .06s);
    }
 }
@@ -119,7 +118,7 @@ a.btn {
   &.active,
   &[disabled],
   fieldset[disabled] & {
-    background-color: transparent;
+    background: transparent;
     @include box-shadow(none);
   }
   &,
@@ -132,7 +131,7 @@ a.btn {
   &:focus {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
-    background-color: transparent;
+    background: transparent;
   }
   &[disabled],
   fieldset[disabled] & {
