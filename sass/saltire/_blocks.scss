@@ -28,11 +28,6 @@
 
 // Homepage Topic Blocks
 
-#services-list {
-	ol, ul {list-style: none; margin-left: 0; padding-left: 0;}
-	li {list-style: none; margin-left: 0; padding-left: 0;}
-}
-
 #home-topics {
 	margin: 0; padding: 0;
 	div {min-height: ($line-height-computed * 7);}
@@ -42,6 +37,11 @@
 		.icon {width: 25%; height: auto; margin: 1.5em 35% 0 35%;}
 		}
 	p {padding-right: 40px;}
+}
+
+.home-about-government {
+	h2 {margin-bottom: 1.5em;}
+	img {width: 100px; height: 100px;}
 }
 
 @media only screen and (max-width: $screen-sm-max) {
@@ -69,6 +69,28 @@
 #broadcast-copy {
 	line-height: $line-height-large * 2em;
 }
+
+
+// SERVICES AND PROGRAMS
+
+.directory-listing-row { // reusable style that can be used on views that return a listing
+	border-bottom: 1px solid $gray-lighter;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+
+	&:hover {background: (lighten $yellow, 50%);}
+
+	.sp-disclaimer {
+		color: $gray-lighter;
+		font-size: $font-size-small;
+	} // Services and programs directory
+}
+
+#services-list {
+	ol, ul {list-style: none; margin-left: 0; padding-left: 0;}
+	li {list-style: none; margin-left: 0; padding-left: 0;}
+}
+
 
 // Document, Document Collection
 

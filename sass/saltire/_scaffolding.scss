@@ -52,10 +52,11 @@ a {
     text-decoration: $link-hover-decoration;
   }
 
-  &:active, &:focus {
+  &:active, &:focus, &:hover {
     background: $yellow;
   }
 }
+
 
 
 // Focus and Active universal styles
