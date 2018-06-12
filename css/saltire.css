@@ -3020,7 +3020,7 @@ hr.document-details {
   .logo > a {
     display: block;
     background: transparent; }
-  .logo:active, .logo:focus {
+  .logo:active, .logo:focus, .logo:hover {
     background: none; }
   .logo-img {
     width: 13em; }
