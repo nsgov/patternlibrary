@@ -1033,6 +1033,9 @@ mark {
   display: block;
   margin-top: .15em; }
 
+.lg-number {
+  font-size: 5em; }
+
 ul,
 ol {
   margin-top: 1em;
@@ -1488,7 +1491,7 @@ fieldset[disabled] input[type="checkbox"] {
   .has-error .form-control-feedback {
     color: #a94442; }
 
-.btn, .gs, button {
+.btn, .gs {
   display: inline-block;
   margin-bottom: 0;
   font-weight: 400;
@@ -1511,43 +1514,43 @@ fieldset[disabled] input[type="checkbox"] {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  .btn:focus, .btn.focus, .gs:focus, .gs.focus, button:focus, button.focus {
+  .btn:focus, .btn.focus, .gs:focus, .gs.focus {
     color: #fff;
     background-color: #003d71;
     border-color: rgba(0, 0, 0, 0); }
-  .btn:hover, .gs:hover, button:hover {
+  .btn:hover, .gs:hover {
     color: #fff;
     background-color: #003d71;
     border-color: rgba(0, 0, 0, 0); }
-  .btn:active, .btn.active, .open > .btn.dropdown-toggle, .gs:active, .gs.active, .open > .gs.dropdown-toggle, button:active, button.active, .open > button.dropdown-toggle {
+  .btn:active, .btn.active, .open > .btn.dropdown-toggle, .gs:active, .gs.active, .open > .gs.dropdown-toggle {
     color: #fff;
     background-color: #003d71;
     border-color: rgba(0, 0, 0, 0); }
-    .btn:active:hover, .btn:active:focus, .btn:active.focus, .btn.active:hover, .btn.active:focus, .btn.active.focus, .open > .btn.dropdown-toggle:hover, .open > .btn.dropdown-toggle:focus, .open > .btn.dropdown-toggle.focus, .gs:active:hover, .gs:active:focus, .gs:active.focus, .gs.active:hover, .gs.active:focus, .gs.active.focus, .open > .gs.dropdown-toggle:hover, .open > .gs.dropdown-toggle:focus, .open > .gs.dropdown-toggle.focus, button:active:hover, button:active:focus, button:active.focus, button.active:hover, button.active:focus, button.active.focus, .open > button.dropdown-toggle:hover, .open > button.dropdown-toggle:focus, .open > button.dropdown-toggle.focus {
+    .btn:active:hover, .btn:active:focus, .btn:active.focus, .btn.active:hover, .btn.active:focus, .btn.active.focus, .open > .btn.dropdown-toggle:hover, .open > .btn.dropdown-toggle:focus, .open > .btn.dropdown-toggle.focus, .gs:active:hover, .gs:active:focus, .gs:active.focus, .gs.active:hover, .gs.active:focus, .gs.active.focus, .open > .gs.dropdown-toggle:hover, .open > .gs.dropdown-toggle:focus, .open > .gs.dropdown-toggle.focus {
       color: #fff;
       background-color: #00294d;
       border-color: rgba(0, 0, 0, 0); }
-  .btn:active, .btn.active, .open > .btn.dropdown-toggle, .gs:active, .gs.active, .open > .gs.dropdown-toggle, button:active, button.active, .open > button.dropdown-toggle {
+  .btn:active, .btn.active, .open > .btn.dropdown-toggle, .gs:active, .gs.active, .open > .gs.dropdown-toggle {
     background-image: none; }
-  .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active, fieldset[disabled] .btn, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn.focus, fieldset[disabled] .btn:active, fieldset[disabled] .btn.active, .gs.disabled, .gs.disabled:hover, .gs.disabled:focus, .gs.disabled.focus, .gs.disabled:active, .gs.disabled.active, .gs[disabled], .gs[disabled]:hover, .gs[disabled]:focus, .gs[disabled].focus, .gs[disabled]:active, .gs[disabled].active, fieldset[disabled] .gs, fieldset[disabled] .gs:hover, fieldset[disabled] .gs:focus, fieldset[disabled] .gs.focus, fieldset[disabled] .gs:active, fieldset[disabled] .gs.active, button.disabled, button.disabled:hover, button.disabled:focus, button.disabled.focus, button.disabled:active, button.disabled.active, button[disabled], button[disabled]:hover, button[disabled]:focus, button[disabled].focus, button[disabled]:active, button[disabled].active, fieldset[disabled] button, fieldset[disabled] button:hover, fieldset[disabled] button:focus, fieldset[disabled] button.focus, fieldset[disabled] button:active, fieldset[disabled] button.active {
+  .btn.disabled, .btn.disabled:hover, .btn.disabled:focus, .btn.disabled.focus, .btn.disabled:active, .btn.disabled.active, .btn[disabled], .btn[disabled]:hover, .btn[disabled]:focus, .btn[disabled].focus, .btn[disabled]:active, .btn[disabled].active, fieldset[disabled] .btn, fieldset[disabled] .btn:hover, fieldset[disabled] .btn:focus, fieldset[disabled] .btn.focus, fieldset[disabled] .btn:active, fieldset[disabled] .btn.active, .gs.disabled, .gs.disabled:hover, .gs.disabled:focus, .gs.disabled.focus, .gs.disabled:active, .gs.disabled.active, .gs[disabled], .gs[disabled]:hover, .gs[disabled]:focus, .gs[disabled].focus, .gs[disabled]:active, .gs[disabled].active, fieldset[disabled] .gs, fieldset[disabled] .gs:hover, fieldset[disabled] .gs:focus, fieldset[disabled] .gs.focus, fieldset[disabled] .gs:active, fieldset[disabled] .gs.active {
     background-color: #0058a4;
     border-color: transparent; }
-  .btn .badge, .gs .badge, button .badge {
+  .btn .badge, .gs .badge {
     color: #0058a4;
     background-color: #fff; }
-  .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus, .gs:focus, .gs.focus, .gs:active:focus, .gs:active.focus, .gs.active:focus, .gs.active.focus, button:focus, button.focus, button:active:focus, button:active.focus, button.active:focus, button.active.focus {
+  .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus, .gs:focus, .gs.focus, .gs:active:focus, .gs:active.focus, .gs.active:focus, .gs.active.focus {
     outline: solid 0.25em #f8d44c;
     outline-offset: 0;
     text-decoration: none; }
-  .btn:hover, .btn:focus, .btn.focus, .gs:hover, .gs:focus, .gs.focus, button:hover, button:focus, button.focus {
+  .btn:hover, .btn:focus, .btn.focus, .gs:hover, .gs:focus, .gs.focus {
     color: #fff;
     text-decoration: none; }
-  .btn:active, .btn.active, .gs:active, .gs.active, button:active, button.active {
+  .btn:active, .btn.active, .gs:active, .gs.active {
     outline: 0;
     background-image: none;
     -webkit-box-shadow: none;
     box-shadow: none; }
-  .btn.disabled, .btn[disabled], fieldset[disabled] .btn, .gs.disabled, .gs[disabled], fieldset[disabled] .gs, button.disabled, button[disabled], fieldset[disabled] button {
+  .btn.disabled, .btn[disabled], fieldset[disabled] .btn, .gs.disabled, .gs[disabled], fieldset[disabled] .gs {
     cursor: not-allowed;
     opacity: 0.65;
     filter: alpha(opacity=65);
@@ -1806,26 +1809,39 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%; }
 
-#nte {
-  background-color: #eeeeee;
-  padding: 1em;
-  margin: 1.5em 0;
-  color: #222222; }
-
 .location {
   float: left; }
 
+.transition-block {
+  background: #afdca7 url(/themes/ignition/img/gargygle.svg) top right no-repeat;
+  padding: 2em 0; }
+  .transition-block .feature-list {
+    font-size: 1.25em;
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1.5em 0; }
+    .transition-block .feature-list li {
+      margin-bottom: 1.5em; }
+    .transition-block .feature-list .fa {
+      font-size: 2em;
+      margin-right: .5em; }
+
+.transition-call-to-action {
+  display: block;
+  clear: both;
+  background: #afdca7 url(/themes/ignition/img/gargygle.svg) top right no-repeat;
+  margin: 2em auto;
+  padding: 1em 2em;
+  border-radius: 4px; }
+
 #home-topics {
   margin: 0;
-  padding: 0; }
-  #home-topics div {
-    min-height: 189px; }
+  padding: 2em 0; }
   #home-topics ol, #home-topics ul {
     margin: 0 auto 0 0;
     padding-left: 0;
     padding-bottom: 0; }
   #home-topics li {
-    min-height: 297px;
     list-style-type: none;
     margin: auto 0 0 auto;
     padding-left: 0;
@@ -1837,18 +1853,38 @@ input[type="button"].btn-block {
   #home-topics p {
     padding-right: 40px; }
 
-.home-about-government h2 {
-  margin-bottom: 1.5em; }
-.home-about-government img {
-  width: 100px;
-  height: 100px; }
+.home-about-government {
+  background-color: #fff;
+  padding: 2em 0; }
+  .home-about-government h2 {
+    margin-bottom: 1.5em; }
+  .home-about-government img {
+    width: 100%;
+    height: 100%;
+    min-width: 150px;
+    max-width: 200px;
+    min-height: 150px;
+    max-height: 200px; }
+  .home-about-government .premier-spotlight {
+    text-align: center; }
+
+.most-requested {
+  background-color: #003262;
+  color: #fff;
+  padding: 2em 0; }
+  .most-requested a, .most-requested h2 {
+    color: #fff; }
+
+#home-features {
+  background-color: #effbff;
+  display: block;
+  clear: both;
+  margin-top: 27px;
+  padding: 2em auto; }
 
 @media only screen and (max-width: 767px) {
   #home-topics li {
     min-height: 1em; } }
-.pub-details {
-  min-height: 5em !important; }
-
 #call-to-action {
   display: block;
   margin: 2.5em auto; }
@@ -2113,13 +2149,6 @@ hr.document-details {
       list-style-type: none;
       margin-left: 0;
       padding-left: 0; } }
-#home-features {
-  background-color: #e3f7ff;
-  display: block;
-  clear: both;
-  margin-top: 27px;
-  padding: 27px auto; }
-
 #features, #about-government {
   display: block;
   clear: both;
@@ -3671,7 +3700,7 @@ footer,
 
 .spotlight {
   border-radius: 50%;
-  border: 3px solid #000; }
+  border: 5px solid #0058a4; }
 
 .list-group {
   margin-bottom: 20px;

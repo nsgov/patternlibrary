@@ -1,0 +1,9 @@
+#### File types to ignore
+*.bak
+*.orig
+*.swp
+*.DS_Store
+*.db
+[Dd]esktop.ini
+*.textClipping
+_notes

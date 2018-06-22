@@ -1,55 +1,78 @@
-.block {
-	h2 {}
-}
-
-.top-tasks {}
-
-.follow-us {
-	.facebook {}
-	.twitter {}
-	.youtube {}
-	.tumblr {}
-}
-
-.related-content {}
-
-// Note to Editors Block at the top of News Releases
-
-#nte {
-	background-color: $gray-lighter;
-	padding: 1em;
-	margin: 1.5em 0;
-	color: $gray-darker;
-}
-
 .location {
 	float: left;
+}
+
+// Transition - ephemeral layer of UI used during transition period only
+
+.transition-block { // Homepage block about the project
+	background: lighten($green, 25%) url(/themes/ignition/img/gargygle.svg) top right no-repeat;
+	padding: 2em 0;
+
+	.feature-list {
+		font-size: 1.25em;
+		list-style: none;
+		margin: 0;
+		padding: 0 0 1.5em 0;
+
+		li {margin-bottom: 1.5em;}
+
+		.fa {font-size: 2em; margin-right: .5em;} // make the icon BIG
+	}
+}
+
+.transition-call-to-action { // Containing element used for communicating transition and listing links to departments on the old site
+		display: block;
+		clear: both;
+		background: lighten($green, 25%) url(/themes/ignition/img/gargygle.svg) top right no-repeat;
+		margin: 2em auto;
+		padding: 1em 2em;
+		border-radius: $border-radius-base;
 }
 
 // Homepage Topic Blocks
 
 #home-topics {
-	margin: 0; padding: 0;
-	div {min-height: ($line-height-computed * 7);}
+	margin: 0;
+	padding: 2em 0;
+	//div {min-height: ($line-height-computed * 7);}
 	ol, ul {margin: 0 auto 0 0; padding-left: 0; padding-bottom: 0;}
 	li {
-		min-height: ($line-height-computed * 11); list-style-type: none; margin: auto 0 0 auto; padding-left: 0; padding-bottom: 0;
+		list-style-type: none; margin: auto 0 0 auto; padding-left: 0; padding-bottom: 0;
 		.icon {width: 25%; height: auto; margin: 1.5em 35% 0 35%;}
 		}
 	p {padding-right: 40px;}
 }
 
+// Homepage About Government
 .home-about-government {
+	background-color: #fff;
+	padding: 2em 0;
 	h2 {margin-bottom: 1.5em;}
-	img {width: 100px; height: 100px;}
+	img {width: 100%; height: 100%; min-width: 150px; max-width: 200px; min-height: 150px; max-height: 200px;}
+	.premier-spotlight {text-align: center;}
 }
+
+// Homepage Most Requested
+.most-requested {
+	background-color: $darkestblue;
+	color: #fff;
+	padding: 2em 0;
+	a, h2 {color: #fff;}
+}
+
+
+
+#home-features {
+	background-color: lighten($cyan, 50%);
+	display: block;
+	clear: both;
+	margin-top: $line-height-computed;
+	padding: 2em auto;
+}
+
 
 @media only screen and (max-width: $screen-sm-max) {
 	#home-topics li {min-height: 1em;}
-}
-
-.pub-details {
-	min-height: 5em !important;
 }
 
 // Call to Action
@@ -217,6 +240,7 @@ hr.document-details {margin: 0 0 1.5em 0;}
 	padding-top: $line-height-computed;
 	margin-bottom: $line-height-computed;
 }
+
 .pub-details {
 	margin-bottom: $line-height-computed;
 	vertical-align: top;
@@ -233,6 +257,7 @@ hr.document-details {margin: 0 0 1.5em 0;}
 	.document-author,
 	.item-list ul {font-size: $font-size-small; display: inline; margin-right: 1.5em;}
 }
+
 .pub-label {
 	margin-bottom: $line-height-computed;
 	h2 {margin-top: 0; padding-top: 0;}
@@ -373,8 +398,6 @@ hr.document-details {margin: 0 0 1.5em 0;}
 		}
 
 }
-#home-features {
-	background-color: lighten($cyan, 47.6%); display: block; clear: both; margin-top: $line-height-computed; padding: $line-height-computed auto;}
 
 #features, #about-government {display: block; clear: both; margin: $line-height-computed auto;}
 

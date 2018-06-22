@@ -41,6 +41,8 @@
 
 <p>For starting a service, the button text should contain a clear call to action to "Start" the service.</p>
 
+<p>Please note: If you are using a button outside of a form, instead of &lsquo;button&rsquo; use &lsquo;a&rsquo; - the classes work on both and the front end result is identical.</p>
+
 <!-- BUTTONS -->
 <?php
 $buttons = array();
