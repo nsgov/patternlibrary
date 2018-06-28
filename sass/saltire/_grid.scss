@@ -2,8 +2,23 @@
 // Grid system
 // --------------------------------------------------
 
+// CSS Grid support
+//
+// Use classes paired with grid-container for specific usages (like Topics)
 
-// Container widths
+.grid-container {
+  display: grid;
+
+  &.topic {
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+}
+
+
+
+// Bootstrap Grid Container widths
 //
 // Set the container width, and override it for fixed navbars in media queries.
 

@@ -186,6 +186,13 @@ td,
 th {
   padding: 0; }
 
+.grid-container {
+  display: grid; }
+  .grid-container.topic {
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem; }
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -1149,15 +1156,16 @@ p.feature-link {
 
 table {
   background-color: transparent; }
-
-caption {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: #777777;
-  text-align: left; }
-
-th {
-  text-align: left; }
+  table caption {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: #777777;
+    text-align: left; }
+  table th {
+    text-align: left; }
+  table .number {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    text-align: right; }
 
 .table {
   width: 100%;
@@ -2149,7 +2157,7 @@ hr.document-details {
       list-style-type: none;
       margin-left: 0;
       padding-left: 0; } }
-#features, #about-government {
+#features, .features, #about-government {
   display: block;
   clear: both;
   margin: 27px auto; }
