@@ -94,6 +94,21 @@
 }
 
 
+// COMMON elements
+
+#summary, .summary {
+	background-color: lighten($lightgray, 10%);
+	border: solid darken($lightgray, 50%);
+	border-width: 0px 3px 0px 5px;
+	margin: $line-height-em 0;
+	padding: 2%;
+	font-size: $font-size-h4;
+	color: #000;
+
+	p {margin-bottom: 0;}
+
+}
+
 // SERVICES AND PROGRAMS
 
 .directory-listing-row { // reusable style that can be used on views that return a listing
@@ -229,7 +244,7 @@ hr.document-details {margin: 0 0 1.5em 0;}
 	label {font-weight: normal;}
 }
 
-#summary, #collection-teaser, #introduction, #dept-homepage-design #what-we-do {
+#collection-teaser, #introduction, #dept-homepage-design #what-we-do {
 	font-size: $font-size-h3;
 	margin: $line-height-computed auto;
 	clear: both;
@@ -419,15 +434,16 @@ hr.document-details {margin: 0 0 1.5em 0;}
 // Universal Survey Block //
 
 #feedback {
+	background-color: lighten($cyan, 35%);
+	border: solid $cyan;
+	border-width: 0px 3px 0px 5px;
 	clear: both;
+	color: #000;
 	display: block;
-	background: $lightestgray;
-	border: 2px solid $lightgray;
-	border-radius: $border-radius-base;
-	padding: $line-height-computed;
-	margin-top: 2.5em;
-	width: 100%;
 	font-size: $font-size-large;
+	margin: $line-height-em 0;
+	padding: 2%;
+	width: 100%;
 
 	a {background: transparent;}
 	a:hover, a:focus {background: transparent;}

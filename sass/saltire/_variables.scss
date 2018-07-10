@@ -356,8 +356,8 @@ $nav-disabled-link-hover-color:             $gray-light !default;
 //
 //## Define colors for form feedback states and, by default, form specific alerts.
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
+$state-success-text:             $gray-dark !default;
+$state-success-bg:               lighten($green,30%) !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
 $state-info-text:                #31708f !default;

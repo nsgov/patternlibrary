@@ -1,16 +1,5 @@
 .alert {
-	position: relative;
-	margin-top: $line-height-em;
-
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: .375em;
-		background-color: $darkestblue;
-	}
+	margin: $line-height-em 0;
 
 	p {
 		margin-bottom: 0;
@@ -21,69 +10,67 @@
 
 
 	&-success {
-		background-color: lighten($green, 20%);
-
-		&:before {
-			background-color: $green;
-			@include box-shadow(0 0 0 1px $green);
-		}
-
+		background-color: lighten($green, 30%);
+		border: solid $green;
+		border-width: 0px 3px 0px 5px;
+		margin: $line-height-em 0;
+		padding: 2%;
 		p {
 			color: darken($green, 50%);
-			padding: 2%;
+			margin-bottom: 0;
 		}
 	}
 
 
 	&-low {
-		background-color: lighten($blue, 50%);
-
-		&:before {
-			background-color: $blue;
-			@include box-shadow(0 0 0 1px $blue);
-		}
+		background-color: lighten($blue, 55%);
+		border: solid $blue;
+		border-width: 0px 3px 0px 5px;
+		margin: $line-height-em 0;
+		padding: 2%;
 
 		p {
 			color: darken($blue, 50%);
-			padding: 2%;
+			margin-bottom: 0;
 		}
 	}
 
 	&-medium {
-		background-color: lighten($yellow, 10%);
-
-		&:before {
-			background-color: $yellow;
-			@include box-shadow(0 0 0 1px $yellow);
-		}
+		background-color: lighten($yellow, 20%);
+		border: solid $yellow;
+		border-width: 0px 3px 0px 5px;
+		margin: $line-height-em 0;
+		padding: 2%;
 
 		p {
 			color: darken($yellow, 50%);
-			padding: 2%;
+			margin-bottom: 0;
 		}
 	}
 
 	&-high {
-		background-color: lighten($red, 25%);
-
-		&:before {
-			background-color: $red;
-			@include box-shadow(0 0 0 1px $red);
-		}
+		background-color: lighten($red, 33%);
+		border: solid $red;
+		border-width: 0px 3px 0px 5px;
+		margin: $line-height-em 0;
+		padding: 2%;
 
 		p {
 			color: darken($red, 50%);
-			padding: 2%;
+			margin-bottom: 0;
 		}
 	}
 
 	&-clear {
-		background-color: lighten($lightgray, 100%);
-		@include box-shadow(0 0 0 1px $lightgray);
+		background-color: lighten($lightgray, 15%);
+		border: solid lighten($lightgray, 5%);
+		border-width: 0px 3px 0px 5px;
+		margin: $line-height-em 0;
+		padding: 2%;
 
 		p {
 			color: #000;
-			padding: 2%;
+			margin-bottom: 0;
 		}
 	}
 
