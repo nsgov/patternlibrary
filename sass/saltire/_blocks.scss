@@ -109,6 +109,11 @@
 
 }
 
+.secondary-content {
+	@include textblock($lightgray, 15%);
+	font-size: $font-size-base;
+}
+
 // SERVICES AND PROGRAMS
 
 .directory-listing-row { // reusable style that can be used on views that return a listing
@@ -434,15 +439,11 @@ hr.document-details {margin: 0 0 1.5em 0;}
 // Universal Survey Block //
 
 #feedback {
-	background-color: lighten($cyan, 35%);
-	border: solid $cyan;
-	border-width: 0px 3px 0px 5px;
+	@include messageblock($cyan, 35%);
 	clear: both;
 	color: #000;
 	display: block;
 	font-size: $font-size-large;
-	margin: $line-height-em 0;
-	padding: 2%;
 	width: 100%;
 
 	a {background: transparent;}

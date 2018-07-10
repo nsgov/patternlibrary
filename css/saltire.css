@@ -1917,6 +1917,12 @@ input[type="button"].btn-block {
   #summary p, .summary p {
     margin-bottom: 0; }
 
+.secondary-content {
+  background-color: #f8f8f8;
+  margin: 1.6875em 0;
+  padding: 2%;
+  font-size: 14px; }
+
 .directory-listing-row {
   border-bottom: 1px solid #eeeeee;
   margin-bottom: 1em;
@@ -2196,12 +2202,12 @@ hr.document-details {
   background-color: #a3e6ff;
   border: solid #00aeef;
   border-width: 0px 3px 0px 5px;
+  margin: 1.6875em 0;
+  padding: 2% 4%;
   clear: both;
   color: #000;
   display: block;
   font-size: 17.5px;
-  margin: 1.6875em 0;
-  padding: 2%;
   width: 100%; }
   #feedback a {
     background: transparent; }
@@ -3447,7 +3453,7 @@ footer,
     border: solid #5cb84c;
     border-width: 0px 3px 0px 5px;
     margin: 1.6875em 0;
-    padding: 2%; }
+    padding: 2% 4%; }
     .alert-success p {
       color: #020401;
       margin-bottom: 0; }
@@ -3456,7 +3462,7 @@ footer,
     border: solid #0058a4;
     border-width: 0px 3px 0px 5px;
     margin: 1.6875em 0;
-    padding: 2%; }
+    padding: 2% 4%; }
     .alert-low p {
       color: black;
       margin-bottom: 0; }
@@ -3465,7 +3471,7 @@ footer,
     border: solid #f8d44c;
     border-width: 0px 3px 0px 5px;
     margin: 1.6875em 0;
-    padding: 2%; }
+    padding: 2% 4%; }
     .alert-medium p {
       color: #423503;
       margin-bottom: 0; }
@@ -3474,16 +3480,16 @@ footer,
     border: solid #e2231a;
     border-width: 0px 3px 0px 5px;
     margin: 1.6875em 0;
-    padding: 2%; }
+    padding: 2% 4%; }
     .alert-high p {
       color: black;
       margin-bottom: 0; }
   .alert-clear {
     background-color: #f8f8f8;
-    border: solid #dfdfde;
+    border: solid #d2d3d1;
     border-width: 0px 3px 0px 5px;
     margin: 1.6875em 0;
-    padding: 2%; }
+    padding: 2% 4%; }
     .alert-clear p {
       color: #000;
       margin-bottom: 0; }

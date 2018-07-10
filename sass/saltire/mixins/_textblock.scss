@@ -1,0 +1,5 @@
+@mixin textblock($color, $percentage) {
+  background-color: lighten($color, $percentage);
+  margin: $line-height-em 0;
+  padding: 2%;
+}

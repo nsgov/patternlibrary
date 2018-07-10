@@ -8,70 +8,29 @@
 		font-weight: $font-weight-bold;
 	}
 
-
 	&-success {
-		background-color: lighten($green, 30%);
-		border: solid $green;
-		border-width: 0px 3px 0px 5px;
-		margin: $line-height-em 0;
-		padding: 2%;
-		p {
-			color: darken($green, 50%);
-			margin-bottom: 0;
-		}
+		@include messageblock($green, 30%);
+		p {color: darken($green, 50%); margin-bottom: 0;}
 	}
 
-
 	&-low {
-		background-color: lighten($blue, 55%);
-		border: solid $blue;
-		border-width: 0px 3px 0px 5px;
-		margin: $line-height-em 0;
-		padding: 2%;
-
-		p {
-			color: darken($blue, 50%);
-			margin-bottom: 0;
-		}
+		@include messageblock($blue, 55%);
+		p {color: darken($blue, 50%); margin-bottom: 0;}
 	}
 
 	&-medium {
-		background-color: lighten($yellow, 20%);
-		border: solid $yellow;
-		border-width: 0px 3px 0px 5px;
-		margin: $line-height-em 0;
-		padding: 2%;
-
-		p {
-			color: darken($yellow, 50%);
-			margin-bottom: 0;
-		}
+		@include messageblock($yellow, 20%);
+		p {color: darken($yellow, 50%); margin-bottom: 0;}
 	}
 
 	&-high {
-		background-color: lighten($red, 33%);
-		border: solid $red;
-		border-width: 0px 3px 0px 5px;
-		margin: $line-height-em 0;
-		padding: 2%;
-
-		p {
-			color: darken($red, 50%);
-			margin-bottom: 0;
-		}
+		@include messageblock($red, 33%);
+		p {color: darken($red, 50%); margin-bottom: 0;}
 	}
 
 	&-clear {
-		background-color: lighten($lightgray, 15%);
-		border: solid lighten($lightgray, 5%);
-		border-width: 0px 3px 0px 5px;
-		margin: $line-height-em 0;
-		padding: 2%;
-
-		p {
-			color: #000;
-			margin-bottom: 0;
-		}
+		@include messageblock($lightgray, 15%);
+		p {color: #000; margin-bottom: 0;}
 	}
 
 	&-in-view {

@@ -1,0 +1,7 @@
+@mixin messageblock($color, $percentage) {
+  background-color: lighten($color, $percentage);
+  border: solid $color;
+  border-width: 0px 3px 0px 5px;
+  margin: $line-height-em 0;
+  padding: 2% 4%;
+}
