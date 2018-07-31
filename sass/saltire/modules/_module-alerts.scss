@@ -38,3 +38,7 @@
 		@include animation-timing-function(cubic-bezier(1, .3, .5, 1.5));
 	}
 }
+
+.highlight {
+		@include textblock($yellow, 20%);
+}

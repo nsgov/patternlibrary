@@ -1,3 +1,13 @@
+.loading {
+  display: block;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+
+  img {margin: 1.5em auto;}
+}
+
+
 @-webkit-keyframes from_left {
   from {
     -webkit-transform: translateX(-150%);

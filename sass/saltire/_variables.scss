@@ -99,6 +99,8 @@ $font-size-h4:            1.15em !default;        // ~18.4px
 $font-size-h5:            1em !default;           // ~16px
 $font-size-h6:            0.875em !default;       // ~14px
 
+$font-size-summary:       1.45em !default;        // ~23.2px
+
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.6875 !default; // 20/14
 $line-height-em:          $line-height-base * 1em;
@@ -109,7 +111,7 @@ $line-height-computed:    floor((16px * $line-height-base)) !default; // ~20px
 $headings-font-family:    $font-family-sans-serif !default;
 $headings-font-weight:    400 !default;
 $headings-line-height:    1.25 !default;
-$headings-color:          $gray-dark !default;
+$headings-color:          $gray-base !default;
 
 //== Components
 //
@@ -127,8 +129,8 @@ $padding-small-horizontal:  10px !default;
 $padding-xs-vertical:       1px !default;
 $padding-xs-horizontal:     5px !default;
 
-$line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
-$line-height-small:         1.5 !default;
+$line-height-small:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-large:         1.5 !default;
 
 $border-radius-base:        4px !default;
 $border-radius-large:       6px !default;
@@ -192,6 +194,10 @@ $btn-warning-border:             transparent !default;
 $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:             transparent !default;
+
+$btn-clear-color:              $blue !default;
+$btn-clear-bg:                 #fff !default;
+$btn-clear-border:             $blue !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 

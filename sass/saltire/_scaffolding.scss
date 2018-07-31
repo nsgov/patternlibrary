@@ -50,6 +50,9 @@ a {
   &:focus {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
+
+    #main + & {color: $link-color;}
+
   }
 
   &:active, &:focus, &:hover {

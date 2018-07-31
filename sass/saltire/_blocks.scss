@@ -97,22 +97,32 @@
 // COMMON elements
 
 #summary, .summary {
-	background-color: lighten($lightgray, 10%);
-	border: solid darken($lightgray, 50%);
-	border-width: 0px 3px 0px 5px;
-	margin: $line-height-em 0;
-	padding: 2%;
-	font-size: $font-size-h4;
-	color: #000;
+	font-size: $font-size-summary;
+	color: $gray;
+	margin-bottom: $line-height-computed;
+	border-bottom: 1px solid $gray-lighter;
+	padding-bottom: $line-height-computed;
 
 	p {margin-bottom: 0;}
 
 }
 
+figcaption {// Removes block treatment from summary that appears inside a figure caption
+	#summary, .summary {
+		background-color: transparent;
+		margin: 0;
+		padding: 0;
+		border-bottom: none;
+		font-size: $font-size-h5;
+		color: #000;}
+}
+
 .secondary-content {
-	@include textblock($lightgray, 15%);
+	@include textblock($lightgray, 12%);
 	font-size: $font-size-base;
 }
+
+
 
 // SERVICES AND PROGRAMS
 
@@ -139,8 +149,30 @@
 
 #meta-publication-type, .pub-details .item-list {@include delimited-list;}
 
+.document-collection-item-teaser {margin-bottom: 0px;}
+.document-collection-item-details { // unordered list used in Document Collection view under teaser
+			@include inline-list;
+			margin-top: 0px;
+			font-size: $font-size-small;
+			color: $gray-light;
+			li {
+				&:after {
+					content: ", ";
+				}
+				&:last-child {
+					&:after {
+						content: "";
+					}
+				}
+		}
+}
+
 // Style for before & after HR containing document details
-hr.document-details {margin: 0 0 1.5em 0;}
+hr.document-details {
+	margin: 0 0 1.5em 0;
+}
+
+
 
 .field--name-field-document-thumbnail,
 .document-thumbnail-container {
@@ -290,6 +322,8 @@ hr.document-details {margin: 0 0 1.5em 0;}
 
 .accessibility-email {
 	font-size: $font-size-small;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
 }
 
 #legislative-acts, #related-information, #minister-link {
@@ -306,6 +340,12 @@ hr.document-details {margin: 0 0 1.5em 0;}
 	}
 }
 
+// Forms: Applications, Licenses and Permits, Submitted and not submitted to Government
+
+.call-to-action-button { // manage whitespace depending on whether there is descriptive text preceeding the button
+	h2 + & {margin-top: $line-height-computed;}
+	p + & {margin-top: 0px;}
+}
 
 // Department Profile
 
@@ -439,15 +479,14 @@ hr.document-details {margin: 0 0 1.5em 0;}
 // Universal Survey Block //
 
 #feedback {
-	@include messageblock($cyan, 35%);
 	clear: both;
-	color: #000;
 	display: block;
 	font-size: $font-size-large;
-	width: 100%;
+	margin: 1em 0;
+	padding: 2em 0;
 
-	a {background: transparent;}
-	a:hover, a:focus {background: transparent;}
+	p {margin-top: 1.5em;}
+	.btn-lg {margin-right: 1em;}
 }
 
 // About the Project page //
