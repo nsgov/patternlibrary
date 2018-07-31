@@ -31,7 +31,8 @@
 </head>
 <body>
 <div id="patternlab-header">
-  <div class="site-title"><a href="https://cns.pages.novascotia.ca/patternlab/">Province of Nova Scotia UI Pattern Library</a></div>
+  <img src="img/ns-vip-white.svg" alt="Province of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
+  <div class="main-link"><a href="https://cns.pages.novascotia.ca/patternlab/">Main page</a></div>
 </div>
 
 <div class="pattern-container">
