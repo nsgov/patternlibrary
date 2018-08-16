@@ -64,7 +64,6 @@ a.btn {
   }
 }
 
-
 // Alternate buttons
 // --------------------------------------------------
 
@@ -222,4 +221,19 @@ input[type="button"] {
   &.btn-block {
     width: 100%;
   }
+}
+
+
+// Buttons for Drupal webform
+// --------------------------------------------------
+
+.webform-button--submit {
+    @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+    // line-height: ensure even-numbered height of button next to large input
+    @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+    text-decoration: none;
+    margin: ($line-height-computed * 2) auto;
+    &:hover,
+    &:focus,
+    &:active {text-decoration: none;}
 }

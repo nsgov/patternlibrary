@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Author: Able Sense Media
 Web: ablesense.com
@@ -2371,6 +2372,14 @@ p + .call-to-action-button {
 .project-details {
   clear: both; }
 
+.profile-features {
+  margin: 1.940625em 0;
+  padding: 1.940625em 0; }
+  .profile-features:before {
+    border-top: 1px solid #d2d3d1; }
+  .profile-features:after {
+    border-bottom: 1px solid #d2d3d1; }
+
 .profile-stories section {
   min-height: 100px; }
 .profile-stories h3 {
@@ -2459,24 +2468,25 @@ p + .call-to-action-button {
 @media only screen and (max-width: 767px) {
   .col-underline {
     position: relative; } }
-.pdf {
-  position: relative;
-  padding-left: 1.25em; }
-  .pdf:before {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    width: 1em;
-    height: 2em;
-    font-size: 1em;
-    background-position: center -9em;
-    background-size: auto 148.5em;
-    background-repeat: no-repeat;
-    background-image: url(/clf/saltire/img/sprite-icons.svg); }
-    .no-svg .pdf:before {
-      background-position: center -9em;
-      background-image: url(/clf/saltire/img/sprite-icons.png); }
+.border-bottom {
+  border-bottom: 1px solid #d2d3d1;
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em; }
+
+.border-left {
+  border-left: 1px solid #d2d3d1;
+  margin-left: 1.5em;
+  padding-left: 1.5em; }
+
+.border-right {
+  border-right: 1px solid #d2d3d1;
+  margin-right: 1.5em;
+  padding-right: 1.5em; }
+
+.border-top {
+  border-top: 1px solid #d2d3d1;
+  margin-top: 1.5em;
+  padding-top: 1.5em; }
 
 .hide-bullets, .hide-bullets ul {
   list-style: none; }
@@ -3231,13 +3241,12 @@ footer,
     box-shadow: none;
     float: left; }
     .breadcrumbs a:after {
-      font-family: "FontAwesome";
-      content: '\f054';
+      content: ' »';
       float: right;
-      margin: 0 .25em 0 .25em;
+      margin: 0 .15em 0 .5em;
       width: 1em;
       height: 1em;
-      font-weight: 300; }
+      font-weight: 100; }
   .breadcrumbs.has-hero-headline {
     position: absolute;
     z-index: 2;

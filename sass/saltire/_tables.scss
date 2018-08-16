@@ -239,3 +239,32 @@ table {
     }
   }
 }
+
+
+// Special table class for Notice Listings
+
+.notices {
+  > tbody > tr {
+      &:nth-of-type(odd) {
+        background-color: $table-bg-accent;
+      }
+      &:last-of-type {
+        border-bottom: 1px solid;
+          td {border-bottom-style: solid;}
+      }
+    }
+
+  thead {
+    background: $gray-lighter;
+    border: 1px solid $table-border-color;
+  }
+
+  td {
+    border: 1px solid $table-border-color;
+    border-style: hidden solid;
+
+    .document-details {}
+    .notices-date {text-align: right; width: 12em;}
+    &.fiscal-year {min-width: 8em;}
+  }
+}

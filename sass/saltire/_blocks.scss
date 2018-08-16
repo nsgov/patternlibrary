@@ -172,93 +172,59 @@ hr.document-details {
 	margin: 0 0 1.5em 0;
 }
 
-
-
-.field--name-field-document-thumbnail,
-.document-thumbnail-container {
-	margin-bottom: 1.5em;
-	img	{
-		border: 1px solid $gray-lighter;
-			// &:after {
-			//width: 100%;
-			//max-width: 200px;
-			//content:'';
-			//  top: 0;
-			// left: 0;
-			// z-index: 10;
-			// height: 100%;
-			// display: block;
-			// position: absolute;
-			// background: black;
-			// opacity: 0.05;
-			//	margin: 0;
-			//	padding: 0;
-		}
-	}
-
-
-.document-thumbnail-container {
-	width:80%;
+.document-link-container {
+	border-top: 1px solid #eee;
+	margin: 1em 0 0;
+	padding: 1.5em 0;
 	position: relative;
-	top:0;
-	left:0;
-	max-width:160px;
+	overflow: hidden;
+
+	.document-link {
+		display: block;
+		text-decoration: none;
+		&:focus, &:hover { text-decoration: none; }
+
+		.document-title {
+	  	display: block;
+	  	font-size: 120%; /*?*/
+	  	font-weight: normal;
+	  	text-decoration: underline;
+	  }
+		.document-details {
+	  	color: #444; /* regular body text color */
+	  	display: block;
+	  }
+	}
+
+	.document-title {
+		display: inline-block;
+		font-size:120%;
+		font-weight:normal;
+		display: inline-block;
+		div {display: inline;}
+	}
+
+
+	.corporate-report { /* USED ON CORPORATE REPORTS VIEW */
+		width: 70%;
+		display: inline-block;
+	}
+
+	.document-thumbnail-container {
+		float: left;
+  	width: 25%;
+  	max-width: 160px;
+  	margin: 0 4% 0 0;
+
+		img	{border: 1px solid $gray-lighter;}
+	}
+	.accessibility-email {
+  	/* what's there now, plus: */
+  	float: left;
+  	max-width: 70%;
+  }
 }
 
-
-
-.document-title {
-	display: inline-block;
-	font-size:120%;
-	font-weight:normal;
-	display: inline-block;
-	div {display: inline;}
-
-	.file--mime-application-pdf {
-		a {
-			&:before {
-					display: inline;
-				  font: normal normal normal 14px/1 FontAwesome;
-				  font-size: inherit;
-				  text-rendering: auto;
-				  -webkit-font-smoothing: antialiased;
-				  -moz-osx-font-smoothing: grayscale;
-					padding-right: 3px;
-					content: '\f1c1';
-			}
-		}
-	}
-
-	.file--mime-application-vnd-openxmlformats-officedocument-spreadsheetml-sheet {
-		a {
-			&:before {
-					display: inline;
-					font: normal normal normal 14px/1 FontAwesome;
-					font-size: inherit;
-					text-rendering: auto;
-					-webkit-font-smoothing: antialiased;
-					-moz-osx-font-smoothing: grayscale;
-					padding-right: 3px;
-					content: '\f1c3';
-			}
-		}
-	}
-
-	.file--mime-application-vnd-openxmlformats-officedocument-wordprocessingml-document {
-		a {
-			&:before {
-					display: inline;
-					font: normal normal normal 14px/1 FontAwesome;
-					font-size: inherit;
-					text-rendering: auto;
-					-webkit-font-smoothing: antialiased;
-					-moz-osx-font-smoothing: grayscale;
-					padding-right: 3px;
-					content: '\f1c2';
-			}
-		}
-	}
-}
 
 .document-author,
 .document-updated,
@@ -267,12 +233,6 @@ hr.document-details {
 	div {display: inline;}
 }
 
-.document-link-container {
-	position:relative;
-	margin:1em 0;
-	padding-left:128px;
-	min-height:130px;
-}
 
 .document-filesize {
 	margin-bottom: 0.5em;
@@ -461,6 +421,7 @@ hr.document-details {
 
 #features, .features, #about-government {display: block; clear: both; margin: $line-height-computed auto;}
 
+
 #home-about-government {
 	display: block;
 	h2 {font-size: $font-size-h1; color: $darkestblue;}
@@ -501,7 +462,14 @@ hr.document-details {
 .project-centered-button {clear: both; margin: $line-height-computed auto; text-align: center;}
 .project-details {clear: both;}
 
+.profile-features {
 
+		&:before {border-top: 1px solid $lightgray;}
+		&:after{border-bottom: 1px solid $lightgray;}
+
+  margin: ($line-height-em * 1.15) 0;
+  padding: ($line-height-em * 1.15) 0;
+}
 // STORY NOT STORY //
 
 .profile-stories {

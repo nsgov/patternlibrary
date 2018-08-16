@@ -42,7 +42,11 @@
 
 <p>For starting a service, the button text should contain a clear call to action to "Start" the service.</p>
 
-<p>Please note: If you are using a button outside of a form, instead of &lsquo;button&rsquo; use &lsquo;a&rsquo; - the classes work on both and the front end result is identical.</p>
+<p>Please note:</p>
+<ul>
+  <li>If you are using a button outside of a form, instead of &lsquo;button&rsquo; use &lsquo;a&rsquo; - the classes work on both and the front end result is identical.</li>
+  <li>Green buttons are intended for use as the main call to action on a page - you should never use more than one green button on a page. If your page has a few different calls to action - use blue (default).</li>
+</ul>
 
 <!-- BUTTONS -->
 <?php

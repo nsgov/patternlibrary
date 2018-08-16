@@ -112,7 +112,6 @@ input[type="checkbox"] {
 }
 
 
-
 // Feedback states
 .has-success {
   @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
