@@ -42,3 +42,39 @@
 .highlight {
 		@include textblock($yellow, 20%);
 }
+
+
+.blockquote-alert {
+  color: #000;
+  margin: 2em 0;
+  padding: 2em 0;
+  border: 1px solid $gray-light;
+  border-width: 1px 0;
+
+  .fa {font-size: $font-size-h1; float: left; margin: 0 0.5em 1em 0;}
+  p {
+    margin-bottom: 0;
+    & + p {margin-bottom: 1.5em;}
+  }
+}
+
+// Site alert - full browser width on top of page
+#news-alert-bar {
+	display: none;
+  &.has-news-alerts {
+  			display: block;
+  			background: $yellow;
+  			text-align: center;
+  			margin: 0;
+  			float: left;
+				width: 100%; /* gets rid of mystery space above alert bar */
+  		}
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .news-alert {
+    color: #444;
+  }
+}

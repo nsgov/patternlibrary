@@ -54,10 +54,31 @@
 
 // Homepage Most Requested
 .most-requested {
-	background-color: $darkestblue;
+	background-color: $blue;
 	color: #fff;
 	padding: 2em 0;
-	a, h2 {color: #fff;}
+	a {color: #fff; font-size: $font-size-h4; line-height: $line-height-em;
+
+		&:hover, &:focus, &:active {color: #000; background: #fff;}
+	}
+	h2 {
+		color: lighten($lightestblue, 30%);
+		margin-top: 0;
+		padding-top: 0;}
+	ul {
+		margin: 0;
+		li {margin-bottom: 1.25em;}
+	}
+ &.dept-profile {
+	 a {font-size: $font-size-h4;}
+ }
+}
+
+.department-most-requested {
+	ul {
+		 padding-left: 1em;
+		li {margin-bottom: ($line-height-em * .5);}
+	}
 }
 
 
@@ -95,13 +116,25 @@
 
 
 // COMMON elements
+//
+// #summary, .summary {
+// 	font-size: $font-size-summary;
+// 	color: $gray;
+// 	margin-bottom: $line-height-computed;
+// 	border-bottom: 1px solid $gray-light;
+// 	padding-bottom: $line-height-computed;
+//
+// 	p {margin-bottom: 0;}
+//
+// }
 
 #summary, .summary {
+	@include textblock($lightgray, 12%);
 	font-size: $font-size-summary;
-	color: $gray;
-	margin-bottom: $line-height-computed;
-	border-bottom: 1px solid $gray-lighter;
-	padding-bottom: $line-height-computed;
+	border: 1px solid $gray-light;
+	border-width: 0 2px 0 5px;
+	color: #000;
+	padding: 1.35em;
 
 	p {margin-bottom: 0;}
 
@@ -112,7 +145,8 @@ figcaption {// Removes block treatment from summary that appears inside a figure
 		background-color: transparent;
 		margin: 0;
 		padding: 0;
-		border-bottom: none;
+		border: none;
+		border-width: 0;
 		font-size: $font-size-h5;
 		color: #000;}
 }
@@ -122,7 +156,9 @@ figcaption {// Removes block treatment from summary that appears inside a figure
 	font-size: $font-size-base;
 }
 
-
+// .secondary-content {
+//
+// }
 
 // SERVICES AND PROGRAMS
 
@@ -149,6 +185,7 @@ figcaption {// Removes block treatment from summary that appears inside a figure
 
 #meta-publication-type, .pub-details .item-list {@include delimited-list;}
 
+.document-collection-item {margin-bottom: 1.35em;}
 .document-collection-item-teaser {margin-bottom: 0px;}
 .document-collection-item-details { // unordered list used in Document Collection view under teaser
 			@include inline-list;
@@ -167,13 +204,29 @@ figcaption {// Removes block treatment from summary that appears inside a figure
 		}
 }
 
+.document-category { // unordered list used in Document Collection view under teaser
+			@include inline-list;
+			margin-top: 0px;
+			display: inline-block;
+			li {
+				&:after {
+					content: ", ";
+				}
+				&:last-child {
+					&:after {
+						content: "";
+					}
+				}
+		}
+}
+
 // Style for before & after HR containing document details
 hr.document-details {
 	margin: 0 0 1.5em 0;
 }
 
 .document-link-container {
-	border-top: 1px solid #eee;
+	border-top: 1px solid $gray-light;
 	margin: 1em 0 0;
 	padding: 1.5em 0;
 	position: relative;
@@ -309,11 +362,28 @@ hr.document-details {
 
 // Department Profile
 
+.department-summary {
+	font-size: $font-size-h4;
+	p {line-height: 2em;}
+
+	#summary {
+		background: transparent;
+		font-size: $font-size-h4;
+		border: none;
+		border-width: 0;
+		color: #000;
+		padding: 0;
+
+		p {margin-bottom: 0;}
+	}
+}
+
+
 #social-media-account, #department, #media-contact, #corp-info, #announcements {
 	ul, li {list-style: none; margin-left: 0; padding-left: 0;}
 }
 
-.about-link {font-size: $font-size-h3; margin-bottom: $line-height-computed; display: block;}
+.about-link {font-size: $font-size-h4; margin-bottom: $line-height-computed; display: block;}
 
 #social-media-account .fa {font-size: 1.5em;}
 
@@ -450,6 +520,14 @@ hr.document-details {
 	.btn-lg {margin-right: 1em;}
 }
 
+.helpful-form, #block-views-block-content-id-for-links-was-this-page-helpful-link {
+	display: block;
+	clear: both;
+	border-top: 1px solid $gray-light;
+	padding-top: ($line-height-em * 1.15);
+	margin-top: ($line-height-em * 1.15);
+}
+
 // About the Project page //
 
 .project-site-links {padding: 1.25em; margin-bottom: 2em; background-color: lighten($green, 30%)}
@@ -464,8 +542,8 @@ hr.document-details {
 
 .profile-features {
 
-		&:before {border-top: 1px solid $lightgray;}
-		&:after{border-bottom: 1px solid $lightgray;}
+		&:before {border-top: 1px solid $gray-light}
+		&:after{border-bottom: 1px solid $gray-light}
 
   margin: ($line-height-em * 1.15) 0;
   padding: ($line-height-em * 1.15) 0;

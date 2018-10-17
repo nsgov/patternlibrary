@@ -1,5 +1,5 @@
 ul.icon-list {
-  margin: 2em 0; padding: 0;
+  margin: 2em 0 2em .5em; padding: 0;
 
   li {
   	padding: 0;
@@ -35,6 +35,8 @@ ul.icon-list {
   li.flickr:before 		         	{content: '\f16e';}
   li.tumblr:before 		         	{content: '\f174';}
   li.medium:before 		         	{content: '\f23a';}
+  li.instagram:before 		      {content: '\f16d';}
+  li.linkedin:before 		        {content: '\f08c';}
 // Other
   li.external-link:before 			{content: '\f08e';}
   li.office:before              {content: '\f0f7';}

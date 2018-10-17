@@ -100,8 +100,6 @@ mark {
 .big-number {font-size: 10em; line-height: .85em; display: block; margin-top: .15em;}
 .lg-number {font-size: 5em;}
 
-.topic a {font-size: $font-size-h3;}
-
 // Lists
 // -------------------------
 
@@ -228,20 +226,6 @@ blockquote.pull-right {
   }
 }
 
-.blockquote-alert {
-  color: #000;
-  margin: 2em 0;
-  padding: 2em 0;
-  border: 1px solid $gray-lighter;
-  border-width: 1px 0;
-
-  .fa {font-size: $font-size-h1; float: left; margin: 0 0.5em 1em 0;}
-  p {
-    margin-bottom: 0;
-    & + p {margin-bottom: 1.5em;}
-  }
-
-}
 
 // Addresses
 address {
@@ -278,3 +262,9 @@ p.feature-link {
   text-transform: lowercase;
     &::first-letter {text-transform: uppercase;}
 }
+
+
+// home-topics
+h2.topic-title,
+h3.topic-title,
+h4.topic-title {font-size: $font-size-large; margin-bottom: 0;}

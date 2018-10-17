@@ -60,7 +60,7 @@ $text-color:            #444 !default; // contrast ratio of at least 4.5:1 on a 
 //** Global link color.
 $link-color:            $blue !default;
 //** Link hover color
-$link-hover-color:      lighten($link-color, 15%) !default;
+$link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
@@ -99,7 +99,7 @@ $font-size-h4:            1.15em !default;        // ~18.4px
 $font-size-h5:            1em !default;           // ~16px
 $font-size-h6:            0.875em !default;       // ~14px
 
-$font-size-summary:       1.45em !default;        // ~23.2px
+$font-size-summary:       1.35em !default;        // ~23.2px
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.6875 !default; // 20/14
@@ -219,7 +219,7 @@ $input-bg-disabled:              $gray-lighter !default;
 //** Text color for `<input>`s
 $input-color:                    $gray !default;
 //** `<input>` border color
-$input-border:                   #ccc !default;
+$input-border:                   lighten($gray, 30%) !default;
 
 $input-border-radius:            $border-radius-base !default;
 //** Large `.form-control` border radius

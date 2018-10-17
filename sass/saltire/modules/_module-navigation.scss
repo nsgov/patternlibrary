@@ -55,7 +55,7 @@
 
 	&-container {
 		// Angles in the top right of the header
-		form:before,
+		.search-box:before,
 		&:before,
 		&:after {
 			content: '';
@@ -72,12 +72,12 @@
 			@include skewX(-30deg);
 		}
 
-		form:before {
+		.search-box:before {
 			top: -200%;
 			right: -1000%;
 			height: 400%;
-			width: 1180%;
-			margin: 0 -22em;
+			width: 1070%;
+			margin: 0 -42em;
 			opacity: .15;
 		}
 
@@ -262,6 +262,8 @@
 		margin-top: .5em;
 		border: none;
 		background: $blue;
+
+		max-height: 3.1em; // temporary fix for french menu items wrapping
 
 		.menu {
 			li {

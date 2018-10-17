@@ -22,7 +22,7 @@ footer,
 	float: left;
 	margin: 0;
 	padding: .33em 0;
-	color: $blue;
+	color: $text-color;
 	list-style: none;
 
 	li {
@@ -30,16 +30,18 @@ footer,
 	}
 
 	a {
+		color: $blue;
 		position: relative;
-		text-decoration: none;
 		background: none;
 		@include box-shadow(none);
 		float: left;
+	}
 
-		&:after {
-			content: ' »';
-			float: right;
-			margin: 0 .15em 0 .5em;
+	span {
+		&:before {
+			content: '»';
+			float: left;
+			margin: 0 0em 0 .5em;
 			width: 1em;
 			height: 1em;
 			font-weight: 100;

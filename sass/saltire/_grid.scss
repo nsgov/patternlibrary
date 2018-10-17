@@ -10,16 +10,19 @@
   display: grid;
 
   &.topic {
+    h2 {font-size: $font-size-large;}
     align-items: start;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 2.5rem; 
+    grid-gap: 0rem 2rem;
+
+    h3 {font-size: $font-size-large;}
   }
+
 
   &.contact {
     align-items: start;
-    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-    grid-gap: 1rem;
-
+    // grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    // grid-gap: 1rem;
 
     section {
       border-bottom: 1px solid $gray-lighter;
@@ -31,6 +34,10 @@
       }
 
       article {
+        max-width: 100%;
+
+        h2, h3 {word-wrap: normal;}
+
         &:target {
           		@include textblock($yellow, 20%);
         }

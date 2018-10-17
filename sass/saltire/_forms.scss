@@ -37,6 +37,13 @@ label {
   }
 }
 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  border: 1px solid $input-border;
+}
 
 // Normalize form controls
 //
@@ -124,4 +131,48 @@ input[type="checkbox"] {
 .has-error {
   @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
   color: $state-danger-text;
+}
+
+
+// Drupal specific form styles
+.webform-content h1 {display: none;} // Hide the mysterious duplicate H1 on webform pages that trail after the form.
+.webform-button--reset {display: none} // Hide reset button
+.webform-submission-form {
+  input, select, textarea {margin-bottom: 1.5em; max-width: 100%;}
+}
+
+.webform-submission-access-ns-online-enquiry-form-form {
+  .webform-submission-form {
+    .form-email {width: 30em;}
+    .form-tel {width: 15em;}
+  }
+}
+
+
+
+//  Search widget for Programs & Services and Notices
+
+#search-widget {
+  @include textblock($lightgray, 12%);
+  h2 { margin-top: .5em; }
+  label {margin: .5em auto 0 auto; padding-bottom: 0;}
+
+  .btn-lg {margin:0;}
+  .form-text {margin: 0 .5em 1em 0; width: 100%;}
+  .filter-field {
+    display: inline-block; margin-right: 1em;
+    label {display: inline-block; margin: .5em auto 0 auto; padding: 0 0.5em 0 0;}
+  }
+  p {
+    margin-bottom: 0;
+    label {display: inline;}
+  }
+
+  &.notices {
+    background: $table-bg-active;
+    border: 1px solid $table-border-color;
+    border-width: 1px 1px 0 1px;
+    margin-bottom: 0;
+    .form-text {max-width: 20em;}
+  }
 }
