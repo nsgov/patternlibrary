@@ -34,7 +34,7 @@
     <li><a href="forms.html">Form elements</a></li>
     <li><a href="icons.html">Icons</a></li>
     <li><a href="lists.html">Lists</a></li>
-    <li><a href="logos.html">Logos</a></li>
+    <!-- <li><a href="logos.html">Logos</a></li> -->
     <li><a href="messages.html">Messages/Feedback</a></li>
     <li><a href="navigation.html">Navigation and structural elements</a></li>
     <li><a href="pages.html">Pages</a></li>
