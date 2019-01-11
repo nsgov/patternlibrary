@@ -54,8 +54,8 @@
 		</p>
 	</li>
 	<li>
-		<p>
-			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-English-3Col-White-Wordmark/NS-Gov-Logo-2016-English-3Col-(White-WM).png" alt="Full colour logo with white wordmark" />
+		<p style="background: #000; padding: 1em;">
+			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-English-3Col-White-Wordmark/NS-Gov-Logo-2016-English-3Col-(White-WM).png" style="max-width: 200px; height: auto;" alt="Full colour logo with white wordmark" />
 		</p>
 		<p>
 			<a href="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English-English-3Col-White-Wordmark.zip">English - Full colour with a white wordmark (ZIP Archive, 815 KB)</a>
@@ -63,7 +63,7 @@
 	</li>
 	<li>
 		<p>
-			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-Blue/NS%20Gov%20Logo%202016%20English%20Blue.jpg" alt="Blue logo" />
+			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-Blue/NS%20Gov%20Logo%202016%20English%20Blue.jpg" style="max-width: 200px; height: auto;" alt="Blue logo" />
 		</p>
 		<p>
 			<a href="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English-Blue.zip">English - Blue (ZIP Archive, 1.5 MB)</a>
@@ -71,15 +71,15 @@
 	</li>
 	<li>
 		<p>
-			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-Black/NS%20Gov%20Logo%202016%20English%20Black.jpg" alt="Black logo" />		
+			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-Black/NS%20Gov%20Logo%202016%20English%20Black.jpg" style="max-width: 200px; height: auto;" alt="Black logo" />		
 		</p>
 		<p>
 			<a href="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English-Black.zip">English - Black (ZIP Archive, 685 KB)</a>
 		</p>
 	</li>
 	<li>
-		<p>
-			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-White/NS-Gov-Logo-2016-English-White.png" alt="White logo" />
+		<p style="background: #000; padding: 1em;">
+			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-White/NS-Gov-Logo-2016-English-White.png" style="max-width: 200px; height: auto;" alt="White logo" />
 		</p>
 		<p>
 			<a href="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English-White.zip">English - White (ZIP Archive, 519 KB)</a>
