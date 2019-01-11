@@ -40,15 +40,7 @@
 
 <p>These blocks are used to provide action based feedback or communicate critical information.</p>
 
-<p>There are four different kinds:</p>
-
-<ul>
-  <li>Success (green): if a user action was successful, or if a program or service is now open or available.</li>
-  <li>Warning (yellow): if a user action was only partially successful, or if a program or service is now closed.</li>
-  <li>Error (red): if a user action has failed</li>
-  <li>Information (blue): for basic information related to the user task.</li>
-  <li>Clear: for general information (not currently in use).</li>
-</ul>
+<p>Recently, these patterns have been revisited and simplified.</p>
 
 <!-- MESSAGES AND FEEDBACK -->
 

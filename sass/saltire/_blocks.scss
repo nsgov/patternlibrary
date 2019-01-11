@@ -362,6 +362,18 @@ hr.document-details {
 
 // Department Profile
 
+.content-logo {
+	display: block;
+	clear: both;
+	img {display: block; max-width: 150px; max-height: 150px; margin-bottom: 1.5em;}
+	&.small {max-width: 100px; max-height: 100px; margin-top: 1.5em;}
+} 
+@media only screen and (max-width: $screen-sm-max) {
+	.content-logo {
+		img {max-width: 100px; max-height: 100px;}
+	}
+}
+
 .department-summary {
 	font-size: $font-size-h4;
 	p {line-height: 2em;}
