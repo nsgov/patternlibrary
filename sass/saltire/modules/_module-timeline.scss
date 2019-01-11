@@ -1,0 +1,33 @@
+// Ordered list timeline
+.timeline {
+	ol {
+		.timeline-item {counter-increment: section; margin: 0px 0px;
+			.step-content {
+				border-left: 1px solid #ccc;
+				padding-left: 120px;
+				width: 100%;
+				position: relative;
+				padding-right: 15px;
+				margin-left: 20px;
+				display:block;
+				padding-bottom: 2em;
+			}
+			.step-counter {
+				font-weight: bold;
+				position: absolute;
+				left: -30px;
+				background: #333;
+				color: #fff;
+				text-align: center;
+				padding: 10px 10px;
+				border-radius: 6px;
+			}
+		
+			&:last-of-type .step-content {border-left: none;}
+
+		}
+		.highlighted {background: #ffecad; border-radius: 6px; padding: 2em 2em 1em 2em;}
+		li {margin: 0;}
+	}
+	h3 {margin-top: 0px;}
+}

@@ -38,7 +38,7 @@
 <div class="pattern-container">
 <h1>Typography</h1>
 
-<p>Our primary typeface online is Roboto Sans*.</p>
+<p>Our primary typeface online is Open Sans.</p>
 
 <p>For information about writing online, please refer to the <a href="https://novascotia.sharepoint.com/sites/Projects/CNSGovWebStrategy/Tools%20and%20Guides/Forms/AllItems.aspx?id=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides%2FOnline%20Writing%20Guide%20v2%2Epdf&parent=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides">online writing guide (PDF)</a>.</p>
 
