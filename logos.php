@@ -44,14 +44,47 @@
 <!-- CONTENT -->
 <h2>Nova Scotia Visual Identity</h2>
 
-<p><img src="/logos/NSGOV-English/NSGOV-English-3Col/NS Gov Logo 2016 English 3Col.jpg" style="max-width: 200px; height: auto;" alt="English Nova Scotia Logo full colour" /></p>
-
 <ul>
-	<li><a href="NSGOV-English-3Col.zip">English - 3 colour</a></li>
-	<li><a href="NSGOV-English-English-3Col-White-Wordmark.zip">English - 3 colour with a white wordmark</a></li>
-	<li><a href="NSGOV-English-Blue.zip">English - Blue</a></li>
-	<li><a href="NSGOV-English-Black.zip">English - Black</a></li>
-	<li><a href="NSGOV-English-White.zip">English - White</a></li>
+	<li>
+		<p>
+			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-3Col/NS%20Gov%20Logo%202016%20English%203Col.jpg" style="max-width: 200px; height: auto;" alt="Full colour logo" />
+		</p>
+		<p>
+			<a href="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English-3Col.zip">English - Full colour (ZIP Archive, 1.5 MB)</a>
+		</p>
+	</li>
+	<li>
+		<p>
+			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-English-3Col-White-Wordmark/NS-Gov-Logo-2016-English-3Col-(White-WM).png" alt="Full colour logo with white wordmark" />
+		</p>
+		<p>
+			<a href="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English-English-3Col-White-Wordmark.zip">English - Full colour with a white wordmark (ZIP Archive, 815 KB)</a>
+		</p>
+	</li>
+	<li>
+		<p>
+			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-Blue/NS%20Gov%20Logo%202016%20English%20Blue.jpg" alt="Blue logo" />
+		</p>
+		<p>
+			<a href="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English-Blue.zip">English - Blue (ZIP Archive, 1.5 MB)</a>
+		</p>
+	</li>
+	<li>
+		<p>
+			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-Black/NS%20Gov%20Logo%202016%20English%20Black.jpg" alt="Black logo" />		
+		</p>
+		<p>
+			<a href="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English-Black.zip">English - Black (ZIP Archive, 685 KB)</a>
+		</p>
+	</li>
+	<li>
+		<p>
+			<img src="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English/NSGOV-English-White/NS-Gov-Logo-2016-English-White.png" alt="White logo" />
+		</p>
+		<p>
+			<a href="https://cns.pages.novascotia.ca/patternlab/logos/NSGOV-English-White.zip">English - White (ZIP Archive, 519 KB)</a>
+		</p>
+	</li>
 </ul>
 
 
