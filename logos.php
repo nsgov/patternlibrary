@@ -38,7 +38,7 @@
 <div class="pattern-container">
 <h1>Logos</h1>
 
-<p>Please refer to the <a href="/logos/Partner Brand Guide 2017.pdf">Partner Brand Guide</a> for details about our Government Brand Policy.</p>
+<p>Please refer to the <a href="https://cns.pages.novascotia.ca/patternlab/logos/Partner Brand Guide 2017.pdf">Partner Brand Guide</a> for details about our Government Brand Policy.</p>
 
 
 <!-- CONTENT -->
