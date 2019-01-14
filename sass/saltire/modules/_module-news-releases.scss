@@ -1,0 +1,24 @@
+.release {line-height: 1.8em; margin-top: 1em; width: 95%;}
+.release-header h1 {margin-top: 0px; padding-top: 0px; color: #000;}
+.release-label {font-size: 1.25em; color: #999; margin-top: 2em;}
+.release-subheader {overflow: hidden; margin-bottom: 1.5em; padding-bottom: 2.5em; border-bottom: 1px solid #777; font-size: small;}
+.release-subheader > .releaseDept {line-height: 1em; margin-top: 1.5em;}
+.release-subheader > time {line-height: 1em;}
+
+#broadcast, #mediacontacts, #supplement {border-top: 1px solid #777;}
+#broadcast {font: 85% "Menlo", "Consolas", "Courier New", monospace;}
+#broadcast h3 { margin-bottom: 1em; }
+#broadcast p {text-indent: 2em; line-height: 2;}
+.end-of-release {color: #999; text-align: center;display:none;} /* -30- */
+#mediacontacts {overflow: hidden;}
+#mediacontacts h3, #mediacontacts dl {float: left; margin: 1rem 1.5em 1em 0;}
+#mediacontacts dd {margin-bottom: 1.5em; white-space: pre-line;}
+#mediacontacts dl dt {font-weight: normal;}
+#supplement {
+	margin: 1em 0;
+	padding: 1em 0;
+}
+.pagination .current-page { color: #333; font-weight: bold; }
+@media screen and (min-width: 40em) {
+	#broadcast p { white-space: pre-line; }
+}
