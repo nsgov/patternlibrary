@@ -66,7 +66,7 @@ foreach ($widgets as $widget):
     echo '</textarea>';
     echo '<p><a href="widgets/'.$widget.'">'.$widget.'</a></p>';
     echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
+    echo '<div class="pattern-separator"></div>';
 endforeach;
 ?>
 

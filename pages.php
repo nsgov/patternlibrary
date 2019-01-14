@@ -73,7 +73,7 @@ foreach ($pages as $page):
     echo '</textarea>';
     echo '<p><a href="pages/'.$page.'">'.$page.'</a></p>';
     echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
+    echo '<div class="pattern-separator"></div>';
 endforeach;
 ?>
 

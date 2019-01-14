@@ -74,7 +74,7 @@ foreach ($icons as $icon):
     echo '<p><a href="icons/'.$icon.'">'.$icon.'</a></p>';
     echo '</div>';
     echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
+    echo '<div class="pattern-separator"></div>';
 endforeach;
 ?>
 
