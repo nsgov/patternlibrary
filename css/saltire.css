@@ -4410,13 +4410,15 @@ ul.icon-list {
       content: '\f068'; }
 
 .timeline ol {
-  list-style: none; }
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0; }
   .timeline ol .timeline-item {
     counter-increment: section;
     margin: 0px 0px; }
     .timeline ol .timeline-item .step-content {
       border-left: 1px solid #ccc;
-      padding-left: 120px;
+      padding-left: 50px;
       width: 100%;
       position: relative;
       padding-right: 15px;
