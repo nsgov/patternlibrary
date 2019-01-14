@@ -114,7 +114,7 @@ foreach ($organisms as $organism):
     echo '<p><a href="organism/'.$organism.'">'.$organism.'</a></p>';
     echo '</div>';
     echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
+    echo '<div class="pattern-separator"></div>';
 endforeach;
 ?>
 

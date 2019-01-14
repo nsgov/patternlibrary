@@ -69,7 +69,7 @@ foreach ($feedbacks as $feedback):
     echo '<p><a href="feedback/'.$feedback.'">'.$feedback.'</a></p>';
     echo '</div>';
     echo '</div>';
-    echo '<div style="clear:both; margin: 1.5em auto;"><hr /></div>';
+    echo '<div class="pattern-separator"></div>';
 endforeach;
 ?>
 

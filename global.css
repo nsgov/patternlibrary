@@ -42,4 +42,4 @@ footer.footer {background: #0058a4 url(img/bg-footer.svg)}
 
 button.search-box-button {background-image: url(img/sprite-icons.svg);}
 
-.pattern-separator {clear:both; margin: 1.5em auto; border-bottom: 5px solid #ccc;}
+.pattern-separator {clear:both; margin: 1.5em auto; border-bottom: 15px solid #ccc;}
