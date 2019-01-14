@@ -1,6 +1,6 @@
 // Ordered list timeline
 .timeline {
-	ol {
+	ol { list-style: none;
 		.timeline-item {counter-increment: section; margin: 0px 0px;
 			.step-content {
 				border-left: 1px solid #ccc;
