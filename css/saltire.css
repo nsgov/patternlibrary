@@ -4409,35 +4409,37 @@ ul.icon-list {
       font: normal normal normal 14px/1 FontAwesome;
       content: '\f068'; }
 
-.timeline ol .timeline-item {
-  counter-increment: section;
-  margin: 0px 0px; }
-  .timeline ol .timeline-item .step-content {
-    border-left: 1px solid #ccc;
-    padding-left: 120px;
-    width: 100%;
-    position: relative;
-    padding-right: 15px;
-    margin-left: 20px;
-    display: block;
-    padding-bottom: 2em; }
-  .timeline ol .timeline-item .step-counter {
-    font-weight: bold;
-    position: absolute;
-    left: -30px;
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 6px; }
-  .timeline ol .timeline-item:last-of-type .step-content {
-    border-left: none; }
-.timeline ol .highlighted {
-  background: #ffecad;
-  border-radius: 6px;
-  padding: 2em 2em 1em 2em; }
-.timeline ol li {
-  margin: 0; }
+.timeline ol {
+  list-style: none; }
+  .timeline ol .timeline-item {
+    counter-increment: section;
+    margin: 0px 0px; }
+    .timeline ol .timeline-item .step-content {
+      border-left: 1px solid #ccc;
+      padding-left: 120px;
+      width: 100%;
+      position: relative;
+      padding-right: 15px;
+      margin-left: 20px;
+      display: block;
+      padding-bottom: 2em; }
+    .timeline ol .timeline-item .step-counter {
+      font-weight: bold;
+      position: absolute;
+      left: -30px;
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 10px;
+      border-radius: 6px; }
+    .timeline ol .timeline-item:last-of-type .step-content {
+      border-left: none; }
+  .timeline ol .highlighted {
+    background: #ffecad;
+    border-radius: 6px;
+    padding: 2em 2em 1em 2em; }
+  .timeline ol li {
+    margin: 0; }
 .timeline h3 {
   margin-top: 0px; }
 
