@@ -1,10 +1,10 @@
 // Ordered list timeline
 .timeline {
-	ol { list-style: none;
+	ol { list-style: none; margin-left: 0; padding-left: 0;
 		.timeline-item {counter-increment: section; margin: 0px 0px;
 			.step-content {
 				border-left: 1px solid #ccc;
-				padding-left: 120px;
+				padding-left: 50px;
 				width: 100%;
 				position: relative;
 				padding-right: 15px;
