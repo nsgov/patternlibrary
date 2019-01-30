@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <title>NSGov UI Pattern Library</title>
 <link rel="stylesheet" href="global.css">
-<link rel="stylesheet" href="css/saltire.css">
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
+<link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
 
 <style>
 .pattern {
