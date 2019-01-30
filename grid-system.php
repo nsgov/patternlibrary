@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <title>NSGov UI Pattern Library</title>
 <link rel="stylesheet" href="global.css">
-<link rel="stylesheet" href="css/saltire.css">
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
+<link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
 
 <style>
 .pattern {
@@ -87,31 +87,31 @@
   <div class="col-xs-1">col-xs-1</div>
 </div>
 
-<!-- Organisms -->
+<!-- Grids -->
 
 <?php
-$organisms = array();
-$handle=opendir('organisms');
-while (false !== ($organism = readdir($handle))):
-    if(stristr($organism,'.html')):
-        $organisms[] = $organism;
+$grids = array();
+$handle=opendir('grid');
+while (false !== ($grid = readdir($handle))):
+    if(stristr($grid,'.html')):
+        $grids[] = $grid;
     endif;
 endwhile;
-sort($organisms);
+sort($grids);
 
 ?>
 <h2 class="section">Grid layout examples</h2>
 <?php
-foreach ($organisms as $organism):
+foreach ($grids as $grid):
     echo '<div class="pattern">';
     echo '<div class="display">';
-    include('organisms/'.$organism);
+    include('grid/'.$grid);
     echo '</div>';
     echo '<div class="source">';
     echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('organisms/'.$organism));
+    echo htmlspecialchars(file_get_contents('grid/'.$grid));
     echo '</textarea>';
-    echo '<p><a href="organism/'.$organism.'">'.$organism.'</a></p>';
+    echo '<p><a href="grid/'.$grid.'">'.$grid.'</a></p>';
     echo '</div>';
     echo '</div>';
     echo '<div class="pattern-separator"></div>';
