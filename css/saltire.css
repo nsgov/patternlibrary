@@ -2380,9 +2380,10 @@ p + .call-to-action-button {
     max-height: 150px;
     margin-bottom: 1.5em; }
   .content-logo.small {
-    max-width: 100px;
-    max-height: 100px;
-    margin-top: 1.5em; }
+    margin: 1.5em auto; }
+    .content-logo.small img {
+      max-width: 130px;
+      max-height: 130px; }
 
 @media only screen and (max-width: 767px) {
   .content-logo img {
@@ -4542,7 +4543,7 @@ ul.icon-list {
   height: 300px;
   background: #003262 no-repeat top/100%;
   background-size: cover;
-  background-position: 0% 70%;
+  background-position: 0% 17%;
   transform: translateZ(0); }
   .hero-headline-container img {
     float: left;

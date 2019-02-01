@@ -2,7 +2,9 @@
 	float: left;
 }
 
+// ###################################################################
 // Transition - ephemeral layer of UI used during transition period only
+// ###################################################################
 
 .transition-block { // Homepage block about the project
 	background: lighten($green, 25%) url(/themes/ignition/img/gargygle.svg) top right no-repeat;
@@ -16,7 +18,10 @@
 
 		li {margin-bottom: 1.5em;}
 
-		.fa {font-size: 2em; margin-right: .5em;} // make the icon BIG
+		.fa {
+			font-size: 2em; 
+			margin-right: .5em;
+		} // make the icon BIG
 	}
 }
 
@@ -29,30 +34,55 @@
 		border-radius: $border-radius-base;
 }
 
+// ###################################################################
 // Homepage Topic Blocks
+// ###################################################################
 
 #home-topics {
 	margin: 0;
 	padding: 2em 0;
-	//div {min-height: ($line-height-computed * 7);}
-	ol, ul {margin: 0 auto 0 0; padding-left: 0; padding-bottom: 0;}
+	ol, ul {
+		margin: 0 auto 0 0; 
+		padding-left: 0; 
+		padding-bottom: 0;
+	}
 	li {
-		list-style-type: none; margin: auto 0 0 auto; padding-left: 0; padding-bottom: 0;
-		.icon {width: 25%; height: auto; margin: 1.5em 35% 0 35%;}
+		list-style-type: none; 
+		margin: auto 0 0 auto; 
+		padding-left: 0; 
+		padding-bottom: 0;
+		.icon {
+			width: 25%; 
+			height: auto; 
+			margin: 1.5em 35% 0 35%;
 		}
+	}
 	p {padding-right: 40px;}
 }
 
+// ###################################################################
 // Homepage About Government
+// ###################################################################
+
 .home-about-government {
 	background-color: #fff;
 	padding: 2em 0;
 	h2 {margin-bottom: 1.5em;}
-	img {width: 100%; height: 100%; min-width: 150px; max-width: 200px; min-height: 150px; max-height: 200px;}
+	img {
+		width: 100%; 
+		height: 100%; 
+		min-width: 150px; 
+		max-width: 200px; 
+		min-height: 150px; 
+		max-height: 200px;
+	}
 	.premier-spotlight {text-align: center;}
 }
 
+// ###################################################################
 // Homepage Most Requested
+// ###################################################################
+
 .most-requested {
 	background-color: $blue;
 	color: #fff;
@@ -81,8 +111,6 @@
 	}
 }
 
-
-
 #home-features {
 	background-color: lighten($cyan, 50%);
 	display: block;
@@ -90,7 +118,6 @@
 	margin-top: $line-height-computed;
 	padding: 2em auto;
 }
-
 
 @media only screen and (max-width: $screen-sm-max) {
 	#home-topics li {min-height: 1em;}
@@ -114,19 +141,9 @@
 	line-height: $line-height-large * 2em;
 }
 
-
+// ###################################################################
 // COMMON elements
-//
-// #summary, .summary {
-// 	font-size: $font-size-summary;
-// 	color: $gray;
-// 	margin-bottom: $line-height-computed;
-// 	border-bottom: 1px solid $gray-light;
-// 	padding-bottom: $line-height-computed;
-//
-// 	p {margin-bottom: 0;}
-//
-// }
+// ###################################################################
 
 #summary, .summary {
 	@include textblock($lightgray, 12%);
@@ -137,7 +154,6 @@
 	padding: 1.35em;
 
 	p {margin-bottom: 0;}
-
 }
 
 figcaption {// Removes block treatment from summary that appears inside a figure caption
@@ -148,7 +164,8 @@ figcaption {// Removes block treatment from summary that appears inside a figure
 		border: none;
 		border-width: 0;
 		font-size: $font-size-h5;
-		color: #000;}
+		color: #000;
+	}
 }
 
 .secondary-content {
@@ -156,11 +173,9 @@ figcaption {// Removes block treatment from summary that appears inside a figure
 	font-size: $font-size-base;
 }
 
-// .secondary-content {
-//
-// }
-
+// ###################################################################
 // SERVICES AND PROGRAMS
+// ###################################################################
 
 .directory-listing-row { // reusable style that can be used on views that return a listing
 	border-bottom: 1px solid $gray-lighter;
@@ -176,32 +191,37 @@ figcaption {// Removes block treatment from summary that appears inside a figure
 }
 
 #services-list {
-	ol, ul {list-style: none; margin-left: 0; padding-left: 0;}
-	li {list-style: none; margin-left: 0; padding-left: 0;}
+	ol, ul {
+		list-style: none; 
+		margin-left: 0; 
+		padding-left: 0;
+	}
+	li {
+		list-style: none; 
+		margin-left: 0; 
+		padding-left: 0;
+	}
 }
 
-
+// ###################################################################
 // Document, Document Collection
+// ###################################################################
 
 #meta-publication-type, .pub-details .item-list {@include delimited-list;}
 
 .document-collection-item {margin-bottom: 1.35em;}
 .document-collection-item-teaser {margin-bottom: 0px;}
 .document-collection-item-details { // unordered list used in Document Collection view under teaser
-			@include inline-list;
-			margin-top: 0px;
-			font-size: $font-size-small;
-			color: $gray-light;
-			li {
-				&:after {
-					content: ", ";
-				}
-				&:last-child {
-					&:after {
-						content: "";
-					}
-				}
+	@include inline-list;
+	margin-top: 0px;
+	font-size: $font-size-small;
+	color: $gray-light;
+	li {
+		&:after {content: ", ";}
+		&:last-child {
+			&:after {content: "";}
 		}
+	}
 }
 
 .document-category { // unordered list used in Document Collection view under teaser
@@ -265,11 +285,12 @@ hr.document-details {
 
 	.document-thumbnail-container {
 		float: left;
-  	width: 25%;
-  	max-width: 160px;
-  	margin: 0 4% 0 0;
-
-		img	{border: 1px solid $gray-lighter;}
+		width: 25%;
+		max-width: 160px;
+		margin: 0 4% 0 0;
+		img	{
+			border: 1px solid $gray-lighter;
+		}
 	}
 	.accessibility-email {
   	/* what's there now, plus: */
@@ -310,7 +331,11 @@ hr.document-details {
 	margin-bottom: $line-height-computed;
 	vertical-align: top;
 
-	ul, li {list-style: none; margin: 0; padding: 0;}
+	ul, li {
+		list-style: none; 
+		margin: 0; 
+		padding: 0;
+	}
 
 	article {margin-bottom: $line-height-computed;}
 	.title {}
@@ -320,17 +345,32 @@ hr.document-details {
 	.last-published,
 	.document-updated,
 	.document-author,
-	.item-list ul {font-size: $font-size-small; display: inline; margin-right: 1.5em;}
+	.item-list ul {
+		font-size: $font-size-small; 
+		display: inline; 
+		margin-right: 1.5em;
+	}
 }
 
 .pub-label {
 	margin-bottom: $line-height-computed;
-	h2 {margin-top: 0; padding-top: 0;}
+	h2 {
+		margin-top: 0; 
+		padding-top: 0;
+	}
 }
 
 #meta-publication-type, #meta-department, #news-release #department, #legislative-acts, #dept-services {
-		ul, li {list-style: none; margin: 0; padding: 0;}
-		ol, li {list-style: none; margin: 0; padding: 0;}
+	ul, li {
+		list-style: none; 
+		margin: 0; 
+		padding: 0;
+	}
+	ol, li {
+		list-style: none; 
+		margin: 0; 
+		padding: 0;
+	}
 }
 
 .accessibility-email {
@@ -343,37 +383,53 @@ hr.document-details {
 	a {
 		&:after {
 			display: inline-block;
-		  font: normal normal normal 14px/1 FontAwesome;
-		  font-size: inherit;
-		  text-rendering: auto;
-		  -webkit-font-smoothing: antialiased;
-		  -moz-osx-font-smoothing: grayscale;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
 			padding-left: 3px;
-			content: '\f08e';}
+			content: '\f08e';
+		}
 	}
 }
 
+// ###################################################################
 // Forms: Applications, Licenses and Permits, Submitted and not submitted to Government
+// ###################################################################
 
 .call-to-action-button { // manage whitespace depending on whether there is descriptive text preceeding the button
 	h2 + & {margin-top: $line-height-computed;}
 	p + & {margin-top: 0px;}
 }
 
+// ###################################################################
 // Department Profile
+// ###################################################################
 
 .content-logo {
 	display: block;
 	clear: both;
-	img {display: block; max-width: 150px; max-height: 150px; margin-bottom: 1.5em;}
+	img {
+		display: block; 
+		max-width: 150px; 
+		max-height: 150px; 
+		margin-bottom: 1.5em;
+	}
 	&.small {
 		margin: 1.5em auto;
-		img {max-width: 130px; max-height: 130px;}
+		img {
+			max-width: 130px; 
+			max-height: 130px;
+		}
 	}
 } 
 @media only screen and (max-width: $screen-sm-max) {
 	.content-logo {
-		img {max-width: 100px; max-height: 100px;}
+		img {
+			max-width: 100px;
+			max-height: 100px;
+		}
 	}
 }
 
@@ -395,19 +451,38 @@ hr.document-details {
 
 
 #social-media-account, #department, #media-contact, #corp-info, #announcements {
-	ul, li {list-style: none; margin-left: 0; padding-left: 0;}
+	ul, li {
+		list-style: none; 
+		margin-left: 0; 
+		padding-left: 0;
+	}
 }
 
-.about-link {font-size: $font-size-h4; margin-bottom: $line-height-computed; display: block;}
+.about-link {
+	font-size: $font-size-h4; 
+	margin-bottom: $line-height-computed; 
+	display: block;
+}
 
-#social-media-account .fa {font-size: 1.5em;}
+#social-media-account .fa {
+	font-size: 1.5em;
+}
 
-.corp-info, .corp-info li {list-style: none; margin-left: 0; padding-left: 0;}
+.corp-info, .corp-info li {
+	list-style: none; 
+	margin-left: 0; 
+	padding-left: 0;
+}
 
-.feature-image img {width: 100%; height: auto;}
+.feature-image img {
+	width: 100%; 
+	height: auto;
+}
 
 .profile-details {
-	width: 100%; display: block; margin: 0 0 $line-height-computed 0;
+	width: 100%; 
+	display: block; 
+	margin: 0 0 $line-height-computed 0;
 	#job-title {
 		font-size: $font-size-h3;
 	}
@@ -435,8 +510,8 @@ hr.document-details {
 			list-style-type: none;
 			position: relative;
 			width: 100%;
-			}
 		}
+	}
 }
 
 
@@ -465,47 +540,37 @@ hr.document-details {
 	}
 }
 
-
-
 @media (max-width: 767px) {
-
-
 	#home-topics {
 		div {min-height: ($line-height-computed * 1);}
 	}
-
-
 }
 
 @media (min-width: 768px) {
-
-
-		#home-top-tasks {
-			position: absolute;
-			top: 20px;
-			left: 62.5%;
-			background: white;
-			color: $gray;
-			text-align: left;
-			font-size: $font-size-small;
-			list-style-type: none;
-			padding: 0.25em 1em;
-			z-index: 2;
-			ul {
-				margin-left: 0;
-				padding-left: 0;
-			}
-			li {
-				list-style-type: none;
-				margin-left: 0;
-				padding-left: 0;
-			}
+	#home-top-tasks {
+		position: absolute;
+		top: 20px;
+		left: 62.5%;
+		background: white;
+		color: $gray;
+		text-align: left;
+		font-size: $font-size-small;
+		list-style-type: none;
+		padding: 0.25em 1em;
+		z-index: 2;
+		ul {
+			margin-left: 0;
+			padding-left: 0;
 		}
-
+		li {
+			list-style-type: none;
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
 }
 
 #features, .features, #about-government {display: block; clear: both; margin: $line-height-computed auto;}
-
 
 #home-about-government {
 	display: block;
@@ -521,8 +586,9 @@ hr.document-details {
 	}
 }
 
-
+// ###################################################################
 // Universal Survey Block //
+// ###################################################################
 
 #feedback {
 	clear: both;
@@ -543,7 +609,9 @@ hr.document-details {
 	margin-top: ($line-height-em * 1.15);
 }
 
+// ###################################################################
 // About the Project page //
+// ###################################################################
 
 .project-site-links {padding: 1.25em; margin-bottom: 2em; background-color: lighten($green, 30%)}
 .project-progress-heading {text-align: center; text-align: center; margin-bottom: 2em;}
@@ -556,14 +624,15 @@ hr.document-details {
 .project-details {clear: both;}
 
 .profile-features {
-
-		&:before {border-top: 1px solid $gray-light}
-		&:after{border-bottom: 1px solid $gray-light}
-
-  margin: ($line-height-em * 1.15) 0;
-  padding: ($line-height-em * 1.15) 0;
+	&:before {border-top: 1px solid $gray-light}
+	&:after{border-bottom: 1px solid $gray-light}
+	margin: ($line-height-em * 1.15) 0;
+	padding: ($line-height-em * 1.15) 0;
 }
+
+// ###################################################################
 // STORY NOT STORY //
+// ###################################################################
 
 .profile-stories {
 

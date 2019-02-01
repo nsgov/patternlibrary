@@ -20,6 +20,7 @@ pages:
   - php tables.php > .public/tables.html
   - php typography.php > .public/typography.html
   - php widgets.php > .public/widgets.html
+  - php videos.php > .public/videos.html
   - cp -r * .public
   - mv .public public
   artifacts:
