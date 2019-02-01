@@ -41,6 +41,7 @@
     <li><a href="grid-system.html">Responsive grid system</a></li>
     <li><a href="tables.html">Tables</a></li>
     <li><a href="typography.html">Typography</a></li>
+    <li><a href="videos.html">Videos</a></li>
   </ul>
 
 </div>
