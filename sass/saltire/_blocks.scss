@@ -252,16 +252,25 @@ hr.document-details {
 	position: relative;
 	overflow: hidden;
 
+	&:focus, &:hover, &:active {
+		.document-title {background: $yellow;}
+	}
+
 	.document-link {
 		display: block;
 		text-decoration: none;
-		&:focus, &:hover { text-decoration: none; }
-
+		position: relative;
+		z-index: 1;
+		background: transparent;
+		padding: 1;
+		&:focus, &:hover, &:active {
+			text-decoration: none;
+		}
 		.document-title {
 	  	display: block;
 	  	font-size: 120%; /*?*/
 	  	font-weight: normal;
-	  	text-decoration: underline;
+		text-decoration: underline;
 	  }
 		.document-details {
 	  	color: #444; /* regular body text color */
@@ -273,7 +282,8 @@ hr.document-details {
 		display: inline-block;
 		font-size:120%;
 		font-weight:normal;
-		display: inline-block;
+		position: relative;
+		z-index: 1;
 		div {display: inline;}
 	}
 
@@ -287,9 +297,13 @@ hr.document-details {
 		float: left;
 		width: 25%;
 		max-width: 160px;
-		margin: 0 4% 0 0;
+		padding: 0 2% 0 0;
+		position: relative;
+		z-index: 2;
+		background: #fff;
 		img	{
 			border: 1px solid $gray-lighter;
+			background: #fff;
 		}
 	}
 	.accessibility-email {
