@@ -1442,7 +1442,7 @@ label {
   max-width: 100%;
   margin-bottom: 5px;
   font-weight: bold; }
-  label .inline {
+  label.inline {
     display: inline-block; }
 
 input[type="text"],
@@ -2257,10 +2257,16 @@ hr.document-details {
   padding: 1.5em 0;
   position: relative;
   overflow: hidden; }
+  .document-link-container:focus .document-title, .document-link-container:hover .document-title, .document-link-container:active .document-title {
+    background: #f8d44c; }
   .document-link-container .document-link {
     display: block;
-    text-decoration: none; }
-    .document-link-container .document-link:focus, .document-link-container .document-link:hover {
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+    padding: 1; }
+    .document-link-container .document-link:focus, .document-link-container .document-link:hover, .document-link-container .document-link:active {
       text-decoration: none; }
     .document-link-container .document-link .document-title {
       display: block;
@@ -2276,7 +2282,8 @@ hr.document-details {
     display: inline-block;
     font-size: 120%;
     font-weight: normal;
-    display: inline-block; }
+    position: relative;
+    z-index: 1; }
     .document-link-container .document-title div {
       display: inline; }
   .document-link-container .corporate-report {
@@ -2287,9 +2294,13 @@ hr.document-details {
     float: left;
     width: 25%;
     max-width: 160px;
-    margin: 0 4% 0 0; }
+    padding: 0 2% 0 0;
+    position: relative;
+    z-index: 2;
+    background: #fff; }
     .document-link-container .document-thumbnail-container img {
-      border: 1px solid #eeeeee; }
+      border: 1px solid #eeeeee;
+      background: #fff; }
   .document-link-container .accessibility-email {
     /* what's there now, plus: */
     float: left;
@@ -2959,6 +2970,22 @@ p + .call-to-action-button {
       .navigation .menu li a, .navigation .menu li.active-trail.first a {
         color: #fff;
         text-decoration: none; }
+  .navigation.ribbon {
+    background: #0058a4;
+    font-size: .85em;
+    margin-top: 0em;
+    max-height: 3.2em; }
+    .navigation.ribbon form {
+      float: right;
+      margin: 5px 0; }
+    .navigation.ribbon .search-box-button {
+      background-image: url(https://novascotia.ca/clf/saltire/img/sprite-icons.svg);
+      background-color: transparent; }
+    .navigation.ribbon .ribbon-img {
+      width: 8em;
+      height: auto;
+      margin: 5px 0;
+      float: left; }
 
 @media only screen and (min-width: 768px) {
   .skew .menu {
