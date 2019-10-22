@@ -2970,22 +2970,6 @@ p + .call-to-action-button {
       .navigation .menu li a, .navigation .menu li.active-trail.first a {
         color: #fff;
         text-decoration: none; }
-  .navigation.ribbon {
-    background: #0058a4;
-    font-size: .85em;
-    margin-top: 0em;
-    max-height: 3.2em; }
-    .navigation.ribbon form {
-      float: right;
-      margin: 5px 0; }
-    .navigation.ribbon .search-box-button {
-      background-image: url(https://novascotia.ca/clf/saltire/img/sprite-icons.svg);
-      background-color: transparent; }
-    .navigation.ribbon .ribbon-img {
-      width: 8em;
-      height: auto;
-      margin: 5px 0;
-      float: left; }
 
 @media only screen and (min-width: 768px) {
   .skew .menu {
@@ -3038,6 +3022,23 @@ p + .call-to-action-button {
     margin: 0 -11em; }
   .header .container:after {
     margin: 1em -13.5em; } }
+.ribbon {
+  background: #0058a4;
+  font-size: .85em;
+  margin-top: 0em;
+  max-height: 3.2em; }
+  .ribbon form {
+    float: right;
+    margin: 5px 0; }
+  .ribbon .search-box-button {
+    background-image: url(https://novascotia.ca/clf/saltire/img/sprite-icons.svg);
+    background-color: transparent; }
+  .ribbon .ribbon-img {
+    width: 8em;
+    height: auto;
+    margin: 5px 0;
+    float: left; }
+
 .mobile {
   position: absolute;
   float: left;
