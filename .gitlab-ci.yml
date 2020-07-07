@@ -16,6 +16,7 @@ pages:
   - php lists.php > .public/lists.html
   - php logos.php > .public/logos.html
   - php messages.php > .public/messages.html
+  - php metadata.php > .public/metadata.html
   - php navigation.php > .public/navigation.html
   - php pages.php > .public/pages.html
   - php tables.php > .public/tables.html
