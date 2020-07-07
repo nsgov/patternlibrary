@@ -37,9 +37,12 @@
 
 <div class="pattern-container">
 <h1>Animation</h1>
-
-<p>The following examples are loading animations we use.</p>
-
+<p>
+    It is important to consider citizens with vestibular disorders for whom motion can cause nausea, dizziness or vertigo.
+</p>
+<p>
+    On the government website, we only use animation to communicate that <a href="https://beta.novascotia.ca/disciplinary-action-notices-liquor-and-gaming-licence-holders">content is loading on our collections</a> that pull data in from other sources.
+</p>
 
 <!-- CONTENT -->
 
@@ -54,7 +57,8 @@ endwhile;
 sort($animations);
 
 ?>
-<h2 class="section">Animation UI Patterns</h2>
+<h2 class="section">Loading animations</h2>
+
 <?php
 foreach ($animations as $animation):
     echo '<div class="pattern">';

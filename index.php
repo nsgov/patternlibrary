@@ -24,6 +24,8 @@
 
 <p>You can look up different elements and grab the HTML you need to use them.</p>
 
+<p>Please refer to our <a href="https://novascotia.sharepoint.com/sites/Projects/CNSGovWebStrategy/Tools%20and%20Guides/Forms/AllItems.aspx">tools and guides</a> for guidance on content criteria, online writing, and other topics.</p>
+
 <p>You can <a href="css/saltire.css">grab the latest version of the Saltire CSS file</a>.
 
 
@@ -44,6 +46,10 @@
     <li><a href="videos.html">Videos</a></li>
   </ul>
 
+<h2>Other information</h2>
+  <ul class="ui-categories">
+    <li><a href="metadata.html">How we use metadata</a></li>
+  </ul>
 </div>
 
 
