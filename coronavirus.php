@@ -40,6 +40,7 @@
 
 <p>A collection of new and experimental patterns brought into use during the Coronavirus pandemic.</p>
 <p>Part of our content strategy during the pandemic was to keep Coronavirus information centralized, and link core government content to the main coronavirus website or the closures page for service change information rather than duplicate it. This required developing a standard way of showing an alert for a service change, and a way to highlight what citizens could do online.</p>
+<p>Most of these patterns contain inline CSS - usually due to the need to use them on a variety of government pages that use older versions of our framework.</p>
 
 
 <!-- CONTENT -->
