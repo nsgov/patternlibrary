@@ -49,6 +49,7 @@
 <h2>Other information</h2>
   <ul class="ui-categories">
     <li><a href="metadata.html">How we use metadata</a></li>
+    <!-- <li><a href="animation.html">Loading animation</a></li> -->
   </ul>
 </div>
 
