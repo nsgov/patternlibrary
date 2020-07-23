@@ -10,6 +10,7 @@ pages:
   - php animation.php > .public/animation.html
   - php buttons.php > .public/buttons.html
   - php content.php > .public/content.html
+  - php coronavirus.php > .public/coronavirus.html
   - php forms.php > .public/forms.html
   - php grid-system.php > .public/grid-system.html
   - php icons.php > .public/icons.html
