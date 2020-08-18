@@ -39,15 +39,17 @@
 <div class="pattern-container">
 <h1>Accessible accordions</h1>
 
-<p>Most of the time, accordions should be avoided, especially when your users need all or part of the content on the page to answer their questions. It is better to show all the content at once, it is a myth that users do not scroll. You should not worry too much about page length.</p>
+<p>Most of the time, accordions should be avoided. It is best to show all your content at once rather than hide chunks of it for cosmetic reasons.</p>
 
-<p>There will be cases where you need navigation inside the page that an accordion could be a good solution for. For programs that have an online application process, the online method is the primary call to action and other ways to apply are inside an accordion.</p>
+<p>It is a myth that users do not scroll. You should not worry too much about page length.</p>
+
+<p>However, there are times when using an accordion for supplementary information makes sense. For programs that have an online application process, the online method is the primary call to action and other ways to apply are inside an accordion.</p>
 
 <h2>Accordion requirements</h2>
 <p>Here are the supporting files you will need:</p>
 <ul>
     <li><a href="https://beta.novascotia.ca/themes/ignition/js/aria.accordion.js">aria.accordion.js</a></li>
-    <li><a href="https://beta.novascotia.ca/themes/ignition/css/aria.accordion.css">aria.accordion.js</a></li>
+    <li><a href="https://beta.novascotia.ca/themes/ignition/css/aria.accordion.css">aria.accordion.css</a></li>
     <li><a href="https://beta.novascotia.ca/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1">modernizr.min.js</a></li>
 </ul>
 
@@ -69,7 +71,7 @@ endwhile;
 sort($accordions);
 
 ?>
-<h2 class="section">Accessible accordion</h2>
+<h2 class="section">Accessible "Other ways to apply" accordion</h2>
 <?php
 foreach ($accordions as $accordion):
     echo '<div class="pattern">';
