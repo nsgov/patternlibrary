@@ -60,7 +60,7 @@
 
 <?php
 $accordions = array();
-$handle=opendir('accordions');
+$handle=opendir('accordion');
 while (false !== ($accordion = readdir($handle))):
     if(stristr($accordion,'.html')):
         $accordions[] = $accordion;
@@ -73,7 +73,7 @@ sort($accordions);
 <?php
 foreach ($accordions as $accordion):
     echo '<div class="pattern">';
-    include('accordions/'.$accordion);
+    include('accordion/'.$accordion);
     echo '</div>';
     echo '<div class="pattern">';
     echo '<textarea rows="6" cols="30">';
