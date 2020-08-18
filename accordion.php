@@ -77,9 +77,9 @@ foreach ($accordions as $accordion):
     echo '</div>';
     echo '<div class="pattern">';
     echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('accordions/'.$accordion));
+    echo htmlspecialchars(file_get_contents('accordion/'.$accordion));
     echo '</textarea>';
-    echo '<p><a href="accordions/'.$accordion.'">'.$accordion.'</a></p>';
+    echo '<p><a href="accordion/'.$accordion.'">'.$accordion.'</a></p>';
     echo '</div>';
     echo '<div class="pattern-separator"></div>';
 endforeach;
