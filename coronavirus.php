@@ -7,6 +7,9 @@
 <link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
 <link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
 
+<link rel="StyleSheet" type="text/css" href="https://novascotia.ca/coronavirus/css/coronavirus.css" />
+<link rel="StyleSheet" type="text/css" href="https://novascotia.ca/coronavirus/css/signature.css" />
+
 <style>
 .pattern {
     clear: both;

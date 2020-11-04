@@ -31,6 +31,7 @@
 
 <h2>Categories</h2>
   <ul class="ui-categories">
+    <!-- <li><a href="accordion.html">Accessible accordion</a></li> -->
     <li><a href="buttons.html">Buttons</a></li>
     <li><a href="content.html">Content</a></li>
     <li><a href="forms.html">Form elements</a></li>

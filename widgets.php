@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
 <link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
 
+<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/css/aria.accordion.css" />
 <style>
 .pattern {
     clear: both;
@@ -38,7 +39,11 @@
 <div class="pattern-container">
 <h1>Accessible widgets</h1>
 
-<p></p>
+<p>Most of the time, accordians should be avoided, especially when your users need all or part of the content on the page to answer their questions. It is better to show all the content at once, it is a myth that users do not scroll. You should not worry too much about page length.</p>
+
+<p>There will be cases where you need navigation inside the page that an accordian could be a good solution for. For programs that have an online application process, the online method is the primary call to action and other ways to apply are inside an accordion.</p>
+
+
 
 
 <!-- widget -->
@@ -54,7 +59,7 @@ endwhile;
 sort($widgets);
 
 ?>
-<h2 class="section">widget and structural UI patterns</h2>
+<h2 class="section">Widgets</h2>
 <?php
 foreach ($widgets as $widget):
     echo '<div class="pattern">';
@@ -72,7 +77,8 @@ endforeach;
 
 </div>
 
-
+    <script src="https://beta.novascotia.ca/themes/ignition/js/aria.accordion.js"></script>
+    <script src="https://beta.novascotia.ca/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
 	<script src="js/script.min.js"></script>
 </body>
 </html>
