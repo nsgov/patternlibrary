@@ -33,7 +33,7 @@
 <body>
 
 <div class="container">
-<h1>Province of Nova Scotia Pattern Library</h1>
+<h1>Government of Nova Scotia Pattern Library</h1>
 
 <?php
 $atoms = array();
