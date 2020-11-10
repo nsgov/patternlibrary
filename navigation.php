@@ -64,7 +64,7 @@ foreach ($navigations as $navigation):
     echo '<textarea rows="6" cols="30">';
     echo htmlspecialchars(file_get_contents('navigation/'.$navigation));
     echo '</textarea>';
-    echo '<p><a href="navigations/'.$navigation.'">'.$navigation.'</a></p>';
+    echo '<p><a href="navigation/'.$navigation.'">'.$navigation.'</a></p>';
     echo '</div>';
     echo '<div class="pattern-separator"></div>';
 endforeach;
