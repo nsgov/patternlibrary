@@ -14,11 +14,11 @@
 </head>
 <body>
 <div id="patternlab-header">
-  <img src="img/ns-vip-white.svg" alt="Province of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
+  <img src="img/ns-vip-white.svg" alt="Government of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
 </div>
 
 <div class="pattern-container">
-<h1>Province of Nova Scotia UI Pattern Library</h1>
+<h1>Government of Nova Scotia UI Pattern Library</h1>
 
 <p>This is a living collection that will continue to evolve and expand. If you can't find what you are looking for, email <a href="internet@novascotia.ca">internet@novascotia.ca</a> and we will work with you to help you find a solution.</p>
 
