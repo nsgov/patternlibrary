@@ -31,7 +31,7 @@
 </head>
 <body>
 <div id="patternlab-header">
-  <img src="img/ns-vip-white.svg" alt="Province of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
+  <img src="img/ns-vip-white.svg" alt="Government of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
   <div class="main-link"><a href="https://cns.pages.novascotia.ca/patternlab/">Main page</a></div>
 </div>
 
@@ -64,7 +64,7 @@ foreach ($navigations as $navigation):
     echo '<textarea rows="6" cols="30">';
     echo htmlspecialchars(file_get_contents('navigation/'.$navigation));
     echo '</textarea>';
-    echo '<p><a href="navigations/'.$navigation.'">'.$navigation.'</a></p>';
+    echo '<p><a href="navigation/'.$navigation.'">'.$navigation.'</a></p>';
     echo '</div>';
     echo '<div class="pattern-separator"></div>';
 endforeach;
