@@ -36,7 +36,7 @@ h1, .h1,
 h2, .h2,
 h3, .h3 {
   margin-top: $line-height-computed;
-  margin-bottom: ($line-height-computed / 6);
+  margin-bottom: ($line-height-computed / 2);
 
   small,
   .small {
@@ -75,7 +75,7 @@ h6, .h6 { font-size: $font-size-h6; }
 p {
   word-spacing: 0;
   line-height: $line-height-base;
-  margin: 0 0 ($line-height-computed * 1.15);
+  margin: 0 0 1.5em;
   + p {
     text-indent: 0;
   }
@@ -98,6 +98,7 @@ mark {
 }
 
 .big-number {font-size: 10em; line-height: .85em; display: block; margin-top: .15em;}
+.lg-number {font-size: 5em;}
 
 // Lists
 // -------------------------
@@ -114,6 +115,12 @@ ol {
   ol {
     margin-bottom: 0;
   }
+
+    p + & {margin-top: -.5em;}
+    ul + & {
+      margin-top: ($line-height-computed * -1.15);
+    }
+
 }
 
 li {
@@ -121,10 +128,6 @@ li {
     margin: 0;
     padding-left: 1em;
   }
-}
-// A little extra margin on the bottom of list items that appear in the main body of the page.
-#body ul {
-  li {margin-bottom: ($line-height-computed / 2);}
 }
 
 // List options
@@ -223,6 +226,7 @@ blockquote.pull-right {
   }
 }
 
+
 // Addresses
 address {
   margin-bottom: $line-height-computed;
@@ -258,3 +262,9 @@ p.feature-link {
   text-transform: lowercase;
     &::first-letter {text-transform: uppercase;}
 }
+
+
+// home-topics
+h2.topic-title,
+h3.topic-title,
+h4.topic-title {font-size: $font-size-large; margin-bottom: 0;}

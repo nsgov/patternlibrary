@@ -10,6 +10,7 @@
 .skip-links {
 	height:0;
 	position:absolute;
+	top: 0;
 	width:100%;
 	z-index:2;
 
@@ -55,7 +56,7 @@
 
 	&-container {
 		// Angles in the top right of the header
-		form:before,
+		.search-box:before,
 		&:before,
 		&:after {
 			content: '';
@@ -72,12 +73,12 @@
 			@include skewX(-30deg);
 		}
 
-		form:before {
+		.search-box:before {
 			top: -200%;
 			right: -1000%;
 			height: 400%;
-			width: 1180%;
-			margin: 0 -22em;
+			width: 1070%;
+			margin: 0 -42em;
 			opacity: .15;
 		}
 
@@ -263,6 +264,8 @@
 		border: none;
 		background: $blue;
 
+		max-height: 3.1em; // temporary fix for french menu items wrapping
+
 		.menu {
 			li {
 				text-align: center;
@@ -338,4 +341,16 @@
 			}
 		}
 	}
+}
+
+.ribbon {
+	background: $blue; 
+	font-size: .85em;
+	margin-top: 0em; 
+	max-height: 3.2em; 
+
+	form {float: right; margin: 5px 0;}
+	button {}
+	.search-box-button {background-image: url(https://novascotia.ca/clf/saltire/img/sprite-icons.svg); background-color: transparent;}
+	.ribbon-img {width: 8em; height: auto; margin: 5px 0; float: left;}
 }

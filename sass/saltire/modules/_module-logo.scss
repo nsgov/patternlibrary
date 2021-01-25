@@ -8,13 +8,16 @@
 		background: transparent;
 	}
 
-	&:active, &:focus {
+	&:active, &:focus, &:hover {
 		background: none;
 	}
+
 
 	&-img {
 		width: 13em;
 	}
+
+	& + div:not(.search-box) {display: none;}
 }
 
 @media only screen and (min-width: $screen-lg) {

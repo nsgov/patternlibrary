@@ -4,10 +4,8 @@
 <meta charset="utf-8">
 <title>NSGov UI Pattern Library</title>
 <link rel="stylesheet" href="global.css">
-<link rel="stylesheet" href="css/saltire.css">
-<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
+<link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
 
 <style>
 .pattern {
@@ -32,68 +30,19 @@
 </style>
 </head>
 <body>
+<div id="patternlab-header">
+  <img src="img/ns-vip-white.svg" alt="Government of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
+  <div class="main-link"><a href="https://cns.pages.novascotia.ca/patternlab/">Main page</a></div>
+</div>
 
-<div class="container">
-<h1>Province of Nova Scotia UI Pattern Library</h1>
+<div class="pattern-container">
+<h1>Typography</h1>
 
-<?php
-$buttons = array();
-$handle=opendir('buttons');
-while (false !== ($button = readdir($handle))):
-    if(stristr($button,'.html')):
-        $buttons[] = $button;
-    endif;
-endwhile;
-sort($buttons);
+<p>Our primary typeface online is Open Sans.</p>
 
-?>
-<h2 class="section">Buttons</h1>
-<?php
-foreach ($buttons as $button):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('buttons/'.$button);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('buttons/'.$button));
-    echo '</textarea>';
-    echo '<p><a href="buttons/'.$button.'">'.$button.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-endforeach;
-?>
+<p>For information about writing online, please refer to the <a href="https://novascotia.sharepoint.com/sites/Projects/CNSGovWebStrategy/Tools%20and%20Guides/Forms/AllItems.aspx?id=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides%2FOnline%20Writing%20Guide%20v2%2Epdf&parent=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides">online writing guide (PDF)</a>.</p>
 
-
-
-<?php
-$forms = array();
-$handle=opendir('forms');
-while (false !== ($form = readdir($handle))):
-    if(stristr($form,'.html')):
-        $forms[] = $form;
-    endif;
-endwhile;
-sort($forms);
-
-?>
-<h2 class="section">Form Elements</h2>
-<?php
-foreach ($forms as $form):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('forms/'.$form);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('forms/'.$form));
-    echo '</textarea>';
-    echo '<p><a href="forms/'.$form.'">'.$form.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-endforeach;
-?>
-
+<!-- TYPOGRAPHY -->
 
 <?php
 $typographys = array();
@@ -106,7 +55,7 @@ endwhile;
 sort($typographys);
 
 ?>
-<h2 class="section">Typography</h2>
+<h2 class="section">Typographic patterns</h2>
 <?php
 foreach ($typographys as $typography):
     echo '<div class="pattern">';
@@ -120,67 +69,7 @@ foreach ($typographys as $typography):
     echo '<p><a href="typographys/'.$typography.'">'.$typography.'</a></p>';
     echo '</div>';
     echo '</div>';
-endforeach;
-?>
-
-
-
-<?php
-$feedbacks = array();
-$handle=opendir('feedback');
-while (false !== ($feedback = readdir($handle))):
-    if(stristr($feedback,'.html')):
-        $feedbacks[] = $feedback;
-    endif;
-endwhile;
-sort($feedbacks);
-
-?>
-<h2 class="section">Messages and Feedback</h2>
-<?php
-foreach ($feedbacks as $feedback):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('feedback/'.$feedback);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('feedback/'.$feedback));
-    echo '</textarea>';
-    echo '<p><a href="feedbacks/'.$feedback.'">'.$feedback.'</a></p>';
-    echo '</div>';
-    echo '</div>';
-endforeach;
-?>
-
-
-
-
-<?php
-$navigations = array();
-$handle=opendir('navigation');
-while (false !== ($navigation = readdir($handle))):
-    if(stristr($navigation,'.html')):
-        $navigations[] = $navigation;
-    endif;
-endwhile;
-sort($navigations);
-
-?>
-<h2 class="section">Navigation Elements</h2>
-<?php
-foreach ($navigations as $navigation):
-    echo '<div class="pattern">';
-    echo '<div class="display">';
-    include('navigation/'.$navigation);
-    echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
-    echo htmlspecialchars(file_get_contents('navigation/'.$navigation));
-    echo '</textarea>';
-    echo '<p><a href="navigations/'.$navigation.'">'.$navigation.'</a></p>';
-    echo '</div>';
-    echo '</div>';
+    echo '<div class="pattern-separator"></div>';
 endforeach;
 ?>
 

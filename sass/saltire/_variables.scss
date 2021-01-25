@@ -22,6 +22,7 @@ $green: #5cb84c;
 $yellowgreen: #b5c334;
 $beige: #e0dccc;
 $lightgray: #d2d3d1;
+$magenta: #e30d8d;
 
 // Predefined shades
 $lightestgray: lighten($lightgray, 8%);
@@ -54,12 +55,12 @@ $brand-danger:          $red !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            #555 !default; // contrast ratio of at least 4.5:1 on a white background
+$text-color:            #444 !default; // contrast ratio of at least 4.5:1 on a white background
 
 //** Global link color.
 $link-color:            $blue !default;
 //** Link hover color
-$link-hover-color:      lighten($link-color, 15%) !default;
+$link-hover-color:      darken($link-color, 15%) !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
@@ -67,10 +68,16 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:        "robotoregular", Helvetica, Arial, Tahoma, sans-serif !default;
-$font-family-italic:            "robotoitalic", Helvetica, Arial, Tahoma, sans-serif !default;
-$font-family-sans-serif-light:  "robotolight", Helvetica, Arial, Tahoma, sans-serif !default;
-$font-family-bold:              "robotobold", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-sans-serif:        "open_sansregular", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-italic:            "open_sansitalic", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-sans-serif-light:  "open_sanslight", Helvetica, Arial, Tahoma, sans-serif !default;
+$font-family-bold:              "open_sansbold", Helvetica, Arial, Tahoma, sans-serif !default;
+
+// $font-family-sans-serif:        "robotoregular", Helvetica, Arial, Tahoma, sans-serif !default;
+// $font-family-italic:            "robotoitalic", Helvetica, Arial, Tahoma, sans-serif !default;
+// $font-family-sans-serif-light:  "robotolight", Helvetica, Arial, Tahoma, sans-serif !default;
+// $font-family-bold:              "robotobold", Helvetica, Arial, Tahoma, sans-serif !default;
+
 $font-family-serif:             Georgia, "Times New Roman", Times, serif !default;
 $font-family-icon:              'FontAwesome';
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -92,6 +99,8 @@ $font-size-h4:            1.15em !default;        // ~18.4px
 $font-size-h5:            1em !default;           // ~16px
 $font-size-h6:            0.875em !default;       // ~14px
 
+$font-size-summary:       1.35em !default;        // ~23.2px
+
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.6875 !default; // 20/14
 $line-height-em:          $line-height-base * 1em;
@@ -102,7 +111,7 @@ $line-height-computed:    floor((16px * $line-height-base)) !default; // ~20px
 $headings-font-family:    $font-family-sans-serif !default;
 $headings-font-weight:    400 !default;
 $headings-line-height:    1.25 !default;
-$headings-color:          $gray-dark !default;
+$headings-color:          $gray-base !default;
 
 //== Components
 //
@@ -120,8 +129,8 @@ $padding-small-horizontal:  10px !default;
 $padding-xs-vertical:       1px !default;
 $padding-xs-horizontal:     5px !default;
 
-$line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
-$line-height-small:         1.5 !default;
+$line-height-small:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
+$line-height-large:         1.5 !default;
 
 $border-radius-base:        4px !default;
 $border-radius-large:       6px !default;
@@ -186,6 +195,10 @@ $btn-danger-color:               #fff !default;
 $btn-danger-bg:                  $brand-danger !default;
 $btn-danger-border:             transparent !default;
 
+$btn-clear-color:              $blue !default;
+$btn-clear-bg:                 #fff !default;
+$btn-clear-border:             $blue !default;
+
 $btn-link-disabled-color:        $gray-light !default;
 
 // Allows for customizing button radius independently from global border radius
@@ -206,7 +219,7 @@ $input-bg-disabled:              $gray-lighter !default;
 //** Text color for `<input>`s
 $input-color:                    $gray !default;
 //** `<input>` border color
-$input-border:                   #ccc !default;
+$input-border:                   lighten($gray, 30%) !default;
 
 $input-border-radius:            $border-radius-base !default;
 //** Large `.form-control` border radius
@@ -349,8 +362,8 @@ $nav-disabled-link-hover-color:             $gray-light !default;
 //
 //## Define colors for form feedback states and, by default, form specific alerts.
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
+$state-success-text:             darken($green,17%) !default;
+$state-success-bg:               lighten($green,30%) !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
 $state-info-text:                #31708f !default;

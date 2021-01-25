@@ -21,6 +21,7 @@
 
 		&:hover, &:active, &:focus {
 			background-color: darken($blue, 5%);
+			overflow: hidden;
 		}
 	}
 

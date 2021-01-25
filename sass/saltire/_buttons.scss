@@ -6,7 +6,7 @@
 // Base styles
 // --------------------------------------------------
 
-.btn, .gs, button {
+.btn, .gs {
   display: inline-block;
   margin-bottom: 0; // For input.btn
   font-weight: $btn-font-weight;
@@ -64,7 +64,6 @@ a.btn {
   }
 }
 
-
 // Alternate buttons
 // --------------------------------------------------
 
@@ -73,20 +72,21 @@ a.btn {
 }
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
-
   @include transition(background .2s, color .2s);
    &:hover, &:focus {
      color: #fff;
-     background-color: darken($darkestblue, 5%);
+     background: darken($darkestblue, 5%);
    }
 
    &:active {
      outline: none;
      color: #fff;
-     background-color: darken($darkestblue, 5%);
+     background: darken($darkestblue, 5%);
      @include transition(background .06s);
    }
 }
+
+
 // Success appears as green
 .btn-success {
   @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
@@ -104,6 +104,25 @@ a.btn {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
 }
 
+.btn-clear {
+  @include button-variant($btn-clear-color, $btn-clear-bg, $btn-clear-border);
+  @include transition(background .3s, color .3s);
+  border: 1px solid;
+     &:hover, &:focus {
+       color: #fff;
+       background: $blue;
+       border-color: $blue;
+     }
+
+     &:active {
+       outline: none;
+       border-color: $blue;
+       color: #fff;
+       background: $blue;
+       @include transition(background .06s);
+     }
+  }
+
 
 // Link buttons
 // -------------------------
@@ -119,7 +138,7 @@ a.btn {
   &.active,
   &[disabled],
   fieldset[disabled] & {
-    background-color: transparent;
+    background: transparent;
     @include box-shadow(none);
   }
   &,
@@ -132,7 +151,7 @@ a.btn {
   &:focus {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
-    background-color: transparent;
+    background: transparent;
   }
   &[disabled],
   fieldset[disabled] & {
@@ -152,7 +171,7 @@ a.btn {
   // line-height: ensure even-numbered height of button next to large input
   @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
   text-decoration: none;
-  margin: $line-height-computed auto;
+  margin: ($line-height-computed * 2) auto;
   &:hover,
   &:focus,
   &:active {
@@ -202,4 +221,19 @@ input[type="button"] {
   &.btn-block {
     width: 100%;
   }
+}
+
+
+// Buttons for Drupal webform
+// --------------------------------------------------
+
+.webform-button--submit {
+    @include button-variant($btn-success-color, $btn-success-bg, $btn-success-border);
+    // line-height: ensure even-numbered height of button next to large input
+    @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large);
+    text-decoration: none;
+    margin: ($line-height-computed * 2) auto;
+    &:hover,
+    &:focus,
+    &:active {text-decoration: none;}
 }

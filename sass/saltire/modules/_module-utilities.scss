@@ -29,9 +29,16 @@
 	}
 }
 
+
+
+
 // Hide from screenreaders and browsers
 .hidden {
 	display: none;
+	visibility: hidden;
+}
+
+.visually-hidden {
 	visibility: hidden;
 }
 
@@ -86,23 +93,34 @@
 }
 
 
-// PDF - Graphic
-//
-.pdf {
-	position: relative;
-	padding-left: 1.25em;
+// Border classes for making horizontal or vertical rules between chunks of content
 
-	&:before {
-		content: '';
-		display: inline-block;
-		position: absolute;
-		left: 0;
-		width: 1em;
-		height: 2em;
-		font-size: 1em;
-		@include sprite($icon__pdf-link--darkblue);
-	}
-}
+.border-bottom {border-bottom: 1px solid $gray-light; margin-bottom: 1.5em; padding-bottom: 1.5em;}
+.border-left {border-left: 1px solid $gray-light; margin-left: 1.5em; padding-left: 1.5em;}
+.border-right {border-right: 1px solid $gray-light; margin-right: 1.5em; padding-right: 1.5em;}
+.border-top {border-top: 1px solid $gray-light; margin-top: 1.5em; padding-top: 1.5em;}
+
+// Classes for removing borders
+
+.no-border-bottom {border-bottom: none;}
+.no-border-left {border-left: none;}
+.no-border-right {border-right: none;}
+.no-border-top {border-top: none;}
+
+
+// Classes for removing whitespace
+
+.no-whitespace-bottom {margin-bottom: 0; padding-bottom: 0;}
+.no-whitespace-left {margin-left: 0; padding-left: 0;}
+.no-whitespace-right {margin-right: 0; padding-right: 0;}
+.no-whitespace-top {margin-top: 0; padding-top: 0;}
+
+// Classes for adding whitespace
+
+.whitespace-bottom {margin-bottom: 1.5em;}
+.whitespace-left {margin-left:  1.5em;}
+.whitespace-right {margin-right:  1.5em;}
+.whitespace-top {margin-top:  1.5em;}
 
 // Hide Bullets from lists
 //

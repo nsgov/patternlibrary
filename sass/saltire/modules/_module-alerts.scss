@@ -1,16 +1,5 @@
 .alert {
-	position: relative;
-	margin-top: $line-height-em;
-
-	&:before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: .375em;
-		background-color: $darkestblue;
-	}
+	margin: $line-height-em 0;
 
 	p {
 		margin-bottom: 0;
@@ -19,76 +8,73 @@
 		font-weight: $font-weight-bold;
 	}
 
-
 	&-success {
-		background-color: lighten($green, 20%);
-
-		&:before {
-			background-color: $green;
-			@include box-shadow(0 0 0 1px $green);
-		}
-
-		p {
-			color: darken($green, 50%);
-			padding: 2%;
-		}
+		@include messageblock($green, 30%);
+		p {color: darken($green, 50%); margin-bottom: 0;}
 	}
 
-
 	&-low {
-		background-color: lighten($blue, 50%);
-
-		&:before {
-			background-color: $blue;
-			@include box-shadow(0 0 0 1px $blue);
-		}
-
-		p {
-			color: darken($blue, 50%);
-			padding: 2%;
-		}
+		@include messageblock($blue, 55%);
+		p {color: darken($blue, 50%); margin-bottom: 0;}
 	}
 
 	&-medium {
-		background-color: lighten($yellow, 10%);
-
-		&:before {
-			background-color: $yellow;
-			@include box-shadow(0 0 0 1px $yellow);
-		}
-
-		p {
-			color: darken($yellow, 50%);
-			padding: 2%;
-		}
+		@include messageblock($yellow, 20%);
+		p {color: darken($yellow, 50%); margin-bottom: 0;}
 	}
 
 	&-high {
-		background-color: lighten($red, 25%);
-
-		&:before {
-			background-color: $red;
-			@include box-shadow(0 0 0 1px $red);
-		}
-
-		p {
-			color: darken($red, 50%);
-			padding: 2%;
-		}
+		@include messageblock($red, 33%);
+		p {color: darken($red, 50%); margin-bottom: 0;}
 	}
 
 	&-clear {
-		background-color: lighten($lightgray, 100%);
-		@include box-shadow(0 0 0 1px $lightgray);
-
-		p {
-			color: #000;
-			padding: 2%;
-		}
+		@include messageblock($lightgray, 15%);
+		p {color: #000; margin-bottom: 0;}
 	}
 
 	&-in-view {
 		@include animation(from_left-opacity .45s);
 		@include animation-timing-function(cubic-bezier(1, .3, .5, 1.5));
 	}
+}
+
+.highlight {
+		@include textblock($yellow, 20%);
+}
+
+
+.blockquote-alert {
+  color: #000;
+  margin: 2em 0;
+  padding: 2em 0;
+  border: 1px solid $gray-light;
+  border-width: 1px 0;
+
+  .fa {font-size: $font-size-h1; float: left; margin: 0 0.5em 1em 0;}
+  p {
+    margin-bottom: 0;
+    & + p {margin-bottom: 1.5em;}
+  }
+}
+
+// Site alert - full browser width on top of page
+#news-alert-bar {
+	display: none;
+  &.has-news-alerts {
+  			display: block;
+  			background: $yellow;
+  			text-align: center;
+  			margin: 0;
+  			float: left;
+				width: 100%; /* gets rid of mystery space above alert bar */
+  		}
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .news-alert {
+    color: #444;
+  }
 }

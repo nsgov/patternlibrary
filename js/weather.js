@@ -1,4 +1,4 @@
-/** Control the weather		* @author David Nordlund		* © 2012 Province of Nova Scotia	**/
+/** Control the weather		* @author David Nordlund		* © 2012 Government of Nova Scotia	**/
 var Weather = {
 	Balloon: { // white box w/ overlay content (webcam image)
 		tag: document.getElementById('weatherBalloon'),

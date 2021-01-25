@@ -5,22 +5,25 @@
 
 table {
   background-color: $table-bg;
+
+  caption {
+    padding-top: $table-cell-padding;
+    padding-bottom: $table-cell-padding;
+    color: $text-muted;
+    text-align: left;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  .number {font-family: $font-family-monospace; text-align: right;}
 }
 
-caption {
-  padding-top: $table-cell-padding;
-  padding-bottom: $table-cell-padding;
-  color: $text-muted;
-  text-align: left;
-}
-
-th {
-  text-align: left;
-}
 
 
 // Baseline styles
-.table {
+table, .table {
   width: 100%;
   max-width: 100%;
   margin-bottom: $line-height-computed;
@@ -234,5 +237,34 @@ table {
       }
 
     }
+  }
+}
+
+
+// Special table class for Notice Listings
+
+.notices {
+  > tbody > tr {
+      &:nth-of-type(odd) {
+        background-color: $table-bg-accent;
+      }
+      &:last-of-type {
+        border-bottom: 1px solid;
+          td {border-bottom-style: solid;}
+      }
+    }
+
+  thead {
+    background: $gray-lighter;
+    border: 1px solid $table-border-color;
+  }
+
+  td {
+    border: 1px solid $table-border-color;
+    border-style: hidden solid;
+
+    .document-details {}
+    .notices-date {text-align: right; width: 12em;}
+    &.fiscal-year {min-width: 8em;}
   }
 }

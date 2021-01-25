@@ -1,0 +1,20 @@
+// Signature campaign header type configuration
+
+#signature-header {
+  background-color: #00aeef;
+  background-size: cover;
+  margin-bottom: 1.5em;
+}
+
+.signature-foreground-white {
+  h1, #summary {color: #fff;}
+}
+.signature-foreground-white-combo {
+  h1, #summary {color: #000;}
+}
+.signature-foreground-black {
+  h1, #summary {color: #000;}
+}
+.signature-foreground-black-combo {
+  h1, #summary {color: #fff;}
+}

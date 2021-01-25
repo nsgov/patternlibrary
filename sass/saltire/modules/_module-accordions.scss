@@ -1,0 +1,58 @@
+// // Regular text preceeded by + with top and bottom solid border on panel
+.otherways-accordion { // styles for Other ways accordian
+  border: solid $gray-light;
+  border-width: 1px 0;
+  padding: .1em 0;
+  margin: 3em 0 1.5em 0;
+	.accordion__heading {margin-top: $line-height-computed;}
+	.accordion__panel {
+    margin: 0 0 $line-height-computed 0;
+  }
+  .accordion__heading button {
+    background: transparent;
+    font-size: $font-size-large;
+    text-decoration: none;
+      &[aria-expanded="false"] {
+        &:after {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: '\f067';
+      }
+    }
+    &[aria-expanded="true"] {
+      &:after {
+      font: normal normal normal 14px/1 FontAwesome;
+      content: '\f068';
+      }
+    }
+  }
+}
+
+// Textblock treatment
+// .otherways-accordion { // styles for Other ways accordian
+//
+// 	@include textblock($lightgray, 12%);
+// 	font-size: $font-size-base;
+//   margin-top: 3em;
+//
+// 	.accordion__heading {margin-top: $line-height-computed;}
+// 	.accordion__panel {
+//     margin: 0 0 ($line-height-computed/2) 0;
+//   }
+//   .accordion__heading button {
+//     background: transparent;
+//     font-size: $font-size-h3;
+//     text-decoration: none;
+//       &[aria-expanded="false"] {
+//         &:after {
+//         font: normal normal normal 14px/1 FontAwesome;
+//         content: '\f067';
+//       }
+//     }
+//     &[aria-expanded="true"] {
+//       &:after {
+//       font: normal normal normal 14px/1 FontAwesome;
+//       content: '\f068';
+//       }
+//     }
+//   }
+// }

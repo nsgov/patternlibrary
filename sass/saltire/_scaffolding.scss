@@ -50,12 +50,16 @@ a {
   &:focus {
     color: $link-hover-color;
     text-decoration: $link-hover-decoration;
+
+    #main + & {color: $link-color;}
+
   }
 
-  &:active, &:focus {
+  &:active, &:focus, &:hover {
     background: $yellow;
   }
 }
+
 
 
 // Focus and Active universal styles
@@ -67,6 +71,12 @@ input {
     @include tab-focus;
   }
 }
+
+// Horizontal rule
+//
+// Sets minimal gray horizontal rule
+
+hr {border: none; border-top: 1px solid $gray-light; box-shadow: none;}
 
 // Figures
 //
