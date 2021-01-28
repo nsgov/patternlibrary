@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+<meta charset="utf-8">
+<title>NSGov UI Pattern Library</title>
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
+<link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/css/aria.accordion.css" />
+<style>
+.pattern {
+    clear: both;
+    overflow: visible;
+    display: block;
+    padding-top: 1em;
+
+}
+.pattern .display {
+    width: 65%;
+    float: left;
+}
+.pattern .source {
+    width: 30%;
+    float: right;
+}
+.pattern .source textarea {
+    width: 90%;
+}
+
+</style>
+</head>
+<body>
+<div id="patternlab-header">
+  <img src="img/ns-vip-white.svg" alt="Government of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
+  <div class="main-link"><a href="https://cns.pages.novascotia.ca/patternlab/">Main page</a></div>
+</div>
+
+<div class="pattern-container">
+<h1>Accessible accordions</h1>
+
+<p>Most of the time, accordions should be avoided. It is best to show all your content at once rather than hide chunks of it for cosmetic reasons.</p>
+
+<p>It is a myth that users do not scroll. You should not worry too much about page length.</p>
+
+<p>However, there are times when using an accordion for supplementary information makes sense. For programs that have an online application process, the online method is the primary call to action and other ways to apply are inside an accordion.</p>
+
+<h2>Accordion requirements</h2>
+<p>Here are the supporting files you will need:</p>
+<ul>
+    <li><a href="https://beta.novascotia.ca/themes/ignition/js/aria.accordion.js">aria.accordion.js</a></li>
+    <li><a href="https://beta.novascotia.ca/themes/ignition/css/aria.accordion.css">aria.accordion.css</a></li>
+    <li><a href="https://beta.novascotia.ca/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1">modernizr.min.js</a></li>
+</ul>
+
+
+<script src="https://beta.novascotia.ca/themes/ignition/js/aria.accordion.js"></script>
+    <script src="https://beta.novascotia.ca/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+
+
+<!-- accordion -->
+
+<h2 class="section">Accessible "Other ways to apply" accordion</h2>
+<div class="pattern"><div class="otherways-accordion accordion" data-aria-accordion="" id="acc_1-0">
+  <div class="accordion__heading">
+    <button type="button" aria-controls="acc_1-0_panel_1" id="acc_1-0_panel_1_trigger" class="accordion__trigger" aria-expanded="false" data-current="true">
+      Other ways to apply
+    </button>
+  </div>
+  <div class="accordion__panel" id="acc_1-0_panel_1" aria-hidden="true">
+    <p>You can use the 
+    <a href="https://beta.novascotia.ca/sites/default/files/documents/2-264/heating-assistance-rebate-application-form-en.pdf">Heating Assistance Rebate Application Form</a>
+    if you’re unable to apply online. Send your completed application (both sides of the application) and any supporting documents by mail or fax. If you’d like to receive a paper application by mail, contact us.</p>
+  </div>
+</div></div><div class="pattern"><textarea rows="6" cols="30">&lt;div class=&quot;otherways-accordion accordion&quot; data-aria-accordion=&quot;&quot; id=&quot;acc_1-0&quot;&gt;
+  &lt;div class=&quot;accordion__heading&quot;&gt;
+    &lt;button type=&quot;button&quot; aria-controls=&quot;acc_1-0_panel_1&quot; id=&quot;acc_1-0_panel_1_trigger&quot; class=&quot;accordion__trigger&quot; aria-expanded=&quot;false&quot; data-current=&quot;true&quot;&gt;
+      Other ways to apply
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;accordion__panel&quot; id=&quot;acc_1-0_panel_1&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;p&gt;You can use the 
+    &lt;a href=&quot;https://beta.novascotia.ca/sites/default/files/documents/2-264/heating-assistance-rebate-application-form-en.pdf&quot;&gt;Heating Assistance Rebate Application Form&lt;/a&gt;
+    if you’re unable to apply online. Send your completed application (both sides of the application) and any supporting documents by mail or fax. If you’d like to receive a paper application by mail, contact us.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</textarea><p><a href="accordion/accordion.html">accordion.html</a></p></div><div class="pattern-separator"></div><div class="pattern"><div class="timeline step-by-step row">
+  <a href="#" class="accordion__toggleall" style="font-size: small; float: right; margin-right: 20px; margin-bottom: 20px;" data-open="false">Open all</a>
+  <ol class="accordion" data-aria-accordion="" data-multi="" id="acc_1-0">
+          <li class="accordion-container col-md-12 col-xs-12">
+    		<span class="accordion-counter">1</span>
+			<div class="accordion__heading">
+				<button type="button" aria-controls="acc_1-0_panel_1" id="acc_1-0_panel_1_trigger" class="accordion__trigger" aria-expanded="false" data-current="true">
+					Decide what legal structure is right for you
+				</button>
+			</div>
+			<div class="accordion__panel" id="acc_1-0_panel_1" aria-hidden="true">	
+				<div class="group-description">
+					<p>How you set up your business depends on what sort of work you do. It can also affect the way you pay tax.</p>
+				</div>
+				
+				<p><a href="/choose-legal-structure-your-business-or-non-profit">Choose a legal structure for your business or non-profit</a>      <br>You need to choose a legal structure for your business or non-profit before you can register it with Registry of Joint Stock Companies.</p>
+			</div>
+
+      </li>
+          <li class="accordion-container col-md-12 col-xs-12">
+    		<span class="accordion-counter">2</span>
+			<div class="accordion__heading">
+				<button type="button" aria-controls="acc_1-0_panel_2" id="acc_1-0_panel_2_trigger" class="accordion__trigger" aria-expanded="false" data-current="false">
+					Reserve a name
+				</button>
+			</div>
+			<div class="accordion__panel" id="acc_1-0_panel_2">
+				<p><a href="/documents/choosing-name-your-business-or-non-profit-guidelines">Choosing a name for your business or non-profit: guidelines</a>      <br>Guidelines you need to follow when choosing a name for your business or non-profit.</p>
+
+        		<p><a href="/documents/reserving-name-your-business-or-non-profit-guidelines">Reserving a name for your business or non-profit: guidelines</a>      <br>Process of reserving a name for your business or non-profit with Registry of Joint Stock Companies.</p>
+
+        		<p><a href="/reserve-name-your-business-or-non-profit">Reserve a name for your business or non-profit</a>      <br>Businesses and non-profits need to apply to reserve a name before they register, incorporate or change an existing name.</p>
+
+        		<p><a href="/check-status-your-name-reservation-request">Check the status of your name reservation request</a>      <br>Businesses and non-profits can check the status of their name reservation request with Registry of Joint Stock Companies.</p>
+			</div>
+      </li>
+          <li class="accordion-container col-md-12 col-xs-12">
+    		<span class="accordion-counter">3</span>
+			<div class="accordion__heading">
+				<button type="button" aria-controls="acc_1-0_panel_3" id="acc_1-0_panel_3_trigger" class="accordion__trigger" aria-expanded="false" data-current="false">
+					Register your business or non-profit
+				</button>
+			</div>
+			<div class="accordion__panel" id="acc_1-0_panel_3">
+				<div class="group-description">
+					<p>Most businesses and non-profits need to register before they start operating.</p>
+				</div>
+								
+				<p><a href="/register-sole-proprietorship">Register a sole proprietorship</a></p>
+
+				<p><a href="/register-partnership-general">Register a partnership (general)</a></p>
+
+				<p><a href="/register-limited-partnership">Register a limited partnership </a></p>
+
+				<p><a href="/register-limited-liability-partnership">Register a limited liability partnership </a></p>
+
+				<p><a href="/register-extra-provincial-federal-or-foreign-corporation">Register an extra-provincial, federal or foreign corporation</a></p>
+
+				<p><a href="/incorporate-profit-co-operative">Incorporate a for-profit co-operative</a></p>
+
+				<p><a href="/incorporate-non-profit-co-operative">Incorporate a non-profit co-operative</a></p>
+
+				<p><a href="/incorporate-society">Incorporate a society</a></p>
+
+				<p><a href="/incorporate-limited-company">Incorporate a limited company</a></p>
+
+				<p><a href="/incorporate-company-limited-guarantee">Incorporate a company limited by guarantee</a></p>
+
+				<p><a href="/incorporate-unlimited-company">Incorporate an unlimited company</a></p>
+			</div>
+      </li>
+    </ol>
+</div></div><div class="pattern"><textarea rows="6" cols="30">&lt;div class=&quot;timeline step-by-step row&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;accordion__toggleall&quot; style=&quot;font-size: small; float: right; margin-right: 20px; margin-bottom: 20px;&quot; data-open=&quot;false&quot;&gt;Open all&lt;/a&gt;
+  &lt;ol class=&quot;accordion&quot; data-aria-accordion=&quot;&quot; data-multi=&quot;&quot; id=&quot;acc_1-0&quot;&gt;
+          &lt;li class=&quot;accordion-container col-md-12 col-xs-12&quot;&gt;
+    		&lt;span class=&quot;accordion-counter&quot;&gt;1&lt;/span&gt;
+			&lt;div class=&quot;accordion__heading&quot;&gt;
+				&lt;button type=&quot;button&quot; aria-controls=&quot;acc_1-0_panel_1&quot; id=&quot;acc_1-0_panel_1_trigger&quot; class=&quot;accordion__trigger&quot; aria-expanded=&quot;false&quot; data-current=&quot;true&quot;&gt;
+					Decide what legal structure is right for you
+				&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;accordion__panel&quot; id=&quot;acc_1-0_panel_1&quot; aria-hidden=&quot;true&quot;&gt;	
+				&lt;div class=&quot;group-description&quot;&gt;
+					&lt;p&gt;How you set up your business depends on what sort of work you do. It can also affect the way you pay tax.&lt;/p&gt;
+				&lt;/div&gt;
+				
+				&lt;p&gt;&lt;a href=&quot;/choose-legal-structure-your-business-or-non-profit&quot;&gt;Choose a legal structure for your business or non-profit&lt;/a&gt;      &lt;br&gt;You need to choose a legal structure for your business or non-profit before you can register it with Registry of Joint Stock Companies.&lt;/p&gt;
+			&lt;/div&gt;
+
+      &lt;/li&gt;
+          &lt;li class=&quot;accordion-container col-md-12 col-xs-12&quot;&gt;
+    		&lt;span class=&quot;accordion-counter&quot;&gt;2&lt;/span&gt;
+			&lt;div class=&quot;accordion__heading&quot;&gt;
+				&lt;button type=&quot;button&quot; aria-controls=&quot;acc_1-0_panel_2&quot; id=&quot;acc_1-0_panel_2_trigger&quot; class=&quot;accordion__trigger&quot; aria-expanded=&quot;false&quot; data-current=&quot;false&quot;&gt;
+					Reserve a name
+				&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;accordion__panel&quot; id=&quot;acc_1-0_panel_2&quot;&gt;
+				&lt;p&gt;&lt;a href=&quot;/documents/choosing-name-your-business-or-non-profit-guidelines&quot;&gt;Choosing a name for your business or non-profit: guidelines&lt;/a&gt;      &lt;br&gt;Guidelines you need to follow when choosing a name for your business or non-profit.&lt;/p&gt;
+
+        		&lt;p&gt;&lt;a href=&quot;/documents/reserving-name-your-business-or-non-profit-guidelines&quot;&gt;Reserving a name for your business or non-profit: guidelines&lt;/a&gt;      &lt;br&gt;Process of reserving a name for your business or non-profit with Registry of Joint Stock Companies.&lt;/p&gt;
+
+        		&lt;p&gt;&lt;a href=&quot;/reserve-name-your-business-or-non-profit&quot;&gt;Reserve a name for your business or non-profit&lt;/a&gt;      &lt;br&gt;Businesses and non-profits need to apply to reserve a name before they register, incorporate or change an existing name.&lt;/p&gt;
+
+        		&lt;p&gt;&lt;a href=&quot;/check-status-your-name-reservation-request&quot;&gt;Check the status of your name reservation request&lt;/a&gt;      &lt;br&gt;Businesses and non-profits can check the status of their name reservation request with Registry of Joint Stock Companies.&lt;/p&gt;
+			&lt;/div&gt;
+      &lt;/li&gt;
+          &lt;li class=&quot;accordion-container col-md-12 col-xs-12&quot;&gt;
+    		&lt;span class=&quot;accordion-counter&quot;&gt;3&lt;/span&gt;
+			&lt;div class=&quot;accordion__heading&quot;&gt;
+				&lt;button type=&quot;button&quot; aria-controls=&quot;acc_1-0_panel_3&quot; id=&quot;acc_1-0_panel_3_trigger&quot; class=&quot;accordion__trigger&quot; aria-expanded=&quot;false&quot; data-current=&quot;false&quot;&gt;
+					Register your business or non-profit
+				&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;accordion__panel&quot; id=&quot;acc_1-0_panel_3&quot;&gt;
+				&lt;div class=&quot;group-description&quot;&gt;
+					&lt;p&gt;Most businesses and non-profits need to register before they start operating.&lt;/p&gt;
+				&lt;/div&gt;
+								
+				&lt;p&gt;&lt;a href=&quot;/register-sole-proprietorship&quot;&gt;Register a sole proprietorship&lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/register-partnership-general&quot;&gt;Register a partnership (general)&lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/register-limited-partnership&quot;&gt;Register a limited partnership &lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/register-limited-liability-partnership&quot;&gt;Register a limited liability partnership &lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/register-extra-provincial-federal-or-foreign-corporation&quot;&gt;Register an extra-provincial, federal or foreign corporation&lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/incorporate-profit-co-operative&quot;&gt;Incorporate a for-profit co-operative&lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/incorporate-non-profit-co-operative&quot;&gt;Incorporate a non-profit co-operative&lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/incorporate-society&quot;&gt;Incorporate a society&lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/incorporate-limited-company&quot;&gt;Incorporate a limited company&lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/incorporate-company-limited-guarantee&quot;&gt;Incorporate a company limited by guarantee&lt;/a&gt;&lt;/p&gt;
+
+				&lt;p&gt;&lt;a href=&quot;/incorporate-unlimited-company&quot;&gt;Incorporate an unlimited company&lt;/a&gt;&lt;/p&gt;
+			&lt;/div&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;</textarea><p><a href="accordion/step-by-step.html">step-by-step.html</a></p></div><div class="pattern-separator"></div>
+</div>
+
+    <script src="https://beta.novascotia.ca/themes/ignition/js/aria.accordion.js"></script>
+    <script src="https://beta.novascotia.ca/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+	<script src="js/script.min.js"></script>
+</body>
+</html>

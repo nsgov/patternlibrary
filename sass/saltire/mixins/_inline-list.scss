@@ -1,0 +1,8 @@
+@mixin inline-list {
+  list-style-type: none;
+  &, & li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+}

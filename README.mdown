@@ -1,0 +1,5 @@
+Create little snippets of markup and save them to the "atoms", "molecules" and "organisms" directories. 
+
+The pattern primer will generate a list of all the patterns in that folder. You will see the pattern rendered as HTML. You will also get the source displayed in a textarea.
+
+This is a mashup of Pattern Primer (https://github.com/adactio/Pattern-Primer) and Pattern Lab (https://github.com/pattern-lab/patternlab-php).

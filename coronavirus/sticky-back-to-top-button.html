@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<style>
+			#top-link {
+				background: #a0d3e6;
+				border: none;
+				border: none;bottom: 0;
+				border-top-left-radius: 20px; 
+				border-top-right-radius: 20px;
+				color: #00223c;
+				display: none;
+				font-weight: bold;
+				padding: 1em 30px 1em 20px;
+				position: fixed;
+				right: 30px;
+				text-align: right;    z-index: 1;  
+			}
+			#top-link:hover, #top-link:focus {
+				background: #00223c;
+				color: #fff; 
+			}
+			</style>
+	</head>
+	<body>
+
+		<button onclick="topFunction()" id="top-link" title="Back to top">Back to top <i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+		<script>
+			var mybutton = document.getElementById("top-link");
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+			  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		  </script>
+	</body>
+</html>
+

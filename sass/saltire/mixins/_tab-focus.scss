@@ -1,0 +1,6 @@
+
+@mixin tab-focus() {
+	outline: solid .25em $yellow;
+	outline-offset: 0;
+	text-decoration: none;
+}

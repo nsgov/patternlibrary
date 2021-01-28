@@ -1,0 +1,142 @@
+// Author: Able Sense Media
+//
+.headline-saltire-container {
+	overflow: hidden;
+	position: relative;
+	display: block;
+	margin-bottom: 1em;
+
+	img {
+		width: 100%;
+	}
+
+	a {
+		&:active {
+			@include box-shadow(none);
+			background: none;
+		}
+	}
+
+	.container-link {
+		position: relative;
+		display: block;
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+		}
+
+		&:before {
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.container-link-blue {
+		&:before {
+			background: rgba(0, 88, 164, .05);
+			@include transition(background .2s, border .2s);
+			border: solid 1px transparent;
+		}
+
+		&:hover, &:focus {
+			&:before {
+				background: rgba(0, 88, 164, .2);
+				border-color: rgba(0, 88, 164, .25);
+			}
+		}
+	}
+}
+
+.headline-saltire-caption {
+	position: absolute;
+	z-index: 2;
+	padding: 1em 1em .8em;
+	line-height: 1;
+	color: $text-color;
+	background: #fff;
+	transform: translateZ(0); // Fixes text rendering
+
+	&:before,
+	&:after { // These create the angles
+		content: '';
+		position: absolute;
+		z-index: -1;
+		width: 200%;
+		height: 100%;
+		background: inherit;
+	}
+
+	h1 {
+		margin-top: 0;
+	}
+
+	.headline-saltire-caption-bottom-left & {
+		bottom: .75em;
+
+		&:before,
+		&:after {
+			top: 0;
+			@include skewX(-30deg);
+		}
+
+		&:before {
+			top: .75em;
+			right: -30%;
+			width: 115%;
+			background: rgba(0, 174, 239, .35);
+		}
+
+		&:after {
+			right: -15%;
+		}
+	}
+
+	.headline-saltire-caption-top-left & {
+		top: 2.75em;
+
+		&:before,
+		&:after {
+			top: 0;
+			@include skewX(30deg);
+		}
+
+		&:before {
+			background: $cyan;
+			top: .75em;
+			right: -15%;
+			opacity: .35;
+		}
+
+		&:after {
+			right: -10%;
+		}
+	}
+
+	.headline-saltire-caption-bottom-left.headline-saltire-animation &,
+	.headline-saltire-caption-top-left.headline-saltire-animation & {
+		@include animation(from_left .7s cubic-bezier( 1, .5, .3, 1.1 ));
+
+		* {
+			@include animation(from_left_25-delay .75s cubic-bezier( 1, .5, .3, 1.1 ));
+		}
+
+		&:before {
+			@include animation(from_left 1s cubic-bezier( 1, .5, .3, 1.1 ));
+		}
+	}
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	.headline-saltire-caption-remove-sm {
+		position: static;
+		padding: 2em 0 .25em;
+
+		&, * {
+			@include animation(none !important);
+		}
+	}
+}

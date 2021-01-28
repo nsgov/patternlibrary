@@ -1,0 +1,55 @@
+ul.icon-list {
+  margin: 2em 0 2em .5em; padding: 0;
+
+  li {
+  	padding: 0;
+  	margin: 0;
+  	list-style: none;
+  	margin: .5em;
+  	margin-left: 1.4em;
+
+  }
+
+  li a:before {
+  	font-family: 'FontAwesome';
+  	float: left;
+    font-size: 1.5em;
+  	margin-left: -1.15em;
+    margin-top: -.25em;
+  	color: $blue;
+  }
+
+// File types
+  li.website a:before 	        	{content: '\f0f6';} // file-text-o
+  li.pdf-file a:before 	        	{content: '\f1c1';} // pdf-o
+  li.ppt-file a:before 	         	{content: '\f1c4';} // powerpoint-o
+  li.doc-file a:before 	        	{content: '\f0f6';} // word-o
+  li.excel-file a:before 	       	{content: '\f1c3';} // file-excel-o
+  li.file a:before 			          {content: '\f15b';} // file-o
+  li.zip a:before 	            	{content: '\f1c6';} // file-archive-o
+
+// Social
+  li.twitter a:before		   	      {content: '\f081';}
+  li.facebook a:before 		        {content: '\f082';}
+  li.youtube a:before       		  {content: '\f166';}
+  li.flickr a:before 		         	{content: '\f16e';}
+  li.tumblr a:before 		         	{content: '\f174';}
+  li.medium a:before 		         	{content: '\f23a';}
+  li.instagram a:before 		      {content: '\f16d';}
+  li.linkedin a:before 		        {content: '\f08c';}
+// Other
+  li.external-link a:before 			{content: '\f08e';}
+  li.office a:before              {content: '\f0f7';}
+  li.map a:before                 {content: '\f041';}
+  li.info a:before                {content: '\f05a';}
+
+// Status
+  li.progress a:before            {content: '\f110'; color: $text-color;} // spinner
+  li.complete a:before            {content: '\f00c'; color: $green;} // check
+  li.scheduled a:before           {content: '\f274';} // calendar-check-o
+
+}
+
+.big-icon {
+  font-size: 3em; color: #2750a0;
+}

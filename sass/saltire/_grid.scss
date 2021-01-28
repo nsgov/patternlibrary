@@ -1,0 +1,129 @@
+//
+// Grid system
+// --------------------------------------------------
+
+// CSS Grid support
+//
+// Use classes paired with grid-container for specific usages (like Topics)
+
+.grid-container {
+  display: grid;
+
+  &.topic {
+    h2 {font-size: $font-size-large;}
+    align-items: start;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 0rem 2rem;
+
+    h3 {font-size: $font-size-large;}
+  }
+
+
+  &.contact {
+    align-items: start;
+    // grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+    // grid-gap: 1rem;
+
+    section {
+      border-bottom: 1px solid $gray-lighter;
+      padding-bottom: 1.5em;
+
+      &:last-of-type {border-bottom: none;}
+      &:target {
+        		@include textblock($yellow, 20%);
+      }
+
+      article {
+        max-width: 100%;
+
+        h2, h3 {word-wrap: normal;}
+
+        &:target {
+          		@include textblock($yellow, 20%);
+        }
+      }
+    }
+  }
+}
+
+
+
+// Bootstrap Grid Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
+  }
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
+  }
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  @include container-fixed;
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  @include make-row;
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+@include make-grid-columns;
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+@include make-grid(xs);
+
+
+// Small grid
+//
+// Columns, offsets, pushes, and pulls for the small device range, from phones
+// to tablets.
+
+@media (min-width: $screen-sm-min) {
+  @include make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: $screen-md-min) {
+  @include make-grid(md);
+}
+
+
+// Large grid
+//
+// Columns, offsets, pushes, and pulls for the large desktop device range.
+
+@media (min-width: $screen-lg-min) {
+  @include make-grid(lg);
+}

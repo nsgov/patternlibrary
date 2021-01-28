@@ -1,0 +1,23 @@
+// Figure
+.figure {
+	display: inline-block;
+
+	&[class*="col"] {
+		padding: 0;
+	}
+
+	img {
+		width: 100%;
+	}
+	&-figcaption {
+		max-width: 100%;
+		margin: 0 .75em;
+		font-family: $font-family-italic;
+		font-style: italic;
+		font-size: $font-size-small;
+		text-align: center;
+		margin-bottom: 1.5em;
+	}
+}
+
+

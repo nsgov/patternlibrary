@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>NSGov UI Pattern Library</title>
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
+<link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
+
+
+<style>
+.pattern {
+    clear: both;
+    overflow: visible;
+    display: block;
+    padding-top: 1em;
+
+}
+.pattern .display {
+    width: 65%;
+    float: left;
+}
+.pattern .source {
+    width: 30%;
+    float: right;
+}
+.pattern .source textarea {
+    width: 90%;
+}
+
+</style>
+</head>
+<body>
+<div id="patternlab-header">
+  <img src="img/ns-vip-white.svg" alt="Government of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
+  <div class="main-link"><a href="https://cns.pages.novascotia.ca/patternlab/">Main page</a></div>
+</div>
+
+<div class="pattern-container">
+<h1>Coronavirus</h1>
+
+<p>A collection of new and experimental patterns brought into use during the Coronavirus pandemic.</p>
+<p>Part of our content strategy during the pandemic was to keep Coronavirus information centralized, and link core government content to the main coronavirus website or the closures page for service change information rather than duplicate it. This required developing a standard way of showing an alert for a service change, and a way to highlight what citizens could do online.</p>
+<p>Most of these patterns contain inline CSS - usually due to the need to use them on a variety of government pages that use older versions of our framework.</p>
+
+
+
+<!-- CONTENT -->
+
+<h2 class="section">Experimental patterns</h2>
+<div class="pattern"><div class="display"><style>
+.blockquote-alert article {
+	display: grid;
+	width: 100%;
+	column-gap: 10px;
+	grid-template-columns: 2em 1fr;
+	align-items: top;
+	}
+	.blockquote-alert article p + p {
+		margin-top: 1.5em; margin-bottom: 0;
+}
+</style>
+
+<section class="blockquote-alert">
+	<article>
+        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+        <div class="alert-message" aria-label="alert" role="alert">
+            <p>
+				Avoid non-essential travel to Halifax and Hants County locations that have additional restrictions and protective measures in place. See <a href="../county-restrictions/halifax/default.asp">Halifax County restriction alerts</a> and <a href="../county-restrictions/hants/default.asp">Hants County restriction alerts</a>.
+            </p>
+			<p>
+				Avoid non-essential travel to other Atlantic provinces (New Brunswick, Prince Edward Island and Newfoundland and Labrador).
+			</p>
+        </div>
+	</article>
+</section></div><div class="source"><textarea rows="6" cols="30">&lt;style&gt;
+.blockquote-alert article {
+	display: grid;
+	width: 100%;
+	column-gap: 10px;
+	grid-template-columns: 2em 1fr;
+	align-items: top;
+	}
+	.blockquote-alert article p + p {
+		margin-top: 1.5em; margin-bottom: 0;
+}
+&lt;/style&gt;
+
+&lt;section class=&quot;blockquote-alert&quot;&gt;
+	&lt;article&gt;
+        &lt;i class=&quot;fa fa-exclamation-circle&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;alert-message&quot; aria-label=&quot;alert&quot; role=&quot;alert&quot;&gt;
+            &lt;p&gt;
+				Avoid non-essential travel to Halifax and Hants County locations that have additional restrictions and protective measures in place. See &lt;a href=&quot;../county-restrictions/halifax/default.asp&quot;&gt;Halifax County restriction alerts&lt;/a&gt; and &lt;a href=&quot;../county-restrictions/hants/default.asp&quot;&gt;Hants County restriction alerts&lt;/a&gt;.
+            &lt;/p&gt;
+			&lt;p&gt;
+				Avoid non-essential travel to other Atlantic provinces (New Brunswick, Prince Edward Island and Newfoundland and Labrador).
+			&lt;/p&gt;
+        &lt;/div&gt;
+	&lt;/article&gt;
+&lt;/section&gt;</textarea><p><a href="coronavirus/covid-big-blockquote-alert.html">covid-big-blockquote-alert.html</a></p></div></div><div class="pattern-separator"></div><div class="pattern"><div class="display"><style>
+
+	header {
+		background: #00223c url(https://novascotia.ca/coronavirus/img/virus-bg.png) top right no-repeat;
+		/* background-size: cover; */
+		margin-bottom: 2em;
+	}
+	
+	header.subpage {background-position: 100% 28%;}
+	header.subpage .signature-summary {display: none;}
+	.logo {margin-left: 0;}
+	.logo-img {width: 10em; margin-bottom: 2em;}
+	
+	.subpage .logo-img {width: 8em; margin-bottom: 1em;}
+	.subpage {margin-bottom: 1em}
+	
+	.header-container form::before, .header-container:before, .header-container::after {background: transparent;}
+		
+	.signature-summary {color: #fff; font-size: 1.25em;}
+	.signature-summary .site-title {color: #fff; font-size: 1.75em;}
+	.signature-summary .site-title-homepage {color: #fff; font-size: 1.75em; margin: 0.23em 0 0.23em 0;}
+	.subpage .signature-summary {font-size: 1em;}
+	
+	.signature-page-summary {font-size: 1.35em; margin-bottom: 1.5em;}
+	
+	.logo + div:not(.search-box) {
+		display: block;
+	}
+	
+	.navigation {
+		background: #00223c;
+	}
+</style>
+
+<header id="header" class="header subpage" role="banner">
+	<div class="container header-container">
+		<ul class="LanguageLinks language-switcher-locale-session"><li class="en first currentLang"><a href="https://novascotia.ca/coronavirus/alerts-notices/" rel="self" hreflang="en" lang="en" class="language-link session-active">English</a></li><li class="fr altLang"><a href="fr/" rel="alternate" hreflang="fr" lang="fr" class="language-link ">Français</a></li></ul>
+
+		<a class="logo" href="https://novascotia.ca/"><img class="logo-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Government of Nova Scotia" /></a>
+		<span class="search-box"></span>
+
+	</div>
+</header></div><div class="source"><textarea rows="6" cols="30">&lt;style&gt;
+
+	header {
+		background: #00223c url(https://novascotia.ca/coronavirus/img/virus-bg.png) top right no-repeat;
+		/* background-size: cover; */
+		margin-bottom: 2em;
+	}
+	
+	header.subpage {background-position: 100% 28%;}
+	header.subpage .signature-summary {display: none;}
+	.logo {margin-left: 0;}
+	.logo-img {width: 10em; margin-bottom: 2em;}
+	
+	.subpage .logo-img {width: 8em; margin-bottom: 1em;}
+	.subpage {margin-bottom: 1em}
+	
+	.header-container form::before, .header-container:before, .header-container::after {background: transparent;}
+		
+	.signature-summary {color: #fff; font-size: 1.25em;}
+	.signature-summary .site-title {color: #fff; font-size: 1.75em;}
+	.signature-summary .site-title-homepage {color: #fff; font-size: 1.75em; margin: 0.23em 0 0.23em 0;}
+	.subpage .signature-summary {font-size: 1em;}
+	
+	.signature-page-summary {font-size: 1.35em; margin-bottom: 1.5em;}
+	
+	.logo + div:not(.search-box) {
+		display: block;
+	}
+	
+	.navigation {
+		background: #00223c;
+	}
+&lt;/style&gt;
+
+&lt;header id=&quot;header&quot; class=&quot;header subpage&quot; role=&quot;banner&quot;&gt;
+	&lt;div class=&quot;container header-container&quot;&gt;
+		&lt;ul class=&quot;LanguageLinks language-switcher-locale-session&quot;&gt;&lt;li class=&quot;en first currentLang&quot;&gt;&lt;a href=&quot;https://novascotia.ca/coronavirus/alerts-notices/&quot; rel=&quot;self&quot; hreflang=&quot;en&quot; lang=&quot;en&quot; class=&quot;language-link session-active&quot;&gt;English&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;fr altLang&quot;&gt;&lt;a href=&quot;fr/&quot; rel=&quot;alternate&quot; hreflang=&quot;fr&quot; lang=&quot;fr&quot; class=&quot;language-link &quot;&gt;Français&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+		&lt;a class=&quot;logo&quot; href=&quot;https://novascotia.ca/&quot;&gt;&lt;img class=&quot;logo-img&quot; src=&quot;https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg&quot; alt=&quot;Government of Nova Scotia&quot; /&gt;&lt;/a&gt;
+		&lt;span class=&quot;search-box&quot;&gt;&lt;/span&gt;
+
+	&lt;/div&gt;
+&lt;/header&gt;</textarea><p><a href="coronavirus/covid-header-condensed.html">covid-header-condensed.html</a></p></div></div><div class="pattern-separator"></div><div class="pattern"><div class="display"><style>
+
+	header {
+		background: #00223c url(https://novascotia.ca/coronavirus/img/virus-bg.png) top right no-repeat;
+		/* background-size: cover; */
+		margin-bottom: 2em;
+	}
+	
+	header.subpage {background-position: 100% 28%;}
+	header.subpage .signature-summary {display: none;}
+	.logo {margin-left: 0;}
+	.logo-img {width: 10em; margin-bottom: 2em;}
+	
+	.subpage .logo-img {width: 8em; margin-bottom: 1em;}
+	.subpage {margin-bottom: 1em}
+	
+	.header-container form::before, .header-container:before, .header-container::after {background: transparent;}
+		
+	.signature-summary {color: #fff; font-size: 1.25em;}
+	.signature-summary .site-title {color: #fff; font-size: 1.75em;}
+	.signature-summary .site-title-homepage {color: #fff; font-size: 1.75em; margin: 0.23em 0 0.23em 0;}
+	.subpage .signature-summary {font-size: 1em;}
+	
+	.signature-page-summary {font-size: 1.35em; margin-bottom: 1.5em;}
+	
+	.logo + div:not(.search-box) {
+		display: block;
+	}
+	
+	.navigation {
+		background: #00223c;
+	}
+</style>
+
+<header id="header" class="header" role="banner">
+	<div class="container header-container">
+		<ul class="LanguageLinks language-switcher-locale-session"><li class="en first currentLang"><a href="https://novascotia.ca/coronavirus/" rel="self" hreflang="en" lang="en" class="language-link session-active">English</a></li><li class="fr altLang"><a href="fr/" rel="alternate" hreflang="fr" lang="fr" class="language-link ">Français</a></li></ul>
+
+		<a class="logo" href="https://novascotia.ca/"><img class="logo-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Government of Nova Scotia" /></a>
+		<span class="search-box"></span>
+
+		<div class="signature-summary">
+			<span class="site-title">Coronavirus (COVID-19)</span>
+			<p>Government&#8217;s response to COVID-19.</p>
+		</div>
+
+	</div>
+</header></div><div class="source"><textarea rows="6" cols="30">&lt;style&gt;
+
+	header {
+		background: #00223c url(https://novascotia.ca/coronavirus/img/virus-bg.png) top right no-repeat;
+		/* background-size: cover; */
+		margin-bottom: 2em;
+	}
+	
+	header.subpage {background-position: 100% 28%;}
+	header.subpage .signature-summary {display: none;}
+	.logo {margin-left: 0;}
+	.logo-img {width: 10em; margin-bottom: 2em;}
+	
+	.subpage .logo-img {width: 8em; margin-bottom: 1em;}
+	.subpage {margin-bottom: 1em}
+	
+	.header-container form::before, .header-container:before, .header-container::after {background: transparent;}
+		
+	.signature-summary {color: #fff; font-size: 1.25em;}
+	.signature-summary .site-title {color: #fff; font-size: 1.75em;}
+	.signature-summary .site-title-homepage {color: #fff; font-size: 1.75em; margin: 0.23em 0 0.23em 0;}
+	.subpage .signature-summary {font-size: 1em;}
+	
+	.signature-page-summary {font-size: 1.35em; margin-bottom: 1.5em;}
+	
+	.logo + div:not(.search-box) {
+		display: block;
+	}
+	
+	.navigation {
+		background: #00223c;
+	}
+&lt;/style&gt;
+
+&lt;header id=&quot;header&quot; class=&quot;header&quot; role=&quot;banner&quot;&gt;
+	&lt;div class=&quot;container header-container&quot;&gt;
+		&lt;ul class=&quot;LanguageLinks language-switcher-locale-session&quot;&gt;&lt;li class=&quot;en first currentLang&quot;&gt;&lt;a href=&quot;https://novascotia.ca/coronavirus/&quot; rel=&quot;self&quot; hreflang=&quot;en&quot; lang=&quot;en&quot; class=&quot;language-link session-active&quot;&gt;English&lt;/a&gt;&lt;/li&gt;&lt;li class=&quot;fr altLang&quot;&gt;&lt;a href=&quot;fr/&quot; rel=&quot;alternate&quot; hreflang=&quot;fr&quot; lang=&quot;fr&quot; class=&quot;language-link &quot;&gt;Français&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+
+		&lt;a class=&quot;logo&quot; href=&quot;https://novascotia.ca/&quot;&gt;&lt;img class=&quot;logo-img&quot; src=&quot;https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg&quot; alt=&quot;Government of Nova Scotia&quot; /&gt;&lt;/a&gt;
+		&lt;span class=&quot;search-box&quot;&gt;&lt;/span&gt;
+
+		&lt;div class=&quot;signature-summary&quot;&gt;
+			&lt;span class=&quot;site-title&quot;&gt;Coronavirus (COVID-19)&lt;/span&gt;
+			&lt;p&gt;Government&amp;#8217;s response to COVID-19.&lt;/p&gt;
+		&lt;/div&gt;
+
+	&lt;/div&gt;
+&lt;/header&gt;</textarea><p><a href="coronavirus/covid-header-expanded.html">covid-header-expanded.html</a></p></div></div><div class="pattern-separator"></div><div class="pattern"><div class="display"><img src="https://novascotia.ca/clf/ignition/img/check-circle-green.svg" style="width: 30px; height: 30px; float: left; margin: .1em .5em 0 0;" alt="" />
+<h2 style="margin-top: 0; padding-top: 0;">Services available online</h2>
+<ul style="margin-left: 1.25em;">
+	<li><a href="https://isd.acol.ca/isd/rmv/VehiclePlateRenewal/index.do?lang=en&amp;_ga=2.221259999.674419657.1595244350-67436124.1589722913">Vehicle Permit Renewals</a></li>
+	<li><a href="https://isd.acol.ca/isd/rmv/ChangeAddress/Start.do?lang=.asp">Change of Address</a></li>
+	<li><a href="https://novascotia.ca/sns/access/services/fine-payments.asp">Motor Vehicle Fine Payment</a></li>
+	<li><a href="https://novascotia.ca/sns/access/online-services.asp">Driver Test Payments</a></li>
+</ul></div><div class="source"><textarea rows="6" cols="30">&lt;img src=&quot;https://novascotia.ca/clf/ignition/img/check-circle-green.svg&quot; style=&quot;width: 30px; height: 30px; float: left; margin: .1em .5em 0 0;&quot; alt=&quot;&quot; /&gt;
+&lt;h2 style=&quot;margin-top: 0; padding-top: 0;&quot;&gt;Services available online&lt;/h2&gt;
+&lt;ul style=&quot;margin-left: 1.25em;&quot;&gt;
+	&lt;li&gt;&lt;a href=&quot;https://isd.acol.ca/isd/rmv/VehiclePlateRenewal/index.do?lang=en&amp;amp;_ga=2.221259999.674419657.1595244350-67436124.1589722913&quot;&gt;Vehicle Permit Renewals&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://isd.acol.ca/isd/rmv/ChangeAddress/Start.do?lang=.asp&quot;&gt;Change of Address&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://novascotia.ca/sns/access/services/fine-payments.asp&quot;&gt;Motor Vehicle Fine Payment&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://novascotia.ca/sns/access/online-services.asp&quot;&gt;Driver Test Payments&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</textarea><p><a href="coronavirus/online-service-lure.html">online-service-lure.html</a></p></div></div><div class="pattern-separator"></div><div class="pattern"><div class="display">
+<style>
+	.blockquote-alert {color: #000; border: 1px solid #777777; border-width: 1px 0; margin: 2em 0; padding: 2em 0;}
+	.blockquote-alert p {margin: 0; padding: 0;}
+	.blockquote-alert h2 {border-bottom: none; color: #000; clear: none; font-size: 1.15em; font-weight: bold; font-family: 'open_sansbold', 'robotobold', sans-serif; font-weight: bold;  padding: 0; margin: 0;}
+	.blockquote-alert img {width: 30px; height: 30px; display: inline-block; float: left; margin: 0 0.5em 1em 0;}
+</style>
+<div class="blockquote-alert" role="alert">
+	<img src="https://novascotia.ca/clf/ignition/img/info-circle.svg" style="width: 30px; height: 30px; display: inline-block; float: left; margin: 0 0.5em 1em 0;">
+	<h2>COVID-19 service change</h2>
+	<p>
+		As a result of COVID-19, there are <a href="/closures-cancellations-and-service-changes/#driving">changes to services</a>.
+	</p>
+</div>	</div><div class="source"><textarea rows="6" cols="30">
+&lt;style&gt;
+	.blockquote-alert {color: #000; border: 1px solid #777777; border-width: 1px 0; margin: 2em 0; padding: 2em 0;}
+	.blockquote-alert p {margin: 0; padding: 0;}
+	.blockquote-alert h2 {border-bottom: none; color: #000; clear: none; font-size: 1.15em; font-weight: bold; font-family: 'open_sansbold', 'robotobold', sans-serif; font-weight: bold;  padding: 0; margin: 0;}
+	.blockquote-alert img {width: 30px; height: 30px; display: inline-block; float: left; margin: 0 0.5em 1em 0;}
+&lt;/style&gt;
+&lt;div class=&quot;blockquote-alert&quot; role=&quot;alert&quot;&gt;
+	&lt;img src=&quot;https://novascotia.ca/clf/ignition/img/info-circle.svg&quot; style=&quot;width: 30px; height: 30px; display: inline-block; float: left; margin: 0 0.5em 1em 0;&quot;&gt;
+	&lt;h2&gt;COVID-19 service change&lt;/h2&gt;
+	&lt;p&gt;
+		As a result of COVID-19, there are &lt;a href=&quot;/closures-cancellations-and-service-changes/#driving&quot;&gt;changes to services&lt;/a&gt;.
+	&lt;/p&gt;
+&lt;/div&gt;	</textarea><p><a href="coronavirus/service-change-notice.html">service-change-notice.html</a></p></div></div><div class="pattern-separator"></div><div class="pattern"><div class="display"><html>
+	<head>
+		<style>
+			#top-link {
+				background: #a0d3e6;
+				border: none;
+				border: none;bottom: 0;
+				border-top-left-radius: 20px; 
+				border-top-right-radius: 20px;
+				color: #00223c;
+				display: none;
+				font-weight: bold;
+				padding: 1em 30px 1em 20px;
+				position: fixed;
+				right: 30px;
+				text-align: right;    z-index: 1;  
+			}
+			#top-link:hover, #top-link:focus {
+				background: #00223c;
+				color: #fff; 
+			}
+			</style>
+	</head>
+	<body>
+
+		<button onclick="topFunction()" id="top-link" title="Back to top">Back to top <i class="fa fa-arrow-up" aria-hidden="true"></i></button>
+
+		<script>
+			var mybutton = document.getElementById("top-link");
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+			  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		  </script>
+	</body>
+</html>
+
+</div><div class="source"><textarea rows="6" cols="30">&lt;html&gt;
+	&lt;head&gt;
+		&lt;style&gt;
+			#top-link {
+				background: #a0d3e6;
+				border: none;
+				border: none;bottom: 0;
+				border-top-left-radius: 20px; 
+				border-top-right-radius: 20px;
+				color: #00223c;
+				display: none;
+				font-weight: bold;
+				padding: 1em 30px 1em 20px;
+				position: fixed;
+				right: 30px;
+				text-align: right;    z-index: 1;  
+			}
+			#top-link:hover, #top-link:focus {
+				background: #00223c;
+				color: #fff; 
+			}
+			&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+		&lt;button onclick=&quot;topFunction()&quot; id=&quot;top-link&quot; title=&quot;Back to top&quot;&gt;Back to top &lt;i class=&quot;fa fa-arrow-up&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+
+		&lt;script&gt;
+			var mybutton = document.getElementById(&quot;top-link&quot;);
+			window.onscroll = function() {scrollFunction()};
+			function scrollFunction() {
+			  if (document.body.scrollTop &gt; 30 || document.documentElement.scrollTop &gt; 30) {
+				mybutton.style.display = &quot;block&quot;;
+			  } else {
+				mybutton.style.display = &quot;none&quot;;
+			  }
+			}
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+		  &lt;/script&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</textarea><p><a href="coronavirus/sticky-back-to-top-button.html">sticky-back-to-top-button.html</a></p></div></div><div class="pattern-separator"></div><div class="pattern"><div class="display"><div class="content-chunk" style="background: #d4e7f0; border-radius: 6px; padding: 1.5em; margin-bottom: 1.5em; color: #333; z-index: 2; position: relative;">
+	<h2>On this page</h2>
+	<ol>
+		<!--li><a href="#fee-deferral">Fee deferral</a></li-->
+		<li><a href="#support-for-individuals-families">Support for individuals and families</a></li>
+		<li><a href="#seniors">Support for seniors</a></li>
+		<li><a href="#support-for-business">Support for businesses</a></li>
+		<li><a href="#support-for-municipalities">Support for municipalities</a></li>
+		<li><a href="#health-system-response">Healthcare and continuing care</a></li>
+		<li><a href="#how-your-organization-can-help">How your organization can help</a></li>
+	</ol>
+</div></div><div class="source"><textarea rows="6" cols="30">&lt;div class=&quot;content-chunk&quot; style=&quot;background: #d4e7f0; border-radius: 6px; padding: 1.5em; margin-bottom: 1.5em; color: #333; z-index: 2; position: relative;&quot;&gt;
+	&lt;h2&gt;On this page&lt;/h2&gt;
+	&lt;ol&gt;
+		&lt;!--li&gt;&lt;a href=&quot;#fee-deferral&quot;&gt;Fee deferral&lt;/a&gt;&lt;/li--&gt;
+		&lt;li&gt;&lt;a href=&quot;#support-for-individuals-families&quot;&gt;Support for individuals and families&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#seniors&quot;&gt;Support for seniors&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#support-for-business&quot;&gt;Support for businesses&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#support-for-municipalities&quot;&gt;Support for municipalities&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#health-system-response&quot;&gt;Healthcare and continuing care&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#how-your-organization-can-help&quot;&gt;How your organization can help&lt;/a&gt;&lt;/li&gt;
+	&lt;/ol&gt;
+&lt;/div&gt;</textarea><p><a href="coronavirus/table-of-contents.html">table-of-contents.html</a></p></div></div><div class="pattern-separator"></div>
+
+
+
+</div>
+
+
+	<script src="js/script.min.js"></script>
+</body>
+</html>

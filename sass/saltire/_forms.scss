@@ -1,0 +1,204 @@
+//
+// Forms
+// --------------------------------------------------
+
+
+// Normalize non-controls
+//
+// Restyle and baseline non-control form elements.
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: $line-height-computed;
+  font-size: ($font-size-em * 1.5);
+  line-height: inherit;
+  color: $legend-color;
+  border: 0;
+  border-bottom: 1px solid $legend-border-color;
+}
+
+label {
+  display: block;
+  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  margin-bottom: 5px;
+  font-weight: bold;
+
+  &.inline {
+  display: inline-block;
+  }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  border: 1px solid $input-border;
+}
+
+// Normalize form controls
+//
+// While most of our form styles require extra classes, some basic normalization
+// is required to ensure optimum display with or without those classes to better
+// address browser inconsistencies.
+
+// Override content-box in Normalize (* isn't specific enough)
+input[type="search"] {
+  @include box-sizing(border-box);
+}
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9; // IE8-9
+  line-height: normal;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+// Make range inputs behave like textual form controls
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+
+// Make multiple select elements height not fixed
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+// Focus for file, radio, and checkbox
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  @include tab-focus;
+}
+
+// Adjust output element
+output {
+  display: block;
+  padding-top: ($padding-base-vertical + 1);
+  font-size: $font-size-em;
+  line-height: $line-height-base;
+  color: $input-color;
+}
+
+
+// Search inputs in iOS
+//
+// This overrides the extra rounded corners on search inputs in iOS so that our
+// `.form-control` class can properly style them. Note that this cannot simply
+// be added to `.form-control` as it's not specific enough. For details, see
+// https://github.com/twbs/bootstrap/issues/11586.
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  &[disabled],
+  &.disabled,
+  fieldset[disabled] & {
+    cursor: $cursor-disabled;
+  }
+}
+
+
+// Feedback states
+.has-success {
+  @include form-control-validation($state-success-text, $state-success-text, $state-success-bg);
+  color: $state-success-text;
+}
+.has-warning {
+  @include form-control-validation($state-warning-text, $state-warning-text, $state-warning-bg);
+  color: $state-warning-text;
+}
+.has-error {
+  @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+  color: $state-danger-text;
+}
+
+
+// Drupal specific form styles
+.webform-content h1 {display: none;} // Hide the mysterious duplicate H1 on webform pages that trail after the form.
+.webform-button--reset {display: none} // Hide reset button
+.webform-submission-form {
+  input, select, textarea {margin-bottom: 1.5em; max-width: 100%;}
+}
+
+.webform-submission-access-ns-online-enquiry-form-form {
+  .webform-submission-form {
+    .form-email {width: 30em;}
+    .form-tel {width: 15em;}
+  }
+}
+
+
+
+//  Search widget for Programs & Services and Notices
+
+#search-widget {
+  @include textblock($lightgray, 12%);
+  h2 { margin-top: .5em; }
+  label {margin: .5em auto 0 auto; padding-bottom: 0;}
+
+  .btn-lg {margin:0;}
+  .form-text {margin: 0 .5em 1em 0; width: 100%;}
+  .filter-field {
+    display: inline-block; margin-right: 1em;
+    label {display: inline-block; margin: .5em auto 0 auto; padding: 0 0.5em 0 0;}
+  }
+  p {
+    margin-bottom: 0;
+    label {display: inline;}
+  }
+
+  &.notices {
+    background: $table-bg-active;
+    border: 1px solid $table-border-color;
+    border-width: 1px 1px 0 1px;
+    margin-bottom: 0;
+    .form-text {max-width: 20em;}
+  }
+}
+
+
+#filter-widget {
+  @include textblock($lightgray, 12%);
+  h2 { margin-top: .5em; }
+  label {margin: .5em auto 0 auto; padding-bottom: 0;}
+
+  .btn-lg {margin:0;}
+  .form-text {margin: 0 .5em 1em 0;}
+  .filter-field {
+    display: inline-block; margin-right: 1em;
+    label {display: inline-block; margin: .5em auto 0 auto; padding: 0 0.5em 0 0;}
+  }
+  p {
+    margin-bottom: 0;
+    label {display: inline;}
+  }
+
+  &.notices {
+    background: $table-bg-active;
+    border: 1px solid $table-border-color;
+    border-width: 1px 1px 0 1px;
+    margin-bottom: 0;
+    .form-text {max-width: 20em;}
+  }
+}

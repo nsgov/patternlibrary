@@ -1,0 +1,676 @@
+.location {
+	float: left;
+}
+
+// ###################################################################
+// Transition - ephemeral layer of UI used during transition period only
+// ###################################################################
+
+.transition-block { // Homepage block about the project
+	background: lighten($green, 25%) url(/themes/ignition/img/gargygle.svg) top right no-repeat;
+	padding: 2em 0;
+
+	.feature-list {
+		font-size: 1.25em;
+		list-style: none;
+		margin: 0;
+		padding: 0 0 1.5em 0;
+
+		li {margin-bottom: 1.5em;}
+
+		.fa {
+			font-size: 2em; 
+			margin-right: .5em;
+		} // make the icon BIG
+	}
+}
+
+.transition-call-to-action { // Containing element used for communicating transition and listing links to departments on the old site
+		display: block;
+		clear: both;
+		background: lighten($green, 25%) url(/themes/ignition/img/gargygle.svg) top right no-repeat;
+		margin: 2em auto;
+		padding: 1em 2em;
+		border-radius: $border-radius-base;
+}
+
+// ###################################################################
+// Homepage Topic Blocks
+// ###################################################################
+
+#home-topics {
+	margin: 0;
+	padding: 2em 0;
+	ol, ul {
+		margin: 0 auto 0 0; 
+		padding-left: 0; 
+		padding-bottom: 0;
+	}
+	li {
+		list-style-type: none; 
+		margin: auto 0 0 auto; 
+		padding-left: 0; 
+		padding-bottom: 0;
+		.icon {
+			width: 25%; 
+			height: auto; 
+			margin: 1.5em 35% 0 35%;
+		}
+	}
+	p {padding-right: 40px;}
+}
+
+// ###################################################################
+// Homepage About Government
+// ###################################################################
+
+.home-about-government {
+	background-color: #fff;
+	padding: 2em 0;
+	h2 {margin-bottom: 1.5em;}
+	img {
+		width: 100%; 
+		height: 100%; 
+		min-width: 150px; 
+		max-width: 200px; 
+		min-height: 150px; 
+		max-height: 200px;
+	}
+	.premier-spotlight {text-align: center;}
+}
+
+// ###################################################################
+// Homepage Most Requested
+// ###################################################################
+
+.most-requested {
+	background-color: $blue;
+	color: #fff;
+	padding: 2em 0;
+	a {color: #fff; font-size: $font-size-h4; line-height: $line-height-em;
+
+		&:hover, &:focus, &:active {color: #000; background: #fff;}
+	}
+	h2 {
+		color: lighten($lightestblue, 30%);
+		margin-top: 0;
+		padding-top: 0;}
+	ul {
+		margin: 0;
+		li {margin-bottom: 1.25em;}
+	}
+ &.dept-profile {
+	 a {font-size: $font-size-h4;}
+ }
+}
+
+.department-most-requested {
+	ul {
+		 padding-left: 1em;
+		li {margin-bottom: ($line-height-em * .5);}
+	}
+}
+
+#home-features {
+	background-color: lighten($cyan, 50%);
+	display: block;
+	clear: both;
+	margin-top: $line-height-computed;
+	padding: 2em auto;
+}
+
+@media only screen and (max-width: $screen-sm-max) {
+	#home-topics li {min-height: 1em;}
+}
+
+// Call to Action
+
+#call-to-action {
+	display: block;
+  margin: 2.5em auto;
+}
+
+#pull-quote {
+	padding: 13.5px 27px;
+	margin: 0 0 27px;
+	border-left: 5px solid $darkblue;
+	font-size: $font-size-h2;
+}
+
+#broadcast-copy {
+	line-height: $line-height-large * 2em;
+}
+
+// ###################################################################
+// COMMON elements
+// ###################################################################
+
+#summary, .summary {
+	@include textblock($lightgray, 12%);
+	font-size: $font-size-summary;
+	border: 1px solid $gray-light;
+	border-width: 0 2px 0 5px;
+	color: #000;
+	padding: 1.35em;
+
+	p {margin-bottom: 0;}
+}
+
+figcaption {// Removes block treatment from summary that appears inside a figure caption
+	#summary, .summary {
+		background-color: transparent;
+		margin: 0;
+		padding: 0;
+		border: none;
+		border-width: 0;
+		font-size: $font-size-h5;
+		color: #000;
+	}
+}
+
+.secondary-content {
+	@include textblock($lightgray, 12%);
+	font-size: $font-size-base;
+}
+
+// ###################################################################
+// SERVICES AND PROGRAMS
+// ###################################################################
+
+.directory-listing-row { // reusable style that can be used on views that return a listing
+	border-bottom: 1px solid $gray-lighter;
+	margin-bottom: 1em;
+	padding-bottom: 1em;
+
+	&:hover {background: (lighten $yellow, 50%);}
+
+	.sp-disclaimer {
+		color: $gray-lighter;
+		font-size: $font-size-small;
+	} // Services and programs directory
+}
+
+#services-list {
+	ol, ul {
+		list-style: none; 
+		margin-left: 0; 
+		padding-left: 0;
+	}
+	li {
+		list-style: none; 
+		margin-left: 0; 
+		padding-left: 0;
+	}
+}
+
+// ###################################################################
+// Document, Document Collection
+// ###################################################################
+
+#meta-publication-type, .pub-details .item-list {@include delimited-list;}
+
+.document-collection-item {margin-bottom: 1.35em;}
+.document-collection-item-teaser {margin-bottom: 0px;}
+.document-collection-item-details { // unordered list used in Document Collection view under teaser
+	@include inline-list;
+	margin-top: 0px;
+	font-size: $font-size-small;
+	color: $gray-light;
+	li {
+		&:after {content: ", ";}
+		&:last-child {
+			&:after {content: "";}
+		}
+	}
+}
+
+.document-category { // unordered list used in Document Collection view under teaser
+			@include inline-list;
+			margin-top: 0px;
+			display: inline-block;
+			li {
+				&:after {
+					content: ", ";
+				}
+				&:last-child {
+					&:after {
+						content: "";
+					}
+				}
+		}
+}
+
+// Style for before & after HR containing document details
+hr.document-details {
+	margin: 0 0 1.5em 0;
+}
+
+.document-link-container {
+	border-top: 1px solid $gray-light;
+	margin: 1em 0 0;
+	padding: 1.5em 0;
+	position: relative;
+	overflow: hidden;
+
+	&:focus, &:hover, &:active {
+		.document-title {background: $yellow;}
+	}
+
+	.document-link {
+		display: block;
+		text-decoration: none;
+		position: relative;
+		z-index: 1;
+		background: transparent;
+		padding: 1;
+		&:focus, &:hover, &:active {
+			text-decoration: none;
+		}
+		.document-title {
+	  	display: block;
+	  	font-size: 120%; /*?*/
+	  	font-weight: normal;
+		text-decoration: underline;
+	  }
+		.document-details {
+	  	color: #444; /* regular body text color */
+	  	display: block;
+	  }
+	}
+
+	.document-title {
+		display: inline-block;
+		font-size:120%;
+		font-weight:normal;
+		position: relative;
+		z-index: 1;
+		div {display: inline;}
+	}
+
+
+	.corporate-report { /* USED ON CORPORATE REPORTS VIEW */
+		width: 70%;
+		display: inline-block;
+	}
+
+	.document-thumbnail-container {
+		float: left;
+		width: 25%;
+		max-width: 160px;
+		padding: 0 2% 0 0;
+		position: relative;
+		z-index: 2;
+		background: #fff;
+		img	{
+			border: 1px solid $gray-lighter;
+			background: #fff;
+		}
+	}
+	.accessibility-email {
+  	/* what's there now, plus: */
+  	float: left;
+  	max-width: 70%;
+  }
+}
+
+
+.document-author,
+.document-updated,
+.first-published,
+.document-pages {
+	div {display: inline;}
+}
+
+
+.document-filesize {
+	margin-bottom: 0.5em;
+}
+.document-layout {
+	label {font-weight: normal;}
+}
+
+#collection-teaser, #introduction, #dept-homepage-design #what-we-do {
+	font-size: $font-size-h3;
+	margin: $line-height-computed auto;
+	clear: both;
+}
+
+.pub-introduction {
+	display: block;
+	padding-top: $line-height-computed;
+	margin-bottom: $line-height-computed;
+}
+
+.pub-details {
+	margin-bottom: $line-height-computed;
+	vertical-align: top;
+
+	ul, li {
+		list-style: none; 
+		margin: 0; 
+		padding: 0;
+	}
+
+	article {margin-bottom: $line-height-computed;}
+	.title {}
+	.teaser {}
+	.document-type,
+	.first-published,
+	.last-published,
+	.document-updated,
+	.document-author,
+	.item-list ul {
+		font-size: $font-size-small; 
+		display: inline; 
+		margin-right: 1.5em;
+	}
+}
+
+.pub-label {
+	margin-bottom: $line-height-computed;
+	h2 {
+		margin-top: 0; 
+		padding-top: 0;
+	}
+}
+
+#meta-publication-type, #meta-department, #news-release #department, #legislative-acts, #dept-services {
+	ul, li {
+		list-style: none; 
+		margin: 0; 
+		padding: 0;
+	}
+	ol, li {
+		list-style: none; 
+		margin: 0; 
+		padding: 0;
+	}
+}
+
+.accessibility-email {
+	font-size: $font-size-small;
+	margin-bottom: .5em;
+	padding-bottom: .5em;
+}
+
+#legislative-acts, #related-information, #minister-link {
+	a {
+		&:after {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			padding-left: 3px;
+			content: '\f08e';
+		}
+	}
+}
+
+// ###################################################################
+// Forms: Applications, Licenses and Permits, Submitted and not submitted to Government
+// ###################################################################
+
+.call-to-action-button { // manage whitespace depending on whether there is descriptive text preceeding the button
+	h2 + & {margin-top: $line-height-computed;}
+	p + & {margin-top: 0px;}
+}
+
+// ###################################################################
+// Department Profile
+// ###################################################################
+
+.content-logo {
+	display: block;
+	clear: both;
+	img {
+		display: block; 
+		max-width: 150px; 
+		max-height: 150px; 
+		margin-bottom: 1.5em;
+	}
+	&.small {
+		margin: 1.5em auto;
+		img {
+			max-width: 130px; 
+			max-height: 130px;
+		}
+	}
+} 
+@media only screen and (max-width: $screen-sm-max) {
+	.content-logo {
+		img {
+			max-width: 100px;
+			max-height: 100px;
+		}
+	}
+}
+
+.department-summary {
+	font-size: $font-size-h4;
+	p {line-height: 2em;}
+
+	#summary {
+		background: transparent;
+		font-size: $font-size-h4;
+		border: none;
+		border-width: 0;
+		color: #000;
+		padding: 0;
+
+		p {margin-bottom: 0;}
+	}
+}
+
+
+#social-media-account, #department, #media-contact, #corp-info, #announcements {
+	ul, li {
+		list-style: none; 
+		margin-left: 0; 
+		padding-left: 0;
+	}
+}
+
+.about-link {
+	font-size: $font-size-h4; 
+	margin-bottom: $line-height-computed; 
+	display: block;
+}
+
+#social-media-account .fa {
+	font-size: 1.5em;
+}
+
+.corp-info, .corp-info li {
+	list-style: none; 
+	margin-left: 0; 
+	padding-left: 0;
+}
+
+.feature-image img {
+	width: 100%; 
+	height: auto;
+}
+
+.profile-details {
+	width: 100%; 
+	display: block; 
+	margin: 0 0 $line-height-computed 0;
+	#job-title {
+		font-size: $font-size-h3;
+	}
+	#department {
+		font-size: $font-size-h3;
+		ul {margin: 0; padding: 0; list-style: none;}
+		li {margin: 0; padding: 0; list-style: none;}
+	}
+}
+
+@media (max-width: 500px) {
+	#home-top-tasks {
+		display: block;
+		position: relative;
+		background-color: lighten($cyan, 47.6%);
+		z-index: -1;
+		font-size: $font-size-em;
+		padding: 2em;
+
+		ul {
+			margin-left: 0;
+			padding-left: 0;
+		}
+		li {
+			list-style-type: none;
+			position: relative;
+			width: 100%;
+		}
+	}
+}
+
+
+@media (min-width: 501px) and (max-width: 767px) {
+
+	#home-top-tasks {
+		display: block;
+		position: relative;
+		background-color: lighten($cyan, 47.6%);
+		z-index: -1;
+		font-size: $font-size-em;
+		padding: 2em;
+
+		ul {
+			margin-left: 0;
+			padding-left: 0;
+		}
+		li {
+			list-style-type: none;
+			position: relative;
+			margin: 0 1% 0 0;
+			padding-left: 0;
+			width: 47%;
+			float: left;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	#home-topics {
+		div {min-height: ($line-height-computed * 1);}
+	}
+}
+
+@media (min-width: 768px) {
+	#home-top-tasks {
+		position: absolute;
+		top: 20px;
+		left: 62.5%;
+		background: white;
+		color: $gray;
+		text-align: left;
+		font-size: $font-size-small;
+		list-style-type: none;
+		padding: 0.25em 1em;
+		z-index: 2;
+		ul {
+			margin-left: 0;
+			padding-left: 0;
+		}
+		li {
+			list-style-type: none;
+			margin-left: 0;
+			padding-left: 0;
+		}
+	}
+}
+
+#features, .features, #about-government {display: block; clear: both; margin: $line-height-computed auto;}
+
+#home-about-government {
+	display: block;
+	h2 {font-size: $font-size-h1; color: $darkestblue;}
+	h3 {font-size: $font-size-h2; color: $darkestblue; clear: both; display: block; margin-top: $line-height-computed;}
+}
+
+#about-government {
+	padding: $line-height-computed auto; display: block;
+	li {
+		list-style-type: none;
+		display: block;
+	}
+}
+
+// ###################################################################
+// Universal Survey Block //
+// ###################################################################
+
+#feedback {
+	clear: both;
+	display: block;
+	font-size: $font-size-large;
+	margin: 1em 0;
+	padding: 2em 0;
+
+	p {margin-top: 1.5em;}
+	.btn-lg {margin-right: 1em;}
+}
+
+.helpful-form, #block-views-block-content-id-for-links-was-this-page-helpful-link {
+	display: block;
+	clear: both;
+	border-top: 1px solid $gray-light;
+	padding-top: ($line-height-em * 1.15);
+	margin-top: ($line-height-em * 1.15);
+}
+
+// ###################################################################
+// About the Project page //
+// ###################################################################
+
+.project-site-links {padding: 1.25em; margin-bottom: 2em; background-color: lighten($green, 30%)}
+.project-progress-heading {text-align: center; text-align: center; margin-bottom: 2em;}
+.project-introduction {font-size: 1.25em; clear: both;}
+.project-highlights {font-size: 1.25em; clear: both; background-color: $blue; color: #fff; padding: $line-height-computed;}
+.project-highlights h2 {color: #fff; margin: 0 auto 1.5em auto;}
+.project-highlights .icon {text-align: center;}
+.project-highlights .fa {font-size: 2.5em; min-height: 1.5em;}
+.project-centered-button {clear: both; margin: $line-height-computed auto; text-align: center;}
+.project-details {clear: both;}
+
+.profile-features {
+	&:before {border-top: 1px solid $gray-light}
+	&:after{border-bottom: 1px solid $gray-light}
+	margin: ($line-height-em * 1.15) 0;
+	padding: ($line-height-em * 1.15) 0;
+}
+
+// ###################################################################
+// STORY NOT STORY //
+// ###################################################################
+
+.profile-stories {
+
+	section {min-height: 100px;}
+
+	h3 {color: $blue;
+		&:before {
+		display: block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: 4em;
+		text-align: center;
+		text-rendering: auto;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		padding: 30px 10px;
+		margin-bottom: .25em;
+		background: $blue;
+		}
+	}
+
+	.build-workforce {&:before {content: '\f0c0'; color: #fff;}}
+	.do-business-with-government {&:before {content: '\f0f7'; color: #fff;}}
+	.innovate-grow {&:before {content: '\f201'; color: #fff;}}
+	.locate {&:before {content: '\f0ac'; color: #fff;}}
+	.sector-regional-development {&:before {content: '\f06c'; color: #fff;}}
+	.start-manage-business {&:before {content: '\f0b1'; color: #fff;}}
+}
