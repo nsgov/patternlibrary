@@ -1,3 +1,6 @@
+/.public
+/public
+
 #### File types to ignore
 *.bak
 *.orig
