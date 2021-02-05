@@ -16,7 +16,7 @@
   <img src="img/ns-vip-white.svg" alt="Government of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
 </div>
 
-
+<div class="pattern-container">
 <p>This is a living collection that will continue to evolve and expand. If you can't find what you are looking for, email <a href="internet@novascotia.ca">internet@novascotia.ca</a> and we will work with you to help you find a solution.</p>
 
 <p>You can look up different elements and grab the HTML you need to use them.</p>
