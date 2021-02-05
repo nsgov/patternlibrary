@@ -1,4 +1,4 @@
-.pattern-container {margin: 30px auto; text-align: left;}
+.pattern-container {margin: 30px; text-align: left;}
 
 #patternlab-header {background: #3fbced url(img/patternlab-bg-header.svg) top left no-repeat; background-size: 2713px 339px; min-height: 100px; width: 100%; margin: 0; padding: 0;}
 #patternlab-header .main-link {float: right; color: #000; margin: 2em; font-size: 1.25em}
