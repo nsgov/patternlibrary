@@ -4,6 +4,7 @@
 	</head>
 	<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
 	<link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="global.css">
 
 	<style>
 		figure {
@@ -236,159 +237,97 @@
 			<p>
 				The main colour palette reflects water and earth tones and should be used in most incidences. If required, a secondary colour can be introduced to enhance the design/message. Colour selection should always help to convey the message of the design and enhance photo selection.
 			</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Colour</th>
-						<th>Pantone</th>
-						<th>CMYK</th>
-						<th>RGB</th>
-						<th>Hex</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td style="background-color: #005587;"></td>
-						<td>
-							Pantone: 7692C
-						</td>
-						<td>
-							C: 100	<br />
-							M: 45	<br />
-							Y: 0	<br />
-							K: 45
-						</td>
-						<td>
-							R: 0	<br />
-							G: 85	<br />
-							B: 135
-						</td>
-						<td>
-							#005587
-						</td>
-					</tr>
-					<tr>
-						<td style="background-color: #005eb8;"></td>
-						<td>
-							Pantone: 300C
-						</td>
-						<td>
-							C: 100	<br />
-							M: 56	<br />
-							Y: 0	<br />
-							K: 0
-						</td>
-						<td>
-							R: 0 	<br />
-							G: 94	<br />
-							B: 184
-						</td>
-						<td>
-							#005eb8
-						</td>
-					</tr>
-					<tr>
-						<td style="background-color: #009fdf;"></td>
-						<td>
-							Pantone: CyanC
-						</td>
-						<td>
-							C: 100	<br />
-							M: 0	<br />
-							Y: 0	<br />
-							K: 0
-						</td>
-						<td>
-							R: 0	<br />
-							G: 159	<br />
-							B: 223
-						</td>
-						<td>
-							#009fdf
-						</td>
-					</tr>
-					<tr>
-						<td style="background-color: #00778b;"></td>
-						<td>
-							Pantone: 3145C
-						</td>
-						<td>
-							C: 100	<br />
-							M: 10	<br />
-							Y: 29	<br />
-							K: 20
-						</td>
-						<td>
-							R: 0	<br />
-							G: 119	<br />
-							B: 139
-						</td>
-						<td>
-							#00778b
-						</td>
-					</tr>
-					<tr>
-						<td style="background-color: #63b1bc;"></td>
-						<td>
-							Pantone: 7709C
-						</td>
-						<td>
-							C: 62	<br />
-							M: 0	<br />
-							Y: 18	<br />
-							K: 6
-						</td>
-						<td>
-							R: 99	<br />
-							G: 177	<br />
-							B: 188
-						</td>
-						<td>
-							#63b1bc
-						</td>
-					</tr>
-					<tr>
-						<td style="background-color: #8db9ca;"></td>
-						<td>
-							Pantone: 550C
-						</td>
-						<td>
-							C: 42	<br />
-							M: 7	<br />
-							Y: 8	<br />
-							K: 8
-						</td>
-						<td>
-							R: 141	<br />
-							G: 185	<br />
-							B: 202
-						</td>
-						<td>
-							#8db9ca
-						</td>
-					</tr>
-					<tr>
-						<td style="background-color: #b9d9eb;"></td>
-						<td>
-							Pantone: 290C
-						</td>
-						<td>
-							C: 23	<br />
-							M: 0	<br />
-							Y: 1	<br />
-							K: 0
-						</td>
-						<td>
-							R: 185	<br />
-							G: 217	<br />
-							B: 235
-						</td>
-						<td>
-							#b9d9eb
-						</td>
-					</tr>
-				</tbody>
-			</table>
+
+
+<div class="row">
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #005587;">
+			<div class="swatch" style="background-color: #005587;"> </div>
+			<div class="values">
+				PANTONE 7692C
+				<br />
+				CMYK 100/45/0/45<br />
+				RGB 0/85/135<br />
+				HEX #005587
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #005eb8;">
+			<div class="swatch" style="background-color: #005eb8;"> </div>
+			<div class="values">
+				PANTONE 300C
+				<br />
+				CMYK 100/56/0/0<br />
+				RGB 0/94/184<br />
+				HEX #005eb8
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #009fdf;">
+			<div class="swatch" style="background-color: #009fdf;"> </div>
+			<div class="values">
+				PANTONE CyanC
+				<br />
+				CMYK 100/0/0/0<br />
+				RGB 0/159/223<br />
+				HEX #009fdf
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #00778b;">
+			<div class="swatch" style="background-color: #00778b;"> </div>
+			<div class="values">
+				PANTONE 3145C
+				<br />
+				CMYK 100/10/29/20<br />
+				RGB 0/119/139<br />
+				HEX 00778b
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #63b1bc;">
+			<div class="swatch" style="background-color: #63b1bc;"> </div>
+			<div class="values">
+				PANTONE 7709C
+				<br />
+				CMYK 62/0/18/6<br />
+				RGB 99/177/188<br />
+				HEX #63b1bc
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #8db9ca;">
+			<div class="swatch" style="background-color: #8db9ca;"> </div>
+			<div class="values">
+				PANTONE 550C
+				<br />
+				CMYK 42/7/8/8<br />
+				RGB 141/185/202<br />
+				HEX 8db9ca
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #b9d9eb;">
+			<div class="swatch" style="background-color: #b9d9eb;"> </div>
+			<div class="values">
+				PANTONE 290C
+				<br />
+				CMYK 23/0/1/0<br />
+				RGB 185/217/235<br />
+				HEX #b9d9eb
+			</div>
+		</div>
+	</div>
+</div>
+
+
+			
 			
 			<h3 id="fonts">Fonts</h3>
 			<p>

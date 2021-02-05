@@ -37,12 +37,6 @@
 	<h1>Colours</h1>
 
 
-	<style>
-		.swatch-box {border: 1px solid #000; color: #000; margin-bottom: 1.5em;}
-		.swatch-box .swatch {height: 80px; width: 100%; padding: 1em;}
-		.swatch-box .values {padding: 1em;}
-	</style>
-	
 <p>
 	The colours used online are slightly different from the tones we recommend for non-digital products. 
 </p>
