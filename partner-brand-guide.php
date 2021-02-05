@@ -28,6 +28,18 @@
 
 <body>
 
+<!-- NS MOTHERSHIP RIBBON -->
+<nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Government of Nova Scotia" /></a>
+			</div>
+		</div>
+	</div>
+</nav>	
+<!-- NS MOTHERSHIP RIBBON -->
+
 	<figure id="hero-headline-container" class="hero-headline-container" style=";">
 		<img src="img/IngonishBeach0025_LWagg.jpg" alt="Ingonish beach"/>
 		<div class="hero-angles"></div>
@@ -39,8 +51,6 @@
 	
 		</figcaption>
 	</figure>
-	
-
 
 <div class="container">
 	<div class="row">
