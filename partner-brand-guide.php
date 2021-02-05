@@ -345,7 +345,7 @@
 				CNS has an extensive selection of authentically Nova Scotian images that should be used instead of stock photography. Occasionally stock images can be justified but CNS images are preferred. For covers, one single “hero image” is recommended. Keep it simple and professional.
 			</p>
 			<p>
-				<a href="" class="btn-default btn-lg">Access the visual library <i class="fa fa-arrow-right" aria-hidden="true"></i>
+				<a href="https://cns-library.gov.ns.ca:8085/visual_library/#/" class="btn-default btn-lg">Access the visual library <i class="fa fa-arrow-right" aria-hidden="true"></i>
 				</a>
 			</p>
 		</div>
