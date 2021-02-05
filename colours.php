@@ -22,7 +22,7 @@
 </nav>	
 <!-- NS MOTHERSHIP RIBBON -->
 
-<div class="container pattern-container">
+<div class="container">
 	<div class="row">
 		<div class="col-xs-12">
 
