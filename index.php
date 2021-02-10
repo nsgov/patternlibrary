@@ -8,8 +8,7 @@
 <link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
 
 <style>
-
-
+.content-chunk {background: #d4e7f0; border-radius: 6px; padding: 1.5em; margin-bottom: 1.5em; color: #333; z-index: 2; position: relative;}
 </style>
 </head>
 <body>
@@ -18,8 +17,6 @@
 </div>
 
 <div class="pattern-container">
-<h1>Government of Nova Scotia UI Pattern Library</h1>
-
 <p>This is a living collection that will continue to evolve and expand. If you can't find what you are looking for, email <a href="internet@novascotia.ca">internet@novascotia.ca</a> and we will work with you to help you find a solution.</p>
 
 <p>You can look up different elements and grab the HTML you need to use them.</p>
@@ -33,9 +30,11 @@
   <ul class="ui-categories">
     <!-- <li><a href="accordion.html">Accessible accordion</a></li> -->
     <li><a href="buttons.html">Buttons</a></li>
+    <!-- <li><a href="colours.html">Colours</a></li> -->
     <li><a href="content.html">Content</a></li>
     <li><a href="forms.html">Form elements</a></li>
     <li><a href="icons.html">Icons</a></li>
+    <li><a href="links.html">Links</a></li>
     <li><a href="lists.html">Lists</a></li>
     <!-- <li><a href="logos.html">Logos</a></li> -->
     <li><a href="messages.html">Messages/Feedback</a></li>
