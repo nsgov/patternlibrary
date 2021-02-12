@@ -1,42 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>NSGov UI Pattern Library</title>
-<link rel="stylesheet" href="global.css">
-<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
-<link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
+<?php
+	$title = 'Tables';
+	include 'inc/header.php';
+	include 'inc/breadcrumb.php';
+?>
 
-<style>
-.pattern {
-    clear: both;
-    overflow: visible;
-    display: block;
-    padding-top: 1em;
-
-}
-.pattern .display {
-    width: 65%;
-    float: left;
-}
-.pattern .source {
-    width: 30%;
-    float: right;
-}
-.pattern .source textarea {
-    width: 90%;
-}
-
-</style>
-</head>
-<body>
-<div id="patternlab-header">
-  <img src="img/ns-vip-white.svg" alt="Government of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
-  <div class="main-link"><a href="https://cns.pages.novascotia.ca/patternlab/">Main page</a></div>
-</div>
-
-<div class="pattern-container">
-<h1>Tables</h1>
+<h1><?php echo "$title"; ?></h1>
 
 <p>Consider the type of data you are working with when selecting which table to use. Complicated data tables should make use of the "scope" property as illustrated in Accessible Data Table. Using scope is very helpful for users trying to navigate a complicated table with a screen reader.</p>
 
@@ -73,11 +41,6 @@ endforeach;
 ?>
 
 
-
-
-</div>
-
-
-	<script src="js/script.min.js"></script>
-</body>
-</html>
+<?php
+	include 'inc/footer.php';
+?>
