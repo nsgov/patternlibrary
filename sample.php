@@ -1,6 +1,7 @@
 <?php
 	$title = 'Page title';
 	include 'inc/header.php';
+	include 'inc/breadcrumb.php';
 ?>
 
 <h1><?php echo "$title"; ?></h1>
