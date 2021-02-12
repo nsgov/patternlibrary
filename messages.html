@@ -2,41 +2,38 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>NSGov UI Pattern Library</title>
+<title>Messages/feedback - Saltire Pattern Library</title>
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
 <link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
 
-<style>
-.pattern {
-    clear: both;
-    overflow: visible;
-    display: block;
-    padding-top: 1em;
-
-}
-.pattern .display {
-    width: 65%;
-    float: left;
-}
-.pattern .source {
-    width: 30%;
-    float: right;
-}
-.pattern .source textarea {
-    width: 90%;
-}
-
-</style>
 </head>
 <body>
-<div id="patternlab-header">
-  <img src="img/ns-vip-white.svg" alt="Government of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
-  <div class="main-link"><a href="https://cns.pages.novascotia.ca/patternlab/">Main page</a></div>
-</div>
 
-<div class="pattern-container">
-<h1>Messages/Feedback</h1>
+<header>
+<!-- NS MOTHERSHIP RIBBON -->
+<nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Government of Nova Scotia" /></a>
+			</div>
+		</div>
+	</div>
+</nav>	
+<!-- NS MOTHERSHIP RIBBON -->
+</header>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+
+			<span aria-hidden="true" id="you-are-here-text">you are here</span>
+			<nav class="breadcrumbs" id="breadcrumbs">
+				<a href="https://cns.pages.novascotia.ca/patternlab/" rel="up" class="breadcrumb" hreflang="en" lang="en">Government of Nova Scotia UI Pattern Library</a>
+				<span class="breadcrumb">Messages/feedback</span>
+			</nav>
+<h1>Messages/feedback</h1>
 
 <p>These blocks are used to provide action based feedback or communicate critical information.</p>
 
@@ -77,9 +74,19 @@
 	&lt;p&gt;&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt; The next direct deposit will be made on &lt;span&gt;March 29, 30, 31&lt;/span&gt;&lt;/p&gt;
 &lt;/div&gt;</textarea><p><a href="feedback/next-date.html">next-date.html</a></p></div></div><div class="pattern-separator"></div>
 
+
+		</div>
+	</div>
 </div>
+<footer>
+	<div class="container">
+		<a href="mailto:internet@novascotia.ca"></a>
+	</div>
+</footer>
 
+<script src="https://beta.novascotia.ca/themes/ignition/js/aria.accordion.js"></script>
+<script src="https://beta.novascotia.ca/core/assets/vendor/modernizr/modernizr.min.js?v=3.3.1"></script>
+<script src="js/script.min.js"></script>
 
-	<script src="js/script.min.js"></script>
 </body>
 </html>

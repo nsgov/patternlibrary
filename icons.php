@@ -1,46 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>NSGov UI Pattern Library</title>
-<link rel="stylesheet" href="global.css">
-<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
-<link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
+<?php
+	$title = 'Icons';
+	include 'inc/header.php';
+	include 'inc/breadcrumb.php';
+?>
 
-<style>
-.pattern {
-    clear: both;
-    overflow: visible;
-    display: block;
-    padding-top: 1em;
-
-}
-.pattern .display {
-    width: 65%;
-    float: left;
-}
-.pattern .source {
-    width: 30%;
-    float: right;
-}
-.pattern .source textarea {
-    width: 90%;
-}
-
-.bootsample div {border: 1px solid #ccc; background: #f5f5f5;}
-
-</style>
-</head>
-<body>
-<div id="patternlab-header">
-  <img src="img/ns-vip-white.svg" alt="Government of Nova Scotia" style="margin: 2em; width: 200px; height: auto;" />
-  <div class="main-link"><a href="https://cns.pages.novascotia.ca/patternlab/">Main page</a></div>
-</div>
-
-<div class="pattern-container">
-<h1>Government of Nova Scotia UI Pattern Library</h1>
-
-<h2>Icons</h2>
+<h1><?php echo "$title"; ?></h1>
 
 <p>We currently use the <a href="http://fontawesome.io/icons/">Font Awesome</a>, a set of scalable vector icons implemented with CSS.</p>
 
@@ -79,9 +43,6 @@ endforeach;
 ?>
 
 
-</div>
-
-
-	<script src="js/script.min.js"></script>
-</body>
-</html>
+<?php
+include 'inc/footer.php';
+?>
