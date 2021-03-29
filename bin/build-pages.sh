@@ -5,6 +5,10 @@ cd "`dirname "$0"`/.."
 [ -d public ] && rm -fr public
 mkdir public
 
+printf "%b\n" "\e[36;40m"
+php --version
+printf "%b\n" "\e[0;39;49m"
+
 for i in *; do
 	[ "$i" = "public" ] && continue	# skip; don't try to copy public into itself
 	file="${i%.*}" # filename w/o extension
