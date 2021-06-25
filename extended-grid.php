@@ -12,7 +12,7 @@
 
 <?php
 $extendedgrids = array();
-$handle=opendir('extendedgrids');
+$handle=opendir('extendedgrid');
 while (false !== ($extendedgrid = readdir($handle))):
     if(stristr($extendedgrid,'.html')):
         $extendedgrids[] = $extendedgrid;
@@ -33,7 +33,7 @@ foreach ($extendedgrids as $extendedgrid):
     echo '<textarea rows="6" cols="30">';
     echo htmlspecialchars(file_get_contents('extendedgrid/'.$extendedgrid));
     echo '</textarea>';
-    echo '<p><a href="extendedgrids/'.$extendedgrid.'">'.$extendedgrid.'</a></p>';
+    echo '<p><a href="extendedgrid/'.$extendedgrid.'">'.$extendedgrid.'</a></p>';
     echo '</div>';
     echo '</div>';
     echo '<div class="pattern-separator"></div>';
