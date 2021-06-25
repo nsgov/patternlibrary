@@ -95,17 +95,18 @@
 		</div>
 	</div>
 	<div class="col-xs-3">
-		<div class="swatch-box" style="border-color: #e2231a;">
-			<div class="swatch" style="background-color: #e2231a;"> </div>
+		<div class="swatch-box" style="border-color: #cb1f17;">
+			<div class="swatch" style="background-color: #cb1f17;"> </div>
 			<div class="values">
-				Danger
+				Danger*
 				<br />
-				#e2231a
+				#cb1f17
 			</div>
 		</div>
 	</div>
 </div>
 
+* In the status palette, <span class="code">$red</span> is darkened 5%.
 
 
 <h2>Extended blue palette</h2>

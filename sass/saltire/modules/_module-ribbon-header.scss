@@ -1,0 +1,41 @@
+.ribbon {
+	background: $blue;
+	font-size: .85em;
+	margin: 0 auto;
+
+	.ribbon-img {width: 8em; height: auto; margin: 5px 0; float: left;}
+
+	&-xs {
+		@extend .ribbon;
+		min-height: 2.5em;
+		.ribbon-img {
+			width: 8em;
+			height: auto;
+			margin: .5em 0;
+		}
+	}
+
+	&-sm {
+		@extend .ribbon;
+		min-height: 3em;
+		.ribbon-img {
+			width: 10em;
+			height: auto;
+			margin: .5em 0;
+		}
+	}
+
+	&-md {
+		@extend .ribbon;
+		min-height: 4em;
+		.ribbon-img {
+			width: 12em;
+			height: auto;
+			margin: .75em 0;
+		}
+	}
+
+	form {float: right; margin: 5px 0;}
+	button {}
+	.search-box-button {background-image: url(https://novascotia.ca/clf/saltire/img/sprite-icons.svg); background-color: transparent;}
+}

@@ -120,3 +120,39 @@
     right: percentage(($columns / $grid-columns));
   }
 }
+
+// Flexbox and grid support
+
+// Column: Mixin
+@mixin col($grid-gutter: $grid-gutter) {
+
+  @if $grid-gutter {
+	padding-left: $grid-gutter;
+	padding-right: $grid-gutter;
+  }
+}
+
+// Row: Mixin
+@mixin row($grid-gutter: $grid-gutter) {
+  margin-left: -$grid-gutter;
+  margin-right: -$grid-gutter;
+  @include clearfix;
+}
+
+@mixin clearfix {
+  &:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+}
+
+@mixin container ($max-width: $screen-lg, $grid-gutter: $grid-gutter) {
+	@if $max-width {
+	  max-width: $max-width;
+	}
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $spacing-md;
+	padding-right: $spacing-md;
+  }

@@ -1,11 +1,10 @@
-// Author: Able Sense Media
 
 .footer {
 	overflow: hidden;
 	position: relative;
 	padding: 4em 0 2em;
 	margin-bottom: -2.5em;
-	background: $blue url(/clf/saltire/img/bg-footer.svg) bottom/100% fixed no-repeat;
+	background: $blue;
 
 	.container {
 		padding: 4em 0;
@@ -13,6 +12,17 @@
 		li {
 			display: inline;
 			margin-right: 1em;
+		}
+	}
+
+	&.beta {
+		background: $blue url(https://beta.novascotia.ca/themes/ignition/img/bg-footer.svg) bottom/100% fixed no-repeat;
+	}
+
+	&.ribbon {
+		padding: $line-height-em 0;
+		.container {
+			padding: 0;
 		}
 	}
 
