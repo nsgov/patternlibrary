@@ -62,8 +62,21 @@
 <h2 id="numbers">Phone numbers</h2>
 
 <p>
-	<li>Mark phone numbers in your content up as links (example: <span class="code">&lt;a href="tel:902-424-5555"&gt;902-424-5555&lt;/a&gt;</span>) to allow users to simply click on it to dial.</li>
+	Mark phone numbers in your content up as links.
 </p>
+
+
+<article class="listing-grid">
+<div class="listing-icon">
+	<p class="success">
+		<i class="fa fa-check-circle" aria-hidden="true"></i>
+	</p>
+</div>
+<div class="ps-listing">
+	<a href="tel:902-424-5555">902-424-5555</a>
+</div>
+</article>
+
 
 <h2 id="time">Time</h2>
 
