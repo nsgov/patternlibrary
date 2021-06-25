@@ -1,5 +1,6 @@
-			<span aria-hidden="true" id="you-are-here-text">you are here</span>
-			<nav class="breadcrumbs" id="breadcrumbs">
-				<a href="index.html" rel="up" class="breadcrumb" hreflang="en" lang="en">Government of Nova Scotia UI Pattern Library</a>
-				<span class="breadcrumb"><?php echo "$title"; ?></span>
-			</nav>
+<nav class="breadcrumb">
+	<ol>
+		<li><a href="index.html" rel="up" class="breadcrumb" hreflang="en" lang="en">Government of Nova Scotia UI Pattern Library</a></li>
+		<li><?php echo "$title"; ?></li>
+	</ol>
+</nav>
