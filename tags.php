@@ -23,176 +23,36 @@
 
 <!-- Default tags -->
 
-<div class="pattern">
-	<div class="display">
-		<ul class="tags">
-			<li><a href="#">Continuing care</a></li>
-			<li><a href="#">Education</a></li>
-			<li><a href="#">Fitness and recreation</a></li>
-			<li><a href="#">Personal services</a> </li>
-			<li><a href="#">Retail</a> </li>
-			<li><a href="#">Travel</a> </li>
-		</ul>
-	</div>
-	<div class="source">
-		<textarea rows="6" cols="30">
-		
-	<ul class="tags">
-		<li><a href="#">Continuing care</a></li>
-		<li><a href="#">Education</a></li>
-		<li><a href="#">Fitness and recreation</a></li>
-		<li><a href="#">Personal services</a> </li>
-		<li><a href="#">Retail</a> </li>
-		<li><a href="#">Travel</a> </li>
-	</ul>
-		</textarea>
-	<p><a href="tag/tags-default-linked.html">tags-default-linked.html</a></p>
-	</div>
-</div>
+<?php
+$tags = array();
+$handle=opendir('tag');
+while (false !== ($tag = readdir($handle))):
+    if(stristr($tag,'.html')):
+        $tags[] = $tag;
+    endif;
+endwhile;
+sort($tags);
 
+?>
+<h2 class="section">Card patterns</h1>
+<?php
+foreach ($tags as $tag):
+    echo '<div class="pattern">';
+    echo '<div class="display">';
+    include('tag/'.$tag);
+    echo '</div>';
+    echo '<div class="source">';
+    echo '<textarea rows="6" cols="30">';
+    echo htmlspecialchars(file_get_contents('tag/'.$tag));
+    echo '</textarea>';
+    echo '<p><a href="tag/'.$tag.'">'.$tag.'</a></p>';
+    echo '</div>';
+    echo '</div>';
+    echo '<div class="pattern-separator"></div>';
 
-<div class="pattern">
-	<div class="display">
-<ul class="tags">
-	<li>Continuing care</li>
-	<li>Education</li>
-	<li>Fitness and recreation</li>
-	<li>Personal services</li>
-	<li>Retail</li>
-	<li>Travel</li>
-</ul>
-	</div>
-	<div class="source">
-		<textarea rows="6" cols="30">
-		
-<ul class="tags">
-	<li>Continuing care</li>
-	<li>Education</li>
-	<li>Fitness and recreation</li>
-	<li>Personal services</li>
-	<li>Retail</li>
-	<li>Travel</li>
-</ul>
-		</textarea>
-	<p><a href="tag/tags-default-unlinked.html">tags-default-unlinked.html</a></p>
-	</div>
-</div>
+endforeach;
+?>
 
-
-<!-- Navy tags -->
-
-<div class="pattern">
-	<div class="display">
-		<ul class="tags navy">
-			<li><a href="#">Continuing care</a></li>
-			<li><a href="#">Education</a></li>
-			<li><a href="#">Fitness and recreation</a></li>
-			<li><a href="#">Personal services</a> </li>
-			<li><a href="#">Retail</a> </li>
-			<li><a href="#">Travel</a> </li>
-		</ul>
-	</div>
-	<div class="source">
-		<textarea rows="6" cols="30">
-		
-	<ul class="tags navy">
-		<li><a href="#">Continuing care</a></li>
-		<li><a href="#">Education</a></li>
-		<li><a href="#">Fitness and recreation</a></li>
-		<li><a href="#">Personal services</a> </li>
-		<li><a href="#">Retail</a> </li>
-		<li><a href="#">Travel</a> </li>
-	</ul>
-		</textarea>
-	<p><a href="tag/tags-navy-linked.html">tags-navy-linked.html</a></p>
-	</div>
-</div>
-
-
-<div class="pattern">
-	<div class="display">
-<ul class="tags navy">
-	<li>Continuing care</li>
-	<li>Education</li>
-	<li>Fitness and recreation</li>
-	<li>Personal services</li>
-	<li>Retail</li>
-	<li>Travel</li>
-</ul>
-	</div>
-	<div class="source">
-		<textarea rows="6" cols="30">
-		
-<ul class="tags navy">
-	<li>Continuing care</li>
-	<li>Education</li>
-	<li>Fitness and recreation</li>
-	<li>Personal services</li>
-	<li>Retail</li>
-	<li>Travel</li>
-</ul>
-		</textarea>
-	<p><a href="tag/tags-navy-unlinked.html">tags-navy-unlinked.html</a></p>
-	</div>
-</div>
-
-
-<!-- Light gray tags -->
-
-<div class="pattern">
-	<div class="display">
-		<ul class="tags fog">
-			<li><a href="#">Continuing care</a></li>
-			<li><a href="#">Education</a></li>
-			<li><a href="#">Fitness and recreation</a></li>
-			<li><a href="#">Personal services</a> </li>
-			<li><a href="#">Retail</a> </li>
-			<li><a href="#">Travel</a> </li>
-		</ul>
-	</div>
-	<div class="source">
-		<textarea rows="6" cols="30">
-		
-	<ul class="tags fog">
-		<li><a href="#">Continuing care</a></li>
-		<li><a href="#">Education</a></li>
-		<li><a href="#">Fitness and recreation</a></li>
-		<li><a href="#">Personal services</a> </li>
-		<li><a href="#">Retail</a> </li>
-		<li><a href="#">Travel</a> </li>
-	</ul>
-		</textarea>
-	<p><a href="tag/tags-fog-linked.html">tags-fog-linked.html</a></p>
-	</div>
-</div>
-
-
-<div class="pattern">
-	<div class="display">
-<ul class="tags fog">
-	<li>Continuing care</li>
-	<li>Education</li>
-	<li>Fitness and recreation</li>
-	<li>Personal services</li>
-	<li>Retail</li>
-	<li>Travel</li>
-</ul>
-	</div>
-	<div class="source">
-		<textarea rows="6" cols="30">
-		
-<ul class="tags fog">
-	<li>Continuing care</li>
-	<li>Education</li>
-	<li>Fitness and recreation</li>
-	<li>Personal services</li>
-	<li>Retail</li>
-	<li>Travel</li>
-</ul>
-		</textarea>
-	<p><a href="tag/tags-fog-unlinked.html">tags-fog-unlinked.html</a></p>
-	</div>
-</div>
 
 <?php
 	include 'inc/footer.php';
