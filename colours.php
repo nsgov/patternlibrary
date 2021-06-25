@@ -161,6 +161,83 @@
 </div>
 
 
+<h2>Grayscale palette</h2>
+
+
+<div class="row">
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #000;">
+			<div class="swatch" style="background-color: #000;"> </div>
+			<div class="values">
+				Black
+				<br />
+				#000000
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #222;">
+			<div class="swatch" style="background-color: #222;"> </div>
+			<div class="values">
+				Charcoal
+				<br />
+				#222222
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #333;">
+			<div class="swatch" style="background-color: #333;"> </div>
+			<div class="values">
+				Graphite
+				<br />
+				#333333
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #555;">
+			<div class="swatch" style="background-color: #555;"> </div>
+			<div class="values">
+				Gray
+				<br />
+				#555555
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #777;">
+			<div class="swatch" style="background-color: #777;"> </div>
+			<div class="values">
+				Ash
+				<br />
+				#777777
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #d9d9d9;">
+			<div class="swatch" style="background-color: #d9d9d9;"> </div>
+			<div class="values">
+				Smoke
+				<br />
+				#d9d9d9
+			</div>
+		</div>
+	</div>
+	<div class="col-xs-3">
+		<div class="swatch-box" style="border-color: #eee;">
+			<div class="swatch" style="background-color: #eee;"> </div>
+			<div class="values">
+				Fog
+				<br />
+				#eeeeee
+			</div>
+		</div>
+	</div>
+</div>
+
+
 
 <h2>Experimental palette</h2>
 

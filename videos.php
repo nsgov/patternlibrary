@@ -34,7 +34,7 @@ foreach ($videos as $video):
     echo '<textarea rows="6" cols="30">';
     echo htmlspecialchars(file_get_contents('video/'.$video));
     echo '</textarea>';
-    echo '<p><a href="videos/'.$video.'">'.$video.'</a></p>';
+    echo '<p><a href="video/'.$video.'">'.$video.'</a></p>';
     echo '</div>';
     echo '</div>';
     echo '<div class="pattern-separator"></div>';
