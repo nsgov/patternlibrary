@@ -23,7 +23,7 @@
 
 <?php
 $tags = array();
-$handle=opendir('tags');
+$handle=opendir('tag');
 while (false !== ($tag = readdir($handle))):
     if(stristr($tag,'.html')):
         $tags[] = $tag;
@@ -43,7 +43,7 @@ foreach ($tags as $tag):
     echo '<textarea rows="6" cols="30">';
     echo htmlspecialchars(file_get_contents('tag/'.$tag));
     echo '</textarea>';
-    echo '<p><a href="tags/'.$tag.'">'.$tag.'</a></p>';
+    echo '<p><a href="tag/'.$tag.'">'.$tag.'</a></p>';
     echo '</div>';
     echo '</div>';
     echo '<div class="pattern-separator"></div>';
