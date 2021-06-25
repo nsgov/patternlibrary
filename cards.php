@@ -10,7 +10,7 @@
 	Cards are used to organise information, providing a brief summary of content or a task linked to more detail. They can be used to display feature stories, or groups of tasks.
 </p>
 
-<div class="pattern">
+<div class="pattern"> 
 
 <section class="card-grid feature-story">
 	<article class="card">
