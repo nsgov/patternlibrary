@@ -21,7 +21,7 @@ endwhile;
 sort($extendedgrids);
 
 ?>
-<h2 class="section">Card patterns</h1>
+<h2 class="section">Extended grid patterns</h1>
 <?php
 foreach ($extendedgrids as $extendedgrid):
     echo '<div class="pattern">';
