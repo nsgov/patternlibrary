@@ -89,3 +89,8 @@ button.search-box-button {background-image: url(img/sprite-icons.svg);}
 .swatch-box {border: 1px solid #000; color: #000; margin-bottom: 1.5em;}
 .swatch-box .swatch {height: 80px; width: 100%; padding: 1em;}
 .swatch-box .values {padding: 1em;}
+
+/* Background used on grid patterns demo */ 
+.gray-bg {background: #efefef;}
+
+.code {font-family: Menlo, Monaco, Consolas, "Courier New", monospace; background: #efefef; padding: 2px; font-size: 0.95em;}

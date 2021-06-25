@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="js">
 <head>
 <meta charset="utf-8">
 <title><?php echo "$title"; ?> - Saltire Pattern Library</title>
 <link rel="stylesheet" href="global.css">
 <link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
 <link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/css/aria.accordion.css">
+<link rel="stylesheet" href="css/aria.accordion.css">
+<link rel="stylesheet" href="css/step-by-step.css">
 
 </head>
 <body>

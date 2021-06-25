@@ -6,7 +6,10 @@
 
 <h1><?php echo "$title"; ?></h1>
 
-<p>The following examples are configurations made from groups of fields used in our content types.</p>
+<p>Different configurations for displaying groups and lists of content.</p>
+
+<p>Listings should always be sorted in alphabetical order. While it may be tempting to present items in the order of highest demand, this order is meaningless to users, difficult to scan and should be avoided.</p>
+
 
 
 <!-- CONTENT -->

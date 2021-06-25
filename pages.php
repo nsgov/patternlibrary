@@ -29,7 +29,7 @@ endwhile;
 sort($pages);
 
 ?>
-<h2 class="section">page and structural UI patterns</h2>
+<h2 class="section">Page and structural UI patterns</h2>
 <?php
 foreach ($pages as $page):
     echo '<div class="pattern">';

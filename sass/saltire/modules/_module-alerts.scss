@@ -4,8 +4,6 @@
 	p {
 		margin-bottom: 0;
 		line-height: 1.5;
-		font-size: $font-size-large;
-		font-weight: $font-weight-bold;
 	}
 
 	&-success {
@@ -57,6 +55,43 @@
     & + p {margin-bottom: 1.5em;}
   }
 }
+
+aside, section {
+	&.blockquote-alert {
+		display: grid;
+		width: 100%;
+		column-gap: 10px;
+		grid-template-columns: 2em 1fr;
+
+		p + p {
+			margin-top: 1.5em; margin-bottom: 0;
+		}
+	}
+}
+
+
+
+.alert-block {
+  color: #000;
+  margin: $line-height-em 0;
+  padding: $line-height-em 0;
+  border: 1px solid $gray-light;
+  border-width: 1px 0;
+  display: grid;
+  width: 100%;
+  column-gap: 10px;
+  grid-template-columns: 2.5em 1fr;
+
+  .fa {font-size: $font-size-h1;}
+
+  p {
+	  margin: 0.25em 0 0 0;
+	  + p {
+  		margin: $line-height-em 0 0 0;
+  		}
+	}
+}
+
 
 // Site alert - full browser width on top of page
 #news-alert-bar {

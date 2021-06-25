@@ -40,7 +40,29 @@ $gray:                   lighten($gray-base, 33.5%) !default;
 $gray-light:             lighten($gray-base, 46.7%) !default;
 $gray-lighter:           lighten($gray-base, 93.5%) !default;
 
-$header-primary:		    $blue !default;
+
+//## Colloquial colour names
+
+$navy:			$darkestblue;
+$dark-aqua:		#00778b;
+$aqua:			#63b1bc;
+$light-aqua:	#8db9ca;
+$light-blue: 	#b9d9eb;
+$dark-teal: 	#0096aa;
+$teal:			#48b9c7;
+$light-teal: 	#73c6d1;
+$eggplant: 		#4c2865;
+$tangerine: 	#f3745a;
+$lemon: 		#fac351;
+$chartreuse: 	#b5c334;
+$green:			#6abe4c;
+
+$charcoal:	$gray-darker;
+$graphite: 	$gray-dark;
+$smoke: 	lighten($gray-base, 85%) !default;
+$fog: 		$gray-lighter;
+
+$header-primary:		$blue !default;
 $brand-primary:         $blue !default;
 $brand-success:         $green !default;
 $brand-info:            $blue !default;
@@ -327,6 +349,25 @@ $container-md:                 $container-desktop !default;
 $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
+
+
+// Grid: Column Count
+$grid-column-count: 12;
+
+// Grid: Gutters
+$grid-gutter: 7.5px;
+$grid-gutter-sm: ($grid-gutter / 2);
+$grid-gutter-lg: ($grid-gutter * 2);
+
+// VARIABLES: SPACING
+// Use for padding, margins, etc.
+
+$spacing: 10px;
+$spacing-md: ($spacing * 2);
+$spacing-lg: ($spacing * 3);
+$spacing-half: ($spacing / 2);
+
+
 
 
 //== Navbar

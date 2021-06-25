@@ -8,6 +8,74 @@
 
 <p>Our primary typeface online is Open Sans.</p>
 
+<h2>Most common font</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Style
+            </th>
+            <th>
+                Size
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <h1>Heading 1</h1>
+            </td>
+            <td>
+                2.25em/36px
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Heading 2</h2>
+            </td>
+            <td>
+                1.7em/27.2px
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3>Heading 3</h3>
+            </td>
+            <td>
+                1.35em/21.6px
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Heading 4</h4>
+            </td>
+            <td>
+                1.15em/18.4px
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    Paragraph text
+                </p>
+            </td>
+            <td>
+                1em/16px
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <small>Small</small>
+            </td>
+            <td>
+                0.875em/14px
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
 <p>For information about writing online, please refer to the <a href="https://novascotia.sharepoint.com/sites/Projects/CNSGovWebStrategy/Tools%20and%20Guides/Forms/AllItems.aspx?id=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides%2FOnline%20Writing%20Guide%20v2%2Epdf&parent=%2Fsites%2FProjects%2FCNSGovWebStrategy%2FTools%20and%20Guides">online writing guide (PDF)</a>.</p>
 
 <!-- TYPOGRAPHY -->

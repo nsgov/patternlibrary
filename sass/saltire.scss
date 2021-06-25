@@ -8,7 +8,6 @@ Date of creation: 2015/07/30
 * Copyright 2011-2015 Twitter, Inc.
 * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
 */
-
 // Core variables and mixins
 @import "saltire/variables";
 @import "saltire/mixins";
@@ -51,6 +50,9 @@ Date of creation: 2015/07/30
 @import "saltire/modules/module-accordions";
 @import "saltire/modules/module-news-releases";
 @import "saltire/modules/module-timeline";
+@import "saltire/modules/module-card";
+@import "saltire/modules/module-ribbon-header";
+@import "saltire/modules/module-tags";
 
 // modules Modules - Headlines / Figures
 @import "saltire/modules/module-figure";
