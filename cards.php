@@ -26,15 +26,13 @@ sort($cards);
 <?php
 foreach ($cards as $card):
     echo '<div class="pattern">';
-    echo '<div class="display">';
     include('cards/'.$card);
     echo '</div>';
-    echo '<div class="source">';
-    echo '<textarea rows="6" cols="30">';
+    echo '<div class="pattern">';
+    echo '<textarea rows="20" style="width: 100%">';
     echo htmlspecialchars(file_get_contents('cards/'.$card));
     echo '</textarea>';
     echo '<p><a href="cards/'.$card.'">'.$card.'</a></p>';
-    echo '</div>';
     echo '</div>';
     echo '<div class="pattern-separator"></div>';
 

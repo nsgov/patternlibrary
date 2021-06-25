@@ -34,7 +34,7 @@ endwhile;
 sort($tags);
 
 ?>
-<h2 class="section">Card patterns</h1>
+<h2 class="section">Tag patterns</h1>
 <?php
 foreach ($tags as $tag):
     echo '<div class="pattern">';
