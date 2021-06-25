@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+<meta charset="utf-8">
+<title>Extended grid patterns - Saltire Pattern Library</title>
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="https://beta.novascotia.ca/themes/ignition/saltire.css">
+<link rel="stylesheet" href="https://novascotia.ca/clf/fonts/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/aria.accordion.css">
+<link rel="stylesheet" href="css/step-by-step.css">
+
+</head>
+<body>
+
+<header>
+<!-- NS MOTHERSHIP RIBBON -->
+<nav id="navigation" class="ribbon" role="navigation" aria-label="Main navigation">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<a href="https://novascotia.ca/" hreflang="en"><img class="ribbon-img" src="https://novascotia.ca/clf/ignition/img/nsvip-en-white-flag.svg" alt="Government of Nova Scotia" /></a>
+			</div>
+		</div>
+	</div>
+</nav>	
+<!-- NS MOTHERSHIP RIBBON -->
+</header>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<span aria-hidden="true" id="you-are-here-text">you are here</span>
+			<nav class="breadcrumbs" id="breadcrumbs">
+				<a href="index.html" rel="up" class="breadcrumb" hreflang="en" lang="en">Government of Nova Scotia UI Pattern Library</a>
+				<span class="breadcrumb">Extended grid patterns</span>
+			</nav>
+<h1>Extended grid patterns</h1>
+
+<p>
+	Some provisional grid patterns leveraging CSS grid and flexbox.
+</p>
+
+
+<div class="pattern">
+	<div class="display">
+<!-- Columns: Column 2 automatically fills up remaining width -->
+<div class="row flex">
+	<div class="col">
+		<div>
+			<img src="img/spring-garden.jpg" style="width: 100px; height: auto;" />
+		</div>
+	</div>
+	<div class="col flex-1">
+		<div>
+			<p>
+				Adding the <span class="code">flex-1</span> class to this column makes it fill the remaining width.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+	 
+
+	</div>
+	<div class="source">
+		<textarea rows="6" cols="30">
+		
+	<!-- Columns: Column 2 automatically fills up remaining width -->
+<div class="row flex">
+	<div class="col">
+		<div>
+			<img src="img/spring-garden.jpg" style="width: 100px; height: auto;" />
+		</div>
+	</div>
+	<div class="col flex-1">
+		<div>
+			<p>
+				Adding the <span class="code">flex-1</span> class to this column makes it fill the remaining width.
+			</p>
+		</div>
+	</div>
+</div>
+
+
+		</textarea>
+	<p><a href="extendedgrid/row-cols-column-2-auto-fill.html">row-cols-column-2-auto-fill.html</a></p>
+	</div>
+</div>
+
+
+
+<div class="pattern">
+	<div class="display">
+
+	<div class="row flex flex-wrap">
+	<div class="col col-12 col-6-sm col-4-mid col-3-lg">
+		<div class="gray-bg">Column 1</div>
+	</div>
+	<div class="col col-12 col-6-sm col-4-mid col-3-lg">
+		<div class="gray-bg">Column 2</div>
+	</div>
+	<div class="col col-12 col-6-sm col-4-mid col-3-lg">
+		<div class="gray-bg">Column 3</div>
+	</div>
+	<div class="col col-12 col-6-sm col-4-mid col-3-lg">
+		<div class="gray-bg">Column 4</div>
+	</div>
+</div>
+
+	</div>
+	<div class="source">
+		<textarea rows="6" cols="30">
+<div class="row flex flex-wrap">
+	<div class="col col-12 col-6-sm col-4-mid col-3-lg">
+		<div class="gray-bg">Column 1</div>
+	</div>
+	<div class="col col-12 col-6-sm col-4-mid col-3-lg">
+		<div class="gray-bg">Column 2</div>
+	</div>
+	<div class="col col-12 col-6-sm col-4-mid col-3-lg">
+		<div class="gray-bg">Column 3</div>
+	</div>
+	<div class="col col-12 col-6-sm col-4-mid col-3-lg">
+		<div class="gray-bg">Column 4</div>
+	</div>
+</div>
+	
+		</textarea>
+	<p><a href="extendedgrid/different-columns-at-breakpoints.html">different-columns-at-breakpoints.html</a></p>
+	</div>
+</div>
+
+
+
+
+<div class="pattern">
+	<div class="display">
+
+	<div class="row flex flex-align-center">
+	<div class="col">
+		<div class="gray-bg">Column 1</div>
+	</div>
+	<div class="col">
+		<div class="gray-bg">
+		<p>Column 2: Adding <span class="code">flex-align-centre</span> to the parent row will vertically align the columns to the centre. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur augue id est accumsan, ut ornare lectus auctor. Aliquam laoreet ante vitae lorem rutrum, quis faucibus nunc elementum. Nulla ornare turpis a nulla pretium ultrices. Sed ultricies venenatis enim a condimentum. Suspendisse sed augue vulputate, rhoncus lorem id, blandit ante. Sed ut nulla vel risus fermentum vehicula semper eu est. Quisque vel odio feugiat, tincidunt nunc eget, mollis dolor. Curabitur eros risus, tincidunt ut ante ac, condimentum consectetur ligula. Mauris euismod sem id est eleifend condimentum. Vestibulum malesuada luctus est et fringilla. Duis laoreet venenatis condimentum. Fusce auctor ligula et erat varius, nec pulvinar augue posuere. Pellentesque mi sapien, lacinia in risus a, iaculis rhoncus mi. Proin non mauris vitae urna ullamcorper cursus. 
+		</p>
+		</div>
+	</div>
+</div>
+
+	</div>
+	<div class="source">
+		<textarea rows="6" cols="30">
+<div class="row flex flex-align-center">
+	<div class="col">
+		<div class="gray-bg">Column 1</div>
+	</div>
+	<div class="col">
+		<div class="gray-bg">
+		<p>Column 2: Adding <span class="code">flex-align-centre</span> to the parent row will vertically align the columns to the centre. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur augue id est accumsan, ut ornare lectus auctor. Aliquam laoreet ante vitae lorem rutrum, quis faucibus nunc elementum. Nulla ornare turpis a nulla pretium ultrices. Sed ultricies venenatis enim a condimentum. Suspendisse sed augue vulputate, rhoncus lorem id, blandit ante. Sed ut nulla vel risus fermentum vehicula semper eu est. Quisque vel odio feugiat, tincidunt nunc eget, mollis dolor. Curabitur eros risus, tincidunt ut ante ac, condimentum consectetur ligula. Mauris euismod sem id est eleifend condimentum. Vestibulum malesuada luctus est et fringilla. Duis laoreet venenatis condimentum. Fusce auctor ligula et erat varius, nec pulvinar augue posuere. Pellentesque mi sapien, lacinia in risus a, iaculis rhoncus mi. Proin non mauris vitae urna ullamcorper cursus. 
+		</p>
+		</div>
+	</div>
+</div>
+	
+		</textarea>
+	<p><a href="extendedgrid/vertically-centred-columns.html">vertically-centred-columns.html</a></p>
+	</div>
+</div>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<a href="mailto:internet@novascotia.ca"></a>
+	</div>
+</footer>
+
+<script src="js/aria.accordion.js"></script>
+<script src="js/modernizr.min.js?v=3.3.1"></script>
+<script src="js/script.min.js"></script>
+
+</body>
+</html>
