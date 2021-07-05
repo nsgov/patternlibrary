@@ -29,7 +29,7 @@ foreach ($cards as $card):
     include('cards/'.$card);
     echo '</div>';
     echo '<div class="pattern">';
-    echo '<textarea rows="20" style="width: 100%">';
+    echo '<textarea rows="6" style="width: 100%">';
     echo htmlspecialchars(file_get_contents('cards/'.$card));
     echo '</textarea>';
     echo '<p><a href="cards/'.$card.'">'.$card.'</a></p>';

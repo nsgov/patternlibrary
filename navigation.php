@@ -8,6 +8,12 @@
 
 <p></p>
 
+<style>
+    .footer {
+        margin-bottom: 1.5em;
+    }
+    .footer.ribbon {background-image: none;}
+</style>
 
 <!-- NAVIGATION -->
 
@@ -29,7 +35,7 @@ foreach ($navigations as $navigation):
     include('navigation/'.$navigation);
     echo '</div>';
     echo '<div class="pattern">';
-    echo '<textarea rows="6" cols="30">';
+    echo '<textarea rows="6" style="width: 100%">';
     echo htmlspecialchars(file_get_contents('navigation/'.$navigation));
     echo '</textarea>';
     echo '<p><a href="navigation/'.$navigation.'">'.$navigation.'</a></p>';

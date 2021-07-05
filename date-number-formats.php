@@ -4,7 +4,7 @@
 	include 'inc/breadcrumb.php';
 ?>
 
-<h1>Date and number formats</h1>
+<h1>Dates and number formats</h1>
 
 <h2 id="dates">Dates</h2>
 <ul>

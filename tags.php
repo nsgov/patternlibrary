@@ -14,7 +14,6 @@
 <ul>
 	<li>Tags should always be presented in alphabetical order</li>
 	<li>Tags should never be used to replace navigation</li>
-	<li>Tags can be linked or unlinked</ul>
 </ul>
 
 <p>
