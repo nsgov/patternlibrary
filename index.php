@@ -109,6 +109,9 @@
       <div class="card-body">
         <h2>Latest updates</h2>
         <p>
+          <a href="minimum-accessibility-ux-requirements.html">Website accessibility and user experience minimum requirements</a>
+        </p> 
+        <p>
         <a href="2021-06-release-notes.html">June 2021 release notes <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
 
         </p>

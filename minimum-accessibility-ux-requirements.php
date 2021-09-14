@@ -6,6 +6,10 @@
 
 <h1><?php echo "$title"; ?></h1>
 
+<p>
+	Last updated: 13 September, 2021
+</p>
+
 <h2>Requirements</h2>
 <ul>
 	<li>Websites/applications must be designed and built to be accessible and inclusive</li>
