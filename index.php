@@ -19,16 +19,37 @@
 			text-align: center;
 			font-size: small;
 		}
-
+/* 
 		.hero-headline-container img {top: -200px;}
 		.hero-headline-container .hero-graphics {left: -38%;}
 		.hero-headline-container h1 {font-size: 2.75em; max-width: 28em;}
-		@media only screen and (max-width: 1024px) {
-			.hero-headline-container h1 {font-size: 2.5em;}
-		}
-		@media only screen and (max-width: 760px) {
-			.hero-headline-container img {top: 0px;}
-		}
+     */
+figure {text-align: left;}
+.hidden-sm {display: none}
+
+@media only screen and (min-width: 989px) {
+  .hero-headline-container {height: 300px;}
+  .hero-headline-container h1 {font-size: 2.5em;}
+}
+@media only screen and (max-width: 1200px) {
+  .hero-headline-container {height: 300px;}
+  .hero-headline-container h1 {max-width: 16em; white-space: normal; font-size: 2.5em;}
+}
+@media only screen and (max-width: 989px) {
+  .hero-headline {width: 56em;}
+}
+@media only screen and (max-width: 760px) {
+  .hero-headline {display: none;}
+  .hidden-sm {display: block}
+  .hero-headline-container img {top: 0px;}
+  .hero-headline-container {height: 250px;}
+}
+@media only screen and (max-width: 600px) {
+  .hero-headline-container {height: 180px;}
+}
+
+
+
 .content-chunk {background: #d4e7f0; border-radius: 6px; padding: 1.5em; margin-bottom: 1.5em; color: #333; z-index: 2; position: relative;}
 		.card-grid {
 			display: grid;
@@ -40,6 +61,10 @@
 		.card-grid.tint .card {
 			background: #efefef;
 		}
+
+.card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
 </style>
 
@@ -61,7 +86,7 @@
 </header>
 
 
-<figure id="hero-headline-container" class="hero-headline-container" style=";">
+<figure id="hero-headline-container" class="hero-headline-container">
 		<img src="img/AppleBlossom_LWaggjpg.jpg" alt="Apple blossom"/>
 		<div class="hero-angles"></div>
 	
@@ -77,11 +102,7 @@
 	<div class="row">
 		<div class="col-xs-12">
 
-
-
-      <h2>How to contribute</h2>
-        <p>Create an issue on the <a href="https://gitlab.novascotia.ca/cns/patternlab">GitLab project</a> to report an issue or request a feature.</p>
-        <p>This is a living collection that will continue to evolve and expand. If you can't find what you are looking for, email <a href="internet@novascotia.ca">internet@novascotia.ca</a> and we will work with you to help you find a solution.</p>
+      <h1 class="hidden-sm">Government of Nova Scotia Pattern Library</h1>
 
 <section class="card-grid tint rounded">
     <article class="card">
